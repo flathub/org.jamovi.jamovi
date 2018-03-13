@@ -2,7 +2,6 @@
     {
         "type": "git",
         "url": "https://github.com/jamovi/jamovi.git",
-        "tag": "v0.8.3.1",
-        "commit": "11beaf4be9306305cd44c01d7fc46ab9eea4f019"
+        "commit": "19c1e1ea9f81832d16842c843c5fba66d802fdc7"
     }
 ]
