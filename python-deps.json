@@ -7,38 +7,38 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://pypi.python.org/packages/e3/7b/e29ab3d51c8df66922fea216e2bddfcb6430fb29620e5165b16a216e0d3c/tornado-4.5.3.tar.gz",
-            "sha256": "6d14e47eab0e15799cf3cdcc86b0b98279da68522caace2bd7ce644287685f0a"
-        },
-        {
-            "type": "file",
             "url": "https://pypi.python.org/packages/4a/85/db5a2df477072b2902b0eb892feb37d88ac635d36245a72a6a69b23b383a/PyYAML-3.12.tar.gz",
-            "sha256": "592766c6303207a20efc445587778322d7f73b161bd994f227adaa341ba212ab"
+            "sha512": "e16d8b7f4f026b6a95b11fb59c54ec5f114f6f516294eaa95e718abdf5d37c17a9c4b5e0a0a61fca04e801792d9b7fb801087cf849ff22b9581f6af204b1883a"
         },
         {
             "type": "file",
             "url": "https://pypi.python.org/packages/16/d8/bc6316cf98419719bd59c91742194c111b6f2e85abac88e496adefaf7afe/six-1.11.0.tar.gz",
-            "sha256": "70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9"
+            "sha512": "33f246a2e987141e17e5edad9d3537cf3aba0cbdd0bc2a907ea52ce0d674b1474f29c3dd5cc26605fd960396054b189ca5f501708333cad234c223131483fe24"
         },
         {
             "type": "file",
             "url": "https://pypi.python.org/packages/ee/2a/c4d2cdd19c84c32d978d18e9355d1ba9982a383de87d0fcb5928553d37f4/Cython-0.27.3.tar.gz",
-            "sha256": "6a00512de1f2e3ce66ba35c5420babaef1fe2d9c43a8faab4080b0dbcc26bc64"
-        },
-        {
-            "type": "file",
-            "url": "https://pypi.python.org/packages/14/03/ff5279abda7b46e9538bfb1411d42831b7e65c460d73831ed2445649bc02/protobuf-3.5.1.tar.gz",
-            "sha256": "95b78959572de7d7fafa3acb718ed71f482932ddddddbd29ba8319c10639d863"
+            "sha512": "3c91d3be063cea4a03420a4ef2d9485453d5aa8f1a605d6157b2456b71ab53601c27a5df9cb5337ac14345b09fc86063d1cc613abe9bcbb0e8257f93181a79cf"
         },
         {
             "type": "file",
             "url": "https://pypi.python.org/packages/fc/bb/a5768c230f9ddb03acc9ef3f0d4a3cf93462473795d18e9535498c8f929d/chardet-3.0.4.tar.gz",
-            "sha256": "84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae"
+            "sha512": "61a03b23447a2bfe52ceed4dd1b9afdb5784da1933a623776883ee9f297e341f633e27f0ce0230bd5fdc5fdb5382105ab42736a74a417ddeb9f83af57455dba5"
+        },
+        {
+            "type": "file",
+            "url": "https://pypi.python.org/packages/f2/2f/7c8475f523b6db67506eba48d3beacc3625e0effabfac109848f19e3cffc/protobuf-3.5.2.tar.gz",
+            "sha512": "b9ad019476f12506c3176f41ed8935a16b6f2dacc167414075bc0a775c382b02e57b3fcf00df6e7dba28fafd631adad982128ff88efc84caf4f718a12b8d2ae6"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/ec/af/c40ad78dacdef134f3e08b3103c3c859b14ceb9639d344811339227b6444/tornado-4.2.1.tar.gz",
+            "sha512": "5bb391b05c8574c8ae5e315b7617e1259ab80e993f1230db611c5beef8058517cc588daf75fac2e0f7969668715470b06ed183c9832b22081be265beb6967e30"
         },
         {
             "type": "file",
             "url": "https://pypi.python.org/packages/0b/b1/3037e0e380d5fab2824e69a59bd374da402c0cef264ccb3fe5d71c230c4b/nanomsg-1.0.tar.gz",
-            "sha256": "843be41258219d9d319cf434a68cac7669834ab9c993ea4bab5b3d87f62a7a13"
+            "sha512": "2d1e6349b73481aaa9fb0a683f531f7fe92374e1893fe236763ec86c6389ad1a3ce3900b1e1b4dff165c90447f2516a5b9aff0e1760dc190fa093c3cc2c301aa"
         }
     ]
 }
