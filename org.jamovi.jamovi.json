@@ -490,7 +490,7 @@
                 "mkdir -p /app/share/icons/hicolor/scalable/apps",
                 "cp platform/app-icon.svg /app/share/icons/hicolor/scalable/apps/jamovi.svg",
                 "mkdir -p /app/share/applications",
-                "sed -E -e 's|Exec=.*|Exec=jamovi %f|g' platform/jamovi.desktop > /app/share/applications/jamovi.desktop",
+                "cp platform/jamovi.desktop /app/share/applications/",
                 "mkdir -p /app/share/appdata",
                 "cp org.jamovi.jamovi.appdata.xml /app/share/appdata/"
             ],
