@@ -9,6 +9,9 @@
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.gfortran-62"
     ],
+    "rename-desktop-file": "jamovi.desktop",
+    "rename-appdata-file": "jamovi.appdata.xml",
+    "rename-icon": "jamovi",
     "finish-args":[
         "--share=network",
         "--share=ipc",
@@ -485,14 +488,12 @@
             "name": "jamovi-meta",
             "buildsystem": "simple",
             "build-commands": [
-                "mkdir -p /app/share/menu",
-                "cp platform/menu /app/share/menu/org.jamovi.jamovi",
                 "mkdir -p /app/share/icons/hicolor/scalable/apps",
-                "cp platform/app-icon.svg /app/share/icons/hicolor/scalable/apps/org.jamovi.jamovi.svg",
+                "cp platform/app-icon.svg /app/share/icons/hicolor/scalable/apps/jamovi.svg",
                 "mkdir -p /app/share/applications",
-                "sed -E -e 's|Icon=.*|Icon=/app/share/icons/hicolor/scalable/apps/org.jamovi.jamovi.svg|g' platform/jamovi.desktop > /app/share/applications/org.jamovi.jamovi.desktop",
+                "sed -E -e 's|Exec=.*|Exec=jamovi %f|g' platform/jamovi.desktop > /app/share/applications/jamovi.desktop",
                 "mkdir -p /app/share/appdata",
-                "cp jamovi.appdata.xml /app/share/appdata/org.jamovi.jamovi.appdata.xml"
+                "cp jamovi.appdata.xml /app/share/appdata/"
             ],
             "sources":[
                 "jamovi-source.json",
