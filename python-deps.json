@@ -1,5 +1,5 @@
 {
-    "name": "python-deps",
+    "name": "python3-cython",
     "buildsystem": "simple",
     "build-commands": [
         "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=/app cython protobuf tornado nanomsg PyYAML chardet"
@@ -7,8 +7,18 @@
     "sources": [
         {
             "type": "file",
+            "url": "https://pypi.python.org/packages/be/08/bb5ffd1c32a951cbc26011ecb8557e59dc7a0a4975f0ad98b2cd7446f7dd/Cython-0.28.1.tar.gz",
+            "sha512": "88db126d3c1cfc93b682f2f617faebf44d413ff9f5b5e59b8438c677cd17a2870574e8811cd5ef882466a293999a1952e897da3fb90bab26a9868c7b3148df32"
+        },
+        {
+            "type": "file",
             "url": "https://pypi.python.org/packages/4a/85/db5a2df477072b2902b0eb892feb37d88ac635d36245a72a6a69b23b383a/PyYAML-3.12.tar.gz",
             "sha512": "e16d8b7f4f026b6a95b11fb59c54ec5f114f6f516294eaa95e718abdf5d37c17a9c4b5e0a0a61fca04e801792d9b7fb801087cf849ff22b9581f6af204b1883a"
+        },
+        {
+            "type": "file",
+            "url": "https://pypi.python.org/packages/66/60/5b34caa5014eb3f1deb16d0e72cc08abeec7a9c9823486da7984ddadc95f/tornado-5.0.1.tar.gz",
+            "sha512": "16439fb98fda908b68e86caabb94a5256f6f450bf4fa98867e6c54b45b957c3f000070d34b92cd34e506b1861b4d1259f57bd1a2bfdb712026c4a01268f9292a"
         },
         {
             "type": "file",
@@ -17,28 +27,18 @@
         },
         {
             "type": "file",
-            "url": "https://pypi.python.org/packages/ee/2a/c4d2cdd19c84c32d978d18e9355d1ba9982a383de87d0fcb5928553d37f4/Cython-0.27.3.tar.gz",
-            "sha512": "3c91d3be063cea4a03420a4ef2d9485453d5aa8f1a605d6157b2456b71ab53601c27a5df9cb5337ac14345b09fc86063d1cc613abe9bcbb0e8257f93181a79cf"
-        },
-        {
-            "type": "file",
             "url": "https://pypi.python.org/packages/fc/bb/a5768c230f9ddb03acc9ef3f0d4a3cf93462473795d18e9535498c8f929d/chardet-3.0.4.tar.gz",
             "sha512": "61a03b23447a2bfe52ceed4dd1b9afdb5784da1933a623776883ee9f297e341f633e27f0ce0230bd5fdc5fdb5382105ab42736a74a417ddeb9f83af57455dba5"
         },
         {
             "type": "file",
-            "url": "https://pypi.python.org/packages/f2/2f/7c8475f523b6db67506eba48d3beacc3625e0effabfac109848f19e3cffc/protobuf-3.5.2.tar.gz",
-            "sha512": "b9ad019476f12506c3176f41ed8935a16b6f2dacc167414075bc0a775c382b02e57b3fcf00df6e7dba28fafd631adad982128ff88efc84caf4f718a12b8d2ae6"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/ec/af/c40ad78dacdef134f3e08b3103c3c859b14ceb9639d344811339227b6444/tornado-4.2.1.tar.gz",
-            "sha512": "5bb391b05c8574c8ae5e315b7617e1259ab80e993f1230db611c5beef8058517cc588daf75fac2e0f7969668715470b06ed183c9832b22081be265beb6967e30"
-        },
-        {
-            "type": "file",
             "url": "https://pypi.python.org/packages/0b/b1/3037e0e380d5fab2824e69a59bd374da402c0cef264ccb3fe5d71c230c4b/nanomsg-1.0.tar.gz",
             "sha512": "2d1e6349b73481aaa9fb0a683f531f7fe92374e1893fe236763ec86c6389ad1a3ce3900b1e1b4dff165c90447f2516a5b9aff0e1760dc190fa093c3cc2c301aa"
+        },
+        {
+            "type": "file",
+            "url": "https://pypi.python.org/packages/73/73/4f133a31d67b27431fe4b9cc5e2f74d0644bce0327a743093f3cc27864ce/protobuf-3.5.2.post1.tar.gz",
+            "sha512": "f19c05d3570b6c6878ebff070bef17e5f2a7685272e9d1e6921103c4b20e33db451651fd0b7af5c304f660c4bb867fc484db42cae86cca34cd173c7e0b7c7e85"
         }
     ]
 }
