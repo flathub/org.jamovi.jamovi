@@ -468,8 +468,8 @@
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2018-03-12/src/contrib/OpenMx_2.8.3.tar.gz",
-        "sha512": "57f52a185742f2a9c9f24e9914efd1d8879b423221e5c27f0f97a3a2dd46cd4ec40a7e1b9b1fb304019e0623ffdcca422a9c1b93e9254a7eeeb15589839766de",
+        "url": "https://cran.microsoft.com/snapshot/2018-03-19/src/contrib/OpenMx_2.9.6.tar.gz",
+        "sha512": "d0f32ab38faf9b7e593025d8259ca46a0579d6c78576ed2f17f90ae25fbe3e9ab96a5712be2a3d063df798be400a38006efaed315d59002149bdd40e5d242abd",
         "dest": "077_OpenMx.Rpkg"
     },
     {

@@ -151,8 +151,8 @@
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2018-03-08/src/contrib/withr_2.1.1.tar.gz",
-        "sha512": "9e0670d5a145f480f63409bbeab4cb287c7e9e91f9899dbe6f45718546dfc1251b259968290610645d1bbb486a904ea2b836c20af0718d27be46cb409d83e54f",
+        "url": "https://cran.microsoft.com/snapshot/2018-03-19/src/contrib/withr_2.1.2.tar.gz",
+        "sha512": "23c521e2bfb241ebc6cdb0c6300f7531e28ab2ef2609aeef33459a7572b37dace8bf31370ab87cffe99bff54d51d37de453073e163a60e557097f7c5e5ce9560",
         "dest": "025_withr.Rpkg"
     },
     {

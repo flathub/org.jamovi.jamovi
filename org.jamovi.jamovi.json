@@ -350,6 +350,8 @@
             "build-commands": [
                 "cd server && python3 setup.py build_ext",
                 "cd server && python3 setup.py install --prefix=/app",
+                "cd readstat && python3 setup.py build_ext",
+                "cd readstat && python3 setup.py install --prefix=/app",
                 "mkdir -p /app/lib/jamovi",
                 "cp -r examples/ /app/lib/jamovi/",
                 "cp version /app/lib/jamovi/version"
@@ -415,13 +417,13 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jamovi/jmv.git",
-                    "commit": "35e618f31d80a192c65a8881ff9104f3fd6ad879",
+                    "commit": "8d61eaafb787d20dd7b9912df24401bf9edffb09",
                     "dest": "jmv"
                 },
                 {
                     "type": "git",
                     "url": "https://github.com/jamovi/jamovi-compiler.git",
-                    "commit": "847f8fd0e9786f8d8c61679020e1e05da2d530b0",
+                    "commit": "3c9f3995edd815851a80b160bc6cfb425f91000e",
                     "dest": "jamovi-compiler"
                 },
                 {
