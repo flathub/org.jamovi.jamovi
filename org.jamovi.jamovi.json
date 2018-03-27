@@ -107,8 +107,8 @@
             "sources": [
                 {
                     "type":"archive",
-                    "url": "https://cran.r-project.org/src/base/R-3/R-3.4.3.tar.gz",
-                    "sha256":"7a3cb831de5b4151e1f890113ed207527b7d4b16df9ec6b35e0964170007f426"
+                    "url": "https://cran.r-project.org/src/base/R-3/R-3.4.4.tar.gz",
+                    "sha512":"83f3023097ef150f066dd51a8706333d955ec0bb91b1e92e73aedba3dcf6abcedb1de196a6aaf32283eb72392d5ea4872f37bd77c1e75a2de20d995846497a44"
                 }
             ],
             "cleanup": [
@@ -234,8 +234,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v1.8.3/electron-v1.8.3-linux-x64.zip",
-                    "sha512": "59bbb7f2a77fb8a97a3583a8468f65aaf3e41a6c443a9c6df4920a846a8beada23063905672b3bc1f3abf93d34bf92fcecf67b417ea409f70eddb38fc91bddff",
+                    "url": "https://github.com/electron/electron/releases/download/v1.8.4/electron-v1.8.4-linux-x64.zip",
+                    "sha512": "f6228477d1bab65446e0108cadaa0a99ae7b4b624c705ac809afa279dc71371a82f2c2a17d1b499d35d2e70f77da51cb2fe43cfb1f69979252fbfcc4f222a685",
                     "strip-components": 0
                 }
             ]
@@ -416,7 +416,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jamovi/jmv.git",
-                    "commit": "6477827e902c3b0b96e0c1ed49239ea61661c5e1",
+                    "commit": "d8de7d8a58bf70bf25add3b0a419c4f3d01cc4e2",
                     "dest": "jmv"
                 },
                 {
@@ -491,7 +491,9 @@
                 "mkdir -p /app/share/applications",
                 "cp platform/jamovi.desktop /app/share/applications/",
                 "mkdir -p /app/share/appdata",
-                "cp org.jamovi.jamovi.appdata.xml /app/share/appdata/"
+                "cp org.jamovi.jamovi.appdata.xml /app/share/appdata/",
+                "mkdir -p /app/share/mime/packages",
+                "cp platform/jamovi-dataset.xml /app/share/mime/packages/org.jamovi.jamovi.xml"
             ],
             "sources":[
                 "jamovi-source.json",

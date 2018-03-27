@@ -402,8 +402,8 @@
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2018-03-12/src/contrib/lme4_1.1-15.tar.gz",
-        "sha512": "c3e58e9cb2ec04ae21a767e3d344d8215fd267952a06dab9c8a3de1f0aa888b024548605725cd783457a13c2b01b7e7552ddbc90bd091161fcd4915b3349ad24",
+        "url": "https://cran.microsoft.com/snapshot/2018-03-29/src/contrib/lme4_1.1-16.tar.gz",
+        "sha512": "6d306580f0800b2df398e6f911705f7e9042e5e4afdb93ddde10ac0e34f55ccae27b604d1ee3907bdbf861bb5b2fea47ebe23658af4403176661c61748bf9e39",
         "dest": "066_lme4.Rpkg"
     },
     {
