@@ -300,8 +300,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jamovi/jmvcore.git",
-                    "tag": "v0.8.2",
-                    "commit": "06978e718c52c728a1cfd0c5e7dab4c551a68a07",
+                    "commit": "f101160403e7c0a21bcb02fa1127f47ca97d4f1b",
                     "dest": "jmvcore"
                 }
             ],
@@ -417,13 +416,13 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jamovi/jmv.git",
-                    "commit": "8d61eaafb787d20dd7b9912df24401bf9edffb09",
+                    "commit": "6477827e902c3b0b96e0c1ed49239ea61661c5e1",
                     "dest": "jmv"
                 },
                 {
                     "type": "git",
                     "url": "https://github.com/jamovi/jamovi-compiler.git",
-                    "commit": "3c9f3995edd815851a80b160bc6cfb425f91000e",
+                    "commit": "ca6159b0f2235834652195a0a9ceb2a5bf96bed4",
                     "dest": "jamovi-compiler"
                 },
                 {
