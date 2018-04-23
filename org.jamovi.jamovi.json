@@ -416,13 +416,13 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jamovi/jmv.git",
-                    "commit": "d8de7d8a58bf70bf25add3b0a419c4f3d01cc4e2",
+                    "commit": "879d03194cfd5e864dbc599ecf4bf6e109bb12cb",
                     "dest": "jmv"
                 },
                 {
                     "type": "git",
                     "url": "https://github.com/jamovi/jamovi-compiler.git",
-                    "commit": "ca6159b0f2235834652195a0a9ceb2a5bf96bed4",
+                    "commit": "3ca1153c27ec70d754c18dd7929a3929564ffee0",
                     "dest": "jamovi-compiler"
                 },
                 {
