@@ -35,6 +35,14 @@
   </screenshots>
 
   <releases>
+    <release version="0.9.0.0" date="2018-04-23">
+      <description>
+        <ul>
+          <li>Added row filtering system</li>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.8.3.0" date="2018-02-28">
       <description>
         <ul>
