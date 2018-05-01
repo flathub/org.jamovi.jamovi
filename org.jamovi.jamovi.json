@@ -300,7 +300,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jamovi/jmvcore.git",
-                    "commit": "f101160403e7c0a21bcb02fa1127f47ca97d4f1b",
+                    "commit": "6c6ee2458abf0d52245af7fc8a32119ca331a45c",
                     "dest": "jmvcore"
                 }
             ],
@@ -416,7 +416,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jamovi/jmv.git",
-                    "commit": "bb50f38e8bfff9298ecb5b594413f0fbad285b01",
+                    "commit": "ce9b20113548e8f22ce6d85d2491367e82f88469",
                     "dest": "jmv"
                 },
                 {
