@@ -17,8 +17,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/79/9d/dea8c5181cdb77d32e20a44dd5346b0e4bac23c4858f2f66ad64bbcf4de8/Cython-0.28.2.tar.gz",
-            "sha512": "7d09d1fdc10f96eb6121657b71e059c38c479b4ca180965a8e5adb89ac0f9be50260ea46197c45e8ddc7c1339b9b88c140dac2c4a7a49e1943fb4bf24a73d082"
+            "url": "https://files.pythonhosted.org/packages/b3/ae/971d3b936a7ad10e65cb7672356cff156000c5132cf406cb0f4d7a980fd3/Cython-0.28.3.tar.gz",
+            "sha512": "cd0b836e9db5cfd1367a72b18c6cb324eb512c4ae9adc12506e1bf73938e39aa9d373f60370de56e6c601aec459fe95672c7d42b7a420e6a6817e1551db58f8c"
         },
         {
             "type": "file",
