@@ -416,7 +416,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jamovi/jmv.git",
-                    "commit": "0ce748a9fcf7dc29934ebad35300559b94c4ec80",
+                    "commit": "bbda565a9a51fe702d772ef26817b1fa97b63c6c",
                     "dest": "jmv"
                 },
                 {
