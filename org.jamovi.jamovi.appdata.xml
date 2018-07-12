@@ -35,6 +35,15 @@
   </screenshots>
 
   <releases>
+    <release version="0.9.1.7" date="2018-07-12">
+      <description>
+        <ul>
+          <li>Added screenshot tool</li>
+          <li>Improvements to SPSS import</li>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.9.1.1" date="2018-06-12">
       <description>
         <ul>
