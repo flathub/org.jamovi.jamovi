@@ -35,6 +35,16 @@
   </screenshots>
 
   <releases>
+    <release version="0.9.1.9" date="2018-07-25">
+      <description>
+        <ul>
+          <li>Added ordinal logistic regression</li>
+          <li>Added Q-Q plots and normality tests to descriptives</li>
+          <li>Added plot colour palettes</li>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.9.1.7" date="2018-07-12">
       <description>
         <ul>
