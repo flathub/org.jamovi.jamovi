@@ -35,6 +35,13 @@
   </screenshots>
 
   <releases>
+    <release version="0.9.1.10" date="2018-07-26">
+      <description>
+        <ul>
+          <li>Fix to correlation matrix plot</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.9.1.9" date="2018-07-25">
       <description>
         <ul>
