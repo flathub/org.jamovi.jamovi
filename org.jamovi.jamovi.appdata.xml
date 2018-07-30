@@ -35,6 +35,13 @@
   </screenshots>
 
   <releases>
+    <release version="0.9.1.11" date="2018-07-30">
+      <description>
+        <ul>
+          <li>Added Rj support</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.9.1.10" date="2018-07-26">
       <description>
         <ul>
