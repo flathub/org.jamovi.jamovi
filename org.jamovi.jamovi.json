@@ -300,7 +300,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jamovi/jmvcore.git",
-                    "commit": "3ba48d0628dfdfd34034a88c82994c01887f8a26",
+                    "commit": "65dd0bf99c5a48f0c20e573dfa9c9268593dd336",
                     "dest": "jmvcore"
                 }
             ],
