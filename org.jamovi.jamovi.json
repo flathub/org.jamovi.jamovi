@@ -234,8 +234,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v1.8.4/electron-v1.8.4-linux-x64.zip",
-                    "sha512": "f6228477d1bab65446e0108cadaa0a99ae7b4b624c705ac809afa279dc71371a82f2c2a17d1b499d35d2e70f77da51cb2fe43cfb1f69979252fbfcc4f222a685",
+                    "url": "https://github.com/electron/electron/releases/download/v1.8.7/electron-v1.8.7-linux-x64.zip",
+                    "sha512": "8c1fcfa23e48b58c19100ffaadff665bf2d57db61905a1a89880779e21875cb9dce158958250c431542f2208e5c010b9a06c6edd70bb0bc77a3aa5ddcd881b41",
                     "strip-components": 0
                 }
             ]
@@ -256,8 +256,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v1.8.3/electron-v1.8.3-linux-ia32.zip",
-                    "sha512": "4ef2504c30c1b7c739e981113d899a4f65d0d16b640c0b5c26e02cf8770b37d35d8c65e09fbf460fdb89a8e17def35762f830150433648d830811a0481c15da4",
+                    "url": "https://github.com/electron/electron/releases/download/v1.8.7/electron-v1.8.7-linux-ia32.zip",
+                    "sha512": "40b9b0f70ea9d53ee422e3ca7e9857094f19d8f8466f9d34a83fdfe6fd4714db0fe24d6c4f77eebc5224abed0207402a27fafc64552666464fd96a2c4d27530d",
                     "strip-components": 0
                 }
             ]
@@ -278,8 +278,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v1.8.3/electron-v1.8.3-linux-arm.zip",
-                    "sha512": "be978701b651ab506a16381891c6f68a6490678098baa223a8392b7134b6b439a0d2130c6da21b1087eff42f699048a9b554364d0e73e1cd55cda5ddfeb32a6b",
+                    "url": "https://github.com/electron/electron/releases/download/v1.8.7/electron-v1.8.7-linux-arm.zip",
+                    "sha512": "bec7732ab0a66808a866dcb53a10e2dce5ebdb3d55e82c4dab2ed8df92ffed3c46adb257a2ffd4653fa0894b15b8d4f379488d89293afacc5b22c6f67bfd7c4a",
                     "strip-components": 0
                 }
             ]
@@ -300,8 +300,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v1.8.3/electron-v1.8.3-linux-arm64.zip",
-                    "sha512": "45b3a021b7fbaeefb70652bfd884da65e56ccaf66accb5fe4fadd330e2959aae901c65b4bf27c367d1b5057025c7f29d591c0b21c7567dd61c09dedf9f7d4cfa",
+                    "url": "https://github.com/electron/electron/releases/download/v1.8.7/electron-v1.8.7-linux-arm64.zip",
+                    "sha512": "0f28d1130f0f211d9a6c55880e6575680a89396610cef546b199333c2b3692435c39e9abd185ad73d7637e82dffd9d1b10d3c8f9dd657f8a62391277f5bd262b",
                     "strip-components": 0
                 }
             ]
