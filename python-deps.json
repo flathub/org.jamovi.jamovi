@@ -7,8 +7,13 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/4a/85/db5a2df477072b2902b0eb892feb37d88ac635d36245a72a6a69b23b383a/PyYAML-3.12.tar.gz",
-            "sha512": "e16d8b7f4f026b6a95b11fb59c54ec5f114f6f516294eaa95e718abdf5d37c17a9c4b5e0a0a61fca04e801792d9b7fb801087cf849ff22b9581f6af204b1883a"
+            "url": "https://files.pythonhosted.org/packages/1b/90/f531329e628ff34aee79b0b9523196eb7b5b6b398f112bb0c03b24ab1973/protobuf-3.6.1.tar.gz",
+            "sha512": "fd58551a51fe8ad1aea6efc7e9af2307b25230b3c23ab63c3b26999b7c74b1d98818090765d90d44c3664ded7be0672f8cb1410bfa28175d6bc5e46c18e8a4fa"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/45/ec/f2a03a0509bcfca336bef23a3dab0d07504893af34fd13064059ba4a0503/tornado-5.1.tar.gz",
+            "sha512": "8f45e5bbee5453a4225f05840a9fa80dd574c5a9cac9ec4d787f11c3f86f347c66d39c984a8bbe96dbb41f599e25102f1a3dad1c55b479bebee7d856aaca764a"
         },
         {
             "type": "file",
@@ -17,28 +22,23 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/b3/ae/971d3b936a7ad10e65cb7672356cff156000c5132cf406cb0f4d7a980fd3/Cython-0.28.3.tar.gz",
-            "sha512": "cd0b836e9db5cfd1367a72b18c6cb324eb512c4ae9adc12506e1bf73938e39aa9d373f60370de56e6c601aec459fe95672c7d42b7a420e6a6817e1551db58f8c"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/cf/d1/3be271ae5eba9fb59df63c9891fdc7d8044b999e8ac145994cdbfd2ae66a/tornado-5.0.2.tar.gz",
-            "sha512": "fbd360df34fe29ed3e5f406992923e2af2815f93446fb9d9810f7575fe06300a2cb15c3f36bd93150284ba297772f94c94a4227acca2dc65c94cf7d100cb5974"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/fc/bb/a5768c230f9ddb03acc9ef3f0d4a3cf93462473795d18e9535498c8f929d/chardet-3.0.4.tar.gz",
             "sha512": "61a03b23447a2bfe52ceed4dd1b9afdb5784da1933a623776883ee9f297e341f633e27f0ce0230bd5fdc5fdb5382105ab42736a74a417ddeb9f83af57455dba5"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/0b/b1/3037e0e380d5fab2824e69a59bd374da402c0cef264ccb3fe5d71c230c4b/nanomsg-1.0.tar.gz",
-            "sha512": "2d1e6349b73481aaa9fb0a683f531f7fe92374e1893fe236763ec86c6389ad1a3ce3900b1e1b4dff165c90447f2516a5b9aff0e1760dc190fa093c3cc2c301aa"
+            "url": "https://files.pythonhosted.org/packages/21/89/ca320e5b45d381ae0df74c4b5694f1471c1b2453c5eb4bac3449f5970481/Cython-0.28.5.tar.gz",
+            "sha512": "a6fad634d289dcf978f3b18bd8c4ba37b7f4672376a5e8b4d282dc7e611ebb38748fc1d4de20771dd0b4227edd5c81bd1c916befe1588982eaa711543b75d5c5"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/73/73/4f133a31d67b27431fe4b9cc5e2f74d0644bce0327a743093f3cc27864ce/protobuf-3.5.2.post1.tar.gz",
-            "sha512": "f19c05d3570b6c6878ebff070bef17e5f2a7685272e9d1e6921103c4b20e33db451651fd0b7af5c304f660c4bb867fc484db42cae86cca34cd173c7e0b7c7e85"
+            "url": "https://files.pythonhosted.org/packages/9e/a3/1d13970c3f36777c583f136c136f804d70f500168edc1edea6daa7200769/PyYAML-3.13.tar.gz",
+            "sha512": "93642286d0317e2fe970632c36d38ce6030f7cabcf971f28e3a1054f07390fcee5baaf7f167e7c9690dbd7b2adc61f5b7d75a218ace0abca34ff8815486cfdd7"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/0b/b1/3037e0e380d5fab2824e69a59bd374da402c0cef264ccb3fe5d71c230c4b/nanomsg-1.0.tar.gz",
+            "sha512": "2d1e6349b73481aaa9fb0a683f531f7fe92374e1893fe236763ec86c6389ad1a3ce3900b1e1b4dff165c90447f2516a5b9aff0e1760dc190fa093c3cc2c301aa"
         }
     ]
 }
