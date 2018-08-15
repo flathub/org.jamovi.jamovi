@@ -341,12 +341,7 @@
                         ]
                 },
                 "base-deps-sources.json",
-                {
-                    "type": "git",
-                    "url": "https://github.com/jamovi/jmvcore.git",
-                    "commit": "4d0238970acd4836900d2c8404abd98ed9d81ae6",
-                    "dest": "jmvcore"
-                }
+                "jamovi-source.json"
             ],
             "cleanup": [
                 "/bin/xml2-config"
@@ -457,18 +452,7 @@
             "sources": [
                 "jmc-deps-sources.json",
                 "jmv-deps-sources.json",
-                {
-                    "type": "git",
-                    "url": "https://github.com/jamovi/jmv.git",
-                    "commit": "8db92a1b7b2be39ddb6571100b8c53e0fc13b8bf",
-                    "dest": "jmv"
-                },
-                {
-                    "type": "git",
-                    "url": "https://github.com/jamovi/jamovi-compiler.git",
-                    "commit": "494e4572fe2b65cb83054d22223cc24bfffa6051",
-                    "dest": "jamovi-compiler"
-                },
+                "jamovi-source.json",
                 {
                     "type": "script",
                     "dest-filename": "xml2-config",
