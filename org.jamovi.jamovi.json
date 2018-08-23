@@ -375,6 +375,9 @@
                         "HERE=`dirname $SCRIPT`",
                         "if [[ \"$1\" == \"--version\" ]]; then",
                         "    cat $HERE/../lib/jamovi/version",
+                        "elif [[ \"$1\" == \"-R\" ]]; then",
+                        "    shift",
+                        "    /app/bin/R \"$@\"",
                         "else",
                         "    $HERE/electron $@",
                         "fi"
