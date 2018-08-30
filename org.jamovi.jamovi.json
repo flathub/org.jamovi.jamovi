@@ -104,7 +104,8 @@
             "build-options": {
                 "ldflags": "-L/usr/lib/sdk/gfortran-62/lib",
                 "env": {
-                    "FC": "/usr/lib/sdk/gfortran-62/bin/gfortran"
+                    "FC": "/usr/lib/sdk/gfortran-62/bin/gfortran",
+                    "F77": "/usr/lib/sdk/gfortran-62/bin/gfortran"
                 }
             },
             "sources": [
