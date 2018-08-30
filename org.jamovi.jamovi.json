@@ -102,7 +102,10 @@
                 "--disable-BLAS-shlib"
             ],
             "build-options": {
-                "ldflags": "-L/usr/lib/sdk/gfortran-62/lib"
+                "ldflags": "-L/usr/lib/sdk/gfortran-62/lib",
+                "env": {
+                    "FC": "/usr/lib/sdk/gfortran-62/bin/gfortran"
+                }
             },
             "sources": [
                 {
