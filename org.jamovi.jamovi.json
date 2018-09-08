@@ -2,7 +2,7 @@
     "app-id": "org.jamovi.jamovi",
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "1.6",
-    "base": "io.atom.electron.BaseApp",
+    "base": "org.electronjs.Electron2.BaseApp",
     "base-version": "stable",
     "sdk": "org.freedesktop.Sdk",
     "command": "jamovi",
@@ -18,7 +18,8 @@
         "--socket=wayland",
         "--socket=pulseaudio",
         "--device=dri",
-        "--filesystem=home"
+        "--filesystem=home",
+        "--filesystem=/tmp"
     ],
     "build-options": {
         "cflags": "-O2",
