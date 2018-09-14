@@ -25,14 +25,14 @@
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2018-08-13/src/contrib/digest_0.6.15.tar.gz",
-        "sha512": "632f5396e900379e3a2c70a4731fd150a36cbb1f426cbcbbdf5483853c431fe3a499ca7ad600411b520e620cc2f048b389346c5c083a205276a42a0e80c5a190",
+        "url": "https://cran.microsoft.com/snapshot/2018-09-11/src/contrib/digest_0.6.16.tar.gz",
+        "sha512": "61167b81dabc22e45ac46b2feb2624d4cedba5faba9cc87bc8acebb05c29ecf54822493cf14961a70495f3d33c3d06c67b0905d8d29f292c2a132c47b1586645",
         "dest": "004_digest.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2018-08-13/src/contrib/fansi_0.2.3.tar.gz",
-        "sha512": "ce53de759e20e632e543950a52a7faeed377ab160f973b73546fe4587ce8642938ef5e33cf83d7585ea8e8b6087a9c6d8ad1ba6a48808f1effd21bf06615eef6",
+        "url": "https://cran.microsoft.com/snapshot/2018-09-11/src/contrib/fansi_0.3.0.tar.gz",
+        "sha512": "4769f80ad649bae681e0e87670fa5e415d39234424574a1da99aa43f6d7da225f9c2d187a8568a36812414a99d9742a279cca8c828b34d0ed94f58596769df5f",
         "dest": "005_fansi.Rpkg"
     },
     {
@@ -73,8 +73,8 @@
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2018-08-13/src/contrib/rlang_0.2.1.tar.gz",
-        "sha512": "ae03d86426d1ef8abfa7f74249036b8a81e1e28b09018f7b8a6b244418697e6723f2e2b3ca1abc3bbd9354c1de9aaa8cf0423291754901573fb73bd6f777b7d1",
+        "url": "https://cran.microsoft.com/snapshot/2018-09-11/src/contrib/rlang_0.2.2.tar.gz",
+        "sha512": "6f1c6f92ef41072f78021b1f146d8576038d2a2822bfdb523a00164af82c25e8ec86b8ef8748f218b3913f3aa54b2fe74267778bd8e2bc457b4f81c8874864e8",
         "dest": "012_rlang.Rpkg"
     },
     {

@@ -180,8 +180,8 @@
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2018-08-13/src/contrib/XML_3.98-1.15.tar.gz",
-        "sha512": "949f0d9afca2cfed0879509e67a71b43ed064a05ca7024981e9159b777f4167455cf67a5df10781b561506f98c37f9a653d302669b93883bb655cf8a4df16e84",
+        "url": "https://cran.microsoft.com/snapshot/2018-09-11/src/contrib/XML_3.98-1.16.tar.gz",
+        "sha512": "bef8b146a85f36fce19aa13e4fe5bdf2aed3cf7254a8bdb2ef605c875ccc03211cbdb82880941e76eb7e57611c6108d81f09dd4be7bff447b530c1e38b1562fd",
         "dest": "029_XML.Rpkg"
     },
     {
@@ -348,8 +348,8 @@
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2018-08-13/src/contrib/pkgconfig_2.0.1.tar.gz",
-        "sha512": "93b6343921909fcdae4f1a9d43c188722722b025eea6880249f560cb5966d696184c8ff6166c798e7436e1297d3856d8c92c7147f89d940263498f013f3348a2",
+        "url": "https://cran.microsoft.com/snapshot/2018-09-11/src/contrib/pkgconfig_2.0.2.tar.gz",
+        "sha512": "ef25f353e1e2755767102f61b4f0e28b9cd1d4f921e5dbf36b1f7ed356148c8702886f31dac8150f3b094bc8e20ebe70a7651848c8aa85715a066a07e66401f5",
         "dest": "057_pkgconfig.Rpkg"
     },
     {
@@ -390,8 +390,8 @@
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2018-08-13/src/contrib/xtable_1.8-2.tar.gz",
-        "sha512": "4e21c7ef1a5d1216cf644623e6683e87d378658ede65f1d7094e0b72ec079ee193a7a48ba54cf02fc65b1258eca371fc9e83a74a873fc74347401965d7cb04c4",
+        "url": "https://cran.microsoft.com/snapshot/2018-09-11/src/contrib/xtable_1.8-3.tar.gz",
+        "sha512": "51c3964922495cd34f53bf9c3261e1fae4ac896a154f1edebb32753c809692e1b93297c357b46112a4a8aca92ea150987e136036daad0f600bea642b5cf5e242",
         "dest": "064_xtable.Rpkg"
     },
     {
@@ -456,8 +456,8 @@
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2018-08-13/src/contrib/lme4_1.1-17.tar.gz",
-        "sha512": "f076f557320207097c08aa856b485609856973b991e8f3846337ab81525a603b02e0b838a19a65f7be3beaab5b637a123162f9ee57253eb2344389de4add328c",
+        "url": "https://cran.microsoft.com/snapshot/2018-09-11/src/contrib/lme4_1.1-18-1.tar.gz",
+        "sha512": "629f7d4b15b0ba1504d99f5751b8938505f6e88ac8f2a374cb5ed93212b4e90ba51d10bbed799f93f0349eb2aa2fc45f5e85aab130fab44d2825053bd03be647",
         "dest": "075_lme4.Rpkg"
     },
     {
@@ -492,8 +492,8 @@
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2018-08-13/src/contrib/sandwich_2.4-0.tar.gz",
-        "sha512": "019671fa9af4e287b27eb2c6dc0daeeb77e238b1e102c81694b29844a20a412bcd5e6dbbda9e8429cd7797ff9ac1dc9813e7d1a8a5d9ad690db7048303adcb76",
+        "url": "https://cran.microsoft.com/snapshot/2018-09-11/src/contrib/sandwich_2.5-0.tar.gz",
+        "sha512": "0ebaf2f2a5c86e450d02bfec32322ef3863406355af94298d1cfbbbe88ce03b708a9d98466ac62ae7dcd04c29cf957a0f0f8c146a647e54ff53b26d3c4d25c8c",
         "dest": "081_sandwich.Rpkg"
     },
     {
@@ -660,8 +660,8 @@
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2018-08-13/src/contrib/car_3.0-0.tar.gz",
-        "sha512": "b65a9f5b20dd465441413daa13723df08c93830182c908261dccc2e48321772a71b75e275addbfed43b5d18aee88a52bf9ad71b4e9d6792c4cc1279d9767d56b",
+        "url": "https://cran.microsoft.com/snapshot/2018-09-11/src/contrib/car_3.0-2.tar.gz",
+        "sha512": "a8ec9de0f928b6544e8b6e1928d354e94f85a8ef3b67a6c6e7743ece27eda5ffe02451b221989289cfc90e79990210f870e9dd50004f4ad035f20e8644625635",
         "dest": "109_car.Rpkg"
     },
     {
