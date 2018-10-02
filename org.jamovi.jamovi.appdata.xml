@@ -35,6 +35,13 @@
   </screenshots>
 
   <releases>
+    <release version="0.9.5.0" date="2018-10-01">
+      <description>
+        <ul>
+          <li>Added support for multiple column selections</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.9.4.2" date="2018-09-14">
       <description>
         <ul>
