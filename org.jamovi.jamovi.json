@@ -195,8 +195,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://pypi.python.org/packages/a3/99/74aa456fc740a7e8f733af4e8302d8e61e123367ec660cd89c53a3cd4d70/numpy-1.14.1.zip",
-                    "sha512": "d423fa1db5da488de8bfcfc86cf44da96492bec4a05022b79c568d33ad5a3fecebc66408a5fde1c31dac639280c7544cb09417e845ec79c729e3885f3af98ae1"
+                    "url": "https://files.pythonhosted.org/packages/45/ba/2a781ebbb0cd7962cc1d12a6b65bd4eff57ffda449fdbbae4726dc05fbc3/numpy-1.15.2.zip",
+                    "sha512": "6a2c9c5e67963558749e6468d79c7dc55f13749400640dbb7dea8c87a30c9cadb04df6b3cf3f92ac7d720486ef3f3c248ab4680b954e7adeb44edf2f2a072250"
                 }
             ]
         },
@@ -218,8 +218,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://pypi.python.org/packages/d0/73/76fc6ea21818eed0de8dd38e1e9586725578864169a2b31acdeffb9131c8/scipy-1.0.0.tar.gz",
-                    "sha512": "7d55c5660ac606933d517171a229b288fd0ea8d9fdd8e30fac3d294545a26b2700c7b100b014a93231c4122dee0f1ddd741c00f5902643a6ccc287cdf581da7a"
+                    "url": "https://files.pythonhosted.org/packages/07/76/7e844757b9f3bf5ab9f951ccd3e4a8eed91ab8720b0aac8c2adcc2fdae9f/scipy-1.1.0.tar.gz",
+                    "sha512": "72fe32c6c009613cb78202598e5db14f8e630b3218839cfe18d43d40550d94cc5aa100c6f5d41f40e86ae148e9b6a13431bb91b0f9be44b0569ccd7b725fe973"
                 }
             ]
         },
@@ -239,8 +239,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v3.0.0-beta.8/electron-v3.0.0-beta.8-linux-x64.zip",
-                    "sha512": "8be642799692329f86700fb40a4ccf7d9e5a4c15c94875e4b531afa87619c0cdcc36bc75b8c2344c59788578a50952cbdd217dbf1be14974d0b4f4926ee52de2",
+                    "url": "https://github.com/electron/electron/releases/download/v3.0.4/electron-v3.0.4-linux-x64.zip",
+                    "sha512": "9e0febf884f652bc0b33088c87de4eba197e92283526e31ec3c51d649cf029da1b32d6fe5588acaa4420b8f74ea4f7e68ddf125f2c3b457eabbf766119212e76",
                     "strip-components": 0
                 }
             ]
@@ -261,8 +261,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v3.0.0-beta.8/electron-v3.0.0-beta.8-linux-ia32.zip",
-                    "sha512": "078c2bc3d93fb0e663c9d0e0d58cf72b965b0369b150d293807aeefcdf3da0a1509bd16431918b1bb7809e66502f4268f73f158ca437aceee977f9c4952aebbf",
+                    "url": "https://github.com/electron/electron/releases/download/v3.0.4/electron-v3.0.4-linux-ia32.zip",
+                    "sha512": "0b9d297718c45215ddf5ec26e174435c90537e10fd84356f1e0c398b2d3acbc0aca003322d6748111f1b45923f9ebecd02e58843eca9ec1a3268ecd7702792e9",
                     "strip-components": 0
                 }
             ]
@@ -283,8 +283,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v3.0.0-beta.8/electron-v3.0.0-beta.8-linux-armv7l.zip",
-                    "sha512": "e4f2dbbd32019c99917bb2df83bbed6aad811046fd6756a1b189e591418a445259da63dc25095ad554fab60ab2d55f901ad4a41c80b664c7fd74ac9432d8e8cd",
+                    "url": "https://github.com/electron/electron/releases/download/v3.0.4/electron-v3.0.4-linux-armv7l.zip",
+                    "sha512": "44843381e650c77a49da4262e5f274cd6db91deb669c5d2038e5c635d1842fa9abf766169eb732e14716cc48a227154588ce52ecb86d5502fbf29d35429a990f",
                     "strip-components": 0
                 }
             ]
@@ -305,8 +305,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v3.0.0-beta.8/electron-v3.0.0-beta.8-linux-arm64.zip",
-                    "sha512": "97440d00a9aac2e9cc6ad0350426f46d1dd523a885065fa386934b7662646aa9d965fb1a9a7d55f32c05513d1e9dd5639b8861ce9b1f44e52e3c86fc20609308",
+                    "url": "https://github.com/electron/electron/releases/download/v3.0.4/electron-v3.0.4-linux-arm64.zip",
+                    "sha512": "7e0bde12d3b2e1ea8ee7545239092d786cf84b9e411a047c19e0188bc0a500eb6574ef9c60a4f26e2abce7fb3d823baa5947c09c4df6b052c153a07c7da7dcc2",
                     "strip-components": 0
                 }
             ]
