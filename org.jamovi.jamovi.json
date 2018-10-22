@@ -15,11 +15,11 @@
         "--share=network",
         "--share=ipc",
         "--socket=x11",
-        "--socket=wayland",
         "--socket=pulseaudio",
         "--device=dri",
         "--filesystem=home",
-        "--filesystem=/tmp"
+        "--filesystem=/tmp",
+        "--talk-name=org.freedesktop.Notifications"
     ],
     "build-options": {
         "cflags": "-O2",
