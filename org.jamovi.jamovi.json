@@ -177,35 +177,6 @@
                 "/bin/npx"
             ]
         },
-        {
-            "name": "cpython",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tar.xz",
-                    "sha512": "3eb62a0127609b14420a47442727702f396519c649625aca59883d04f4c02e5f37ba1d58ac8e93c49d14a63f17ae7909315c33fc813293dbcdb6127f39a148b0"
-                }
-            ],
-            "cleanup": [
-                "/bin/2to3",
-                "/bin/2to3-3.7",
-                "/bin/easy_install-3.7",
-                "/bin/f2py3",
-                "/bin/f2py3.7",
-                "/bin/idle3",
-                "/bin/idle3.7",
-                "/bin/pip3",
-                "/bin/pip3.7",
-                "/bin/pydoc3",
-                "/bin/pydoc3.7",
-                "/bin/python3-config",
-                "/bin/python3.7-config",
-                "/bin/python3.7m",
-                "/bin/python3.7m-config",
-                "/bin/pyvenv",
-                "/bin/pyvenv-3.7"
-            ]
-        },
         "python-deps.json",
         {
             "name": "python3-numpy",
