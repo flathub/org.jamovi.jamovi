@@ -190,7 +190,7 @@
                 "/bin/2to3",
                 "/bin/2to3-3.7",
                 "/bin/easy_install-3.7",
-                "/bin/f2py3"
+                "/bin/f2py3",
                 "/bin/f2py3.7",
                 "/bin/idle3",
                 "/bin/idle3.7",
