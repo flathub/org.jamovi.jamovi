@@ -35,6 +35,14 @@
   </screenshots>
 
   <releases>
+    <release version="0.9.5.7" date="2018-11-01">
+      <description>
+        <ul>
+          <li>Added data change tracking</li>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.9.5.5" date="2018-10-16">
       <description>
         <ul>
