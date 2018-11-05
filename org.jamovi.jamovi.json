@@ -6,6 +6,7 @@
     "base-version": "stable",
     "sdk": "org.freedesktop.Sdk",
     "command": "jamovi",
+    "separate-locales": false,
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.gfortran-62"
     ],
@@ -27,13 +28,6 @@
         "env": {
             "PATH": "/app/bin:/usr/bin:/usr/lib/sdk/gfortran-62/bin",
             "R_HOME": "/app/lib/R"
-        },
-        "arch": {
-            "x86_64": {
-                "env": {
-                    "R_HOME": "/app/lib64/R"
-                }
-            }
         }
     },
     "cleanup": [
@@ -100,7 +94,8 @@
             "name": "R",
             "config-opts": [
                 "--enable-R-shlib",
-                "--disable-BLAS-shlib"
+                "--disable-BLAS-shlib",
+                "--libdir=/app/lib"
             ],
             "build-options": {
                 "ldflags": "-L/usr/lib/sdk/gfortran-62/lib",
@@ -117,7 +112,6 @@
                 }
             ],
             "cleanup": [
-                "/app/lib64/R/doc",
                 "/app/lib/R/doc"
             ]
         },
@@ -531,17 +525,7 @@
                     "--base-module-path=/app/lib/R/library",
                     "--rpath=/app/lib/R/library/RInside/lib",
                     "--rpath=/app/lib/R/lib"
-                ],
-                "arch": {
-                    "x86_64": {
-                        "config-opts": [
-                            "--rhome=/app/lib64/R",
-                            "--base-module-path=/app/lib64/R/library",
-                            "--rpath=/app/lib64/R/library/RInside/lib",
-                            "--rpath=/app/lib64/R/lib"
-                        ]
-                    }
-                }
+                ]
             },
             "sources":[
                 "jamovi-source.json"
