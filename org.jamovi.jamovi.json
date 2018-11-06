@@ -407,7 +407,7 @@
                         "    shift",
                         "    /app/bin/R \"$@\"",
                         "else",
-                        "    $HERE/electron $@",
+                        "    $HERE/electron \"$@\"",
                         "fi"
                     ]
                 }
