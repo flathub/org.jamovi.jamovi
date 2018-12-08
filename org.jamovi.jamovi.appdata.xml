@@ -36,6 +36,13 @@
   </screenshots>
 
   <releases>
+    <release version="0.9.5.12" date="2018-12-08">
+      <description>
+        <ul>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.9.5.11" date="2018-11-30">
       <description>
         <ul>
