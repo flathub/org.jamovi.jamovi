@@ -36,6 +36,14 @@
   </screenshots>
 
   <releases>
+    <release version="0.9.5.14" date="2018-12-19">
+      <description>
+        <ul>
+          <li>Added support for .RData and .RDS import</li>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.9.5.13" date="2018-12-11">
       <description>
         <ul>
