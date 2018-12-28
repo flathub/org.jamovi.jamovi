@@ -36,6 +36,14 @@
   </screenshots>
 
   <releases>
+    <release version="0.9.5.15" date="2018-12-28">
+      <description>
+        <ul>
+          <li>Added support for exporting a range of formats</li>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.9.5.14" date="2018-12-19">
       <description>
         <ul>
