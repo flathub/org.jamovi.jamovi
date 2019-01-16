@@ -36,6 +36,14 @@
   </screenshots>
 
   <releases>
+    <release version="0.9.5.16" date="2019-01-16">
+      <description>
+        <ul>
+          <li>Added support for duplicating analyses</li>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.9.5.15" date="2018-12-28">
       <description>
         <ul>
