@@ -36,7 +36,7 @@
   </screenshots>
 
   <releases>
-    <release version="0.9.5.17" date="2019-02-06">
+    <release version="0.9.5.17" date="2019-02-05">
       <description>
         <ul>
           <li>Added support for importing data into existing data sets</li>
