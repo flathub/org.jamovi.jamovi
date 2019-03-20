@@ -36,6 +36,14 @@
   </screenshots>
 
   <releases>
+    <release version="0.9.6.2" date="2019-03-20">
+      <description>
+        <ul>
+          <li>Added group_by argument to V functions</li>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.9.6.1" date="2019-03-06">
       <description>
         <ul>
