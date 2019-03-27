@@ -36,6 +36,14 @@
   </screenshots>
 
   <releases>
+    <release version="0.9.6.4" date="2019-03-27">
+      <description>
+        <ul>
+          <li>Added support for references</li>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.9.6.3" date="2019-03-21">
       <description>
         <ul>
