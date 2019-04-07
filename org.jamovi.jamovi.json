@@ -158,8 +158,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://nodejs.org/dist/v10.13.0/node-v10.13.0.tar.gz",
-                    "sha512": "ec30c966467a9fb348b060deeb918d1605d79eb35ca09197d8bccb37f98645d4d75f0dcf97a6e328376d56b132359d3691403ed8b3301269a6258da28adb8cc0"
+                    "url": "https://nodejs.org/dist/v10.16.0/node-v10.16.0.tar.xz",
+                    "sha512": "df197c7b929fe1e0acf0334dbeb45be4c0cfa3266f9ddb513eafffcd6405bc02cba2fcbd34a7a5bef2e45a1d61ef3734ca0afe7295904ed563744fe06751cc62"
                 }
             ],
             "cleanup": [
@@ -176,8 +176,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tar.xz",
-                    "sha512": "3eb62a0127609b14420a47442727702f396519c649625aca59883d04f4c02e5f37ba1d58ac8e93c49d14a63f17ae7909315c33fc813293dbcdb6127f39a148b0"
+                    "url": "https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tar.xz",
+                    "sha512": "71f64668c259f3ed07bd4aa239dbba6cc1b6b0a84d50bbff160664845d7986f757e4d65fca327e62a2d12ba593742ca83a22f7cb6093aff8715ec916c2ba9416"
                 }
             ],
             "cleanup": [
@@ -218,8 +218,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/83/6b/d03277eacf113697675cd659086a4dcf9472108e2f1a83884c0271bdca46/numpy-1.15.3.zip",
-                    "sha512": "5d3e399c54c8ffacae3518011c5fba523b463a300a44c454c149c57365d2cfad370f292952c93ea0a98b3cdd4f67824b8d02ff4638106e57524f315ccb6a5c3c"
+                    "url": "https://files.pythonhosted.org/packages/cf/8d/6345b4f32b37945fedc1e027e83970005fc9c699068d2f566b82826515f2/numpy-1.16.2.zip",
+                    "sha512": "5edd460c0948f424d8deb72f44a33db8ac6a973859b25c824533330dccb4f844197a437e945cd382760bbb6983fd120b08c949ac437973a915246024a8ebc911"
                 }
             ]
         },
@@ -241,8 +241,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/07/76/7e844757b9f3bf5ab9f951ccd3e4a8eed91ab8720b0aac8c2adcc2fdae9f/scipy-1.1.0.tar.gz",
-                    "sha512": "72fe32c6c009613cb78202598e5db14f8e630b3218839cfe18d43d40550d94cc5aa100c6f5d41f40e86ae148e9b6a13431bb91b0f9be44b0569ccd7b725fe973"
+                    "url": "https://files.pythonhosted.org/packages/a9/b4/5598a706697d1e2929eaf7fe68898ef4bea76e4950b9efbe1ef396b8813a/scipy-1.2.1.tar.gz",
+                    "sha512": "80caf9af93046c0d58829a61eb90d824aabe8a53f3e7d8a72efc44accaa3299d1e22adbb4852ed192cee6e47aafbb4ebea3115233ed11f1ef05dd373866b0243"
                 }
             ]
         },

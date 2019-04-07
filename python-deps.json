@@ -7,18 +7,28 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/1b/90/f531329e628ff34aee79b0b9523196eb7b5b6b398f112bb0c03b24ab1973/protobuf-3.6.1.tar.gz",
-            "sha512": "fd58551a51fe8ad1aea6efc7e9af2307b25230b3c23ab63c3b26999b7c74b1d98818090765d90d44c3664ded7be0672f8cb1410bfa28175d6bc5e46c18e8a4fa"
+            "url": "https://files.pythonhosted.org/packages/cd/02/0425c38def9047d77166abdc9bb66dcff2882095c57b952511c85720f03c/protobuf-3.9.0.tar.gz",
+            "sha512": "b0cedd121692ddeeb60c5a389d63d63de16a614f1604b97a288433718a9cfcee46641adeb4d89e4dffb0c4b10bb9b0b18eb2dcd7263a93dd73dfa3bee580d148"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/e6/78/6e7b5af12c12bdf38ca9bfe863fcaf53dc10430a312d0324e76c1e5ca426/tornado-5.1.1.tar.gz",
-            "sha512": "f9ecedb20c055981f482c9a2a8bb30082dcc479674f75f6c8654afcf40f2ce5a45e82c7e2b5a6ce5d1c9da7896e865e78c7d29a64b6b1d28d6e74a718be62dc7"
+            "url": "https://files.pythonhosted.org/packages/a5/1f/c7c5450c60a90ce058b47ecf60bb5be2bfe46f952ed1d3b95d1d677588be/Cython-0.29.13.tar.gz",
+            "sha512": "61ce4cab938163c14c7ece750fde2b26ce8476c3a6fed0c6768022ef7e9b652591db9646a2814c7f17457581c9b4b7c38bb703e697fee9322a480b020a43d8fc"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/16/d8/bc6316cf98419719bd59c91742194c111b6f2e85abac88e496adefaf7afe/six-1.11.0.tar.gz",
-            "sha512": "33f246a2e987141e17e5edad9d3537cf3aba0cbdd0bc2a907ea52ce0d674b1474f29c3dd5cc26605fd960396054b189ca5f501708333cad234c223131483fe24"
+            "url": "https://files.pythonhosted.org/packages/dd/bf/4138e7bfb757de47d1f4b6994648ec67a51efe58fa907c1e11e350cddfca/six-1.12.0.tar.gz",
+            "sha512": "937728372edf1e0ac13bbd706723d0de35e015c30d0ae41f789c5ed2e3669bb0db70cdc6e036ec2d437a6c4aa0d5d1e727b6d09ac34cca7e4e92e5d3b4775151"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/a3/65/837fefac7475963d1eccf4aa684c23b95aa6c1d033a2c5965ccb11e22623/PyYAML-5.1.1.tar.gz",
+            "sha512": "fa47fb2d2903506c55e3651ec130ad5472168e0257eabec8fdf329336f60d9ef36df0f8c4eb7d5ab913f3037120048b02f715aa2215085b3b1ce936cdcff77bf"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/30/78/2d2823598496127b21423baffaa186b668f73cd91887fcef78b6eade136b/tornado-6.0.3.tar.gz",
+            "sha512": "2db182da7327fdd32fe76a50726a1285332139972766368c3b3dac5b4d54b4bd452a76062c09d1d158a97ace78b7915d93a29a7a8138499a2e56aee9df461abc"
         },
         {
             "type": "file",
@@ -27,18 +37,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/9e/a3/1d13970c3f36777c583f136c136f804d70f500168edc1edea6daa7200769/PyYAML-3.13.tar.gz",
-            "sha512": "93642286d0317e2fe970632c36d38ce6030f7cabcf971f28e3a1054f07390fcee5baaf7f167e7c9690dbd7b2adc61f5b7d75a218ace0abca34ff8815486cfdd7"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/0b/b1/3037e0e380d5fab2824e69a59bd374da402c0cef264ccb3fe5d71c230c4b/nanomsg-1.0.tar.gz",
             "sha512": "2d1e6349b73481aaa9fb0a683f531f7fe92374e1893fe236763ec86c6389ad1a3ce3900b1e1b4dff165c90447f2516a5b9aff0e1760dc190fa093c3cc2c301aa"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/f0/66/6309291b19b498b672817bd237caec787d1b18013ee659f17b1ec5844887/Cython-0.29.tar.gz",
-            "sha512": "f90249c12bb9c1f5b9bcecd66624516d6e255a8d321a5dada2ba4eda360c12623c64b391177e061eac7a37b24ec53f8098fc0e1b46065e69eb0766585f739ab6"
         }
     ]
 }
