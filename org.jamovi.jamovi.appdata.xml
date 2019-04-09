@@ -36,6 +36,14 @@
   </screenshots>
 
   <releases>
+    <release version="0.9.6.7" date="2019-04-09">
+      <description>
+        <ul>
+          <li>Added SPLIT() formula</li>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.9.6.6" date="2019-04-03">
       <description>
         <ul>
