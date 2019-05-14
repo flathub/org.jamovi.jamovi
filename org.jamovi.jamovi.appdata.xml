@@ -36,6 +36,16 @@
   </screenshots>
 
   <releases>
+    <release version="0.9.6.10" date="2019-05-14">
+      <description>
+        <ul>
+          <li>Enhanced the modules menu</li>
+          <li>Added transform duplication</li>
+          <li>Improvements to template system</li>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.9.6.9" date="2019-04-16">
       <description>
         <ul>
