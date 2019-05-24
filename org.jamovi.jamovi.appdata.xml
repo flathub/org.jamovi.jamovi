@@ -36,6 +36,11 @@
   </screenshots>
 
   <releases>
+    <release version="1.0.0" date="2019-05-24">
+      <description>
+        Version 1.0 released!
+      </description>
+    </release>
     <release version="0.9.6.11" date="2019-05-17">
       <description>
         <ul>
