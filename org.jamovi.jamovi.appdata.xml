@@ -36,6 +36,13 @@
   </screenshots>
 
   <releases>
+    <release version="1.0.2" date="2019-06-21">
+      <description>
+        <ul>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.0.0" date="2019-05-24">
       <description>
         Version 1.0 released!
