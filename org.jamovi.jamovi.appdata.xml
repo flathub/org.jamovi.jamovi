@@ -36,6 +36,13 @@
   </screenshots>
 
   <releases>
+    <release version="1.0.4" date="2019-07-08">
+      <description>
+        <ul>
+          <li>Added new UI events system</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.0.2" date="2019-06-21">
       <description>
         <ul>
