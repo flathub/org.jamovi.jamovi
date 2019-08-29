@@ -95,7 +95,8 @@
             "config-opts": [
                 "--enable-R-shlib",
                 "--disable-BLAS-shlib",
-                "--libdir=/app/lib"
+                "--libdir=/app/lib",
+                "--with-x=no"
             ],
             "build-options": {
                 "ldflags": "-L/usr/lib/sdk/gfortran-62/lib",
