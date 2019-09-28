@@ -36,6 +36,13 @@
   </screenshots>
 
   <releases>
+    <release version="1.1.5" date="2019-09-28">
+      <description>
+        <ul>
+          <li>Fix to opening files via file association</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.1.4" date="2019-09-25">
       <description>
         <ul>
