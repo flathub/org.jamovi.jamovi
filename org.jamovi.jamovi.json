@@ -99,7 +99,7 @@
                 "--with-x=no"
             ],
             "build-options": {
-                "ldflags": "-L/usr/lib/sdk/gfortran-62/lib",
+                "ldflags": "-L/app/lib -L/usr/lib/sdk/gfortran-62/lib",
                 "env": {
                     "FC": "/usr/lib/sdk/gfortran-62/bin/gfortran",
                     "F77": "/usr/lib/sdk/gfortran-62/bin/gfortran"
@@ -127,6 +127,20 @@
                     "type":"archive",
                     "url": "http://ab-initio.mit.edu/nlopt/nlopt-2.4.2.tar.gz",
                     "sha256":"8099633de9d71cbc06cd435da993eb424bbcdbded8f803cdaa9fb8c6e09c8e89"
+                }
+            ]
+        },
+        {
+            "name": "gsl",
+            /* needed by gsl (R package) */
+            "config-opts": [
+                "includedir=/app/lib/R/include"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://mirror.freedif.org/GNU/gsl/gsl-2.6.tar.gz",
+                    "sha512": "0be8240715f0b86aba2c63d9f12da4dba4719d4e350e9308d279e0dd3b2f0519ea26fd2e38a17f3e8cf43aacbaa2455207a7ca0d6c305f3b8725e8ece2250a74"
                 }
             ]
         },
