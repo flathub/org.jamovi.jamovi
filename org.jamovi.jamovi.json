@@ -133,6 +133,9 @@
         {
             "name": "gsl",
             /* needed by gsl (R package) */
+            "config-opts": [
+                "includedir=/app/lib/R/include"
+            ],
             "sources": [
                 {
                     "type": "archive",
