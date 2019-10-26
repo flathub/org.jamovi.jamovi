@@ -1,5 +1,5 @@
 {
-    "name": "walrus",
+    "name": "scatr",
     "buildsystem": "simple",
     "build-commands": [
         "mkdir -p /app/lib/jamovi/modules-extra",
@@ -10,10 +10,10 @@
     "sources": [
         {
             "type": "git",
-            "url": "https://github.com/jamovi/walrus.git",
-            "commit": "639c2bd6e3df8fcd7825234f58dfb1599b99ebca",
+            "url": "https://github.com/raviselker/scatr.git",
+            "commit": "2c490a4e519d680822b1e757ad73d4b162f9cb06",
             "dest": "module"
         },
-        "walrus-deps.json"
+        "scatr-deps.json"
     ]
 }

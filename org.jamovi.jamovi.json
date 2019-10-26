@@ -516,11 +516,6 @@
                 "R CMD INSTALL *.Rpkg --library=jmv/build/R --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
                 "jmc --install jmv --to /app/lib/jamovi/modules --home /app"
             ],
-            "build-options": {
-                "env": {
-                    "npm_config_cache": "../npm-cache"
-                }
-            },
             "sources": [
                 "jmv-deps-sources.json",
                 "jamovi-source.json",
@@ -563,7 +558,8 @@
                 }
             ],
             "cleanup": [
-                "/bin/xml2-config"
+                "/bin/xml2-config",
+                "/bin/libpng-config"
             ]
         },
         {
@@ -601,6 +597,8 @@
                 }
             ]
         },
+        "modules/scatr.json",
+        "modules/medmod.json",
         "modules/walrus.json"
     ],
     "add-extensions": {
@@ -608,13 +606,6 @@
             "directory": "lib/jamovi/modules-extra",
             "bundle": false,
             "subdirectories": true
-        }
-    },
-    "add-build-extensions": {
-        "org.jamovi.jamovi.Modules": {
-            "directory": "lib/node_modules/jmc",
-            "bundle": false,
-            "remove-after-build": true
         }
     }
 }

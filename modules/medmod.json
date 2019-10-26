@@ -1,5 +1,5 @@
 {
-    "name": "walrus",
+    "name": "medmod",
     "buildsystem": "simple",
     "build-commands": [
         "mkdir -p /app/lib/jamovi/modules-extra",
@@ -10,10 +10,10 @@
     "sources": [
         {
             "type": "git",
-            "url": "https://github.com/jamovi/walrus.git",
-            "commit": "639c2bd6e3df8fcd7825234f58dfb1599b99ebca",
+            "url": "https://github.com/raviselker/medmod.git",
+            "commit": "6e9ec3bb96f58f9120beb23b495903c661359da5",
             "dest": "module"
         },
-        "walrus-deps.json"
+        "medmod-deps.json"
     ]
 }

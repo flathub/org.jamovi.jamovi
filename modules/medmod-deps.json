@@ -1,0 +1,26 @@
+[
+    {
+        "type": "archive",
+        "url": "https://cran.microsoft.com/snapshot/2019-10-25/src/contrib/mnormt_1.5-5.tar.gz",
+        "sha512": "ef5bb44b3dfce8153570652746aec031d12e2d151f912d17ae4b070d3e2ca0c9b1d302adb32f8ce827312ae13d99723f90b5866bebd2aed09e216b3846eeb6e6",
+        "dest": "000_mnormt.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://cran.microsoft.com/snapshot/2019-10-25/src/contrib/numDeriv_2016.8-1.1.tar.gz",
+        "sha512": "20e9dda1af54ff581f4f9218c34af204de5b78bb21eed88aef836ea215c37d90f7af8f1d972436316eab80451f531e1c9badb34f33001e3441a583a3ac4776e0",
+        "dest": "001_numDeriv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://cran.microsoft.com/snapshot/2019-10-25/src/contrib/pbivnorm_0.6.0.tar.gz",
+        "sha512": "44d6a3edc899533d392009034037b8221e5c94ad570a4d91789c0c23971f4385a4f317651733c92366146fea75db9f84fd33bebf8c56e90ea6e4139fd924bde2",
+        "dest": "002_pbivnorm.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://cran.microsoft.com/snapshot/2019-10-25/src/contrib/lavaan_0.6-5.tar.gz",
+        "sha512": "436c538b806da9a7d1f3dd0193584535685738b6d935816e0c861d90acd8e72b32f6cddd1d382c816efcdb112a90b83b7a4682c122525d3a7b551adbcc52f88c",
+        "dest": "003_lavaan.Rpkg"
+    }
+]

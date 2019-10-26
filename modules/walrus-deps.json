@@ -1,26 +1,26 @@
 [
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2018-10-31/src/contrib/mvtnorm_1.0-8.tar.gz",
-        "sha512": "6a3683267092c238d6470fe8b4814dd7d1eb20282aab1aad7b8bd8777e5425999f11e89f92ca02a798ea0eb5f0dd92e87d80e4c031fab44077b6c66ab15b0209",
+        "url": "https://cran.microsoft.com/snapshot/2019-10-25/src/contrib/mvtnorm_1.0-11.tar.gz",
+        "sha512": "3e4b1a70f6f0865bdb8644f7ae2951cace9157b98772120b5827a7add2d4efda06008ea0930991ba55e41624d52a3711ed055de3328bc7f2fc3a5b0d44a6ee72",
         "dest": "000_mvtnorm.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2018-10-31/src/contrib/reshape_0.8.8.tar.gz",
+        "url": "https://cran.microsoft.com/snapshot/2019-10-25/src/contrib/reshape_0.8.8.tar.gz",
         "sha512": "f8924fcfa10fb4f60c594c629b020dbc61c166aecf7e8e2c2d2c88d4a230503b43f06f4bd9df40475c533bbb11b1dbe62dfe95db76e65fd15314dfbe182062e9",
         "dest": "001_reshape.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2018-10-31/src/contrib/mc2d_0.1-18.tar.gz",
+        "url": "https://cran.microsoft.com/snapshot/2019-10-25/src/contrib/mc2d_0.1-18.tar.gz",
         "sha512": "441cc93f8207d8e7d7aacd0466a5538fb1ab9ee0712acc85ac76e9c17a574b4251c08046ebc8b1ad13c8ae34872880f4334a2e4edd884fe9beb144518cba35be",
         "dest": "002_mc2d.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2018-10-31/src/contrib/WRS2_0.10-0.tar.gz",
-        "sha512": "48385f8dc82eaed2691afd3b4cd29b1b9c17c26a35dd7e29afb3e4410eb8afa080ae1fc4acb457a9b3aae6eb0377ea32d338901dc582493a9f5f2c0920ae4b9c",
+        "url": "https://cran.microsoft.com/snapshot/2019-10-25/src/contrib/WRS2_1.0-0.tar.gz",
+        "sha512": "01f390b674dba9204b1340bc7307642cfc1d8c421329ffde0f00b2052e5e772c057ef1aecab0c923caceb51f9a2be18ca039b4c28975be6c4fdc59c9c2b97459",
         "dest": "003_WRS2.Rpkg"
     }
 ]
