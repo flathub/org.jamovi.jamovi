@@ -597,7 +597,6 @@
                 }
             ]
         },
-        "modules/medmod.json",
         "modules/walrus.json"
     ],
     "add-extensions": {
