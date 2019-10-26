@@ -1,0 +1,19 @@
+{
+    "name": "walrus",
+    "buildsystem": "simple",
+    "build-commands": [
+        "mkdir -p /app/lib/jamovi/modules-extra",
+        "mkdir -p module/build/R",
+        "/app/bin/R CMD INSTALL *.Rpkg --library=module/build/R --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+        "jmc --install module --to /app/lib/jamovi/modules-extra --home /app"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/jamovi/walrus.git",
+            "commit": "639c2bd6e3df8fcd7825234f58dfb1599b99ebca",
+            "dest": "module"
+        },
+        "walrus-deps.json"
+    ]
+}
