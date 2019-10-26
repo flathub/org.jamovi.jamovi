@@ -597,7 +597,6 @@
                 }
             ]
         },
-        "modules/scatr.json",
         "modules/medmod.json",
         "modules/walrus.json"
     ],
