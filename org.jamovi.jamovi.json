@@ -481,14 +481,12 @@
             ]
         },
         {
-            "name": "jmv",
+            "name": "jmc",
             "buildsystem": "simple",
             "build-commands": [
-                "mkdir -p /app/lib/jamovi/modules",
-                "mkdir -p jmv/build/R",
-                "/app/bin/R CMD INSTALL *.Rpkg --library=jmv/build/R --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "mkdir -p /app/lib/node_modules",
                 "cd jamovi-compiler && npm install --offline",
-                "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app"
+                "cp -r jamovi-compiler /app/lib/node_modules/jmc"
             ],
             "build-options": {
                 "env": {
@@ -497,6 +495,32 @@
             },
             "sources": [
                 "jmc-deps-sources.json",
+                "jamovi-source.json",
+                {
+                    "type": "script",
+                    "dest-filename": "jmc",
+                    "commands": [
+                        "#!/bin/sh",
+                        "node /app/lib/node_modules/jmc/index.js --rhome $R_HOME $*"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "jmv",
+            "buildsystem": "simple",
+            "build-commands": [
+                "mkdir -p /app/lib/jamovi/modules",
+                "mkdir -p jmv/build/R",
+                "R CMD INSTALL *.Rpkg --library=jmv/build/R --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "jmc --install jmv --to /app/lib/jamovi/modules --home /app"
+            ],
+            "build-options": {
+                "env": {
+                    "npm_config_cache": "../npm-cache"
+                }
+            },
+            "sources": [
                 "jmv-deps-sources.json",
                 "jamovi-source.json",
                 {
@@ -518,13 +542,6 @@
                     "type": "shell",
                     "commands": [
                         "mv xml2-config /app/bin"
-                    ]
-                },
-                {
-                    "type": "script",
-                    "dest-filename": "jamovi-compiler.sh",
-                    "commands": [
-                        "node jamovi-compiler/index.js --rhome $R_HOME $*"
                     ]
                 }
             ],
@@ -566,6 +583,21 @@
                     "path": "org.jamovi.jamovi.appdata.xml"
                 }
             ]
+        },
+        "modules/walrus.json"
+    ],
+    "add-extensions": {
+        "org.jamovi.jamovi.Modules": {
+            "directory": "lib/jamovi/modules-extra",
+            "bundle": false,
+            "subdirectories": true
         }
-    ]
+    },
+    "add-build-extensions": {
+        "org.jamovi.jamovi.Modules": {
+            "directory": "lib/node_modules/jmc",
+            "bundle": false,
+            "remove-after-build": true
+        }
+    }
 }
