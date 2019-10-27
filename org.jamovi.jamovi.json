@@ -99,7 +99,7 @@
                 "--with-x=no"
             ],
             "build-options": {
-                "ldflags": "-L/usr/lib/sdk/gfortran-62/lib",
+                "ldflags": "-L/app/lib -L/usr/lib/sdk/gfortran-62/lib",
                 "env": {
                     "FC": "/usr/lib/sdk/gfortran-62/bin/gfortran",
                     "F77": "/usr/lib/sdk/gfortran-62/bin/gfortran"
@@ -127,6 +127,20 @@
                     "type":"archive",
                     "url": "http://ab-initio.mit.edu/nlopt/nlopt-2.4.2.tar.gz",
                     "sha256":"8099633de9d71cbc06cd435da993eb424bbcdbded8f803cdaa9fb8c6e09c8e89"
+                }
+            ]
+        },
+        {
+            "name": "gsl",
+            /* needed by gsl (R package) */
+            "config-opts": [
+                "includedir=/app/lib/R/include"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://mirror.freedif.org/GNU/gsl/gsl-2.6.tar.gz",
+                    "sha512": "0be8240715f0b86aba2c63d9f12da4dba4719d4e350e9308d279e0dd3b2f0519ea26fd2e38a17f3e8cf43aacbaa2455207a7ca0d6c305f3b8725e8ece2250a74"
                 }
             ]
         },
@@ -467,14 +481,13 @@
             ]
         },
         {
-            "name": "jmv",
+            "name": "jmc",
             "buildsystem": "simple",
             "build-commands": [
-                "mkdir -p /app/lib/jamovi/modules",
-                "mkdir -p jmv/build/R",
-                "/app/bin/R CMD INSTALL *.Rpkg --library=jmv/build/R --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "mkdir -p /app/lib/node_modules",
                 "cd jamovi-compiler && npm install --offline",
-                "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app"
+                "cp -r jamovi-compiler /app/lib/node_modules/jmc",
+                "cp jmc /app/bin/"
             ],
             "build-options": {
                 "env": {
@@ -483,6 +496,27 @@
             },
             "sources": [
                 "jmc-deps-sources.json",
+                "jamovi-source.json",
+                {
+                    "type": "script",
+                    "dest-filename": "jmc",
+                    "commands": [
+                        "#!/bin/sh",
+                        "node /app/lib/node_modules/jmc/index.js --rhome $R_HOME $*"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "jmv",
+            "buildsystem": "simple",
+            "build-commands": [
+                "mkdir -p /app/lib/jamovi/modules",
+                "mkdir -p jmv/build/R",
+                "R CMD INSTALL *.Rpkg --library=jmv/build/R --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "jmc --install jmv --to /app/lib/jamovi/modules --home /app"
+            ],
+            "sources": [
                 "jmv-deps-sources.json",
                 "jamovi-source.json",
                 {
@@ -501,21 +535,31 @@
                     ]
                 },
                 {
-                    "type": "shell",
+                    "type": "script",
+                    "dest-filename": "libpng-config",
+                    /* providing our own libpng-config saves us from having to */
+                    /* patch some packages */
                     "commands": [
-                        "mv xml2-config /app/bin"
+                        "#!/bin/bash",
+                        "if [ \"$1\" == \"--static\" ] && [ \"$2\" == \"--ldflags\" ];",
+                        "then",
+                        "    pkg-config --static --libs libpng",
+                        "else",
+                        "    pkg-config --cflags libpng",
+                        "fi"
                     ]
                 },
                 {
-                    "type": "script",
-                    "dest-filename": "jamovi-compiler.sh",
+                    "type": "shell",
                     "commands": [
-                        "node jamovi-compiler/index.js --rhome $R_HOME $*"
+                        "mv xml2-config   /app/bin",
+                        "mv libpng-config /app/bin"
                     ]
                 }
             ],
             "cleanup": [
-                "/bin/xml2-config"
+                "/bin/xml2-config",
+                "/bin/libpng-config"
             ]
         },
         {
@@ -552,6 +596,14 @@
                     "path": "org.jamovi.jamovi.appdata.xml"
                 }
             ]
+        },
+        "modules/walrus.json"
+    ],
+    "add-extensions": {
+        "org.jamovi.jamovi.Modules": {
+            "directory": "lib/jamovi/modules-extra",
+            "bundle": false,
+            "subdirectories": true
         }
-    ]
+    }
 }

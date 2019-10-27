@@ -1,0 +1,20 @@
+[
+    {
+        "type": "archive",
+        "url": "https://cran.microsoft.com/snapshot/2019-10-25/src/contrib/cowplot_1.0.0.tar.gz",
+        "sha512": "3aaf80878204fdf46bb1b156dbd8bb5c314aa1541ac516e2e61ed8a42cbf4fd5c62371912dd864e7e78062d6203d024526a518e4c667987dd101a61c81c3f237",
+        "dest": "000_cowplot.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://cran.microsoft.com/snapshot/2019-10-25/src/contrib/ggridges_0.5.1.tar.gz",
+        "sha512": "22c39a5556291ed688ad7df85fd81ea0864e1728c4533e97ccaec8c48020d794c410111d50b914a8b49f2d999b776cc42e16970a0fdd1924dcd3ac0700b1480c",
+        "dest": "001_ggridges.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://cran.microsoft.com/snapshot/2019-10-25/src/contrib/ggstance_0.3.3.tar.gz",
+        "sha512": "106a86d6e32d95d0650eb27e9c52e2c4bcf26821f3b0e6d25ba372b4161163e903681dbbac3216f5218ce8164d4522847570f116711a11eb1a43539fb8a306be",
+        "dest": "002_ggstance.Rpkg"
+    }
+]

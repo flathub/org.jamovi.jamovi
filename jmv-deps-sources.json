@@ -102,11 +102,6 @@
         "dest": "016_png.Rpkg"
     },
     {
-        "type": "patch",
-        "path": "patches/png.patch",
-        "dest": "016_png.Rpkg"
-    },
-    {
         "type": "archive",
         "url": "https://cran.microsoft.com/snapshot/2019-08-09/src/contrib/qvcalc_1.0.0.tar.gz",
         "sha512": "ff32c5f20884e631d3a49744004ec88a4ff7e5b253bc3dd4df94049fb08c4b9cea417c22e2112f4532fa24d3703b17efe062c8ed9b728878883f5a8a05710e03",
