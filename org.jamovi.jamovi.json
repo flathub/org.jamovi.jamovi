@@ -352,6 +352,9 @@
         {
             "name": "xml2-config",
             "buildsystem": "simple",
+            "build-commands": [
+                "mv xml2-config /app/bin"
+            ],
             "sources": [
                 {
                     "type": "script",
@@ -367,18 +370,15 @@
                         "    pkg-config $* libxml-2.0",
                         "fi"
                     ]
-                },
-                {
-                        "type": "shell",
-                        "commands": [
-                            "mv xml2-config /app/bin"
-                        ]
                 }
             ]
         },
         {
             "name": "libpng-config",
             "buildsystem": "simple",
+            "build-commands": [
+                "mv libpng-config /app/bin"
+            ],
             "sources": [
                 {
                     "type": "script",
@@ -394,12 +394,6 @@
                         "    pkg-config --cflags libpng",
                         "fi"
                     ]
-                },
-                {
-                        "type": "shell",
-                        "commands": [
-                            "mv libpng-config /app/bin"
-                        ]
                 }
             ]
         },
