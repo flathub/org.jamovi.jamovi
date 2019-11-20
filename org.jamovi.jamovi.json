@@ -350,17 +350,8 @@
             ]
         },
         {
-            "name": "jmvcore",
+            "name": "xml2-config",
             "buildsystem": "simple",
-            "build-commands": [
-                "/app/bin/R CMD INSTALL *.Rpkg  --no-docs --no-html --no-help --no-demo --no-multiarch",
-                "/app/bin/R CMD INSTALL jmvcore --no-docs --no-html --no-help --no-demo --no-multiarch"
-            ],
-            "build-options": {
-                "env": {
-                    "PATH": "/app/bin:/usr/bin:/usr/lib/sdk/gfortran-62/bin"
-                }
-            },
             "sources": [
                 {
                     "type": "script",
@@ -382,12 +373,51 @@
                         "commands": [
                             "mv xml2-config /app/bin"
                         ]
+                }
+            ]
+        },
+        {
+            "name": "libpng-config",
+            "buildsystem": "simple",
+            "sources": [
+                {
+                    "type": "script",
+                    "dest-filename": "libpng-config",
+                    /* providing our own libpng-config saves us from having to */
+                    /* patch some packages */
+                    "commands": [
+                        "#!/bin/bash",
+                        "if [ \"$1\" == \"--static\" ] && [ \"$2\" == \"--ldflags\" ];",
+                        "then",
+                        "    pkg-config --static --libs libpng",
+                        "else",
+                        "    pkg-config --cflags libpng",
+                        "fi"
+                    ]
                 },
+                {
+                        "type": "shell",
+                        "commands": [
+                            "mv libpng-config /app/bin"
+                        ]
+                }
+            ]
+        },
+        {
+            "name": "jmvcore",
+            "buildsystem": "simple",
+            "build-commands": [
+                "/app/bin/R CMD INSTALL *.Rpkg  --no-docs --no-html --no-help --no-demo --no-multiarch",
+                "/app/bin/R CMD INSTALL jmvcore --no-docs --no-html --no-help --no-demo --no-multiarch"
+            ],
+            "build-options": {
+                "env": {
+                    "PATH": "/app/bin:/usr/bin:/usr/lib/sdk/gfortran-62/bin"
+                }
+            },
+            "sources": [
                 "base-deps-sources.json",
                 "jamovi-source.json"
-            ],
-            "cleanup": [
-                "/bin/xml2-config"
             ]
         },
         {
@@ -501,35 +531,11 @@
                 "jamovi-source.json",
                 {
                     "type": "script",
-                    "dest-filename": "xml2-config",
-                    /* providing our own xml2-config saves us from having to */
-                    /* patch a *lot* of packages */
-                    "commands": [
-                        "#!/bin/bash",
-                        "if [ \"$1\" == \"--version\" ]",
-                        "then",
-                        "    pkg-config --modversion libxml-2.0",
-                        "else",
-                        "    pkg-config $* libxml-2.0",
-                        "fi"
-                    ]
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "mv xml2-config /app/bin"
-                    ]
-                },
-                {
-                    "type": "script",
                     "dest-filename": "jamovi-compiler.sh",
                     "commands": [
                         "node jamovi-compiler/index.js --rhome $R_HOME $*"
                     ]
                 }
-            ],
-            "cleanup": [
-                "/bin/xml2-config"
             ]
         },
         {
