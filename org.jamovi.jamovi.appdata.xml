@@ -36,6 +36,15 @@
   </screenshots>
 
   <releases>
+    <release version="1.1.9" date="2019-12-12">
+      <description>
+        <ul>
+          <li>Linear regression: now uses the ref level as the intercept by default</li>
+          <li>Linear regression: added option for using the grand mean as the intercept</li>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.1.8" date="2019-11-28">
       <description>
         <ul>
