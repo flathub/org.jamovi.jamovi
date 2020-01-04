@@ -36,7 +36,7 @@
   </screenshots>
 
   <releases>
-    <release version="1.2.0" date="2020-04-03">
+    <release version="1.2.0" date="2020-01-04">
       <description>
         <ul>
           <li>Added .xlsx (excel) and .ods (libreoffice) support</li>

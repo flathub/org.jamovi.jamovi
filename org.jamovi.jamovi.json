@@ -215,6 +215,23 @@
                 "/bin/pyvenv-3.7"
             ]
         },
+        {
+            "name": "xslt-config",
+            "buildsystem": "simple",
+            "build-commands": [
+                "mv xslt-config /app/bin"
+            ],
+            "sources": [
+                {
+                    "type": "script",
+                    "dest-filename": "xslt-config",
+                    "commands": [
+                        "#!/bin/bash",
+                        "pkg-config libxslt $*"
+                    ]
+                }
+            ]
+        },
         "python-deps.json",
         {
             "name": "python3-numpy",
