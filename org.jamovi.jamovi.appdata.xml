@@ -36,6 +36,13 @@
   </screenshots>
 
   <releases>
+    <release version="1.2.1" date="2020-01-16">
+      <description>
+        <ul>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.2.0" date="2020-01-04">
       <description>
         <ul>
