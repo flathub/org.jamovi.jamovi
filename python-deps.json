@@ -7,13 +7,8 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/8d/c9/e5be955a117a1ac548cdd31e37e8fd7b02ce987f9655f5c7563c656d5dcb/PyYAML-5.2.tar.gz",
-            "sha512": "d2c212ae445dd647d94084f0f177f3246964d77d8ced468c8cc94c2540df014034d26535ca181b25246b2dd34e6d20c87695bd91b2b0937d3a2aa2ffe0daf633"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/94/3e/edcf6fef41d89187df7e38e868b2dd2182677922b600e880baad7749c865/six-1.13.0.tar.gz",
-            "sha512": "55eb8e23e529cb0d2ab9e7c85868e695f36c8235e914b1548eb4b9fd561e4237266bf1839457f15a9513d57a343cbf8ab809d6187499300791fd9356854fcb00"
+            "url": "https://files.pythonhosted.org/packages/95/8c/83563c60489954e5b80f9e2596b93a68e1ac4e4a730deb1aae632066d704/openpyxl-3.0.3.tar.gz",
+            "sha512": "f0cd3fb217338124ca046a5f3b7eb2f8bbd933b328dc5c00d687e1d9b1ebd6c6a0668a1ff9a842cb2bbc32ce8654cc992f013d02ec24a3da39903e3e4f956942"
         },
         {
             "type": "file",
@@ -42,6 +37,11 @@
         },
         {
             "type": "file",
+            "url": "https://files.pythonhosted.org/packages/21/9f/b251f7f8a76dec1d6651be194dfba8fb8d7781d10ab3987190de8391d08e/six-1.14.0.tar.gz",
+            "sha512": "4dea0f4e7961e8b582d665501c65852dc3b73516a0b6f78b0888c8670f1450df58bd3eea418777f41080b842ab6c3d8633be1034bcf920192e5590d5316e2c9e"
+        },
+        {
+            "type": "file",
             "url": "https://files.pythonhosted.org/packages/30/78/2d2823598496127b21423baffaa186b668f73cd91887fcef78b6eade136b/tornado-6.0.3.tar.gz",
             "sha512": "2db182da7327fdd32fe76a50726a1285332139972766368c3b3dac5b4d54b4bd452a76062c09d1d158a97ace78b7915d93a29a7a8138499a2e56aee9df461abc"
         },
@@ -52,11 +52,6 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/f4/5f/fb8706fba43b46716e252fdd3ffdfe801a63a0f4663b80b6f3421d85ab70/openpyxl-3.0.2.tar.gz",
-            "sha512": "eafaad9efb10aa4d29b162e729bc5bc4fecc5aaf482076da1dc7aa5d7cb411aa481e1aae64e054dd107db663fcfbb9c179dc0fcf1ac17006eb9d02933e1eb3ec"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/fc/bb/a5768c230f9ddb03acc9ef3f0d4a3cf93462473795d18e9535498c8f929d/chardet-3.0.4.tar.gz",
             "sha512": "61a03b23447a2bfe52ceed4dd1b9afdb5784da1933a623776883ee9f297e341f633e27f0ce0230bd5fdc5fdb5382105ab42736a74a417ddeb9f83af57455dba5"
         },
@@ -64,6 +59,11 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/0b/b1/3037e0e380d5fab2824e69a59bd374da402c0cef264ccb3fe5d71c230c4b/nanomsg-1.0.tar.gz",
             "sha512": "2d1e6349b73481aaa9fb0a683f531f7fe92374e1893fe236763ec86c6389ad1a3ce3900b1e1b4dff165c90447f2516a5b9aff0e1760dc190fa093c3cc2c301aa"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/3d/d9/ea9816aea31beeadccd03f1f8b625ecf8f645bd66744484d162d84803ce5/PyYAML-5.3.tar.gz",
+            "sha512": "9124bf4d58ebe925f430fd6ed749e5a3311a54d536a035d39794c485843ddb80692fd7f7bac05797507128b933297ff730d967f49e7237c7c567086a83ee9e1f"
         }
     ]
 }

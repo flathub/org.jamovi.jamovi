@@ -1,15 +1,12 @@
 {
     "app-id": "org.jamovi.jamovi",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "1.6",
+    "runtime-version": "18.08",
     "base": "org.electronjs.Electron2.BaseApp",
     "base-version": "stable",
     "sdk": "org.freedesktop.Sdk",
     "command": "jamovi",
     "separate-locales": false,
-    "sdk-extensions": [
-        "org.freedesktop.Sdk.Extension.gfortran-62"
-    ],
     "rename-desktop-file": "jamovi.desktop",
     "rename-icon": "jamovi",
     "finish-args":[
@@ -23,10 +20,9 @@
         "--talk-name=org.freedesktop.Notifications"
     ],
     "build-options": {
-        "cflags": "-O2",
-        "cxxflags": "-O2",
+        "cflags": "-O2 -g",
+        "cxxflags": "-O2 -g",
         "env": {
-            "PATH": "/app/bin:/usr/bin:/usr/lib/sdk/gfortran-62/bin",
             "R_HOME": "/app/lib/R"
         }
     },
@@ -44,11 +40,6 @@
         "/lib/*.la"
     ],
     "modules":[
-        {
-            "name": "gfortran",
-            "buildsystem": "simple",
-            "build-commands": [ "/usr/lib/sdk/gfortran-62/install.sh" ]
-        },
         {
             "name": "boost",
             "buildsystem": "simple",
@@ -77,7 +68,6 @@
                 "-DCMAKE_BUILD_TYPE=Release",
                 "-DBUILD_SHARED_LIBS=ON",
                 "-DBUILD_TESTING=OFF",
-                "-DCMAKE_Fortran_COMPILER=/usr/lib/sdk/gfortran-62/bin/gfortran",
                 "-DLAPACKE=ON",
                 "-DCBLAS=ON"
             ],
@@ -99,17 +89,12 @@
                 "--with-x=no"
             ],
             "build-options": {
-                "ldflags": "-L/app/lib -L/usr/lib/sdk/gfortran-62/lib",
-                "env": {
-                    "FC": "/usr/lib/sdk/gfortran-62/bin/gfortran",
-                    "F77": "/usr/lib/sdk/gfortran-62/bin/gfortran"
-                }
             },
             "sources": [
                 {
                     "type":"archive",
-                    "url": "https://cran.r-project.org/src/base/R-3/R-3.5.1.tar.gz",
-                    "sha512":"382cc6e200469dd168799948edcf3a0b869d7ef3b3176fdfc60752f3f37e6ba356323c47d8815a4d9ab6ad3a21cd045d26ef5e75107c8685328e0ffcfd172f7f"
+                    "url": "https://cran.r-project.org/src/base/R-3/R-3.6.1.tar.gz",
+                    "sha512":"fae7d114437c4b5d10fcb2a4265acd707ad2a4810eeb7c11e25caca1d85093a1495c2e13457b4894c1508830ec1b2be95379b7d54007cf3e574c2a9eea28ef80"
                 }
             ],
             "cleanup": [
@@ -168,6 +153,7 @@
                 }
             ]
         },
+        "shared-modules/python2.7/python-2.7.json",
         {
             "name": "nodejs",
             "sources": [
@@ -421,11 +407,6 @@
                 "/app/bin/R CMD INSTALL *.Rpkg  --no-docs --no-html --no-help --no-demo --no-multiarch",
                 "/app/bin/R CMD INSTALL jmvcore --no-docs --no-html --no-help --no-demo --no-multiarch"
             ],
-            "build-options": {
-                "env": {
-                    "PATH": "/app/bin:/usr/bin:/usr/lib/sdk/gfortran-62/bin"
-                }
-            },
             "sources": [
                 "base-deps-sources.json",
                 "jamovi-source.json"
@@ -526,8 +507,8 @@
             "buildsystem": "simple",
             "build-commands": [
                 "mkdir -p /app/lib/jamovi/modules",
-                "mkdir -p jmv/build/R",
-                "/app/bin/R CMD INSTALL *.Rpkg --library=jmv/build/R --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "mkdir -p jmv/build/R3.6.1-linux",
+                "/app/bin/R CMD INSTALL *.Rpkg --library=jmv/build/R3.6.1-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
                 "cd jamovi-compiler && npm install --offline",
                 "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app"
             ],
