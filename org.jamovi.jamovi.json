@@ -93,8 +93,8 @@
             "sources": [
                 {
                     "type":"archive",
-                    "url": "https://cran.r-project.org/src/base/R-3/R-3.6.1.tar.gz",
-                    "sha512":"fae7d114437c4b5d10fcb2a4265acd707ad2a4810eeb7c11e25caca1d85093a1495c2e13457b4894c1508830ec1b2be95379b7d54007cf3e574c2a9eea28ef80"
+                    "url": "https://cran.r-project.org/src/base/R-3/R-3.6.2.tar.gz",
+                    "sha512":"17513e9f4dd27c61c11f7aa45227aeeeefb375bf5d4e193b471724f379a1b2da33e127cbe91aa175cbbbb048b892047e2f610280585c8159242a6c94790b07f9"
                 }
             ],
             "cleanup": [
@@ -519,8 +519,8 @@
             "buildsystem": "simple",
             "build-commands": [
                 "mkdir -p /app/lib/jamovi/modules",
-                "mkdir -p jmv/build/R3.6.1-linux",
-                "/app/bin/R CMD INSTALL *.Rpkg --library=jmv/build/R3.6.1-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "mkdir -p jmv/build/R3.6.2-linux",
+                "/app/bin/R CMD INSTALL *.Rpkg --library=jmv/build/R3.6.2-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
                 "cd jamovi-compiler && npm install --offline",
                 "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app"
             ],
