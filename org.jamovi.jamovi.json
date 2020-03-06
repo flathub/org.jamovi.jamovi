@@ -135,7 +135,7 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/protocolbuffers/protobuf/releases/download/v3.11.4/protobuf-cpp-3.11.4.tar.gz",
-                    "sha512": "89dc380adb0a8ffe1812b651dad8759bc1e343a48c5b564b5a6f058ac851de209484060dbe3d29b4e9e050d6383fa2c723ecebe7d6a2305296d6225fa08f751c"
+                    "sha512": "b421ebfe2a16f76785abf43583d04ced6c1fd8d79e988a7a4bf5bc3a4108121dd5ffa25e20c5d2cc32a07daf58d5c3b9d123eb0e6e5a2002e2788effc3dda2de"
                 }
             ],
             "cleanup": [
