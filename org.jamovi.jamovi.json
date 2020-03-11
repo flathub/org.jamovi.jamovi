@@ -446,7 +446,7 @@
                         "    shift",
                         "    /app/bin/R \"$@\"",
                         "else",
-                        "    $HERE/electron \"$@\"",
+                        "    $HERE/electron --no-sandbox \"$@\"",
                         "fi"
                     ]
                 }
