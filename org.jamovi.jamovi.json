@@ -353,6 +353,27 @@
             ]
         },
         {
+            /* needed for the electron sandbox */
+            "name": "zypak",
+            "sources": [
+                {
+                  "type": "git",
+                  "url": "https://github.com/refi64/zypak",
+                  "tag": "v2020.02"
+                }
+            ]
+        },
+        {
+            /* as per https://github.com/refi64/zypak/blob/master/README.md#common-problems */
+            "name": "zypak-chrome-sandbox",
+            "buildsystem": "simple",
+            "build-commands": [
+                "touch    ${FLATPAK_DEST}/bin/chrome-sandbox",
+                "chmod +x ${FLATPAK_DEST}/bin/chrome-sandbox"
+            ],
+            "sources": [ ]
+        },
+        {
             "name": "xml2-config",
             "buildsystem": "simple",
             "build-commands": [
@@ -446,7 +467,7 @@
                         "    shift",
                         "    /app/bin/R \"$@\"",
                         "else",
-                        "    $HERE/electron --no-sandbox \"$@\"",
+                        "    /app/bin/zypak-wrapper /app/bin/electron \"$@\"",
                         "fi"
                     ]
                 }
