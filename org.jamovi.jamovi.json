@@ -353,8 +353,8 @@
             ]
         },
         {
-            /* needed for the electron sandbox */
             "name": "zypak",
+            /* needed for the electron sandbox */
             "sources": [
                 {
                   "type": "git",
@@ -364,8 +364,8 @@
             ]
         },
         {
-            /* as per https://github.com/refi64/zypak/blob/master/README.md#common-problems */
             "name": "zypak-chrome-sandbox",
+            /* as per https://github.com/refi64/zypak/blob/master/README.md#common-problems */
             "buildsystem": "simple",
             "build-commands": [
                 "touch    ${FLATPAK_DEST}/bin/chrome-sandbox",
