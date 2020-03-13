@@ -456,7 +456,7 @@
                         "    shift",
                         "    /app/bin/R \"$@\"",
                         "else",
-                        "    $HERE/electron \"$@\"",
+                        "    /app/bin/zypak-wrapper /app/bin/electron \"$@\"",
                         "fi"
                     ]
                 }
