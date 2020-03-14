@@ -27,7 +27,6 @@
         }
     },
     "cleanup": [
-        "/include",
         "/bin/chardetect",
         "/bin/cygdb",
         "/bin/cython",
@@ -42,6 +41,12 @@
         "/lib/*.a",
         "/lib/*.la",
         "/lib/python2*"
+        /* leave include/node intact */
+        "/include/*.*",
+        "/include/python*",
+        "/include/nanomsg",
+        "/include/google",
+        "/include/boost"
     ],
     "modules":[
         {
