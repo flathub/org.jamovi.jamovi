@@ -33,11 +33,15 @@
         "/bin/cython",
         "/bin/cythonize",
         "/bin/nanocat",
+        "/bin/f2py*",
+        "/bin/pip*",
+        "/bin/python2*",
         "/lib/cmake",
         "/lib/debug",
         "/lib/pkgconfig",
         "/lib/*.a",
-        "/lib/*.la"
+        "/lib/*.la",
+        "/lib/python2*"
     ],
     "modules":[
         {
