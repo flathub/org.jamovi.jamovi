@@ -2,14 +2,9 @@
     "name": "python3-cython",
     "buildsystem": "simple",
     "build-commands": [
-        "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=/app cython protobuf tornado nanomsg PyYAML chardet openpyxl pyexcel-ezodf aiohttp"
+        "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=/app cython protobuf tornado nanomsg PyYAML chardet openpyxl pyexcel-ezodf"
     ],
     "sources": [
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/cb/19/57503b5de719ee45e83472f339f617b0c01ad75cba44aba1e4c97c2b0abd/idna-2.9.tar.gz",
-            "sha512": "2bd3fdae46fe7045640912872b0a3955de3abce62fd222b16ea2c997a04755acc834eeb645e5610d621c176d4b963e1d4a71228fba14efad54999cdf3c02eaf4"
-        },
         {
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/39/2b/0a66d5436f237aff76b91e68b4d8c041d145ad0a2cdeefe2c42f76ba2857/lxml-4.5.0.tar.gz",
@@ -17,23 +12,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/6a/28/d32852f2af6b5ead85d396249d5bdf450833f3a69896d76eb480d9c5e406/typing_extensions-3.7.4.2.tar.gz",
-            "sha512": "7a74c4a97d8cda3e56830c92b409235ffbe7cf0c1685b7fefa7a275a0abf21937622d12c25b4163b4927f6269ed689cbd30f95990ad0b7d2d4341ed648516819"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/64/c2/b80047c7ac2478f9501676c988a5411ed5572f35d1beff9cae07d321512c/PyYAML-5.3.1.tar.gz",
-            "sha512": "87372877d396bd06cdb6b9052ef8822ef0589a211659bf27d7a1c4deca8429cb39e120a23e5d590d7adc0f8059ce1c8af42409bebd7c6d504d49dc8504d5683a"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/95/8c/83563c60489954e5b80f9e2596b93a68e1ac4e4a730deb1aae632066d704/openpyxl-3.0.3.tar.gz",
             "sha512": "f0cd3fb217338124ca046a5f3b7eb2f8bbd933b328dc5c00d687e1d9b1ebd6c6a0668a1ff9a842cb2bbc32ce8654cc992f013d02ec24a3da39903e3e4f956942"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/49/8a/6a4135469372da2e3d9f88f71c6d00d8a07ef65f121eeca0c7ae21697219/Cython-0.29.16.tar.gz",
-            "sha512": "bbfd917a37a58389eff6780634ed3d58c6bfc69278d4d7a9b82d44f3a69a798961ac017dfc2a1a2b5db930bf73f1b5bf2e5ae0fde1c079012d1aa36886181e32"
         },
         {
             "type": "file",
@@ -47,16 +27,6 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/d6/67/6e2507586eb1cfa6d55540845b0cd05b4b77c414f6bca8b00b45483b976e/yarl-1.4.2.tar.gz",
-            "sha512": "036562b645d7b9b3ed4a749decb189587b41ab13b5dda5ff461b00eebadf1ecdbd8d5ae06932cc7d8b7ff551cd630f8671eb0f6c854b20996cda4a6897994fa0"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/61/b4/475114b3f1671da634f89239e61038f8742d9ac13aa34b32a05bf8022d22/multidict-4.7.5.tar.gz",
-            "sha512": "cde917bee0466ab6af9ee08835c41ba2156483855510a054b79894ebd5fc89549de04284e3eef5c2123297db219c326f43a3587bc15aa51857fda122f087e42e"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/22/28/a99c42aea746e18382ad9fb36f64c1c1f04216f41797f2f0fa567da11388/et_xmlfile-1.0.1.tar.gz",
             "sha512": "551fd87efd961b9c3202154dea9468aa97814ab8f6e5efc00962a651b17400866f2ad4fc85484a04c183c85a06375fd1c576c425e2e01bee4395ccfb680ce39b"
         },
@@ -67,28 +37,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/46/03/07c4894aae38b0de52b52586b24bf189bb83e4ddabfe2e2c8f2419eec6f4/idna-ssl-1.1.0.tar.gz",
-            "sha512": "f9db74cecabbbfddfd1817bbd8434ef2aafeea433c3eefff3f94c7e994da40e3f315fcda527f3a0c3743028f26bbc934f1dd21f94134123c3271975d0527cd35"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/c9/d5/e6e789e50e478463a84bd1cdb45aa408d49a2e1aaffc45da43d10722c007/protobuf-3.11.3.tar.gz",
             "sha512": "1e9e0d03715e8d3f5271c58139000cb512ab4cd586bfdd5ce42ff7a5971fa427285fd4ec51894a63b0435facb200088c5220677e2dd645aab6821c90476ff13c"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/00/94/f9fa18e8d7124d7850a5715a0b9c0584f7b9375d331d35e157cee50f27cc/aiohttp-3.6.2.tar.gz",
-            "sha512": "49bd3089158c05ff6312420190ccd7fed95efb4a18b8aff7497d5507c71c692080d6949801edabdcd95379ca8e6614398408118d72ff1e782399e059e2cfc1a8"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/a1/78/aae1545aba6e87e23ecab8d212b58bb70e72164b67eb090b81bb17ad38e3/async-timeout-3.0.1.tar.gz",
-            "sha512": "fd30842671a79edfd52c7350e7fb2120533a6d97b44975f7b071ce2cbde43443bd5bbe1f2ad0ad3ab2156e1987b9e58e0c149b0ecfea8674eb0cb78eee79c986"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/98/c3/2c227e66b5e896e15ccdae2e00bbc69aa46e9a8ce8869cc5fa96310bf612/attrs-19.3.0.tar.gz",
-            "sha512": "b5b641e6732156d1454ed6c49e3a6b29200a8d3f1515fb59aeb85fcb5e9ab6a1d760904de45083cae5250e7bf1a7aa2c1f3ede217240a63f989ae4bb484f2511"
         },
         {
             "type": "file",
@@ -104,6 +54,16 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/0b/b1/3037e0e380d5fab2824e69a59bd374da402c0cef264ccb3fe5d71c230c4b/nanomsg-1.0.tar.gz",
             "sha512": "2d1e6349b73481aaa9fb0a683f531f7fe92374e1893fe236763ec86c6389ad1a3ce3900b1e1b4dff165c90447f2516a5b9aff0e1760dc190fa093c3cc2c301aa"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/d9/82/d01e767abb9c4a5c07a6a1e6f4d5a8dfce7369318d31f48a52374094372e/Cython-0.29.15.tar.gz",
+            "sha512": "dcf12ddc89e12fbae7351dbff9e508490d4247214bf4d0a996f2bed9956e47b7d53241d94575e3784a58a8ef38c28d9e7862193f132ba8b775ee16fb27707f0b"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/3d/d9/ea9816aea31beeadccd03f1f8b625ecf8f645bd66744484d162d84803ce5/PyYAML-5.3.tar.gz",
+            "sha512": "9124bf4d58ebe925f430fd6ed749e5a3311a54d536a035d39794c485843ddb80692fd7f7bac05797507128b933297ff730d967f49e7237c7c567086a83ee9e1f"
         }
     ]
 }
