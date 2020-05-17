@@ -284,7 +284,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v8.3.0/electron-v8.3.0-darwin-x64.zip",
+                    "url": "https://github.com/electron/electron/releases/download/v8.3.0/electron-v8.3.0-linux-x64.zip",
                     "sha512": "cab339c3fc7b9bb821bed11299c113e9ce3031e4215166375fe491461f28f135365ccd1c05fa3100381b01359a580969302e5700f095ffbd378a15b1aab851fa",
                     "strip-components": 0
                 }
