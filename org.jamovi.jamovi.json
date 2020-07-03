@@ -291,28 +291,6 @@
             ]
         },
         {
-            "name": "electron-i386",
-            "only-arches": [ "i386" ],
-            "buildsystem": "simple",
-            "build-commands": [
-                "mkdir -p /app/bin/resources",
-                "cp *.so  /app/bin",
-                "cp *.bin /app/bin",
-                "cp *.dat /app/bin",
-                "cp *.pak /app/bin",
-                "cp electron /app/bin/",
-                "cp -r resources/ /app/bin/"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v9.0.5/electron-v9.0.5-linux-ia32.zip",
-                    "sha512": "36bf35fedf0f866635e2e261f1b938405e6bf68d4882840d87dafc8201303be85932179181bd4225ce395a9a4a4a13b49c23651f44051dbe35be30b2f642ef40",
-                    "strip-components": 0
-                }
-            ]
-        },
-        {
             "name": "electron-arm",
             "only-arches": [ "arm" ],
             "buildsystem": "simple",
