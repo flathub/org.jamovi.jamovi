@@ -235,110 +235,128 @@
     },
     {
         "type": "archive",
+        "url": "https://cran.microsoft.com/snapshot/2020-05-01/src/contrib/htmltools_0.4.0.tar.gz",
+        "sha512": "fcd189fe0b5a741263092f2c8f13384cd3ef688fb9b3d129aa99f02aeb18c559ab37059788135744b653dc1cdfb43a43ad1c2e7854aa5bd8646239b0d0cb570c",
+        "dest": "039_htmltools.Rpkg"
+    },
+    {
+        "type": "archive",
         "url": "https://cran.microsoft.com/snapshot/2020-05-01/src/contrib/lifecycle_0.2.0.tar.gz",
         "sha512": "f939b65a7eaaff543ffaf7284b07d551d2f851a1975a17116d7cdd3561dcf2e60d79561912f6e007a3d60c8a4e78727e74a96532f2555a5d6cc365a6f1e1dde5",
-        "dest": "039_lifecycle.Rpkg"
+        "dest": "040_lifecycle.Rpkg"
     },
     {
         "type": "archive",
         "url": "https://cran.microsoft.com/snapshot/2020-05-01/src/contrib/markdown_1.1.tar.gz",
         "sha512": "d53da9b7d184154b866e85cad33f1ba836656bca4007486190c1767b7a79f003b86f34ee66c7349c96372c63c5b6762ea00dd5efb731d9b5e9f2aebddeb9b7da",
-        "dest": "040_markdown.Rpkg"
+        "dest": "041_markdown.Rpkg"
     },
     {
         "type": "archive",
         "url": "https://cran.microsoft.com/snapshot/2020-05-01/src/contrib/munsell_0.5.0.tar.gz",
         "sha512": "12a66c2406bf5aecec52a504549e7beeaff67fb67aab9950c24e9e6300b458cf541c818630814433229c1b406a2830a32dc21e10cabcdb4429245d85ba96f8de",
-        "dest": "041_munsell.Rpkg"
+        "dest": "042_munsell.Rpkg"
     },
     {
         "type": "archive",
         "url": "https://cran.microsoft.com/snapshot/2020-05-01/src/contrib/processx_3.4.2.tar.gz",
         "sha512": "09e42384946d0298f3eb1914963155fa458b51fccf1e1a142fc275c93a7210f2d09d0710699c8b2e8cbf2262dd0dcc94166d608da77cd98fbeb89e37959607c6",
-        "dest": "042_processx.Rpkg"
+        "dest": "043_processx.Rpkg"
     },
     {
         "type": "archive",
         "url": "https://cran.microsoft.com/snapshot/2020-05-01/src/contrib/rprojroot_1.3-2.tar.gz",
         "sha512": "7ea312a39ccf297a83155c849b0399459eb767f869fb327a238258e0f7a69b545c29e005dd33fdc1c1895116554ad0c3efbcc098ca1979610887ce67d8a8ea4b",
-        "dest": "043_rprojroot.Rpkg"
+        "dest": "044_rprojroot.Rpkg"
     },
     {
         "type": "archive",
         "url": "https://cran.microsoft.com/snapshot/2020-05-01/src/contrib/stringr_1.4.0.tar.gz",
         "sha512": "c72f150037a5ff55d9d067aef254a37a81cdaab8177b85cc88ba60610e1cfc0d04f0246666ba1a6e2d435e86fcb8cc589d872e24daac65c8faab7c71909b0a99",
-        "dest": "044_stringr.Rpkg"
+        "dest": "045_stringr.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://cran.microsoft.com/snapshot/2020-05-01/src/contrib/tinytex_0.22.tar.gz",
+        "sha512": "1fa06ffb2cb86c45f59b54f9de9b9c9110a856df995707b1531cb1729fe07452364721c76bdfc29c47d4992ac0bb76b0268f30491373d32711b756cc38a8a937",
+        "dest": "046_tinytex.Rpkg"
     },
     {
         "type": "archive",
         "url": "https://cran.microsoft.com/snapshot/2020-05-01/src/contrib/vctrs_0.2.4.tar.gz",
         "sha512": "2d23a58d407b1eff2162883d6906684ab0f3ec8a4ca2be7274bc82f29b2a846bce7d288d20b47ceb912846f4ee743556955b569b655efbd1d7d3d0da897e76ac",
-        "dest": "045_vctrs.Rpkg"
+        "dest": "047_vctrs.Rpkg"
     },
     {
         "type": "archive",
         "url": "https://cran.microsoft.com/snapshot/2020-05-01/src/contrib/callr_3.4.3.tar.gz",
         "sha512": "04ef68084b9fb2721566d51d0ca3cbf89ddb78d65e769ba1ed9b337097dd87b7640f7e8e06bc2e6cdf121aba1e7f9567bcaf7277d886686a079f1630713f16df",
-        "dest": "046_callr.Rpkg"
+        "dest": "048_callr.Rpkg"
     },
     {
         "type": "archive",
         "url": "https://cran.microsoft.com/snapshot/2020-05-01/src/contrib/desc_1.2.0.tar.gz",
         "sha512": "c0ef146faa28aa9b7f2ca20a5711d6e1f5553b8d4292d3e8d877e37ca78ebf720a8eca8fd3a5dc4ddef339fd28c639bb4e20813b8f2be4f5666897385eb456fc",
-        "dest": "047_desc.Rpkg"
+        "dest": "049_desc.Rpkg"
     },
     {
         "type": "archive",
         "url": "https://cran.microsoft.com/snapshot/2020-05-01/src/contrib/knitr_1.28.tar.gz",
         "sha512": "647360d4a67e09ba0b8731edbd4da2d8a31f5f58702ce4737a7dac75b208e614d4e85c048f5e13d5dc40c116dd4f68d6ebb35584d236dc8eab99f5d107e4bddb",
-        "dest": "048_knitr.Rpkg"
+        "dest": "050_knitr.Rpkg"
     },
     {
         "type": "archive",
         "url": "https://cran.microsoft.com/snapshot/2020-05-01/src/contrib/pillar_1.4.3.tar.gz",
         "sha512": "6f346cb722c2d391c7e6009e5ea93a11efde4710b787ff29bebffd186d27a7c00b358d4a6640da47152bdab5cfd132f2877e80957e32c40b40f455f431262685",
-        "dest": "049_pillar.Rpkg"
+        "dest": "051_pillar.Rpkg"
     },
     {
         "type": "archive",
         "url": "https://cran.microsoft.com/snapshot/2020-05-01/src/contrib/scales_1.1.0.tar.gz",
         "sha512": "8be54310d02af301277e3b6a4a33bcb98b70411097720db96ff5c4b79f860d6c91774c9f7b8812d9553b883ba116e9dac13dd9eb8b8bd8c1914a5533745143e5",
-        "dest": "050_scales.Rpkg"
+        "dest": "052_scales.Rpkg"
     },
     {
         "type": "archive",
         "url": "https://cran.microsoft.com/snapshot/2020-05-01/src/contrib/pkgbuild_1.0.7.tar.gz",
         "sha512": "06fa8bd3537ec4c7f87594183c45434a7238b15e9605e2ed337754e0cd44db6c0964d3f6baf9024bc072d68190ef9c77d0a8cf22ee7686321fc7757be0bc58a8",
-        "dest": "051_pkgbuild.Rpkg"
+        "dest": "053_pkgbuild.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://cran.microsoft.com/snapshot/2020-05-01/src/contrib/rmarkdown_2.1.tar.gz",
+        "sha512": "df2a8ee7e0bd730f4c8c869f16b0daf19e9e9c8b4d6b84bf2fd1b949942e40cfaf29274bafaa8e62cf3225ae8153b6fa2710dbe466fe1f511382001a17365d84",
+        "dest": "054_rmarkdown.Rpkg"
     },
     {
         "type": "archive",
         "url": "https://cran.microsoft.com/snapshot/2020-05-01/src/contrib/tibble_3.0.1.tar.gz",
         "sha512": "ad97383dd6468730c37a059881a27114fbdd10431be1354fc3899863d043e58303b123c95c6f5a729c353d9f3445ce317d6742696bd1fb940095034ea6b89037",
-        "dest": "052_tibble.Rpkg"
+        "dest": "055_tibble.Rpkg"
     },
     {
         "type": "archive",
         "url": "https://cran.microsoft.com/snapshot/2020-05-01/src/contrib/pkgload_1.0.2.tar.gz",
         "sha512": "a1bb38f8a14b0ffd9cc5483b1e0920c1f1284f8a4c1196682c943345274911816cde0ef9ccc251253db52658dcd9185f492162091c8fafa216b82f934572a3bc",
-        "dest": "053_pkgload.Rpkg"
+        "dest": "056_pkgload.Rpkg"
     },
     {
         "type": "archive",
         "url": "https://cran.microsoft.com/snapshot/2020-05-01/src/contrib/testthat_2.3.2.tar.gz",
         "sha512": "6b104174887792bd02a5d5b851be91b7ade88f80e690c79e9b272bae9e4b06d684b8718d0dee8266dc14e5d1c9d730822ca2d5e00d67ead6dfd5011d990afe56",
-        "dest": "054_testthat.Rpkg"
+        "dest": "057_testthat.Rpkg"
     },
     {
         "type": "archive",
         "url": "https://cran.microsoft.com/snapshot/2020-05-01/src/contrib/isoband_0.2.1.tar.gz",
         "sha512": "2d1f736b10b93d2bc16c6f0c3a21adb3c9b803d3924d70100cd6dc874c306cc6307d5f7dafd8d775b4804905b95004ba417b438ed7c59276d9bff1536a33165f",
-        "dest": "055_isoband.Rpkg"
+        "dest": "058_isoband.Rpkg"
     },
     {
         "type": "archive",
         "url": "https://cran.microsoft.com/snapshot/2020-05-01/src/contrib/ggplot2_3.3.0.tar.gz",
         "sha512": "d071e755905cb2a153acaa8df2ac4106780fa4d09c20cbbfd21f6d54e59ca9d49959d039d982baeff4efd615216b42c3d084238dc6bdb7a278006e8558fa636f",
-        "dest": "056_ggplot2.Rpkg"
+        "dest": "059_ggplot2.Rpkg"
     }
 ]
