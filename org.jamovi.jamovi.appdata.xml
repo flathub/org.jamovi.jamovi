@@ -36,6 +36,13 @@
   </screenshots>
 
   <releases>
+    <release version="1.6.0" date="2020-08-30">
+      <description>
+        <ul>
+          <li>Added results editing</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.2.27" date="2020-08-23">
       <description>
         <ul>
