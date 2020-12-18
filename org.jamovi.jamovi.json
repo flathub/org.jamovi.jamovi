@@ -531,7 +531,7 @@
             "build-options": {
                 "env": {
                     "npm_config_cache": "../npm-cache"
-                }
+                } 
             },
             "sources": [
                 "jmc-deps-sources.json",
