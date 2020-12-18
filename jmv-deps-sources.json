@@ -732,9 +732,9 @@
         "dest": "121_tidygraph.Rpkg"
     },
     {
-        "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2020-08-24/src/contrib/afex_0.27-2.tar.gz",
-        "sha512": "ee45a9584c2aa2c9183b59ff8c6f95d651c1a6e57dcb25c6b751c1ee6517f9eec869d7045bd604e6ed11fd035806c14e0265e5e4bd17afadefd1f5159fdcdda0",
+        "type": "git",
+        "url": "https://github.com/singmann/afex.git",
+        "commit": "fdfe4f5e96efeeac0ed6b78684f2da75c7c4d760",
         "dest": "122_afex.Rpkg"
     },
     {
