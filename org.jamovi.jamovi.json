@@ -526,7 +526,7 @@
                 "mkdir -p jmv/build/R4.0.2-linux",
                 "/app/bin/R CMD INSTALL *.Rpkg --library=jmv/build/R4.0.2-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
                 "cd jamovi-compiler && npm install --offline",
-                "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app"
+                "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app --patch-version --skip-remotes"
             ],
             "build-options": {
                 "env": {

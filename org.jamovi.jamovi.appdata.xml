@@ -36,6 +36,17 @@
   </screenshots>
 
   <releases>
+    <release version="1.6.9" date="2020-12-18">
+      <description>
+        <ul>
+          <li>Added normality tests to RM ANOVA</li>
+          <li>Added min_valid argument to MEAN() and SUM() functions</li>
+          <li>Improvements to linear regression handling large data sets</li>
+          <li>Improvements to file load performance</li>
+          <li>General improvements and bug-fixes</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.6.0" date="2020-08-30">
       <description>
         <ul>
