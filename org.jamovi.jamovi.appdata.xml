@@ -36,6 +36,15 @@
   </screenshots>
 
   <releases>
+    <release version="1.6.10" date="2021-01-11">
+      <description>
+        <ul>
+          <li>Added RANK() function</li>
+          <li>Added IQR into descriptives</li>
+          <li>General improvements and bug-fixes</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.6.9" date="2020-12-18">
       <description>
         <ul>
