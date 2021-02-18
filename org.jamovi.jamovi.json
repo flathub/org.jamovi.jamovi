@@ -1,9 +1,9 @@
 {
     "app-id": "org.jamovi.jamovi",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "19.08",
+    "runtime-version": "20.08",
     "base": "org.electronjs.Electron2.BaseApp",
-    "base-version": "19.08",
+    "base-version": "20.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "jamovi",
     "separate-locales": false,
@@ -284,30 +284,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v6.1.9/electron-v6.1.9-linux-x64.zip",
-                    "sha512": "0e3d4df5bf358d6d8630ad461057cf497843015c6b87b8939df4f03b2d1229bc6a9c2b05efb8afdc9917a0dd2f7defd24c38bfeffb2cd081b5376825a9d11f41",
-                    "strip-components": 0
-                }
-            ]
-        },
-        {
-            "name": "electron-i386",
-            "only-arches": [ "i386" ],
-            "buildsystem": "simple",
-            "build-commands": [
-                "mkdir -p /app/bin/resources",
-                "cp *.so  /app/bin",
-                "cp *.bin /app/bin",
-                "cp *.dat /app/bin",
-                "cp *.pak /app/bin",
-                "cp electron /app/bin/",
-                "cp -r resources/ /app/bin/"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v6.1.9/electron-v6.1.9-linux-ia32.zip",
-                    "sha512": "f20d120f4968c10b350eea88f684f413d58152c4651b3a7f24d6a65afe3ff74d016f269d737ee9c9c3c91a4c73ca6aad468c7ecba72d12fcf4301048050eb0f3",
+                    "url": "https://github.com/electron/electron/releases/download/v11.2.3/electron-v11.2.3-linux-x64.zip",
+                    "sha512": "2c4f6ff41d262a1abf76e3b16ed3736f8d2aa49a5fa3c0f65a0b72bebb074baf2cc55a6960a69f9e38a6f0b72d74f37cc600c9ba483805160acdaa4d2d261edc",
                     "strip-components": 0
                 }
             ]
