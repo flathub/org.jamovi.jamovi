@@ -291,6 +291,28 @@
             ]
         },
         {
+            "name": "electron-arm",
+            "only-arches": [ "arm" ],
+            "buildsystem": "simple",
+            "build-commands": [
+                "mkdir -p ${FLATPAK_DEST}/bin/resources",
+                "cp *.so  ${FLATPAK_DEST}/bin",
+                "cp *.bin ${FLATPAK_DEST}/bin",
+                "cp *.dat ${FLATPAK_DEST}/bin",
+                "cp *.pak ${FLATPAK_DEST}/bin",
+                "cp electron ${FLATPAK_DEST}/bin/",
+                "cp -r resources/ ${FLATPAK_DEST}/bin/"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/electron/electron/releases/download/v10.3.2/electron-v10.3.2-linux-armv7l.zip",
+                    "sha512": "07c834e47cb1ec4c7a42233405179fc42a88a285f201d775da13e46a01dcc8341f2c1282332123fcfa297e2304e0d7b9a3d853cb0f844766b0f6ba7dfd933e40",
+                    "strip-components": 0
+                }
+            ]
+        },
+        {
             "name": "electron-arm64",
             "only-arches": [ "aarch64" ],
             "buildsystem": "simple",
