@@ -1,9 +1,9 @@
 {
     "app-id": "org.jamovi.jamovi",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "20.08",
+    "runtime-version": "19.08",
     "base": "org.electronjs.Electron2.BaseApp",
-    "base-version": "20.08",
+    "base-version": "19.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "jamovi",
     "separate-locales": false,
@@ -162,9 +162,9 @@
             "name": "nodejs",
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://nodejs.org/dist/v10.16.0/node-v10.16.0.tar.xz",
-                    "sha512": "df197c7b929fe1e0acf0334dbeb45be4c0cfa3266f9ddb513eafffcd6405bc02cba2fcbd34a7a5bef2e45a1d61ef3734ca0afe7295904ed563744fe06751cc62"
+                    "type": "archive",                 
+                    "url": "https://github.com/nodejs/node/archive/v12.20.2.tar.gz",
+                    "sha512": "e17793f7defb9b770f49f5be0810fe9f5c759a059eeba23bcbef15a723faba267b3e5d227b1d76bbae352154657178d77cdcb4714d575ccfd29a692d655d5579"
                 }
             ],
             "cleanup": [
@@ -284,30 +284,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v11.2.3/electron-v11.2.3-linux-x64.zip",
-                    "sha512": "2c4f6ff41d262a1abf76e3b16ed3736f8d2aa49a5fa3c0f65a0b72bebb074baf2cc55a6960a69f9e38a6f0b72d74f37cc600c9ba483805160acdaa4d2d261edc",
-                    "strip-components": 0
-                }
-            ]
-        },
-        {
-            "name": "electron-arm",
-            "only-arches": [ "arm" ],
-            "buildsystem": "simple",
-            "build-commands": [
-                "mkdir -p ${FLATPAK_DEST}/bin/resources",
-                "cp *.so  ${FLATPAK_DEST}/bin",
-                "cp *.bin ${FLATPAK_DEST}/bin",
-                "cp *.dat ${FLATPAK_DEST}/bin",
-                "cp *.pak ${FLATPAK_DEST}/bin",
-                "cp electron ${FLATPAK_DEST}/bin/",
-                "cp -r resources/ ${FLATPAK_DEST}/bin/"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v6.1.9/electron-v6.1.9-linux-armv7l.zip",
-                    "sha512": "0e0895568d2b3304cc92d372a9e539dca3990c13283c5031a36c3ba0e09a7e06bff353e0373edbcea8981844df121160e0fcdd07ca3c4c1629ba458f7fe0cb2a",
+                    "url": "https://github.com/electron/electron/releases/download/v10.3.2/electron-v10.3.2-linux-x64.zip",
+                    "sha512": "de2e9f32ac2af376b08c9791b8720923f5083ccfe14de52a5a85e168a3592792defade25fb8ca5eda061cd5b8a88c47678df56d84dd5bf44d99c23959e49c8f3",
                     "strip-components": 0
                 }
             ]
@@ -328,8 +306,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v6.1.9/electron-v6.1.9-linux-arm64.zip",
-                    "sha512": "cfc53f479b5c2fac3f1f618283d7311f669354f0fa02b09281399cf3f212d0aa3e0a5873f9cc0fb2f9c5adcadc3ea41b7c6009cbc79f9737fac139cc667032e4",
+                    "url": "https://github.com/electron/electron/releases/download/v10.3.2/electron-v10.3.2-linux-arm64.zip",
+                    "sha512": "de4fc211b509a92e04275207a9b92821a4170743f15155f427e6c3af1c6dd3b0a319bd5957eb9457d28201fe0390d1ec0221a5e4492fca80da405f3d511fd098",
                     "strip-components": 0
                 }
             ]
