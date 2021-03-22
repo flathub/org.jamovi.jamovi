@@ -36,6 +36,24 @@
   </screenshots>
 
   <releases>
+    <release version="1.6.19" date="2021-03-22">
+      <description>
+        <ul>
+          <li>Improvements to security</li>
+          <li>Added SAMPLE() function</li>
+          <li>General improvements and bug-fixes</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.6.18" date="2021-03-04">
+      <description>
+        <ul>
+          <li>Added ROUND() function</li>
+          <li>Increased buffer to reduce problems with analyses not completing (ultimately, modules themselves are responsible)</li>
+          <li>General improvements and bug-fixes</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.6.10" date="2021-01-11">
       <description>
         <ul>
