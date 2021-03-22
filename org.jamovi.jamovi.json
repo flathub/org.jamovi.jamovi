@@ -284,8 +284,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v6.1.9/electron-v6.1.9-linux-x64.zip",
-                    "sha512": "0e3d4df5bf358d6d8630ad461057cf497843015c6b87b8939df4f03b2d1229bc6a9c2b05efb8afdc9917a0dd2f7defd24c38bfeffb2cd081b5376825a9d11f41",
+                    "url": "https://github.com/electron/electron/releases/download/v11.3.0/electron-v11.3.0-linux-x64.zip",
+                    "sha512": "dfd2036149a219a777827ea9f46ca67606d0048bb600feccee07671e84910499536dfea16106f86c1d174a2d6094d9f24935f07ab23f3514bac13e875139b5d3",
                     "strip-components": 0
                 }
             ]
@@ -306,8 +306,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v6.1.9/electron-v6.1.9-linux-ia32.zip",
-                    "sha512": "f20d120f4968c10b350eea88f684f413d58152c4651b3a7f24d6a65afe3ff74d016f269d737ee9c9c3c91a4c73ca6aad468c7ecba72d12fcf4301048050eb0f3",
+                    "url": "https://github.com/electron/electron/releases/download/v11.3.0/electron-v11.3.0-linux-ia32.zip",
+                    "sha512": "e14a637a4a64e52ff21eed40dd31761e5e3e182371fbb166ae64da04064576df991bfe705d11768bc3a3a9250f02646aa6028e41332d4d55ff8377e1fddc0f10",
                     "strip-components": 0
                 }
             ]
@@ -328,8 +328,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v6.1.9/electron-v6.1.9-linux-armv7l.zip",
-                    "sha512": "0e0895568d2b3304cc92d372a9e539dca3990c13283c5031a36c3ba0e09a7e06bff353e0373edbcea8981844df121160e0fcdd07ca3c4c1629ba458f7fe0cb2a",
+                    "url": "https://github.com/electron/electron/releases/download/v11.3.0/electron-v11.3.0-linux-armv7l.zip",
+                    "sha512": "457f4bcbf02bf00f64032e1efa9ee721bf454a8872ea8bbcdf1141f09bd5e7520a326ac6a6c17f3db5dcd524065e529aaeddfa23420722dd9e6ac489955e46e0",
                     "strip-components": 0
                 }
             ]
@@ -350,8 +350,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v6.1.9/electron-v6.1.9-linux-arm64.zip",
-                    "sha512": "cfc53f479b5c2fac3f1f618283d7311f669354f0fa02b09281399cf3f212d0aa3e0a5873f9cc0fb2f9c5adcadc3ea41b7c6009cbc79f9737fac139cc667032e4",
+                    "url": "https://github.com/electron/electron/releases/download/v11.3.0/electron-v11.3.0-linux-arm64.zip",
+                    "sha512": "a2b12ddccb7602c2b20d5c521955126afc08ebe3dfa55b86fa020d74687913e9398084e77bf3a58adfa2d18f3d2592735f31c94095503ec4449002127feb99e2",
                     "strip-components": 0
                 }
             ]
