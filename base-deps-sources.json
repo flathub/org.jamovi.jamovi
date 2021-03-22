@@ -199,8 +199,8 @@
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-02-19/src/contrib/ragg_1.1.0.tar.gz",
-        "sha512": "31f7c0012f04afd5dd8c0ec77951e1c623ca23115e86d19c1812496c9b813f4b73a6ee4e49a250cf959dc3ade278f1e44ac774ff7756e34c98b314544fb59134",
+        "url": "https://cran.microsoft.com/snapshot/2020-08-24/src/contrib/ragg_0.3.1.tar.gz",
+        "sha512": "c7aef1147739069a5d72458011d0ec1ed469117616c47d305089661deed5c39650f18b86b9a91574f45ea1b087f1e211dd214b7f3174e5c7589a8707f8df13e3",
         "dest": "033_ragg.Rpkg"
     },
     {
