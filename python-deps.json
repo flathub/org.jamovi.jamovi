@@ -2,7 +2,7 @@
     "name": "python3-cython",
     "buildsystem": "simple",
     "build-commands": [
-        "pip3 install -U --no-index --find-links=\"file://${PWD}\" --prefix=/app cython protobuf tornado nanomsg PyYAML chardet openpyxl pyexcel-ezodf aiohttp setuptools wheel pip"
+        "pip3 install -U --no-index --find-links=\"file://${PWD}\" --prefix=/app cython protobuf tornado nanomsg PyYAML chardet openpyxl pyexcel-ezodf aiohttp"
     ],
     "sources": [
         {
@@ -14,11 +14,6 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/6c/9f/f501ba9d178aeb1f5bf7da1ad5619b207c90ac235d9859961c11829d0160/Cython-0.29.21.tar.gz",
             "sha512": "6216e63996e83b887cdcee6cd912d42e7da853640336b9190f5115d687848a902ee5a8edd6bfaef645c066b89e17dcd80ca1387688eb80a527ec23a0a4636e8f"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/ed/46/e298a50dde405e1c202e316fa6a3015ff9288423661d7ea5e8f22f589071/wheel-0.36.2.tar.gz",
-            "sha512": "73f5c6e77b8c396163b02e12ce7291e32960d771c732d8e97476971201b29e654d53551b2ce17db1fbde5697ced1908607995cac38fe2b61c63aec6abd4b6aaf"
         },
         {
             "type": "file",
@@ -34,11 +29,6 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/9f/24/1444ee2c9aee531783c031072a273182109c6800320868ab87675d147a05/idna-3.1.tar.gz",
             "sha512": "23c02520d00a99855d552a9b9def529f0baeec7d27e8036c544dd654ade15243fd5c9e5ad02e73b83a9ca3bb335ab2584233d17345a6a5e6d5ac089e8ac81e8a"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/b7/2d/ad02de84a4c9fd3b1958dc9fb72764de1aa2605a9d7e943837be6ad82337/pip-21.0.1.tar.gz",
-            "sha512": "b80387fed6abf64cb4794686a82a415cf58b4516b9db17a5db496152b432b81bc638d8de91d40578f6dac08e26c0d0d4099901b9a186d73cf36691f24c4b4ee9"
         },
         {
             "type": "file",
@@ -94,11 +84,6 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/6b/34/415834bfdafca3c5f451532e8a8d9ba89a21c9743a0c59fbd0205c7f9426/six-1.15.0.tar.gz",
             "sha512": "eb840ac17f433f1fc4af56de75cfbfe0b54e6a737bb23c453bf09a4a13d768d153e46064880dc763f4c5cc2785b78ea6d3d3b4a41fed181cb9064837e3f699a9"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/94/75/05e1d69c61c4dfaf65ad12785cd18bedc1e0129976c55914d6aea59c7da8/setuptools-54.2.0.tar.gz",
-            "sha512": "b18cd075cf59b8648611eef1874de41199ede6ffe6d7f5047586c6ac8783fe18b9a4f537783e590e7aec127033f612b93925e92f039bd6416a609fcfb262e354"
         },
         {
             "type": "file",
