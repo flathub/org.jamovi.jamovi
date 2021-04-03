@@ -7,58 +7,48 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/cb/19/57503b5de719ee45e83472f339f617b0c01ad75cba44aba1e4c97c2b0abd/idna-2.9.tar.gz",
-            "sha512": "2bd3fdae46fe7045640912872b0a3955de3abce62fd222b16ea2c997a04755acc834eeb645e5610d621c176d4b963e1d4a71228fba14efad54999cdf3c02eaf4"
+            "url": "https://files.pythonhosted.org/packages/a0/a4/d63f2d7597e1a4b55aa3b4d6c5b029991d3b824b5bd331af8d4ab1ed687d/PyYAML-5.4.1.tar.gz",
+            "sha512": "359c45d843fd839797572efeab121f17b1947647960dfb062f3618f25f71e1a6bc4bab14a1720b6b67f256089d5d48c452ec5419e3130222765c7ca41db11dad"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/39/2b/0a66d5436f237aff76b91e68b4d8c041d145ad0a2cdeefe2c42f76ba2857/lxml-4.5.0.tar.gz",
-            "sha512": "7cb957b2ab9931c32984ad0808f51e650e82e2d9b14df3fd8df2dd8f2c5c261d26ebf2c672b723e89b00b867a0a8dbb9130023e48a5f302fd02d5409e1c8cd6c"
+            "url": "https://files.pythonhosted.org/packages/d3/38/adc49a5aca4f644e6322237089fdcf194084f5fe41445e6e632f28b32bf7/Cython-0.29.22.tar.gz",
+            "sha512": "721812b7009049717d907f3b22cc63a28b882a843d3af613ddd5a47a6588fb49ffd4188856ed4a2612f8abe07d35ba29b2143b8ff6d184a99c22328db09e9c27"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/6a/28/d32852f2af6b5ead85d396249d5bdf450833f3a69896d76eb480d9c5e406/typing_extensions-3.7.4.2.tar.gz",
-            "sha512": "7a74c4a97d8cda3e56830c92b409235ffbe7cf0c1685b7fefa7a275a0abf21937622d12c25b4163b4927f6269ed689cbd30f95990ad0b7d2d4341ed648516819"
+            "url": "https://files.pythonhosted.org/packages/ed/46/e298a50dde405e1c202e316fa6a3015ff9288423661d7ea5e8f22f589071/wheel-0.36.2.tar.gz",
+            "sha512": "73f5c6e77b8c396163b02e12ce7291e32960d771c732d8e97476971201b29e654d53551b2ce17db1fbde5697ced1908607995cac38fe2b61c63aec6abd4b6aaf"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/64/c2/b80047c7ac2478f9501676c988a5411ed5572f35d1beff9cae07d321512c/PyYAML-5.3.1.tar.gz",
-            "sha512": "87372877d396bd06cdb6b9052ef8822ef0589a211659bf27d7a1c4deca8429cb39e120a23e5d590d7adc0f8059ce1c8af42409bebd7c6d504d49dc8504d5683a"
+            "url": "https://files.pythonhosted.org/packages/f1/7d/fb475cd963bd9d244f95a90c98f518f5c834fefe749f25f9f479ca2d8a51/openpyxl-3.0.7.tar.gz",
+            "sha512": "00a6bd824d57236456300dc5ccf82d44a57af52302e8298a7c407142dd7a67fc535f85c6870393e97fc4029f010722cad3f3c30db666d8aab748b1139d06f77b"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/95/8c/83563c60489954e5b80f9e2596b93a68e1ac4e4a730deb1aae632066d704/openpyxl-3.0.3.tar.gz",
-            "sha512": "f0cd3fb217338124ca046a5f3b7eb2f8bbd933b328dc5c00d687e1d9b1ebd6c6a0668a1ff9a842cb2bbc32ce8654cc992f013d02ec24a3da39903e3e4f956942"
+            "url": "https://files.pythonhosted.org/packages/97/e7/af7219a0fe240e8ef6bb555341a63c43045c21ab0392b4435e754b716fa1/yarl-1.6.3.tar.gz",
+            "sha512": "4c76b94198b8e334f4b4e71d92b0fe23f752d35e0c29bc68df99648b3f48fbb6e3dd8d7339138544e5dc8fbf64c15cb61678052670ac47edc5be958df819d42e"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/8e/76/66066b7bc71817238924c7e4b448abdb17eb0c92d645769c223f9ace478f/pip-20.0.2.tar.gz",
-            "sha512": "72f9c4b8a5a3c5f8074bc2b671a118942f161fb145c38077ded8a18f07537eb674c679fdcf7c3f3f0aeee11d66fe34eaa157f53f1f689fce3e12567e5339ac89"
+            "url": "https://files.pythonhosted.org/packages/9f/24/1444ee2c9aee531783c031072a273182109c6800320868ab87675d147a05/idna-3.1.tar.gz",
+            "sha512": "23c02520d00a99855d552a9b9def529f0baeec7d27e8036c544dd654ade15243fd5c9e5ad02e73b83a9ca3bb335ab2584233d17345a6a5e6d5ac089e8ac81e8a"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/49/8a/6a4135469372da2e3d9f88f71c6d00d8a07ef65f121eeca0c7ae21697219/Cython-0.29.16.tar.gz",
-            "sha512": "bbfd917a37a58389eff6780634ed3d58c6bfc69278d4d7a9b82d44f3a69a798961ac017dfc2a1a2b5db930bf73f1b5bf2e5ae0fde1c079012d1aa36886181e32"
+            "url": "https://files.pythonhosted.org/packages/b7/2d/ad02de84a4c9fd3b1958dc9fb72764de1aa2605a9d7e943837be6ad82337/pip-21.0.1.tar.gz",
+            "sha512": "b80387fed6abf64cb4794686a82a415cf58b4516b9db17a5db496152b432b81bc638d8de91d40578f6dac08e26c0d0d4099901b9a186d73cf36691f24c4b4ee9"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/95/84/119a46d494f008969bf0c775cb2c6b3579d3c4cc1bb1b41a022aa93ee242/tornado-6.0.4.tar.gz",
-            "sha512": "d29d69cf40f8b34fb2c55d81b6ecd9bc7c6fdf644eb4ff35452829510c0d5ec185da0a6067fec3e8afb2bedf9f5f08b06adb0ad53dcab04cb791a75abc304d6e"
+            "url": "https://files.pythonhosted.org/packages/b0/e1/3bf55eb999735a948ea4d8c417458ba2c14615c104fff8976729832efb8f/protobuf-3.15.7.tar.gz",
+            "sha512": "440009d4d4942091a5e759ab4fcd3b27ea231d504186041106bf41c6f5ef5dffb6ba5d45aab2c61ec6f45b77bb789bacfcabf1ad049f0ffb1f33970fe5575d94"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/a6/8d/aba802912a3ffbaf6c3ae7f3208206f0811b72e48adff86edd0f933bb9d7/pyexcel-ezodf-0.3.4.tar.gz",
-            "sha512": "019584191acdbf6acb50d61fcc720d9945c47722156a0d3a5882d4e2e169f79b21d9fed2a2e00c4447bb4691b82559bb5440dd37814c42c32d4edb3ff2430367"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/d6/67/6e2507586eb1cfa6d55540845b0cd05b4b77c414f6bca8b00b45483b976e/yarl-1.4.2.tar.gz",
-            "sha512": "036562b645d7b9b3ed4a749decb189587b41ab13b5dda5ff461b00eebadf1ecdbd8d5ae06932cc7d8b7ff551cd630f8671eb0f6c854b20996cda4a6897994fa0"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/61/b4/475114b3f1671da634f89239e61038f8742d9ac13aa34b32a05bf8022d22/multidict-4.7.5.tar.gz",
-            "sha512": "cde917bee0466ab6af9ee08835c41ba2156483855510a054b79894ebd5fc89549de04284e3eef5c2123297db219c326f43a3587bc15aa51857fda122f087e42e"
+            "url": "https://files.pythonhosted.org/packages/1c/74/e8b46156f37ca56d10d895d4e8595aa2b344cff3c1fb3629ec97a8656ccb/multidict-5.1.0.tar.gz",
+            "sha512": "2a6a6aaedb6ed6f7c2b9d2a848623a6a1b5908de346d2b6c8a7b3d207e3c4cf2b7fe4a29536a1939ebbee6905aabcd23c07f818f55cc16e9362a04455d440253"
         },
         {
             "type": "file",
@@ -67,28 +57,13 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/21/9f/b251f7f8a76dec1d6651be194dfba8fb8d7781d10ab3987190de8391d08e/six-1.14.0.tar.gz",
-            "sha512": "4dea0f4e7961e8b582d665501c65852dc3b73516a0b6f78b0888c8670f1450df58bd3eea418777f41080b842ab6c3d8633be1034bcf920192e5590d5316e2c9e"
+            "url": "https://files.pythonhosted.org/packages/e5/21/a2e4517e3d216f0051687eea3d3317557bde68736f038a3b105ac3809247/lxml-4.6.3.tar.gz",
+            "sha512": "57489c42257afd00376886d6873c97088778afa8009fa644e2660722d134f346030218c24be6329ee828f73f5164cdd1dad583c17addbdf3e0c84e4d8ab9e176"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/b5/96/af1686ea8c1e503f4a81223d4a3410e7587fd52df03083de24161d0df7d4/setuptools-46.1.3.zip",
-            "sha512": "7f8f99313ce2af2cbfa86ff9a3135bc3445804e9323a375b498d20dad7f8fc819481da0c2a057160397e98b6178c1eb453a093652cfdfe7896c9d31732f7ad8c"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/46/03/07c4894aae38b0de52b52586b24bf189bb83e4ddabfe2e2c8f2419eec6f4/idna-ssl-1.1.0.tar.gz",
-            "sha512": "f9db74cecabbbfddfd1817bbd8434ef2aafeea433c3eefff3f94c7e994da40e3f315fcda527f3a0c3743028f26bbc934f1dd21f94134123c3271975d0527cd35"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/c9/d5/e6e789e50e478463a84bd1cdb45aa408d49a2e1aaffc45da43d10722c007/protobuf-3.11.3.tar.gz",
-            "sha512": "1e9e0d03715e8d3f5271c58139000cb512ab4cd586bfdd5ce42ff7a5971fa427285fd4ec51894a63b0435facb200088c5220677e2dd645aab6821c90476ff13c"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/00/94/f9fa18e8d7124d7850a5715a0b9c0584f7b9375d331d35e157cee50f27cc/aiohttp-3.6.2.tar.gz",
-            "sha512": "49bd3089158c05ff6312420190ccd7fed95efb4a18b8aff7497d5507c71c692080d6949801edabdcd95379ca8e6614398408118d72ff1e782399e059e2cfc1a8"
+            "url": "https://files.pythonhosted.org/packages/ee/2d/9cdc2b527e127b4c9db64b86647d567985940ac3698eeabc7ffaccb4ea61/chardet-4.0.0.tar.gz",
+            "sha512": "ebd7f420e1094445270db993f6373ffe7370419e002b0bb13299dc6c9b0f7c4e77b0f44f871fba6371e6869e7c86728514367db377e3137487a3acf50cb81e96"
         },
         {
             "type": "file",
@@ -97,28 +72,43 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/98/c3/2c227e66b5e896e15ccdae2e00bbc69aa46e9a8ce8869cc5fa96310bf612/attrs-19.3.0.tar.gz",
-            "sha512": "b5b641e6732156d1454ed6c49e3a6b29200a8d3f1515fb59aeb85fcb5e9ab6a1d760904de45083cae5250e7bf1a7aa2c1f3ede217240a63f989ae4bb484f2511"
+            "url": "https://files.pythonhosted.org/packages/f0/cb/80a4a274df7da7b8baf083249b0890a0579374c3d74b5ac0ee9291f912dc/attrs-20.3.0.tar.gz",
+            "sha512": "640532c6b763fd96572e5d85e93c111bebc4c5e0ff9419fe92fb51280f03acb5f9f43339f57d30659e777d5578460675c60ec0a362f9ad433893e3624ce6a931"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/7b/b0/fa20fce23e9c3b55b640e629cb5edf32a85e6af3cf7af599940eb0c753fe/jdcal-1.4.1.tar.gz",
-            "sha512": "5e14f470f35764c0d76fcf0ee13f9ea0879e645b589a48636207b7848f3df0437343898595c8cf19b8e4fe8a172d4e82aa06e56284ed263154c93de217e24e39"
+            "url": "https://files.pythonhosted.org/packages/16/06/0f7367eafb692f73158e5c5cbca1aec798cdf78be5167f6415dd4205fa32/typing_extensions-3.7.4.3.tar.gz",
+            "sha512": "fa1f96b73b13308ddb2676684862916aac8741be4523387c6a0f682a52d307190aac3e4149317842e686d14483d8a37a9e1de2514a2d1ca86f9ae9c8b0e18eb1"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/fc/bb/a5768c230f9ddb03acc9ef3f0d4a3cf93462473795d18e9535498c8f929d/chardet-3.0.4.tar.gz",
-            "sha512": "61a03b23447a2bfe52ceed4dd1b9afdb5784da1933a623776883ee9f297e341f633e27f0ce0230bd5fdc5fdb5382105ab42736a74a417ddeb9f83af57455dba5"
+            "url": "https://files.pythonhosted.org/packages/99/f5/90ede947a3ce2d6de1614799f5fea4e93c19b6520a59dc5d2f64123b032f/aiohttp-3.7.4.post0.tar.gz",
+            "sha512": "1697390a8f40a1de0335343f7c3451a1b772e181364edd30c5834abf5e8f3020bdf3fa4226d435e4c2b73340bea567188089d67a1fc93826e1a51bc5e419f0d7"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/a6/8d/aba802912a3ffbaf6c3ae7f3208206f0811b72e48adff86edd0f933bb9d7/pyexcel-ezodf-0.3.4.tar.gz",
+            "sha512": "019584191acdbf6acb50d61fcc720d9945c47722156a0d3a5882d4e2e169f79b21d9fed2a2e00c4447bb4691b82559bb5440dd37814c42c32d4edb3ff2430367"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/6b/34/415834bfdafca3c5f451532e8a8d9ba89a21c9743a0c59fbd0205c7f9426/six-1.15.0.tar.gz",
+            "sha512": "eb840ac17f433f1fc4af56de75cfbfe0b54e6a737bb23c453bf09a4a13d768d153e46064880dc763f4c5cc2785b78ea6d3d3b4a41fed181cb9064837e3f699a9"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/94/75/05e1d69c61c4dfaf65ad12785cd18bedc1e0129976c55914d6aea59c7da8/setuptools-54.2.0.tar.gz",
+            "sha512": "b18cd075cf59b8648611eef1874de41199ede6ffe6d7f5047586c6ac8783fe18b9a4f537783e590e7aec127033f612b93925e92f039bd6416a609fcfb262e354"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/cf/44/cc9590db23758ee7906d40cacff06c02a21c2a6166602e095a56cbf2f6f6/tornado-6.1.tar.gz",
+            "sha512": "0ec1db1fad911182bda547c177a18b107b906cf66576443069e2b986cf041b3d4ebe08e5a168aa5cd3b56547f32f8b384bacaf74db89f582951d7b610b7494e8"
         },
         {
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/0b/b1/3037e0e380d5fab2824e69a59bd374da402c0cef264ccb3fe5d71c230c4b/nanomsg-1.0.tar.gz",
             "sha512": "2d1e6349b73481aaa9fb0a683f531f7fe92374e1893fe236763ec86c6389ad1a3ce3900b1e1b4dff165c90447f2516a5b9aff0e1760dc190fa093c3cc2c301aa"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/75/28/521c6dc7fef23a68368efefdcd682f5b3d1d58c2b90b06dc1d0b805b51ae/wheel-0.34.2.tar.gz",
-            "sha512": "7f2143b26812f94330671ab5d2bbc31f0a4fc103dbc8d7b971afd5e5ca7e72140cb61fa264a39ec8e80bae61ebb22c738bfbb803242b52a32eee6a3e90aa1513"
         }
     ]
 }
