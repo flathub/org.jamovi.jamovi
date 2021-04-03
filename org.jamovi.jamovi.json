@@ -240,8 +240,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/cf/8d/6345b4f32b37945fedc1e027e83970005fc9c699068d2f566b82826515f2/numpy-1.16.2.zip",
-                    "sha512": "5edd460c0948f424d8deb72f44a33db8ac6a973859b25c824533330dccb4f844197a437e945cd382760bbb6983fd120b08c949ac437973a915246024a8ebc911"
+                    "url": "https://files.pythonhosted.org/packages/82/a8/1e0f86ae3f13f7ce260e9f782764c16559917f24382c74edfb52149897de/numpy-1.20.2.zip",
+                    "sha512": "337a66d68c965da06f757a89b58d30b83ec0b2f3c7a3bb39496e5031e50fee6c4f2ec090202c3da9a20613864ea46d032ae75af1de5c33eebe515133ef37d40c"
                 }
             ]
         },
@@ -263,8 +263,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/a9/b4/5598a706697d1e2929eaf7fe68898ef4bea76e4950b9efbe1ef396b8813a/scipy-1.2.1.tar.gz",
-                    "sha512": "80caf9af93046c0d58829a61eb90d824aabe8a53f3e7d8a72efc44accaa3299d1e22adbb4852ed192cee6e47aafbb4ebea3115233ed11f1ef05dd373866b0243"
+                    "url": "https://github.com/scipy/scipy/releases/download/v1.6.2/scipy-1.6.2.tar.xz",
+                    "sha512": "2253f257d5c55739a47759e039602dc542bd1a068c5883fd2a80a60bc7d3e8372d467d589ae2c83b9a847d0fb76c1fb841208213297db284f142fac98dd33b8e"
                 }
             ]
         },
