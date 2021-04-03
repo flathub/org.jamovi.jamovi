@@ -1,14 +1,19 @@
 {
-    "name": "python3-deps",
+    "name": "python3-cython",
     "buildsystem": "simple",
     "build-commands": [
-        "pip3 install -U --no-index --find-links=\"file://${PWD}\" --prefix=/app protobuf tornado nanomsg PyYAML chardet openpyxl pyexcel-ezodf aiohttp setuptools wheel pip"
+        "pip3 install -U --no-index --find-links=\"file://${PWD}\" --prefix=/app cython protobuf tornado nanomsg PyYAML chardet openpyxl pyexcel-ezodf aiohttp setuptools wheel pip"
     ],
     "sources": [
         {
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/a0/a4/d63f2d7597e1a4b55aa3b4d6c5b029991d3b824b5bd331af8d4ab1ed687d/PyYAML-5.4.1.tar.gz",
             "sha512": "359c45d843fd839797572efeab121f17b1947647960dfb062f3618f25f71e1a6bc4bab14a1720b6b67f256089d5d48c452ec5419e3130222765c7ca41db11dad"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/6c/9f/f501ba9d178aeb1f5bf7da1ad5619b207c90ac235d9859961c11829d0160/Cython-0.29.21.tar.gz",
+            "sha512": "6216e63996e83b887cdcee6cd912d42e7da853640336b9190f5115d687848a902ee5a8edd6bfaef645c066b89e17dcd80ca1387688eb80a527ec23a0a4636e8f"
         },
         {
             "type": "file",
