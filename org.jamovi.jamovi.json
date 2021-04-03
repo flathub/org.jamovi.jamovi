@@ -97,8 +97,8 @@
             "sources": [
                 {
                     "type":"archive",
-                    "url": "https://cran.r-project.org/src/base/R-4/R-4.0.2.tar.gz",
-                    "sha512":"b7330613ee9795f54cde3dd9f7509be83d9156fb8577c17179727ee01450db27704249f68bd48e0331e2df09c2d9833d8bb019c4f9ce9ba669df74650ff2e842"
+                    "url": "https://cran.r-project.org/src/base/R-4/R-4.0.5.tar.gz",
+                    "sha512":"6ff5b0f9cb6b17f66cde1f5585d1b33659dbae8919d34c2e593f68a0bff4d0425aa9704d99284d103702a9cd42f613311f3a87af6b939b1af65dcec80bf2ca8c"
                 }
             ],
             "cleanup": [
@@ -523,8 +523,8 @@
             "buildsystem": "simple",
             "build-commands": [
                 "mkdir -p /app/lib/jamovi/modules",
-                "mkdir -p jmv/build/R4.0.2-linux",
-                "/app/bin/R CMD INSTALL *.Rpkg --library=jmv/build/R4.0.2-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "mkdir -p jmv/build/R4.0.5-linux",
+                "/app/bin/R CMD INSTALL *.Rpkg --library=jmv/build/R4.0.5-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
                 "cd jamovi-compiler && npm install --offline",
                 "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app --patch-version --skip-remotes"
             ],
