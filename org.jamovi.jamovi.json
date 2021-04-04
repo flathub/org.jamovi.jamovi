@@ -480,7 +480,7 @@
             "name": "env.conf",
             "buildsystem": "simple",
             "build-commands": [
-                "sed -E -e \"s|JAMOVI_SERVER_CMD=[A-Za-z0-9_/]+|JAMOVI_SERVER_CMD=/app/bin/python3|g\" -e \"s|R_HOME=.*|R_HOME=$R_HOME|g\" -e \"s|R_LIBS=.*|R_LIBS=$R_HOME/library|g\" env.conf > /app/bin/env.conf"
+                "sed -E -e \"s|R_HOME=.*|R_HOME=$R_HOME|g\" -e \"s|R_LIBS=.*|R_LIBS=$R_HOME/library|g\" env.conf > /app/bin/env.conf"
             ],
             "sources":[
                 {
