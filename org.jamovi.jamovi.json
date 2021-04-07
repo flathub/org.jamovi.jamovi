@@ -522,13 +522,13 @@
             "name": "jmv",
             "buildsystem": "simple",
             "build-commands": [
+                "cd jamovi-compiler && npm install --offline",
                 "mkdir -p /app/lib/jamovi/modules",
                 "mkdir -p   jmv/build/R4.0.5-linux",
+                "/app/bin/R CMD INSTALL *.jmv.Rpkg --library=jmv/build/R4.0.5-linux   --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app --patch-version --skip-remotes",
                 "mkdir -p scatr/build/R4.0.5-linux",
-                "/app/bin/R CMD INSTALL *.jmv.Rpkg   --library=jmv/build/R4.0.5-linux   --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
                 "/app/bin/R CMD INSTALL *.scatr.Rpkg --library=scatr/build/R4.0.5-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
-                "cd jamovi-compiler && npm install --offline",
-                "./jamovi-compiler.sh --install jmv   --to /app/lib/jamovi/modules --home /app --patch-version --skip-remotes",
                 "./jamovi-compiler.sh --install scatr --to /app/lib/jamovi/modules --home /app"
             ],
             "build-options": {
