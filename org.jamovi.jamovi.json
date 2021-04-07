@@ -533,7 +533,8 @@
             ],
             "build-options": {
                 "env": {
-                    "npm_config_cache": "../npm-cache"
+                    "npm_config_cache": "../npm-cache",
+                    "R_LIBS": "/app/lib/jamovi/modules/jmv/R"
                 }
             },
             "sources": [
