@@ -529,7 +529,7 @@
                 "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app --patch-version --skip-remotes",
                 "mkdir -p scatr/build/R4.0.5-linux",
                 "/app/bin/R CMD INSTALL *.scatr.Rpkg --library=scatr/build/R4.0.5-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
-                "./jamovi-compiler.sh --debug --install scatr --to /app/lib/jamovi/modules --home /app"
+                "./jamovi-compiler.sh --install scatr --to /app/lib/jamovi/modules --home flatpak"
             ],
             "build-options": {
                 "env": {
