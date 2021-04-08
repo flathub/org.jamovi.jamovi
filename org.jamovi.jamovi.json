@@ -522,20 +522,25 @@
             "name": "jmv",
             "buildsystem": "simple",
             "build-commands": [
-                "mkdir -p /app/lib/jamovi/modules",
-                "mkdir -p jmv/build/R4.0.5-linux",
-                "/app/bin/R CMD INSTALL *.Rpkg --library=jmv/build/R4.0.5-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
                 "cd jamovi-compiler && npm install --offline",
-                "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app --patch-version --skip-remotes"
+                "mkdir -p /app/lib/jamovi/modules",
+                "mkdir -p   jmv/build/R4.0.5-linux",
+                "/app/bin/R CMD INSTALL *.jmv.Rpkg --library=jmv/build/R4.0.5-linux   --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app --patch-version --skip-remotes",
+                "mkdir -p scatr/build/R4.0.5-linux",
+                "/app/bin/R CMD INSTALL *.scatr.Rpkg --library=scatr/build/R4.0.5-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "./jamovi-compiler.sh --install scatr --to /app/lib/jamovi/modules --home /app --rlibs /app/lib/jamovi/modules/jmv/R"
             ],
             "build-options": {
                 "env": {
-                    "npm_config_cache": "../npm-cache"
+                    "npm_config_cache": "../npm-cache",
+                    "R_LIBS": "/app/lib/jamovi/modules/jmv/R"
                 }
             },
             "sources": [
                 "jmc-deps-sources.json",
                 "jmv-deps-sources.json",
+                "scatr-deps-sources.json",
                 "jamovi-source.json",
                 {
                     "type": "script",
