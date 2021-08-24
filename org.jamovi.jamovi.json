@@ -54,8 +54,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://dl.bintray.com/boostorg/release/1.66.0/source/boost_1_66_0.tar.bz2",
-                    "sha256": "5721818253e6a0989583192f96782c4a98eb6204965316df9f5ad75819225ca9"
+                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.76.0/source/boost_1_76_0.tar.bz2",
+                    "sha512": "5d68bed98c57e03b4cb2420d9b856e5f0669561a6142a4b0c9c8a58dc5b6b28e16ccbb16ac559c3a3198c45769a246bf996b96cb7b6a019dd15f05c2270e9429"
                 }
             ],
             "cleanup": [
@@ -497,16 +497,24 @@
                 "mkdir -p jmv/build/R4.0.5-linux",
                 "/app/bin/R CMD INSTALL *.Rpkg --library=jmv/build/R4.0.5-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
                 "cd jamovi-compiler && npm install --offline",
-                "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app --patch-version --skip-remotes"
+                "mkdir -p /app/lib/jamovi/modules",
+                "mkdir -p   jmv/build/R4.0.5-linux",
+                "/app/bin/R CMD INSTALL *.jmv.Rpkg --library=jmv/build/R4.0.5-linux   --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app --patch-version --skip-remotes",
+                "mkdir -p scatr/build/R4.0.5-linux",
+                "/app/bin/R CMD INSTALL *.scatr.Rpkg --library=scatr/build/R4.0.5-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "./jamovi-compiler.sh --install scatr --to /app/lib/jamovi/modules --home /app --rlibs /app/lib/jamovi/modules/jmv/R"
             ],
             "build-options": {
                 "env": {
-                    "npm_config_cache": "../npm-cache"
+                    "npm_config_cache": "../npm-cache",
+                    "R_LIBS": "/app/lib/jamovi/modules/jmv/R"
                 }
             },
             "sources": [
                 "jmc-deps-sources.json",
                 "jmv-deps-sources.json",
+                "scatr-deps-sources.json",
                 "jamovi-source.json",
                 {
                     "type": "script",

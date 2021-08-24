@@ -1,0 +1,20 @@
+[
+    {
+        "type": "archive",
+        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/lazyeval_0.2.2.tar.gz",
+        "sha512": "b1115386f76b14e9e718ff2234de1dcdd8d11f2f06b9490e901c0496a0780f96d543c6ccd6552791f1e004e379cdeeccec7c9075db9def639664bd9370ea889e",
+        "dest": "000_lazyeval.scatr.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/cowplot_1.1.1.tar.gz",
+        "sha512": "474be04bb4e828c67642aa62e5eb35640bfdf49da2411d94cb0f4f32098db18eebe026e8aa2b590d467f08bb2bcdbd809bf97a7cdc1d975a64632eb0fb90bd6b",
+        "dest": "001_cowplot.scatr.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/ggstance_0.3.5.tar.gz",
+        "sha512": "601515951bb7fdaa0b9c74d0f3310d330e9445f7086ca03935db6de375c3d411ff9365d1d036b7580d24c9f5d51509e4165f456bde7253749c09b831fe85df7e",
+        "dest": "002_ggstance.scatr.Rpkg"
+    }
+]
