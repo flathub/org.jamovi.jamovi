@@ -13,8 +13,14 @@
     },
     {
         "type": "archive",
+        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/plyr_1.8.6.tar.gz",
+        "sha512": "2c41e77b338055fbc500cf3c5e1f8b0e8339692eb18b63edceca92f4e4ba4b3930d718b59da79ab459230f4177de718a034069bbf42c1b0e47b97ba99dcacec7",
+        "dest": "002_plyr.scatr.Rpkg"
+    },
+    {
+        "type": "archive",
         "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/ggstance_0.3.5.tar.gz",
         "sha512": "601515951bb7fdaa0b9c74d0f3310d330e9445f7086ca03935db6de375c3d411ff9365d1d036b7580d24c9f5d51509e4165f456bde7253749c09b831fe85df7e",
-        "dest": "002_ggstance.scatr.Rpkg"
+        "dest": "003_ggstance.scatr.Rpkg"
     }
 ]
