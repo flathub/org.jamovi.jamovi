@@ -36,6 +36,67 @@
   </screenshots>
 
   <releases>
+    <release version="2.0.2" date="2021-09-12">
+      <description>
+        <ul>
+          <li>Fix to stacked dot plot in descriptives</li>
+          <li>Fix to Q-Q plot in RM ANOVA</li>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.0" date="2021-07-12">
+      <description>
+        <ul>
+          <li>Added the new variables tab</li>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.8.4" date="2021-06-09">
+      <description>
+        <ul>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.8.2" date="2021-05-17">
+      <description>
+        <ul>
+          <li>Fix to an interaction between output variables and filters</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.8.1" date="2021-04-19">
+      <description>
+        <ul>
+          <li>Descriptives - Added the option to transpose descriptives table</li>
+          <li>General improvements and bug-fixes</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.8.0" date="2021-04-08">
+      <description>
+        <ul>
+          <li>AN(C)OVA - Added saving of residuals</li>
+          <li>Linear regression - Added saving of residuals, predicted values, cook's distance</li>
+          <li>PCA - Added saving component scores</li>
+          <li>Reliability - Added saving mean, sum scores</li>
+          <li>Descriptives - Added confidence intervals</li>
+          <li>scatr it now installed with jamovi by default</li>
+          <li>Bumped the version of R to 4.0.5 (modules will need to be reinstalled)</li>
+          <li>Bumped MRAN snapshot to 2021-04-01</li>
+          <li>General improvements and bug-fixes</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.6.21" date="2021-03-23">
+      <description>
+        <ul>
+          <li>General improvements and bug-fixes</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.6.19" date="2021-03-22">
       <description>
         <ul>
