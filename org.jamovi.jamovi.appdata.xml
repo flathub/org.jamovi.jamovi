@@ -36,7 +36,16 @@
   </screenshots>
 
   <releases>
-    <release version="2.0" date="2021-07-12">
+    <release version="2.0.2" date="2021-09-12">
+      <description>
+        <ul>
+          <li>Fix to stacked dot plot in descriptives</li>
+          <li>Fix to Q-Q plot in RM ANOVA</li>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.0.0" date="2021-07-12">
       <description>
         <ul>
           <li>Added the new variables tab</li>
