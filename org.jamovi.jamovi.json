@@ -97,8 +97,8 @@
             "sources": [
                 {
                     "type":"archive",
-                    "url": "https://cran.r-project.org/src/base/R-4/R-4.1.1.tar.gz",
-                    "sha512":"8eef82c0321f53a6a737bb641c4401626682fd01fa21e497ed2b8d6291d94ada47cee46b258bb3052f1097fc087c72982b2625c80420c8fb230ba8fcd962f254"
+                    "url": "https://cran.r-project.org/src/base/R-4/R-4.1.2.tar.gz",
+                    "sha512":"657c7950a88f632f1bbb08dbd0b3fb485732a25d8bbcb8a7939a40b23c7a235fdb9b46c296acaa9f72eabebe96e270ecbdcd7970fc9d3a299e6687bea45f2d3f"
                 }
             ],
             "cleanup": [
@@ -495,11 +495,11 @@
             "build-commands": [
                 "cd jamovi-compiler && npm install --offline",
                 "mkdir -p /app/lib/jamovi/modules",
-                "mkdir -p   jmv/build/R4.1.1-linux",
-                "/app/bin/R CMD INSTALL *.jmv.Rpkg --library=jmv/build/R4.1.1-linux   --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "mkdir -p   jmv/build/R4.1.2-linux",
+                "/app/bin/R CMD INSTALL *.jmv.Rpkg --library=jmv/build/R4.1.2-linux   --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
                 "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app --patch-version --skip-remotes",
-                "mkdir -p scatr/build/R4.1.1-linux",
-                "/app/bin/R CMD INSTALL *.scatr.Rpkg --library=scatr/build/R4.1.1-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "mkdir -p scatr/build/R4.1.2-linux",
+                "/app/bin/R CMD INSTALL *.scatr.Rpkg --library=scatr/build/R4.1.2-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
                 "./jamovi-compiler.sh --install scatr --to /app/lib/jamovi/modules --home /app --rlibs /app/lib/jamovi/modules/jmv/R"
             ],
             "build-options": {
