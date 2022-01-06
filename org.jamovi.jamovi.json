@@ -163,8 +163,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://nodejs.org/dist/v10.16.0/node-v10.16.0.tar.xz",
-                    "sha512": "df197c7b929fe1e0acf0334dbeb45be4c0cfa3266f9ddb513eafffcd6405bc02cba2fcbd34a7a5bef2e45a1d61ef3734ca0afe7295904ed563744fe06751cc62"
+                    "url": "https://nodejs.org/dist/v16.13.1/node-v16.13.1.tar.gz",
+                    "sha512": "22865b221954fc7b691596ec62c7a6b048de964586de03e5208a443afa909bcbad9fca6c7e416e41a5fd4ec09bdd28cd60c5b1c951f7ea5b265616cc59255cb0"
                 }
             ],
             "cleanup": [
