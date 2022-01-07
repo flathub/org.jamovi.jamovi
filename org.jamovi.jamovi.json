@@ -457,7 +457,7 @@
             "buildsystem": "simple",
             "build-options": {
                 "env": {
-                    "npm_config_cache": "../npm-cache"
+                    "npm_config_cache": "../flatpak-node/npm-cache"
                 }
             },
             "build-commands": [
@@ -503,7 +503,7 @@
             ],
             "build-options": {
                 "env": {
-                    "npm_config_cache": "../npm-cache",
+                    "npm_config_cache": "../flatpak-node/npm-cache",
                     "R_LIBS": "/app/lib/jamovi/modules/jmv/R"
                 }
             },
