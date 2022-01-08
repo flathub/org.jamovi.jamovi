@@ -496,6 +496,7 @@
                 "mkdir -p /app/lib/jamovi/modules",
                 "mkdir -p   jmv/build/R4.1.2-linux",
                 "/app/bin/R CMD INSTALL *.jmv.Rpkg --library=jmv/build/R4.1.2-linux   --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "./jamovi-compiler.sh --i18n jmv --update",
                 "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app --patch-version --skip-remotes",
                 "mkdir -p scatr/build/R4.1.2-linux",
                 "/app/bin/R CMD INSTALL *.scatr.Rpkg --library=scatr/build/R4.1.2-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
@@ -531,6 +532,17 @@
                     "--rpath=/app/lib/R/lib"
                 ]
             },
+            "sources":[
+                "jamovi-source.json"
+            ]
+        },
+        {
+            "name": "jamovi-i18n",
+            "buildsystem": "simple",
+            "build-commands": [
+                "mkdir -p /usr/lib/jamovi/i18n/json",
+                "node i18n/index.js --build i18n/src --dest /usr/lib/jamovi/i18n/json"
+            ],
             "sources":[
                 "jamovi-source.json"
             ]
