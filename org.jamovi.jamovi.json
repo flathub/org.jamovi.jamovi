@@ -402,7 +402,7 @@
             "buildsystem": "simple",
             "build-options": {
                 "env": {
-                    "npm_config_cache": "../npm-cache"
+                    "npm_config_cache": "../flatpak-node/npm-cache"
                 }
             },
             "build-commands": [
