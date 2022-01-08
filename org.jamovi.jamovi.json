@@ -540,8 +540,8 @@
             "name": "jamovi-i18n",
             "buildsystem": "simple",
             "build-commands": [
-                "mkdir -p /usr/lib/jamovi/i18n/json",
-                "node i18n/index.js --build i18n/src --dest /usr/lib/jamovi/i18n/json"
+                "mkdir -p /app/lib/jamovi/i18n/json",
+                "node i18n/index.js --build i18n/src --dest /app/lib/jamovi/i18n/json"
             ],
             "sources":[
                 "jamovi-source.json"
