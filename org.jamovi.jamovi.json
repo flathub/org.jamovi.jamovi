@@ -539,11 +539,18 @@
         {
             "name": "jamovi-i18n",
             "buildsystem": "simple",
+            "build-options": {
+                "env": {
+                    "npm_config_cache": "../flatpak-node/npm-cache"
+                }
+            },
             "build-commands": [
                 "mkdir -p /app/lib/jamovi/i18n/json",
-                "node i18n/index.js --build i18n/src --dest /app/lib/jamovi/i18n/json"
+                "cd i18n && npm install --offline",
+                "cd i18n && node index.js --build src --dest /app/lib/jamovi/i18n/json"
             ],
             "sources":[
+                "i18n-deps-sources.json",
                 "jamovi-source.json"
             ]
         },
