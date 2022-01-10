@@ -250,7 +250,8 @@
                 "cp *.dat /app/bin",
                 "cp *.pak /app/bin",
                 "cp electron /app/bin/",
-                "cp -r resources/ /app/bin/"
+                "cp -r resources/ /app/bin/",
+                "cp -r locales/   /app/bin/"
             ],
             "sources": [
                 {
@@ -272,7 +273,8 @@
                 "cp *.dat /app/bin",
                 "cp *.pak /app/bin",
                 "cp electron /app/bin/",
-                "cp -r resources/ /app/bin/"
+                "cp -r resources/ /app/bin/",
+                "cp -r locales/   /app/bin/"
             ],
             "sources": [
                 {
