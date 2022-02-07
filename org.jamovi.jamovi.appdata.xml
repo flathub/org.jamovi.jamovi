@@ -36,6 +36,14 @@
   </screenshots>
 
   <releases>
+    <release version="2.3" date="2022-02-07">
+      <description>
+        <ul>
+          <li>Added translations</li>
+          <li>EFA: added saving of factor scores</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.0.2" date="2021-09-12">
       <description>
         <ul>

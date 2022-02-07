@@ -97,8 +97,8 @@
             "sources": [
                 {
                     "type":"archive",
-                    "url": "https://cran.r-project.org/src/base/R-4/R-4.1.1.tar.gz",
-                    "sha512":"8eef82c0321f53a6a737bb641c4401626682fd01fa21e497ed2b8d6291d94ada47cee46b258bb3052f1097fc087c72982b2625c80420c8fb230ba8fcd962f254"
+                    "url": "https://cran.r-project.org/src/base/R-4/R-4.1.2.tar.gz",
+                    "sha512":"657c7950a88f632f1bbb08dbd0b3fb485732a25d8bbcb8a7939a40b23c7a235fdb9b46c296acaa9f72eabebe96e270ecbdcd7970fc9d3a299e6687bea45f2d3f"
                 }
             ],
             "cleanup": [
@@ -163,8 +163,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://nodejs.org/dist/v10.16.0/node-v10.16.0.tar.xz",
-                    "sha512": "df197c7b929fe1e0acf0334dbeb45be4c0cfa3266f9ddb513eafffcd6405bc02cba2fcbd34a7a5bef2e45a1d61ef3734ca0afe7295904ed563744fe06751cc62"
+                    "url": "https://nodejs.org/download/release/v14.18.2/node-v14.18.2.tar.xz",
+                    "sha512": "9179321e09e91ae68e8833b57fcd8e76aef11546cb9e75a95dc80480513fef46211f308138c10653a050decc687bb31d7975adb388654bc64d41be625fc2e76b"
                 }
             ],
             "cleanup": [
@@ -250,7 +250,8 @@
                 "cp *.dat /app/bin",
                 "cp *.pak /app/bin",
                 "cp electron /app/bin/",
-                "cp -r resources/ /app/bin/"
+                "cp -r resources/ /app/bin/",
+                "cp -r locales/   /app/bin/"
             ],
             "sources": [
                 {
@@ -272,7 +273,8 @@
                 "cp *.dat /app/bin",
                 "cp *.pak /app/bin",
                 "cp electron /app/bin/",
-                "cp -r resources/ /app/bin/"
+                "cp -r resources/ /app/bin/",
+                "cp -r locales/   /app/bin/"
             ],
             "sources": [
                 {
@@ -402,7 +404,7 @@
             "buildsystem": "simple",
             "build-options": {
                 "env": {
-                    "npm_config_cache": "../npm-cache"
+                    "npm_config_cache": "../flatpak-node/npm-cache"
                 }
             },
             "build-commands": [
@@ -446,7 +448,6 @@
                 "cd readstat && python3 setup.py build_ext",
                 "cd readstat && python3 setup.py install --prefix=/app",
                 "mkdir -p /app/lib/jamovi",
-                "cp -r examples/ /app/lib/jamovi/",
                 "cp version /app/lib/jamovi/version"
             ],
             "sources":[
@@ -458,7 +459,7 @@
             "buildsystem": "simple",
             "build-options": {
                 "env": {
-                    "npm_config_cache": "../npm-cache"
+                    "npm_config_cache": "../flatpak-node/npm-cache"
                 }
             },
             "build-commands": [
@@ -495,16 +496,17 @@
             "build-commands": [
                 "cd jamovi-compiler && npm install --offline",
                 "mkdir -p /app/lib/jamovi/modules",
-                "mkdir -p   jmv/build/R4.1.1-linux",
-                "/app/bin/R CMD INSTALL *.jmv.Rpkg --library=jmv/build/R4.1.1-linux   --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "mkdir -p   jmv/build/R4.1.2-linux",
+                "/app/bin/R CMD INSTALL *.jmv.Rpkg --library=jmv/build/R4.1.2-linux   --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "./jamovi-compiler.sh --i18n jmv --update",
                 "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app --patch-version --skip-remotes",
-                "mkdir -p scatr/build/R4.1.1-linux",
-                "/app/bin/R CMD INSTALL *.scatr.Rpkg --library=scatr/build/R4.1.1-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "mkdir -p scatr/build/R4.1.2-linux",
+                "/app/bin/R CMD INSTALL *.scatr.Rpkg --library=scatr/build/R4.1.2-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
                 "./jamovi-compiler.sh --install scatr --to /app/lib/jamovi/modules --home /app --rlibs /app/lib/jamovi/modules/jmv/R"
             ],
             "build-options": {
                 "env": {
-                    "npm_config_cache": "../npm-cache",
+                    "npm_config_cache": "../flatpak-node/npm-cache",
                     "R_LIBS": "/app/lib/jamovi/modules/jmv/R"
                 }
             },
@@ -533,6 +535,24 @@
                 ]
             },
             "sources":[
+                "jamovi-source.json"
+            ]
+        },
+        {
+            "name": "jamovi-i18n",
+            "buildsystem": "simple",
+            "build-options": {
+                "env": {
+                    "npm_config_cache": "../flatpak-node/npm-cache"
+                }
+            },
+            "build-commands": [
+                "mkdir -p /app/lib/jamovi/i18n/json",
+                "cd i18n && npm install --offline",
+                "cd i18n && node index.js --build src --dest /app/lib/jamovi/i18n/json"
+            ],
+            "sources":[
+                "i18n-deps-sources.json",
                 "jamovi-source.json"
             ]
         },

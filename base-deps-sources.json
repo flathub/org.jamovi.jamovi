@@ -1,404 +1,374 @@
 [
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/R6_2.5.0.tar.gz",
-        "sha512": "09cfd4c5bde6ff46ec64622e81e24e944f325e720f6a65d476faca045505954e66a6a0efe9abeb9c88646c8071cda1c0267e325a342f00ee1933694d4d3a22c7",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/R6_2.5.1.tar.gz",
+        "sha512": "e479714066a1f37d39e7fec824492233b25086941678921d153fb3ab5fe8ec2ce0bf774eb491435e8d2da660daded0a97648672327d7a46af4dee0eb57d44d48",
         "dest": "000_R6.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/RColorBrewer_1.1-2.tar.gz",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/RColorBrewer_1.1-2.tar.gz",
         "sha512": "29eeecae274c57f2af3366d072fb6a61a1e0be64aae9393e10c7e92c3b98473b60b7042b532c49e0ce2f53e6dce1a728ddd6937bbc64cedcb3664a429c3e54da",
         "dest": "001_RColorBrewer.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/base64enc_0.1-3.tar.gz",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/base64enc_0.1-3.tar.gz",
         "sha512": "e486a4dd8ec8ec72285440c016e9e73d2e7f73dc864472ce7204bab15eb00f2cb26cf29c20dfb1e3087372aaaed961344dc84f691576c1ff64a58dc342341287",
         "dest": "002_base64enc.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/bitops_1.0-6.tar.gz",
-        "sha512": "0761883d2b0ff4cbb7908e4c1999f045a323c3094e0351e26e8bc9481c3922e60099fb7c3f2abf1e4b45b8a120e074d9d59678559fb4ab7d0ead59d07c6f2a2a",
-        "dest": "003_bitops.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/brio_1.1.3.tar.gz",
+        "sha512": "a3faca93f7b1e41c94e820ecfa2c44bde5552e3dfb75b588bdee1dd9a9c825fc3927d77b41865c9a1659aae53d25a56887ac02efa95d38d3d38f1b249dacbaaf",
+        "dest": "003_brio.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/brio_1.1.1.tar.gz",
-        "sha512": "81b3ffcb9fbb891341e19a899452300abe4e1e8139fbf3a45e905cfe8a5b02f108025b7e4d0699ceaa31e7e7f01daf97b02b3457f0036f0d34a743c0c3edba06",
-        "dest": "004_brio.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/cpp11_0.4.2.tar.gz",
+        "sha512": "078eff5924df78572fd50f443f4c04ca69a11b11a1a2986a2a20023ec05e5c0fcb3bcbad3a50873583e6637960925dc62e8afe2bdb6e3019cf2627ff50b0ff01",
+        "dest": "004_cpp11.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/cpp11_0.2.7.tar.gz",
-        "sha512": "8210a57823c00f4b5c6739f53d653e9d3fa422bcf771dcc3857c0bc12a602fd09079da308490af7c42fe561e734e94cfa327fe6e232b60769f06322487228c1e",
-        "dest": "005_cpp11.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/curl_4.3.2.tar.gz",
+        "sha512": "7b8e9b136f206733a3314a876de21bf7d52b9bcef1c8c399fc9b0e1983a12853da18bd7ce06959fdd83957cd3637a11fc9246154187427a3c6479101cc492322",
+        "dest": "005_curl.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/curl_4.3.tar.gz",
-        "sha512": "666a1fd209587c4fb051d8c60c57f7c2e365216a7dd8d7f0d520c211c8f9790235ff77b7a1799d00380e755f9d520000ae7d2ad74394b8acae441458a5c73022",
-        "dest": "006_curl.Rpkg"
-    },
-    {
-        "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/fansi_0.4.2.tar.gz",
-        "sha512": "5b6327e96e0febdb557fcad2a1ba7b91b229ab8d8fb22ff30ae24bd7850dee0b8bcdd66215df365873ed52e0d13736f7ad9219cc71de15ef25c6526fe84b3ce9",
-        "dest": "007_fansi.Rpkg"
-    },
-    {
-        "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/farver_2.1.0.tar.gz",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/farver_2.1.0.tar.gz",
         "sha512": "a89c77a971e831d2b203a011539f5e077d953432156eaff588e8b0cb57536dfaace1d98bd656b9b48eccddb2b1d03dc395e01ae670bde1b769b905bc17eb4129",
-        "dest": "008_farver.Rpkg"
+        "dest": "006_farver.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/highr_0.8.tar.gz",
-        "sha512": "3ca3bf64457fdb2f4b0122568dac969a33cc1cdeba437d29417c5bea4e8ed4b0ac43d6cf5ad1a4a75719beafc09dcbd31a6b57fd22142b096ce809c5d4c04ab5",
-        "dest": "009_highr.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/fastmap_1.1.0.tar.gz",
+        "sha512": "f61b777f3ac4bf0a5c778bc07bb09a0244955c8bc13a669225a0c70999182af4012af2d9a792f1d861f7b5394c631e1896bf7ac3f3866b0c96e7e33a5635fb87",
+        "dest": "007_fastmap.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/magrittr_2.0.1.tar.gz",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/magrittr_2.0.1.tar.gz",
         "sha512": "aa27f64ba09494a5afbe0263ec379c4a73110de45f43c6265437192c01c33a0df6dce98bd0ace021b2f380be84c040c7177b00c396842b3415d137e9e01896d2",
-        "dest": "010_magrittr.Rpkg"
+        "dest": "008_magrittr.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/praise_1.0.0.tar.gz",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/praise_1.0.0.tar.gz",
         "sha512": "6405e733884e95b165ed285e1a9f6470b76d96abdf3516292bdbacd562667ccc747d78b4abe96d7d512aeb10dde8c6db06d04cbe3e774bbcdb0fc529365bb0b8",
-        "dest": "011_praise.Rpkg"
+        "dest": "009_praise.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/prettyunits_1.1.1.tar.gz",
-        "sha512": "563feed049b4d6afda31ff162348a2d4467c49e3273c21937b049a7c4f47181a8bc278fa0b02acce014aefc98f9cddfdf8d65aa2960f63fb66dd1606d708c545",
-        "dest": "012_prettyunits.Rpkg"
-    },
-    {
-        "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/rprojroot_2.0.2.tar.gz",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/rprojroot_2.0.2.tar.gz",
         "sha512": "36f9bcf1435709eea2325e2a0f681782083ae158eaca485af5fb9871c9a3429e8a3a94c4dae1741905d37d8e9538d35d6588fa3e901ef60601de344282497629",
-        "dest": "013_rprojroot.Rpkg"
+        "dest": "010_rprojroot.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/rstudioapi_0.13.tar.gz",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/rstudioapi_0.13.tar.gz",
         "sha512": "608ad60d2b63e4e2c75a33431dd9a075b52d5ec3c8f7cff72e795a519d764a4e7abb7c949f61d3168183c33cc4ad0ed3f358f822fc20feb98d3cde7e92cee92c",
-        "dest": "014_rstudioapi.Rpkg"
+        "dest": "011_rstudioapi.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/utf8_1.2.1.tar.gz",
-        "sha512": "c91b1000366c44cea0956100cb0c5681466b9f4fd4511c8b4ebf6fb5d14bd71a49b1e4cb082a776af49de05e51c3deb0ba688a9bd740e5e722d41dd9b1eab282",
-        "dest": "015_utf8.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/utf8_1.2.2.tar.gz",
+        "sha512": "1928597fecd0c4da0498431df479406e427adbec88ecff95b51ed66913526fc29aabf5485c07c92b30b71e8addbde05070b29204a74d298a42ce8f1f326d10a3",
+        "dest": "012_utf8.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/viridisLite_0.3.0.tar.gz",
-        "sha512": "116b7a60fef5814e2c1f63d38f473168b11f869f8be888486e19727655a5297717a9b8f54dd123605ae6f02730aa95dc65f1e812bd20c7479a6a8b52e1ab6abf",
-        "dest": "016_viridisLite.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/viridisLite_0.4.0.tar.gz",
+        "sha512": "91fdaed822c6a0dca9e30b8e4baa0d53e751666d4ed743c41a9d76c5efa2370988fec2fda0d37bd8544bb8df543fc318c0ca5757518219237deea6cefe69c7a7",
+        "dest": "013_viridisLite.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/yaml_2.2.1.tar.gz",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/yaml_2.2.1.tar.gz",
         "sha512": "4a6054aba1355e1e658e5c8c56e2fe991ce650cc091c54d7041b094588eb2269a067a4b23e4030eb357f7a5a73638db10d0865a925bae660e0728098f73f66c1",
-        "dest": "017_yaml.Rpkg"
+        "dest": "014_yaml.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/RCurl_1.98-1.3.tar.gz",
-        "sha512": "26db97aefbe17fa58406d950af06814055f43b84c1924f600e4cc5c59882b058ff56c058917e3f70e86d0d260ac20c3b241bcd234f1b101e1619783a7acf2a04",
-        "dest": "018_RCurl.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/Rcpp_1.0.7.tar.gz",
+        "sha512": "77e980582836993a9521c1c03349ff0a801cf4ab7200264587ef85cc35b7db8c3edac53523167830619e7e7c5e14da55e96e612f60672ca9fe30852f915a3e5f",
+        "dest": "015_Rcpp.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/Rcpp_1.0.6.tar.gz",
-        "sha512": "eab225cfdd838e316824fe224e9822c01d09287251b89f3a83f03b5be294f6f3376f2cd2518f78a7bff57426247b62108dc7c60b89d78443172826fa24bf14cc",
-        "dest": "019_Rcpp.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/colorspace_2.0-2.tar.gz",
+        "sha512": "b2c6b24b9a6d05e284950689e64a1aa0d2405e5013ef8bf27ea6d2da936c6428ae2751d5324d812a90d4e71945dbe9d958c50c1eaabc8cc2fdd2f865d1ab9bfc",
+        "dest": "016_colorspace.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/assertthat_0.2.1.tar.gz",
-        "sha512": "e8dbcb9b7c638f7133dea70443debbf739d35df1eb5ef19d5ae2ad7e9669f06184af43477ee061e15d253b3fa32ec203dbe28a4585c2027d4e567c2eb2195337",
-        "dest": "020_assertthat.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/crayon_1.4.2.tar.gz",
+        "sha512": "8a64c5942471c247fe7c8b8c696ed473abd2a841e6afd9c259ad2a933844325f9e371613b151fdafc511d891071a0f768a468544c1bbce3ba0d86045078582b0",
+        "dest": "017_crayon.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/colorspace_2.0-0.tar.gz",
-        "sha512": "9f0b2c89afa5b9ca31004d6f2f11d51c298754ab4a1fba6e9637974f4bb38920b45221681fdc1eb206a8540c590d0036a9addeb1cbe2a868d10be80ada419610",
-        "dest": "021_colorspace.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/digest_0.6.29.tar.gz",
+        "sha512": "6e92db3b5f4e34c2ce7435ac5381ea5af8c7e07c34c25dad9aa27dbc7df13f578c61f632e5afa1f3009ef84131f601b47a92d3cd41fd96ddf3caee1560931f07",
+        "dest": "018_digest.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/crayon_1.4.1.tar.gz",
-        "sha512": "cb449c04c8ecf8e78d91a8deb0d0ebe2407e4c608f0d001448985aca0cf81f1a5371ea0e1c96cb598d947db4b3f5ad484c7b4f6457ff06cd9bfce3cbb45b483c",
-        "dest": "022_crayon.Rpkg"
-    },
-    {
-        "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/digest_0.6.27.tar.gz",
-        "sha512": "e97f2232d2bbebb2f5daf8f240a37ac9fae6d7ab57fc96c693fdca5436d8b9d1984ada5bd6f11c9683ae9096eda87db02d292f2d111b06af6f878f34bc46c639",
-        "dest": "023_digest.Rpkg"
-    },
-    {
-        "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/evaluate_0.14.tar.gz",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/evaluate_0.14.tar.gz",
         "sha512": "3a74a7fd9ce7d933a3070954c54ab36ca39b0fe5b90227ebaa7a35bff7642ce438240034f43f40f47e7d80788489ad6018fc5901dc7266df773fe380e16105a5",
-        "dest": "024_evaluate.Rpkg"
+        "dest": "019_evaluate.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/glue_1.4.2.tar.gz",
-        "sha512": "d4c43c95fedf881be2fbe0e406a282e9af30b741533b653cb3c84ead8952e971d94cb4b6a98df07551b17726630b426e6178296e1c146e6cf04e9a7bd6d0562c",
-        "dest": "025_glue.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/fansi_0.5.0.tar.gz",
+        "sha512": "cc2c52e5c122d4b99c5af47997ece264e90e7969e40c2f0acca694da8b6b3b6699fa53624ccfeb45e3dfcb3e789865e64e3b8a3c8ba8eac8bddeccb66bb835d4",
+        "dest": "020_fansi.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/gtable_0.3.0.tar.gz",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/glue_1.6.0.tar.gz",
+        "sha512": "88cf84effaddbedc45429998313bdecb4312c2bc0879a3b8dd1b345aeaa08b967c50f15c295a3e3257c6e41ff03f0773fc3c4bc4169dfbf295863089d63897b3",
+        "dest": "021_glue.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/gtable_0.3.0.tar.gz",
         "sha512": "20fa86874a286f5b49ca428040113cb94272df966dd8e0403648ecc76672d8680239fc8030ea803cf65c5baa3acf1698b068b7c51163fa7f27acc31242befc52",
-        "dest": "026_gtable.Rpkg"
+        "dest": "022_gtable.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/isoband_0.2.4.tar.gz",
-        "sha512": "8d83afd3b5cecc33721e52b9241fd7cb1fde6b8d9e35da6ca8afbda63e603f71d4208fdb22777d6a992bf26eb66680d85d44ad267cdf89a2a6007afbe2ee8cde",
-        "dest": "027_isoband.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/isoband_0.2.5.tar.gz",
+        "sha512": "2cf3c9c5c176bc5fa9f6db4d0ef1ad49391473b01d810afeb1e26f67bdbcad13bd903a23ae438fd5f3dd579c51b0e5b09b4791e8e9b9a051b03c3c76beb7f4af",
+        "dest": "023_isoband.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/jsonlite_1.7.2.tar.gz",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/jsonlite_1.7.2.tar.gz",
         "sha512": "7156958ea4666440161c6d91a7bc988b674b06299aa3acae97cdedbe597353fa38ffcd276934cf7d8080ce560e7265db3ddd90c7a437cc44cc30756640023ed1",
-        "dest": "028_jsonlite.Rpkg"
+        "dest": "024_jsonlite.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/labeling_0.4.2.tar.gz",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/labeling_0.4.2.tar.gz",
         "sha512": "e61b544dd22e35e9a55123045c9bd4fe6105619e6413462f89a64cbf626749d52465b857cf4142c4f1502e37ad775949825a29c4864846ec84de8ab49edadbee",
-        "dest": "029_labeling.Rpkg"
+        "dest": "025_labeling.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/mime_0.10.tar.gz",
-        "sha512": "6c5401b11e7a480744ef21db51a3afd49d4a5dda1440ee2f8aba95e90b3ebdc596bfeec993b72b953bd99cdae37b16f031e4f6e54e74ded7d78c810eb29812cd",
-        "dest": "030_mime.Rpkg"
-    },
-    {
-        "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/pkgconfig_2.0.3.tar.gz",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/pkgconfig_2.0.3.tar.gz",
         "sha512": "bfc5d0bf707ed6d13348d9c01f9470428fc2f020e72d0122a3356548bbebe4d8bd2b288dabd2ec90069935622b2df842f57a8fe9b67b51c01e7c7029921fcfb9",
-        "dest": "031_pkgconfig.Rpkg"
+        "dest": "026_pkgconfig.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/ps_1.6.0.tar.gz",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/ps_1.6.0.tar.gz",
         "sha512": "c5110e86ea72a3c1aff4d93fbcb630b00d9b59e49271530327dfa8f1f7f88b9caab909b76d1638f77518292bec438412961375035e156b3ceebe6fed381bae45",
-        "dest": "032_ps.Rpkg"
+        "dest": "027_ps.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/remotes_2.2.0.tar.gz",
-        "sha512": "b0b4e880901870f990c69a46d08590162cbc9c94fe8875eee5b18d263fc9950b5c739e304e7f399d4febb979f1d55b6268a7588f93df91b060048fd6bd7fabe4",
-        "dest": "033_remotes.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/remotes_2.4.2.tar.gz",
+        "sha512": "b90afc95e2d0f290956af523ad1ebb036a2171d70d286b3292557d292af425d0d05dea9053a2d22b9a7621ebb430b2fcc360d864ca8a6c5d427e5bce931ffee2",
+        "dest": "028_remotes.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/rlang_0.4.10.tar.gz",
-        "sha512": "f251217a448c484941d34edf5cb0964ab34f552c303ad3793084c03e57e4b6024c32a810644d3b2ba9d3b989b850b676ed5a89376d14507bbd2365feb4c7db2d",
-        "dest": "034_rlang.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/rlang_0.4.12.tar.gz",
+        "sha512": "86e5efa4f7b4f707993c0dbba9ce9a2d84f0d3cfe07b4a729b7830b5fdb5897693f179285cb8522d01a1882886b4155c0d5734c267bf4decbe83fa83d14069b0",
+        "dest": "029_rlang.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/stringi_1.5.3.tar.gz",
-        "sha512": "9a473ad0bc00c24815ede79221f8e645957936ec40a698e8784fccdde27ce4eac3603628f9ddd120bf8510157247570c7f65e7a15307ba5b6ca4b73a59c93f3d",
-        "dest": "035_stringi.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/stringi_1.7.6.tar.gz",
+        "sha512": "fe130971ae1a546d853237b751ecc5ef51ca17efba0ce9fe159d5f53daa542c6c87680b428e6df880cbce71ce265f068b6a017e5c8ed2b149a4b39185212a269",
+        "dest": "030_stringi.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/systemfonts_1.0.1.tar.gz",
-        "sha512": "513f6cc0d57c8ed9258c76f75862b8ab2f95ddb16fe342f37da509d527da66a90da19657329987d77de07d63481e431bdbd72c3f32e379472c9a4a3033e95366",
-        "dest": "036_systemfonts.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/systemfonts_1.0.3.tar.gz",
+        "sha512": "e415a0d0f9083c3de379425cf77bca96992ec053cd61e9f5ac73c0d9a66eb038ffdcd9319ef34df7d174693ffa22bb53f8be8c3d22d1da38ff8383a191b32bfd",
+        "dest": "031_systemfonts.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/withr_2.4.1.tar.gz",
-        "sha512": "e115675b7cc2eaae9148bc5bdf4e711c4bca3c34c78c4bdef2f520ba06240a217c831ca590c5b2479bd799b2c4e32ccb956632ed0b961117d3e26465d7b54f1a",
-        "dest": "037_withr.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/withr_2.4.3.tar.gz",
+        "sha512": "2f07c97c5781c4ef3dee02c33842f192af6638cb59899e2560bf8b89583a55ef6472212c78c388fb6021621b53b00b11d01bfef8ee57c7d7a6711acb1c3323ce",
+        "dest": "032_withr.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/xfun_0.22.tar.gz",
-        "sha512": "b767aad26072250474935353ee79d5197f08fe6d719d2328646b46922c08acb86b296b8306d85bb7645ddf53a776c0252190cf806361c4e396b21f00112f034e",
-        "dest": "038_xfun.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/xfun_0.29.tar.gz",
+        "sha512": "05fc0acacef2d7589f230610d0ceadd651eca9b620e93e0ae4e3fe8e6ed9b333c94e033da0a9a1e11828075603f1317b79ff222acd16136fdcd9068f96740962",
+        "dest": "033_xfun.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/RInside_0.2.16.tar.gz",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/RInside_0.2.16.tar.gz",
         "sha512": "367430d2243864532688aea17cabca45e9dfcaa357b5a19dfd8fa3c8878d0c38e55815feba00c27541e1a908507766bbe5a4b87274734fa1b66581da254fc215",
-        "dest": "039_RInside.Rpkg"
+        "dest": "034_RInside.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/RProtoBuf_0.4.17.tar.gz",
-        "sha512": "4112eb8e4776c966f1482cecfb2076561d0c9adbf3d60d39ab7d2a56ba1d180633aea3536ae7b29f2de9ff81e3bfb4b1f700a1eb977e58431b96f8fa75a7af24",
-        "dest": "040_RProtoBuf.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/RProtoBuf_0.4.18.tar.gz",
+        "sha512": "ef23d4c0fd0d01e175f07c4aa667f3597f3cf3140a3e249ca85244074a55f68ce18c5313f218671d432b6cae04179be3017994efd899ebd7a54b9fee56c2bcc0",
+        "dest": "035_RProtoBuf.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/cli_2.3.1.tar.gz",
-        "sha512": "37cbe182ae855f06b75dcad589b9bb35d44b2ea3acb8ffdbcb2a0b704168d8a72c72daaa5d2ca98f2cd0dc2f2def7de43760552edaafa1e21929e313f93247c8",
-        "dest": "041_cli.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/cli_3.1.0.tar.gz",
+        "sha512": "c6ac113e06664a3947bae1a67144779a95ad54bc18b7c6ece6405627d79592fd4e840b5efb41c63332c098dc57c2863341a8a1030256c1cd1135563487ced68d",
+        "dest": "036_cli.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/desc_1.3.0.tar.gz",
-        "sha512": "a478a5589732971c6255accbd12ed88ab030f3ee39cdc690f6c537dbaeb3937c1185146c2035435f103c323faf3fa1e593246c90d5d776fd78d29f40352351b4",
-        "dest": "042_desc.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/desc_1.4.0.tar.gz",
+        "sha512": "a902f03c481f881f3290e6b17ea25270620bedf3811e6b5762235f3ddc84cfd7c57c144e497754c6464b5e48e186942d56d07e8ae54c02ff0acd626ec0562a08",
+        "dest": "037_desc.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/diffobj_0.3.4.tar.gz",
-        "sha512": "b0c8e846615f3cd85092a806f99526d26235ca3b35e7c99d489dd112525ef7a2e955cecdc8dfeee5e3fabe8aa77212b2d5eeec28a4021a2a44f76f76038d5994",
-        "dest": "043_diffobj.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/diffobj_0.3.5.tar.gz",
+        "sha512": "8a35b44ca4d0488e63c2bca4ea95f89b603e2eafabbc374d582e8cd50bc84c2cdb58d5d27ffa14c3f547a67d2a4d3ab5834728e9a84b1c572a2cd846efae0b83",
+        "dest": "038_diffobj.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/ellipsis_0.3.1.tar.gz",
-        "sha512": "a8752e3cc52e13ec9503eeb19956ab604a6d1588b892501a14493697dc829507b5cdd64a361de4469c37420c0ba85cde44ca7a24c5e016b9dfc817d5666fe328",
-        "dest": "044_ellipsis.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/ellipsis_0.3.2.tar.gz",
+        "sha512": "31017bd6d3dc54629d29d8743a9a582894b54bfe92362d4ed6959afd5383368aac19cd5b21a2a390b82e8130800aca035b501945527af964cce1fe8e420e5736",
+        "dest": "039_ellipsis.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/htmltools_0.5.1.1.tar.gz",
-        "sha512": "45414e7d71a1d554f89086fbac9938c1cfd299b4480ee678abd86571af84b53acfa021bdd5d2c40194f4acf1163787e2b7539ebe1d1abf7eea57297cca7888b8",
-        "dest": "045_htmltools.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/highr_0.9.tar.gz",
+        "sha512": "5a3add535dc78c8cfd50407bf5f7e63746a8af7efa30cf2b54f9b15bfa533d922ecc153ebdaa07c70baadf7ee633d2fba7aba38e3e93b923c908396bc1c1694e",
+        "dest": "040_highr.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/lifecycle_1.0.0.tar.gz",
-        "sha512": "603e1889c41b970a10956aff5b547111bd0166de7c6721419d2ea1667ff36202803faa9a0913710993d15e4713227ae8d9801ab26b0f2e54b06d44838de495a4",
-        "dest": "046_lifecycle.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/htmltools_0.5.2.tar.gz",
+        "sha512": "10d605439621d4ae46a6b10580ddcbdbb4dc52c9b50f3d8a7c0a1ca8f86087ad4949efdaf7e445fd752ad4d58e2601e1fc7f262f9f0a8760ea883aac3cb7698c",
+        "dest": "041_htmltools.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/markdown_1.1.tar.gz",
-        "sha512": "d53da9b7d184154b866e85cad33f1ba836656bca4007486190c1767b7a79f003b86f34ee66c7349c96372c63c5b6762ea00dd5efb731d9b5e9f2aebddeb9b7da",
-        "dest": "047_markdown.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/lifecycle_1.0.1.tar.gz",
+        "sha512": "63d3bda7086a50fc8e818e82f87d75e8850c60c8b10c54810ae62e9f20c944c23666df2be71d260f4c61c09218d9c8dca7d45d227799d851278079e4d9954f87",
+        "dest": "042_lifecycle.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/munsell_0.5.0.tar.gz",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/munsell_0.5.0.tar.gz",
         "sha512": "12a66c2406bf5aecec52a504549e7beeaff67fb67aab9950c24e9e6300b458cf541c818630814433229c1b406a2830a32dc21e10cabcdb4429245d85ba96f8de",
-        "dest": "048_munsell.Rpkg"
+        "dest": "043_munsell.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/processx_3.5.0.tar.gz",
-        "sha512": "8ed38e9a7ae14038ab55dbd7c2ac774b2bc30f0d341a1f8f0e9f7ec47fce4c2f01d41aa1f9f13aa29c58cd147f382a225dbb883fc85bc02102e1a8084b13e806",
-        "dest": "049_processx.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/processx_3.5.2.tar.gz",
+        "sha512": "1f7bcbc6acbb28e34286525e4b43979afec077f8ace823516ed8779cbae75f6252363aa4d722e6fad3049f8835190700b4abe094188ccb68ce6436bfa7ad0c7b",
+        "dest": "044_processx.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/stringr_1.4.0.tar.gz",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/stringr_1.4.0.tar.gz",
         "sha512": "c72f150037a5ff55d9d067aef254a37a81cdaab8177b85cc88ba60610e1cfc0d04f0246666ba1a6e2d435e86fcb8cc589d872e24daac65c8faab7c71909b0a99",
-        "dest": "050_stringr.Rpkg"
+        "dest": "045_stringr.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/textshaping_0.3.3.tar.gz",
-        "sha512": "c8995bab746dcfbe955cc7c60b68437241a5bfc6a73868f7d75286d56b894fef28bc1d3a79e4797ef269f0bf0d89f1da0c7147b19318736e59dd226137c4aec4",
-        "dest": "051_textshaping.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/textshaping_0.3.6.tar.gz",
+        "sha512": "191e3c467f7a27dc7f1df3c7aa01ebc19314b72787493e2ebc5e2b5d3a76d825c4155d69a1d119a97f8076cd525fdf4453e3227feb7b8e5d049ea58b8ebf5847",
+        "dest": "046_textshaping.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/tinytex_0.31.tar.gz",
-        "sha512": "a9123c6a33c4d360c00ae1f9aed19b4869bee18e49ad95441f7ea543d7f10744eca1c7f271b00c5c6d1bdbb85463439e4e1a75ba5767a1e8bf2843e7e9eb3cee",
-        "dest": "052_tinytex.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/tinytex_0.36.tar.gz",
+        "sha512": "ed1b89cf56bbab8e3ac33d4db30400d63133b27eb4faa61c7edcc1d5301c83e70fcb25b205e9befb6724cd873134145e50ac7304447284f7f89f9280118ef8b8",
+        "dest": "047_tinytex.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/callr_3.6.0.tar.gz",
-        "sha512": "eb25cbf50f6e1a39295c39d88e01cd76ad6fca977977ff4d8db85517d8b56d452ee475ec7e139e7ac75dea3dd05646b5fb22d8993af96e18a4fb7c89f075c05d",
-        "dest": "053_callr.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/callr_3.7.0.tar.gz",
+        "sha512": "bca18993e498ceb0bc1acb7978d84fc105831ff0350237d5b039a005e4f87add6bdf501bfa544c4f2f292b10bacfa3a14cc4af64aae518ab31542e92d8620bef",
+        "dest": "048_callr.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/knitr_1.31.tar.gz",
-        "sha512": "b02c769df3a5958bfe934a538a2d8d8a95faed69ca9bc9dd2588e88cb6c29d5ab76a1503bce0bbcd11dd7aba20874226e25004023d4ea7b718651ddae588557a",
-        "dest": "054_knitr.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/jquerylib_0.1.4.tar.gz",
+        "sha512": "42434815ef9faaa7fe7da8c1314ba03c8e454e9bc47d617b1800086d3719fefa9a65d996c08ae3fc652178de30c1630ab9e27af8767663b1494a2f5717be4ff4",
+        "dest": "049_jquerylib.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/ragg_1.1.2.tar.gz",
-        "sha512": "4f7433b9b98df5a53e87d1890aa40a221b1b91bdd551d9b43710dfb7a69062a78cc6e4ccc32fe673333e6055c26d2d97723dac8952accaf00ded732172e3ece1",
-        "dest": "055_ragg.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/knitr_1.37.tar.gz",
+        "sha512": "ad4adeac96cf1b14b0d37ff584220a40d5685545d98970d0660e22f0630c279a34257afba87a003fa204e2c6e7f65c515600fecb205eafa90c71a2e0b6636865",
+        "dest": "050_knitr.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/scales_1.1.1.tar.gz",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/pkgload_1.2.4.tar.gz",
+        "sha512": "5cc6c790c3fd77e938d5aacb841a2a416666ae8fdee09e5eefb54bd87fac1c912beecf8f3239f1dc3258103f90c2e4d5fcb8f27402a60fe280da70bb99892661",
+        "dest": "051_pkgload.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/ragg_1.2.1.tar.gz",
+        "sha512": "bc542a2b636dd8cb08e8b6d61e5dbece7d5601f8018805e3b9d7e2841944fcfcadd51bb738b89f536a84c301bf5f798c4544b1377fff10aaf8122d1a1fc4ac73",
+        "dest": "052_ragg.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/scales_1.1.1.tar.gz",
         "sha512": "5e0eb71d0122e94577243747a8bf12dffcfab7a466bee7ae8bcd92cc17e188fdb617d0ab7a60a4728a2a27b5f8953684b2eb43bee22973de2ff708f8c8ad855d",
-        "dest": "056_scales.Rpkg"
+        "dest": "053_scales.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/vctrs_0.3.7.tar.gz",
-        "sha512": "6474585edab12d58ca9abe612e71148d9d6d3f7f32250645e0ffc463fc3a9007ccbfe8c7b7a6a752dab7f382490a15889cbe0e433e2a4d51ec659c54b37681f7",
-        "dest": "057_vctrs.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/vctrs_0.3.8.tar.gz",
+        "sha512": "f5162fa4641779fc7cd0f77efb1d83efc01af0ba13d910337531980e2fa93abe6ce03f23a9a51db4f506faf716cc3fac820b91abac3e3282bc9cb73038fc5787",
+        "dest": "054_vctrs.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/pillar_1.5.1.tar.gz",
-        "sha512": "a7dbcfa659506a10b03859d48ee3cabe1fea1874c82d0cecdf246f4a1de5aa4d24949ea5998d52fa172f296870960f572000c3f9784d1a073622f6f5d497befe",
-        "dest": "058_pillar.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/pillar_1.6.4.tar.gz",
+        "sha512": "f61fe8b1496590145d7070c9fe582c07f697049b20a284e00f6691bbb6aadb0b2234fab3c02203b121efe03d977a6505545dd0563ab0c8e41eb5cbc36175ff2c",
+        "dest": "055_pillar.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/pkgbuild_1.2.0.tar.gz",
-        "sha512": "f94f924ec6cca5cd61a9bbffdbc09ba3a7c48cd3300223900f8d9a5d4bd24d288be61e4d03a50f72a7c06297d01e276b1164279cd6c6cb0add9ebed20fec456c",
-        "dest": "059_pkgbuild.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/rmarkdown_2.11.tar.gz",
+        "sha512": "3f62f5264d22dc2b9eb61636c0633d980e7669f20f5f21e1e792792faf34c4ac6b31329cea9d8a210f341655f1710299517478d1df0f44858eb26f6fc02771d6",
+        "dest": "056_rmarkdown.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/rmarkdown_2.7.tar.gz",
-        "sha512": "df970286a1ca24b5d10d06d4743b7487314e63ec115a60b15aaefbc9b39f5e942d6ac1b3d1beda7718ea53ec26c4c8e9549ef323a8de5ff1c05d34ab3da1ee41",
-        "dest": "060_rmarkdown.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/tibble_3.1.6.tar.gz",
+        "sha512": "1d46d65607b5fdb1548ecfb040baabee55ff18b14009543e1140c907500932e1f9150371f922ba175015d4b73e2078b3e2d5f944d3a4bf696a06677230b1f193",
+        "dest": "057_tibble.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/pkgload_1.2.0.tar.gz",
-        "sha512": "437e1239b0c9b1222c04078f676b1a99b6872784200e74355181837d32deb6849cba23fae87fa106a55a487757c7ab876e581d3ea951c663af429afe7c6d327b",
-        "dest": "061_pkgload.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/ggplot2_3.3.5.tar.gz",
+        "sha512": "94ed976e48ddd08a2a840f3638bf7552cb05e5c588f362c1dffc57d903a222961516d28ab43f85f571f81e0fd12ecc7eb9690b2153d4eec2e358e2561e0c9c03",
+        "dest": "058_ggplot2.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/tibble_3.1.0.tar.gz",
-        "sha512": "13c695f671e958569fd3fe452e898c7ffe461a15235c06a549e65e393c5c205a6bfe948219f0b4c3e5d33db7f59d4da65bb09b44fa377f00d285d4bb10d83c38",
-        "dest": "062_tibble.Rpkg"
-    },
-    {
-        "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/ggplot2_3.3.3.tar.gz",
-        "sha512": "6234c2b606bda80b770927975b52c92f9eb7126dcb36889c1d58159c9c2312ff8469a1dd123065c10f77c1f83731285d9a5fdb6d31a1e595169021ece76d717d",
-        "dest": "063_ggplot2.Rpkg"
-    },
-    {
-        "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/rematch2_2.1.2.tar.gz",
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/rematch2_2.1.2.tar.gz",
         "sha512": "1267df1cfc4def1de163cec121728da2ea7ee66c035aecba1857b4ff77b858e0f9aadb34eedeef97a4ea2716a20f4b87941b7b12b2a921371796c5f80d8769bd",
-        "dest": "064_rematch2.Rpkg"
+        "dest": "059_rematch2.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/waldo_0.2.5.tar.gz",
-        "sha512": "b94540663ece80b62fb423b4016ad7e5a82dd6a6905a1f7a237d0c795fc0823dbb3eeb03db32885ead1d9d6d5e03ac1b90427e7f38556730207d3bf745159131",
-        "dest": "065_waldo.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/waldo_0.3.1.tar.gz",
+        "sha512": "3655f92013f87c7a34c36bdeaba225c7f0dd7b31703b018191ab3b665f93c46ec1a4f37c8b904aa80c344ee9e10fb905ef75bda935a309e0bc14a44fa2ab418f",
+        "dest": "060_waldo.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2021-04-01/src/contrib/testthat_3.0.2.tar.gz",
-        "sha512": "b6ce23dc72a7568722524435aae850831e8605edd22cc11aa6724cbdc830198ce8365d4bf5ebdcfbf739a7776ee80c069e0681b3e2f1d21cfc1bacfe201a5791",
-        "dest": "066_testthat.Rpkg"
+        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/testthat_3.1.1.tar.gz",
+        "sha512": "a59aa87f6a3fde1f206d5566c96eb680b68dacb7d976eaf07f84ea3d6e97f46fb8940fc49ddaaaf3241a0e168b071d4d2da1a2f055f3846a65bde3e0fc546e30",
+        "dest": "061_testthat.Rpkg"
     }
 ]
