@@ -464,7 +464,7 @@
             },
             "build-commands": [
                 "cd client && npm install --offline",
-                "cd client && npm run prepublish",
+                "cd client && npm run build",
                 "mkdir -p              /app/lib/jamovi/client",
                 "cp client/*.js        /app/lib/jamovi/client",
                 "cp client/*.html      /app/lib/jamovi/client",
