@@ -37,7 +37,6 @@
         "/bin/pip*",
         "/bin/python2*",
         "/lib/cmake",
-        "/lib/debug",
         "/lib/pkgconfig",
         "/lib/*.a",
         "/lib/*.la",
