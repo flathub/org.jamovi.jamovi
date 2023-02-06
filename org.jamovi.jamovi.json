@@ -464,12 +464,12 @@
             "build-commands": [
                 "cd client && npm install --offline",
                 "cd client && npm run build",
-                "mkdir -p              /app/lib/jamovi/client",
-                "cp client/*.js        /app/lib/jamovi/client",
-                "cp client/*.html      /app/lib/jamovi/client",
-                "cp client/*.css       /app/lib/jamovi/client",
-                "cp client/favicon.ico /app/lib/jamovi/client",
-                "cp -r client/assets   /app/lib/jamovi/client"
+                "mkdir -p                  /app/lib/jamovi/client",
+                "cp client/dist/*.js       /app/lib/jamovi/client",
+                "cp client/dist/*.html     /app/lib/jamovi/client",
+                "cp client/dist/*.css      /app/lib/jamovi/client",
+                "cp client/favicon.ico     /app/lib/jamovi/client",
+                "cp -r client/dist/assets  /app/lib/jamovi/client"
             ],
             "sources":[
                 "client-deps-sources.json",
