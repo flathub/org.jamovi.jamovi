@@ -41,10 +41,10 @@
     },
     {
         "type": "file",
-        "url": "https://github.com/jonathon-love/dialogs/archive/refs/tags/v1.tar.gz",
-        "sha512": "3fc23e4f510f55f4ef8dd206b0c0a3027b2a0d288c793906bfb7bce9ed23e6908d9b3933c977f65b23221867f335f8bb2e102361c1344fc3ddc35dfe11dd68b0",
-        "dest-filename": "3e4f510f55f4ef8dd206b0c0a3027b2a0d288c793906bfb7bce9ed23e6908d9b3933c977f65b23221867f335f8bb2e102361c1344fc3ddc35dfe11dd68b0",
-        "dest": "flatpak-node/npm-cache/_cacache/content-v2/sha512/3f/c2"
+        "url": "https://codeload.github.com/jonathon-love/dialogs/tar.gz/refs/tags/v1",
+        "sha512": "da13602f094b22c99fcc6ac51ae845cbd745592c81dd842787b12baa407d74654cde5601b7a0e3fe06f4914257026fd714b3550cb06a86c20a76e9ef7ff578f8",
+        "dest-filename": "602f094b22c99fcc6ac51ae845cbd745592c81dd842787b12baa407d74654cde5601b7a0e3fe06f4914257026fd714b3550cb06a86c20a76e9ef7ff578f8",
+        "dest": "flatpak-node/npm-cache/_cacache/content-v2/sha512/da/13"
     },
     {
         "type": "file",
@@ -5296,6 +5296,12 @@
     },
     {
         "type": "inline",
+        "contents": "2ca2a931271f61ddf81a58c660899be1a6664292\t{\"key\": \"make-fetch-happen:request-cache:https://codeload.github.com/jonathon-love/dialogs/tar.gz/refs/tags/v1\", \"integrity\": \"sha512-2hNgLwlLIsmfzGrFGuhFy9dFWSyB3YQnh7ErqkB9dGVM3lYBt6Dj/gb0kUJXAm/XFLNVDLBqhsIKdunvf/V4+A==\", \"time\": 0, \"size\": 21150, \"metadata\": {\"url\": \"https://codeload.github.com/jonathon-love/dialogs/tar.gz/refs/tags/v1\", \"reqHeaders\": {}, \"resHeaders\": {}}}",
+        "dest-filename": "40d3158a8fdac6a966f7e6662754ccbc77b4cc499fb6f1dba376b541780b",
+        "dest": "flatpak-node/npm-cache/_cacache/index-v5/b1/1f"
+    },
+    {
+        "type": "inline",
         "contents": "2cb9e461c8a51c85aefc088a133ea6345c50ebd3\t{\"key\": \"make-fetch-happen:request-cache:https://registry.npmjs.org/vue/-/vue-3.2.47.tgz\", \"integrity\": \"sha512-60188y/9Dc9WVrAZeUVSDxRQOZ+z+y5nO2ts9jWXSTkMvayiWxCWOWtBQoYjLeccfXkiiPZWAHcV+WTPhkqJHQ==\", \"time\": 0, \"size\": 652105, \"metadata\": {\"url\": \"https://registry.npmjs.org/vue/-/vue-3.2.47.tgz\", \"reqHeaders\": {}, \"resHeaders\": {}}}",
         "dest-filename": "70e29ad636b1941e36ebba126bf425a794051261fc113f150ebd6d01202a",
         "dest": "flatpak-node/npm-cache/_cacache/index-v5/a7/2b"
@@ -9445,12 +9451,6 @@
         "contents": "d07600ea5e51a70299a8952c0b59712b696144d5\t{\"key\": \"make-fetch-happen:request-cache:https://registry.npmjs.org/pseudomap\", \"integrity\": \"sha256-LANhUbODm/e2nwrD1vEOPG2wnV/jYvYT2ftr5HCSEqA=\", \"time\": 0, \"size\": 1412, \"metadata\": {\"url\": \"https://registry.npmjs.org/pseudomap\", \"reqHeaders\": {\"accept\": \"application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*\"}, \"resHeaders\": {}}}",
         "dest-filename": "75ec99de78ba00a682a7f7b6a87da2c1145ec4eff5565825004e427b9e42",
         "dest": "flatpak-node/npm-cache/_cacache/index-v5/6b/41"
-    },
-    {
-        "type": "inline",
-        "contents": "d090834e72ce0d82faaf5b6eb484c8f0cdf9f978\t{\"key\": \"make-fetch-happen:request-cache:https://github.com/jonathon-love/dialogs/archive/refs/tags/v1.tar.gz\", \"integrity\": \"sha512-P8I+T1EPVfTvjdIGsMCjAnsqDSiMeTkGv7e86e0j5pCNmzkzyXf2WyMiGGfzNfi7LhAjYcE0T8Pdw13+Ed1osA==\", \"time\": 0, \"size\": 21150, \"metadata\": {\"url\": \"https://github.com/jonathon-love/dialogs/archive/refs/tags/v1.tar.gz\", \"reqHeaders\": {}, \"resHeaders\": {}}}",
-        "dest-filename": "db09965b1ab90ec91db7bcae44916a3c6ce3b5cc40ab519d84f991a0ddf3",
-        "dest": "flatpak-node/npm-cache/_cacache/index-v5/ee/a1"
     },
     {
         "type": "inline",
