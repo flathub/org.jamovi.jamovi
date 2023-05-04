@@ -1,20 +1,20 @@
 [
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/lazyeval_0.2.2.tar.gz",
-        "sha512": "b1115386f76b14e9e718ff2234de1dcdd8d11f2f06b9490e901c0496a0780f96d543c6ccd6552791f1e004e379cdeeccec7c9075db9def639664bd9370ea889e",
+        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/lazyeval_0.2.2.tar.gz",
+        "sha512": "ff69538e70e2886ce3733ac1b6930de3605a0e1bae864589678f2e2d3e45ed69496f53aa88f9bc79dcb4cde23f93b3f1133e75f9ac668034591dca7b1ef69c07",
         "dest": "000_lazyeval.scatr.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/cowplot_1.1.1.tar.gz",
-        "sha512": "474be04bb4e828c67642aa62e5eb35640bfdf49da2411d94cb0f4f32098db18eebe026e8aa2b590d467f08bb2bcdbd809bf97a7cdc1d975a64632eb0fb90bd6b",
+        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/cowplot_1.1.1.tar.gz",
+        "sha512": "7767b5c2bc16551af9135741af13acc5c371e9e5b87bd08b8151be9962679dadab071a470217c844016bd7a42010fcc9868169cde29382b82c1b97918f9271d0",
         "dest": "001_cowplot.scatr.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://cran.microsoft.com/snapshot/2022-01-01/src/contrib/ggstance_0.3.5.tar.gz",
-        "sha512": "601515951bb7fdaa0b9c74d0f3310d330e9445f7086ca03935db6de375c3d411ff9365d1d036b7580d24c9f5d51509e4165f456bde7253749c09b831fe85df7e",
+        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/ggstance_0.3.6.tar.gz",
+        "sha512": "5dbf297bd9fab7760d98037bc11ad7c315ae6b57c5e6ae3a635370f5f04daff015eb9a1dd9b9d84bc722aa7c580db1bcc215d07a324736c793e7b1bd6e0016cf",
         "dest": "002_ggstance.scatr.Rpkg"
     }
 ]
