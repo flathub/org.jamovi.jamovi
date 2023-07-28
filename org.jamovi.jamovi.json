@@ -255,31 +255,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v11.3.0/electron-v11.3.0-linux-x64.zip",
-                    "sha512": "dfd2036149a219a777827ea9f46ca67606d0048bb600feccee07671e84910499536dfea16106f86c1d174a2d6094d9f24935f07ab23f3514bac13e875139b5d3",
-                    "strip-components": 0
-                }
-            ]
-        },
-        {
-            "name": "electron-i386",
-            "only-arches": [ "i386" ],
-            "buildsystem": "simple",
-            "build-commands": [
-                "mkdir -p /app/bin/resources",
-                "cp *.so  /app/bin",
-                "cp *.bin /app/bin",
-                "cp *.dat /app/bin",
-                "cp *.pak /app/bin",
-                "cp electron /app/bin/",
-                "cp -r resources/ /app/bin/",
-                "cp -r locales/   /app/bin/"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v11.3.0/electron-v11.3.0-linux-ia32.zip",
-                    "sha512": "e14a637a4a64e52ff21eed40dd31761e5e3e182371fbb166ae64da04064576df991bfe705d11768bc3a3a9250f02646aa6028e41332d4d55ff8377e1fddc0f10",
+                    "url": "https://github.com/electron/electron/releases/download/v25.3.2/electron-v25.3.2-linux-x64.zip",
+                    "sha512": "6a1af90665d67d5d7f94c491dc8fb68213a0d276127c54a130172d5009160ef1005258434dde62bc888189ac7ef57905e29d90842f38badf8ad423b09c37cece",
                     "strip-components": 0
                 }
             ]
@@ -300,8 +277,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v11.3.0/electron-v11.3.0-linux-armv7l.zip",
-                    "sha512": "457f4bcbf02bf00f64032e1efa9ee721bf454a8872ea8bbcdf1141f09bd5e7520a326ac6a6c17f3db5dcd524065e529aaeddfa23420722dd9e6ac489955e46e0",
+                    "url": "https://github.com/electron/electron/releases/download/v25.3.2/electron-v25.3.2-linux-armv7l.zip",
+                    "sha512": "2b31aca7727b77b2d35145730b8e07fe5c83088161310c3c3de24678d919838e2cf5481eb5f4125628f070a14f1d986cf8e9da84567a57f67cea08380e28bb54",
                     "strip-components": 0
                 }
             ]
@@ -322,8 +299,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v11.3.0/electron-v11.3.0-linux-arm64.zip",
-                    "sha512": "a2b12ddccb7602c2b20d5c521955126afc08ebe3dfa55b86fa020d74687913e9398084e77bf3a58adfa2d18f3d2592735f31c94095503ec4449002127feb99e2",
+                    "url": "https://github.com/electron/electron/releases/download/v25.3.2/electron-v25.3.2-linux-arm64.zip",
+                    "sha512": "24e06513df2357266ff3f169291eb12d2265f2cbc2c8509833389aea3e62d0f60da6295f3233bc5423e4fdcbc807e47ecabeadd50f332909b92b36593e18c72f",
                     "strip-components": 0
                 }
             ]
