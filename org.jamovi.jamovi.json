@@ -210,8 +210,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/82/a8/1e0f86ae3f13f7ce260e9f782764c16559917f24382c74edfb52149897de/numpy-1.20.2.zip",
-                    "sha512": "337a66d68c965da06f757a89b58d30b83ec0b2f3c7a3bb39496e5031e50fee6c4f2ec090202c3da9a20613864ea46d032ae75af1de5c33eebe515133ef37d40c"
+                    "url": "https://files.pythonhosted.org/packages/78/23/f78fd8311e0f710fe1d065d50b92ce0057fe877b8ed7fd41b28ad6865bfc/numpy-1.26.1.tar.gz",
+                    "sha256": "c8c6c72d4a9f831f328efb1312642a1cafafaa88981d9ab76368d50d07d93cbe"
                 }
             ]
         },
