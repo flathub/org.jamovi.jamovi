@@ -62,6 +62,25 @@
             ]
         },
         {
+            "name": "curl",
+            "buildsystem": "simple",
+            "build-commands": [
+                "./configure --with-openssl --prefix=/app"
+                "make"
+                "make install"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/curl/curl/releases/download/curl-8_4_0/curl-8.4.0.tar.gz",
+                    "sha512": "375d241effccde852cfba32aa61be406f6c6e8ef2773b48d57bfa1ff99fdf414dc08bdb6b3a65930e53b28e31246a4bc396c81054ae9c560a3bf58cca0ae78b0"
+                }
+            ],
+            "cleanup": [
+                "/include"
+            ]
+        },
+        {
             "name": "lapack",
             "buildsystem": "cmake",
             "builddir": true,
