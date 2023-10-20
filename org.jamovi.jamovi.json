@@ -1,9 +1,9 @@
 {
     "app-id": "org.jamovi.jamovi",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "22.08",
+    "runtime-version": "23.08",
     "base": "org.electronjs.Electron2.BaseApp",
-    "base-version": "22.08",
+    "base-version": "23.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "jamovi",
     "separate-locales": false,
@@ -55,6 +55,25 @@
                     "type": "archive",
                     "url": "https://boostorg.jfrog.io/artifactory/main/release/1.76.0/source/boost_1_76_0.tar.bz2",
                     "sha512": "5d68bed98c57e03b4cb2420d9b856e5f0669561a6142a4b0c9c8a58dc5b6b28e16ccbb16ac559c3a3198c45769a246bf996b96cb7b6a019dd15f05c2270e9429"
+                }
+            ],
+            "cleanup": [
+                "/include"
+            ]
+        },
+        {
+            "name": "curl",
+            "buildsystem": "simple",
+            "build-commands": [
+                "./configure --with-openssl --prefix=/app"
+                "make"
+                "make install"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/curl/curl/releases/download/curl-8_4_0/curl-8.4.0.tar.gz",
+                    "sha512": "375d241effccde852cfba32aa61be406f6c6e8ef2773b48d57bfa1ff99fdf414dc08bdb6b3a65930e53b28e31246a4bc396c81054ae9c560a3bf58cca0ae78b0"
                 }
             ],
             "cleanup": [
