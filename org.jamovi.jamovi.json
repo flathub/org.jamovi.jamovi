@@ -65,8 +65,8 @@
             "name": "curl",
             "buildsystem": "simple",
             "build-commands": [
-                "./configure --with-openssl --prefix=/app"
-                "make"
+                "./configure --with-openssl --prefix=/app",
+                "make",
                 "make install"
             ],
             "sources": [
