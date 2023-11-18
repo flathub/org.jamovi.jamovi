@@ -102,8 +102,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/94/75/05e1d69c61c4dfaf65ad12785cd18bedc1e0129976c55914d6aea59c7da8/setuptools-54.2.0.tar.gz",
-            "sha512": "b18cd075cf59b8648611eef1874de41199ede6ffe6d7f5047586c6ac8783fe18b9a4f537783e590e7aec127033f612b93925e92f039bd6416a609fcfb262e354"
+            "url": "https://files.pythonhosted.org/packages/ef/cc/93f7213b2ab5ed383f98ce8020e632ef256b406b8569606c3f160ed8e1c9/setuptools-68.2.2.tar.gz",
+            "sha256": "4ac1475276d2f1c48684874089fefcd83bd7162ddaafb81fac866ba0db282a87"
         },
         {
             "type": "file",
