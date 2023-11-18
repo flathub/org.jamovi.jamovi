@@ -72,8 +72,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/curl/curl/releases/download/curl-8_4_0/curl-8.4.0.tar.gz",
-                    "sha512": "375d241effccde852cfba32aa61be406f6c6e8ef2773b48d57bfa1ff99fdf414dc08bdb6b3a65930e53b28e31246a4bc396c81054ae9c560a3bf58cca0ae78b0"
+                    "url": "https://github.com/curl/curl/releases/download/curl-7_88_1/curl-7.88.1.tar.gz",
+                    "sha512": "67701d458548712bbfaa55f2ebefbf87cdbba01b7b1200f608b1c3af67e8dd8e243fa89f256446d217d658a5a1242331d8b0168ab600351e74ee0e2511e79dae"
                 }
             ],
             "cleanup": [
