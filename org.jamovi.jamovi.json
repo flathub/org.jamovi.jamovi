@@ -1,9 +1,9 @@
 {
     "app-id": "org.jamovi.jamovi",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "21.08",
+    "runtime-version": "23.08",
     "base": "org.electronjs.Electron2.BaseApp",
-    "base-version": "21.08",
+    "base-version": "23.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "jamovi",
     "separate-locales": false,
@@ -55,6 +55,25 @@
                     "type": "archive",
                     "url": "https://boostorg.jfrog.io/artifactory/main/release/1.76.0/source/boost_1_76_0.tar.bz2",
                     "sha512": "5d68bed98c57e03b4cb2420d9b856e5f0669561a6142a4b0c9c8a58dc5b6b28e16ccbb16ac559c3a3198c45769a246bf996b96cb7b6a019dd15f05c2270e9429"
+                }
+            ],
+            "cleanup": [
+                "/include"
+            ]
+        },
+        {
+            "name": "curl",
+            "buildsystem": "simple",
+            "build-commands": [
+                "./configure --with-openssl --prefix=/app",
+                "make",
+                "make install"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/curl/curl/releases/download/curl-7_88_1/curl-7.88.1.tar.gz",
+                    "sha512": "67701d458548712bbfaa55f2ebefbf87cdbba01b7b1200f608b1c3af67e8dd8e243fa89f256446d217d658a5a1242331d8b0168ab600351e74ee0e2511e79dae"
                 }
             ],
             "cleanup": [
@@ -210,8 +229,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/82/a8/1e0f86ae3f13f7ce260e9f782764c16559917f24382c74edfb52149897de/numpy-1.20.2.zip",
-                    "sha512": "337a66d68c965da06f757a89b58d30b83ec0b2f3c7a3bb39496e5031e50fee6c4f2ec090202c3da9a20613864ea46d032ae75af1de5c33eebe515133ef37d40c"
+                    "url": "https://files.pythonhosted.org/packages/78/23/f78fd8311e0f710fe1d065d50b92ce0057fe877b8ed7fd41b28ad6865bfc/numpy-1.26.1.tar.gz",
+                    "sha256": "c8c6c72d4a9f831f328efb1312642a1cafafaa88981d9ab76368d50d07d93cbe"
                 }
             ]
         },
