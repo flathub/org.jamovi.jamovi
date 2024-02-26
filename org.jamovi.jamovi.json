@@ -5,6 +5,7 @@
     "base": "org.electronjs.Electron2.BaseApp",
     "base-version": "23.08",
     "sdk": "org.freedesktop.Sdk",
+    "sdk-extensions": [ "org.freedesktop.Sdk.Extension.node18" ],
     "command": "jamovi",
     "separate-locales": false,
     "rename-desktop-file": "jamovi.desktop",
@@ -24,7 +25,8 @@
         "cxxflags": "-O2 -g",
         "env": {
             "R_HOME": "/app/lib/R"
-        }
+        },
+        "append-path": "/usr/lib/sdk/node18/bin"
     },
     "cleanup": [
         "/include",
@@ -131,25 +133,6 @@
                     "url": "https://github.com/nanomsg/nanomsg/archive/1.1.5.zip",
                     "sha512": "8fbdf275f6e4185bfeb24f4ad28094ce8e9b5798e8040d6ff16fd6df51b79c17f3fc36d2285e9e23baf86ff9c9fa1f9613b9abdae67cccb470878af90f1fe304"
                 }
-            ]
-        },
-        "shared-modules/python2.7/python-2.7.json",
-        {
-            "name": "nodejs",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://nodejs.org/download/release/v14.18.2/node-v14.18.2.tar.xz",
-                    "sha512": "9179321e09e91ae68e8833b57fcd8e76aef11546cb9e75a95dc80480513fef46211f308138c10653a050decc687bb31d7975adb388654bc64d41be625fc2e76b"
-                }
-            ],
-            "cleanup": [
-                "/include",
-                "/share",
-                "/lib/node_modules",
-                "/bin/node",
-                "/bin/npm",
-                "/bin/npx"
             ]
         },
         {
