@@ -44,24 +44,6 @@
     ],
     "modules":[
         {
-            "name": "boost",
-            "buildsystem": "simple",
-            "build-commands": [
-                "./bootstrap.sh --with-libraries=filesystem,system",
-                "./b2 -j4 install --prefix=/app"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.81.0/source/boost_1_81_0.tar.bz2",
-                    "sha512": "a04201e73da59f68fa02761b333c864a96ebaf268247b6b10cb19ed3d70ee9ad3da4c53123f2a7a4a9b9e1408793b51e1adbcc6fd09f60fecef3ca9522bb6b36"
-                }
-            ],
-            "cleanup": [
-                "/include"
-            ]
-        },
-        {
             "name": "lapack",
             "buildsystem": "cmake",
             "builddir": true,
@@ -130,6 +112,24 @@
                     "url": "https://mirror.freedif.org/GNU/gsl/gsl-2.6.tar.gz",
                     "sha512": "0be8240715f0b86aba2c63d9f12da4dba4719d4e350e9308d279e0dd3b2f0519ea26fd2e38a17f3e8cf43aacbaa2455207a7ca0d6c305f3b8725e8ece2250a74"
                 }
+            ]
+        },
+        {
+            "name": "boost",
+            "buildsystem": "simple",
+            "build-commands": [
+                "./bootstrap.sh --with-libraries=filesystem,system",
+                "./b2 -j4 install --prefix=/app"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.81.0/source/boost_1_81_0.tar.bz2",
+                    "sha512": "a04201e73da59f68fa02761b333c864a96ebaf268247b6b10cb19ed3d70ee9ad3da4c53123f2a7a4a9b9e1408793b51e1adbcc6fd09f60fecef3ca9522bb6b36"
+                }
+            ],
+            "cleanup": [
+                "/include"
             ]
         },
         {
