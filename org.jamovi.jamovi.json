@@ -53,8 +53,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.76.0/source/boost_1_76_0.tar.bz2",
-                    "sha512": "5d68bed98c57e03b4cb2420d9b856e5f0669561a6142a4b0c9c8a58dc5b6b28e16ccbb16ac559c3a3198c45769a246bf996b96cb7b6a019dd15f05c2270e9429"
+                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.81.0/source/boost_1_81_0.tar.bz2",
+                    "sha512": "a04201e73da59f68fa02761b333c864a96ebaf268247b6b10cb19ed3d70ee9ad3da4c53123f2a7a4a9b9e1408793b51e1adbcc6fd09f60fecef3ca9522bb6b36"
                 }
             ],
             "cleanup": [
