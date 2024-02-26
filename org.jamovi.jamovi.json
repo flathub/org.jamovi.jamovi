@@ -46,28 +46,6 @@
     ],
     "modules":[
         {
-            "name": "lapack",
-            "buildsystem": "cmake",
-            "builddir": true,
-            "config-opts": [
-                "-DCMAKE_INSTALL_PREFIX=/app",
-                "-DCMAKE_INSTALL_LIBDIR=lib",
-                "-DCMAKE_BUILD_TYPE=Release",
-                "-DBUILD_SHARED_LIBS=ON",
-                "-DBUILD_TESTING=OFF",
-                "-DLAPACKE=ON",
-                "-DCBLAS=ON"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/Reference-LAPACK/lapack/archive/refs/tags/v3.12.0.tar.gz",
-                    "sha512": "f8f3c733a0221be0b3f5618235408ac59cbd4e5f1c4eab5f509b831a6ec6a9ef14b8849aa6ea10810df1aff90186ca454d15e9438d1dd271c2449d42d3da9dda"
-                }
-            ],
-            "cleanup": [ "/lib/cmake" ]
-        },
-        {
             "name": "R",
             "config-opts": [
                 "--enable-R-shlib",
@@ -175,51 +153,6 @@
             ]
         },
         "python-deps.json",
-        {
-            "name": "python3-numpy",
-            "buildsystem": "simple",
-            "build-commands": [
-                "python3 setup.py build -j 0",
-                "python3 setup.py install --prefix=/app --root=/ --optimize=1"
-            ],
-            "build-options": {
-                "env": {
-                    "ATLAS": "None",
-                    "BLAS": "/app/lib",
-                    "LAPACK": "/app/lib"
-                }
-            },
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/82/a8/1e0f86ae3f13f7ce260e9f782764c16559917f24382c74edfb52149897de/numpy-1.20.2.zip",
-                    "sha512": "337a66d68c965da06f757a89b58d30b83ec0b2f3c7a3bb39496e5031e50fee6c4f2ec090202c3da9a20613864ea46d032ae75af1de5c33eebe515133ef37d40c"
-                }
-            ]
-        },
-        {
-            "name": "python3-scipy",
-            "buildsystem": "simple",
-            "build-commands": [
-                "python3 setup.py build -j 0",
-                "python3 setup.py install --prefix=/app --root=/ --optimize=1"
-            ],
-            "build-options": {
-                "env": {
-                    "ATLAS": "None",
-                    "BLAS": "/app/lib",
-                    "LAPACK": "/app/lib",
-                    "LDFLAGS": "-shared"
-                }
-            },
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/scipy/scipy/releases/download/v1.6.2/scipy-1.6.2.tar.xz",
-                    "sha512": "2253f257d5c55739a47759e039602dc542bd1a068c5883fd2a80a60bc7d3e8372d467d589ae2c83b9a847d0fb76c1fb841208213297db284f142fac98dd33b8e"
-                }
-            ]
-        },
         {
             "name": "electron-x86_64",
             "only-arches": [ "x86_64" ],
