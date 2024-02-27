@@ -46,6 +46,28 @@
     ],
     "modules":[
         {
+            "name": "lapack",
+            "buildsystem": "cmake",
+            "builddir": true,
+            "config-opts": [
+                "-DCMAKE_INSTALL_PREFIX=/app",
+                "-DCMAKE_INSTALL_LIBDIR=lib",
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DBUILD_SHARED_LIBS=ON",
+                "-DBUILD_TESTING=OFF",
+                "-DLAPACKE=ON",
+                "-DCBLAS=ON"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/Reference-LAPACK/lapack/archive/refs/tags/v3.12.0.tar.gz",
+                    "sha512": "f8f3c733a0221be0b3f5618235408ac59cbd4e5f1c4eab5f509b831a6ec6a9ef14b8849aa6ea10810df1aff90186ca454d15e9438d1dd271c2449d42d3da9dda"
+                }
+            ],
+            "cleanup": [ "/lib/cmake" ]
+        },
+        {
             "name": "R",
             "config-opts": [
                 "--enable-R-shlib",
@@ -88,7 +110,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mirror.freedif.org/GNU/gsl/gsl-2.6.tar.gz",
+                    "url": "https://ftp.gnu.org/gnu/gsl/gsl-2.6.tar.gz",
                     "sha512": "0be8240715f0b86aba2c63d9f12da4dba4719d4e350e9308d279e0dd3b2f0519ea26fd2e38a17f3e8cf43aacbaa2455207a7ca0d6c305f3b8725e8ece2250a74"
                 }
             ]
@@ -154,6 +176,58 @@
         },
         "python-deps.json",
         {
+            "name": "python3-numpy",
+            "buildsystem": "simple",
+            "build-commands": [
+                "python3 setup.py build -j 0",
+                "python3 setup.py install --prefix=/app --root=/ --optimize=1"
+            ],
+            "build-options": {
+                "env": {
+                    "ATLAS": "None",
+                    "BLAS": "/app/lib",
+                    "LAPACK": "/app/lib"
+                }
+            },
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/65/6e/09db70a523a96d25e115e71cc56a6f9031e7b8cd166c1ac8438307c14058/numpy-1.26.4.tar.gz",
+                    "sha256": "2a02aba9ed12e4ac4eb3ea9421c420301a0c6460d9830d74a9df87efa4912010"
+                }
+            ]
+        },
+        {
+            "name": "python3-scipy-x86_64",
+            "only-arches": [ "x86_64" ],
+            "buildsystem": "simple",
+            "build-commands": [
+                "python3 -m pip install scipy-1.12.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/d4/b8/7169935f9a2ea9e274ad8c21d6133d492079e6ebc3fc69a915c2375616b0/scipy-1.12.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+                    "sha256": "8b8066bce124ee5531d12a74b617d9ac0ea59245246410e19bca549656d9a40a"
+                }
+            ]
+        },
+        {
+            "name": "python3-scipy-aarch64",
+            "only-arches": [ "aarch64" ],
+            "buildsystem": "simple",
+            "build-commands": [
+                "python3 -m pip install scipy-1.12.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/e3/c5/d40abc1a857c1c6519e1a4e096d6aee86861eddac019fb736b6af8a58d25/scipy-1.12.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+                    "sha256": "c3003652496f6e7c387b1cf63f4bb720951cfa18907e998ea551e6de51a04467"
+                }
+            ]
+        },
+        {
             "name": "electron-x86_64",
             "only-arches": [ "x86_64" ],
             "buildsystem": "simple",
@@ -172,28 +246,6 @@
                     "type": "archive",
                     "url": "https://github.com/electron/electron/releases/download/v25.3.2/electron-v25.3.2-linux-x64.zip",
                     "sha512": "6a1af90665d67d5d7f94c491dc8fb68213a0d276127c54a130172d5009160ef1005258434dde62bc888189ac7ef57905e29d90842f38badf8ad423b09c37cece",
-                    "strip-components": 0
-                }
-            ]
-        },
-        {
-            "name": "electron-arm",
-            "only-arches": [ "arm" ],
-            "buildsystem": "simple",
-            "build-commands": [
-                "mkdir -p ${FLATPAK_DEST}/bin/resources",
-                "cp *.so  ${FLATPAK_DEST}/bin",
-                "cp *.bin ${FLATPAK_DEST}/bin",
-                "cp *.dat ${FLATPAK_DEST}/bin",
-                "cp *.pak ${FLATPAK_DEST}/bin",
-                "cp electron ${FLATPAK_DEST}/bin/",
-                "cp -r resources/ ${FLATPAK_DEST}/bin/"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v25.3.2/electron-v25.3.2-linux-armv7l.zip",
-                    "sha512": "2b31aca7727b77b2d35145730b8e07fe5c83088161310c3c3de24678d919838e2cf5481eb5f4125628f070a14f1d986cf8e9da84567a57f67cea08380e28bb54",
                     "strip-components": 0
                 }
             ]
@@ -282,6 +334,7 @@
             "name": "jmvcore",
             "buildsystem": "simple",
             "build-commands": [
+                "ls -la",
                 "/app/bin/R CMD INSTALL *.Rpkg  --no-docs --no-html --no-help --no-demo --no-multiarch",
                 "/app/bin/R CMD INSTALL jmvcore --no-docs --no-html --no-help --no-demo --no-multiarch"
             ],
