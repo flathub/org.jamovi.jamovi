@@ -46,26 +46,63 @@
     ],
     "modules":[
         {
-            "name": "lapack",
-            "buildsystem": "cmake",
-            "builddir": true,
-            "config-opts": [
-                "-DCMAKE_INSTALL_PREFIX=/app",
-                "-DCMAKE_INSTALL_LIBDIR=lib",
-                "-DCMAKE_BUILD_TYPE=Release",
-                "-DBUILD_SHARED_LIBS=ON",
-                "-DBUILD_TESTING=OFF",
-                "-DLAPACKE=ON",
-                "-DCBLAS=ON"
+            "name": "boost",
+            "buildsystem": "simple",
+            "build-commands": [
+                "./bootstrap.sh --with-libraries=filesystem,system",
+                "./b2 -j4 install --prefix=/app"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/Reference-LAPACK/lapack/archive/refs/tags/v3.12.0.tar.gz",
-                    "sha512": "f8f3c733a0221be0b3f5618235408ac59cbd4e5f1c4eab5f509b831a6ec6a9ef14b8849aa6ea10810df1aff90186ca454d15e9438d1dd271c2449d42d3da9dda"
+                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.81.0/source/boost_1_81_0.tar.bz2",
+                    "sha512": "a04201e73da59f68fa02761b333c864a96ebaf268247b6b10cb19ed3d70ee9ad3da4c53123f2a7a4a9b9e1408793b51e1adbcc6fd09f60fecef3ca9522bb6b36"
                 }
             ],
-            "cleanup": [ "/lib/cmake" ]
+            "cleanup": [
+                "/include"
+            ]
+        },
+        {
+            "name": "ProtoBuf",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/protocolbuffers/protobuf/archive/refs/tags/v3.21.12.zip",
+                    "sha512": "7f1c9a4297a4e47705d64932483f31ed25da928d24e351d94899038f852015d4a16c88c2b962ac4a0c62e6a3f6689f87fb4cef7165d327aae5381a7b975bdf2e"
+                }
+            ],
+            "cleanup": [
+                "/bin/protoc"
+            ]
+        },
+        {
+            "name": "nanomsg",
+            /* needed by python3-nanomsg */
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/nanomsg/nanomsg/archive/1.1.5.zip",
+                    "sha512": "8fbdf275f6e4185bfeb24f4ad28094ce8e9b5798e8040d6ff16fd6df51b79c17f3fc36d2285e9e23baf86ff9c9fa1f9613b9abdae67cccb470878af90f1fe304"
+                }
+            ]
+        },
+        {
+            "name": "xslt-config",
+            "buildsystem": "simple",
+            "build-commands": [
+                "mv xslt-config /app/bin"
+            ],
+            "sources": [
+                {
+                    "type": "script",
+                    "dest-filename": "xslt-config",
+                    "commands": [
+                        "#!/bin/bash",
+                        "pkg-config libxslt $*"
+                    ]
+                }
+            ]
         },
         {
             "name": "R",
@@ -116,115 +153,63 @@
             ]
         },
         {
-            "name": "boost",
+            "name": "xml2-config",
             "buildsystem": "simple",
             "build-commands": [
-                "./bootstrap.sh --with-libraries=filesystem,system",
-                "./b2 -j4 install --prefix=/app"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.81.0/source/boost_1_81_0.tar.bz2",
-                    "sha512": "a04201e73da59f68fa02761b333c864a96ebaf268247b6b10cb19ed3d70ee9ad3da4c53123f2a7a4a9b9e1408793b51e1adbcc6fd09f60fecef3ca9522bb6b36"
-                }
-            ],
-            "cleanup": [
-                "/include"
-            ]
-        },
-        {
-            "name": "ProtoBuf",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/protocolbuffers/protobuf/releases/download/v3.11.4/protobuf-cpp-3.11.4.tar.gz",
-                    "sha512": "b421ebfe2a16f76785abf43583d04ced6c1fd8d79e988a7a4bf5bc3a4108121dd5ffa25e20c5d2cc32a07daf58d5c3b9d123eb0e6e5a2002e2788effc3dda2de"
-                }
-            ],
-            "cleanup": [
-                "/bin/protoc"
-            ]
-        },
-        {
-            "name": "nanomsg",
-            /* needed by python3-nanomsg */
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/nanomsg/nanomsg/archive/1.1.5.zip",
-                    "sha512": "8fbdf275f6e4185bfeb24f4ad28094ce8e9b5798e8040d6ff16fd6df51b79c17f3fc36d2285e9e23baf86ff9c9fa1f9613b9abdae67cccb470878af90f1fe304"
-                }
-            ]
-        },
-        {
-            "name": "xslt-config",
-            "buildsystem": "simple",
-            "build-commands": [
-                "mv xslt-config /app/bin"
+                "mv xml2-config /app/bin"
             ],
             "sources": [
                 {
                     "type": "script",
-                    "dest-filename": "xslt-config",
+                    "dest-filename": "xml2-config",
+                    /* providing our own xml2-config saves us from having to */
+                    /* patch a *lot* of packages */
                     "commands": [
                         "#!/bin/bash",
-                        "pkg-config libxslt $*"
+                        "if [ \"$1\" == \"--version\" ]",
+                        "then",
+                        "    pkg-config --modversion libxml-2.0",
+                        "else",
+                        "    pkg-config $* libxml-2.0",
+                        "fi"
                     ]
                 }
             ]
         },
-        "python-deps.json",
         {
-            "name": "python3-numpy",
+            "name": "libpng-config",
             "buildsystem": "simple",
             "build-commands": [
-                "python3 setup.py build -j 0",
-                "python3 setup.py install --prefix=/app --root=/ --optimize=1"
+                "mv libpng-config /app/bin"
             ],
-            "build-options": {
-                "env": {
-                    "ATLAS": "None",
-                    "BLAS": "/app/lib",
-                    "LAPACK": "/app/lib"
-                }
-            },
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/65/6e/09db70a523a96d25e115e71cc56a6f9031e7b8cd166c1ac8438307c14058/numpy-1.26.4.tar.gz",
-                    "sha256": "2a02aba9ed12e4ac4eb3ea9421c420301a0c6460d9830d74a9df87efa4912010"
+                    "type": "script",
+                    "dest-filename": "libpng-config",
+                    /* providing our own libpng-config saves us from having to */
+                    /* patch some packages */
+                    "commands": [
+                        "#!/bin/bash",
+                        "if [ \"$1\" == \"--static\" ] && [ \"$2\" == \"--ldflags\" ];",
+                        "then",
+                        "    pkg-config --static --libs libpng",
+                        "else",
+                        "    pkg-config --cflags libpng",
+                        "fi"
+                    ]
                 }
             ]
         },
         {
-            "name": "python3-scipy-x86_64",
-            "only-arches": [ "x86_64" ],
+            "name": "jmvcore",
             "buildsystem": "simple",
             "build-commands": [
-                "python3 -m pip install scipy-1.12.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+                "/app/bin/R CMD INSTALL *.Rpkg  --no-docs --no-html --no-help --no-demo --no-multiarch",
+                "/app/bin/R CMD INSTALL jmvcore --no-docs --no-html --no-help --no-demo --no-multiarch"
             ],
             "sources": [
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d4/b8/7169935f9a2ea9e274ad8c21d6133d492079e6ebc3fc69a915c2375616b0/scipy-1.12.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-                    "sha256": "8b8066bce124ee5531d12a74b617d9ac0ea59245246410e19bca549656d9a40a"
-                }
-            ]
-        },
-        {
-            "name": "python3-scipy-aarch64",
-            "only-arches": [ "aarch64" ],
-            "buildsystem": "simple",
-            "build-commands": [
-                "python3 -m pip install scipy-1.12.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/e3/c5/d40abc1a857c1c6519e1a4e096d6aee86861eddac019fb736b6af8a58d25/scipy-1.12.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
-                    "sha256": "c3003652496f6e7c387b1cf63f4bb720951cfa18907e998ea551e6de51a04467"
-                }
+                "base-deps-sources.json",
+                "jamovi-source.json"
             ]
         },
         {
@@ -283,72 +268,13 @@
             "sources": [ ]
         },
         {
-            "name": "xml2-config",
-            "buildsystem": "simple",
-            "build-commands": [
-                "mv xml2-config /app/bin"
-            ],
-            "sources": [
-                {
-                    "type": "script",
-                    "dest-filename": "xml2-config",
-                    /* providing our own xml2-config saves us from having to */
-                    /* patch a *lot* of packages */
-                    "commands": [
-                        "#!/bin/bash",
-                        "if [ \"$1\" == \"--version\" ]",
-                        "then",
-                        "    pkg-config --modversion libxml-2.0",
-                        "else",
-                        "    pkg-config $* libxml-2.0",
-                        "fi"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "libpng-config",
-            "buildsystem": "simple",
-            "build-commands": [
-                "mv libpng-config /app/bin"
-            ],
-            "sources": [
-                {
-                    "type": "script",
-                    "dest-filename": "libpng-config",
-                    /* providing our own libpng-config saves us from having to */
-                    /* patch some packages */
-                    "commands": [
-                        "#!/bin/bash",
-                        "if [ \"$1\" == \"--static\" ] && [ \"$2\" == \"--ldflags\" ];",
-                        "then",
-                        "    pkg-config --static --libs libpng",
-                        "else",
-                        "    pkg-config --cflags libpng",
-                        "fi"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "jmvcore",
-            "buildsystem": "simple",
-            "build-commands": [
-                "ls -la",
-                "/app/bin/R CMD INSTALL *.Rpkg  --no-docs --no-html --no-help --no-demo --no-multiarch",
-                "/app/bin/R CMD INSTALL jmvcore --no-docs --no-html --no-help --no-demo --no-multiarch"
-            ],
-            "sources": [
-                "base-deps-sources.json",
-                "jamovi-source.json"
-            ]
-        },
-        {
             "name": "jamovi-electron-app",
             "buildsystem": "simple",
             "build-options": {
                 "env": {
-                    "npm_config_cache": "../flatpak-node/npm-cache"
+                    "XDG_CACHE_HOME": "../flatpak-node/cache",
+                    "npm_config_cache": "../flatpak-node/npm-cache",
+                    "npm_config_offline": "true"
                 }
             },
             "build-commands": [
@@ -384,13 +310,90 @@
             ]
         },
         {
+            "name": "jmv",
+            "buildsystem": "simple",
+            "build-commands": [
+                "cd jamovi-compiler && npm install --offline",
+                "mkdir -p /app/lib/jamovi/modules",
+                "mkdir -p   jmv/build/R4.3.2-linux",
+                "/app/bin/R CMD INSTALL *.jmv.Rpkg --library=jmv/build/R4.3.2-linux   --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "./jamovi-compiler.sh --i18n jmv --update",
+                "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app --patch-version --skip-remotes --assume-app-version `cat version`",
+                "mkdir -p scatr/build/R4.3.2-linux",
+                "/app/bin/R CMD INSTALL *.scatr.Rpkg --library=scatr/build/R4.3.2-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "./jamovi-compiler.sh --install scatr --to /app/lib/jamovi/modules --home /app --rlibs /app/lib/jamovi/modules/jmv/R --assume-app-version `cat version`"
+            ],
+            "build-options": {
+                "env": {
+                    "XDG_CACHE_HOME": "../flatpak-node/cache",
+                    "npm_config_cache": "../flatpak-node/npm-cache",
+                    "npm_config_offline": "true",
+                    "R_LIBS": "/app/lib/jamovi/modules/jmv/R"
+                }
+            },
+            "sources": [
+                "jmc-deps-sources.json",
+                "jmv-deps-sources.json",
+                "scatr-deps-sources.json",
+                "jamovi-source.json",
+                {
+                    "type": "script",
+                    "dest-filename": "jamovi-compiler.sh",
+                    "commands": [
+                        "node jamovi-compiler/index.js --rhome $R_HOME $*"
+                    ]
+                }
+            ]
+        },
+        "python-deps.json",
+        {
+            "name": "python3-scipy-x86_64",
+            "only-arches": [ "x86_64" ],
+            "buildsystem": "simple",
+            "build-commands": [
+            	"python3 -m pip install numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl scipy-1.12.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl --prefix=${FLATPAK_DEST}"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/3a/d0/edc009c27b406c4f9cbc79274d6e46d634d139075492ad055e3d68445925/numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+                    "sha256": "666dbfb6ec68962c033a450943ded891bed2d54e6755e35e5835d63f4f6931d5"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/d4/b8/7169935f9a2ea9e274ad8c21d6133d492079e6ebc3fc69a915c2375616b0/scipy-1.12.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+                    "sha256": "8b8066bce124ee5531d12a74b617d9ac0ea59245246410e19bca549656d9a40a"
+                }
+            ]
+        },
+        {
+            "name": "python3-scipy-aarch64",
+            "only-arches": [ "aarch64" ],
+            "buildsystem": "simple",
+            "build-commands": [
+                "python3 -m pip install numpy-1.26.4-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl scipy-1.12.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl --prefix=${FLATPAK_DEST}"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/79/ae/7e5b85136806f9dadf4878bf73cf223fe5c2636818ba3ab1c585d0403164/numpy-1.26.4-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+                    "sha256": "7ab55401287bfec946ced39700c053796e7cc0e3acbef09993a9ad2adba6ca6e"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/e3/c5/d40abc1a857c1c6519e1a4e096d6aee86861eddac019fb736b6af8a58d25/scipy-1.12.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+                    "sha256": "c3003652496f6e7c387b1cf63f4bb720951cfa18907e998ea551e6de51a04467"
+                }
+            ]
+        },
+        {
             "name": "jamovi-server",
             "buildsystem": "simple",
             "build-commands": [
                 "cd server && python3 setup.py build_ext",
-                "cd server && python3 setup.py install --prefix=/app",
+                "cd server && python3 setup.py install --single-version-externally-managed --root=/ --prefix=${FLATPAK_DEST}",
                 "cd readstat && python3 setup.py build_ext",
-                "cd readstat && python3 setup.py install --prefix=/app",
+                "cd readstat && python3 setup.py install --single-version-externally-managed --root=/ --prefix=${FLATPAK_DEST}",
                 "mkdir -p /app/lib/jamovi",
                 "cp version /app/lib/jamovi/version"
             ],
@@ -403,7 +406,9 @@
             "buildsystem": "simple",
             "build-options": {
                 "env": {
-                    "npm_config_cache": "../flatpak-node/npm-cache"
+                    "XDG_CACHE_HOME": "../flatpak-node/cache",
+                    "npm_config_cache": "../flatpak-node/npm-cache",
+                    "npm_config_offline": "true"
                 }
             },
             "build-commands": [
@@ -420,46 +425,12 @@
             "name": "env.conf",
             "buildsystem": "simple",
             "build-commands": [
-                "sed -E -e \"s|R_HOME=.*|R_HOME=$R_HOME|g\" -e \"s|R_LIBS=.*|R_LIBS=$R_HOME/library|g\" env.conf > /app/bin/env.conf"
+                "sed -E -e \"s|R_HOME=.*|R_HOME=$R_HOME|g\" -e \"s|R_LIBS=.*|R_LIBS=$R_HOME/library|g\" -e \"s|JAMOVI_R_VERSION=.*|JAMOVI_R_VERSION=`jamovi --r-version`|g\" env.conf > /app/bin/env.conf"
             ],
             "sources":[
                 {
                     "type": "file",
                     "path": "env.conf"
-                }
-            ]
-        },
-        {
-            "name": "jmv",
-            "buildsystem": "simple",
-            "build-commands": [
-                "cd jamovi-compiler && npm install --offline",
-                "mkdir -p /app/lib/jamovi/modules",
-                "mkdir -p   jmv/build/R4.1.3-linux",
-                "/app/bin/R CMD INSTALL *.jmv.Rpkg --library=jmv/build/R4.1.3-linux   --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
-                "./jamovi-compiler.sh --i18n jmv --update",
-                "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app --patch-version --skip-remotes",
-                "mkdir -p scatr/build/R4.1.3-linux",
-                "/app/bin/R CMD INSTALL *.scatr.Rpkg --library=scatr/build/R4.1.3-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
-                "./jamovi-compiler.sh --install scatr --to /app/lib/jamovi/modules --home /app --rlibs /app/lib/jamovi/modules/jmv/R"
-            ],
-            "build-options": {
-                "env": {
-                    "npm_config_cache": "../flatpak-node/npm-cache",
-                    "R_LIBS": "/app/lib/jamovi/modules/jmv/R"
-                }
-            },
-            "sources": [
-                "jmc-deps-sources.json",
-                "jmv-deps-sources.json",
-                "scatr-deps-sources.json",
-                "jamovi-source.json",
-                {
-                    "type": "script",
-                    "dest-filename": "jamovi-compiler.sh",
-                    "commands": [
-                        "node jamovi-compiler/index.js --rhome $R_HOME $*"
-                    ]
                 }
             ]
         },
@@ -482,7 +453,9 @@
             "buildsystem": "simple",
             "build-options": {
                 "env": {
-                    "npm_config_cache": "../flatpak-node/npm-cache"
+                    "XDG_CACHE_HOME": "../flatpak-node/cache",
+                    "npm_config_cache": "../flatpak-node/npm-cache",
+                    "npm_config_offline": "true"
                 }
             },
             "build-commands": [
