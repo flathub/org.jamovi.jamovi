@@ -298,7 +298,7 @@
                         "if [[ \"$1\" == \"--version\" ]]; then",
                         "    cat $HERE/../lib/jamovi/version",
                         "elif [[ \"$1\" == \"--r-version\" ]]; then",
-                        "    /app/bin/R --version | head -1 | sed 's|^R version \\([0-9]\\+\\.[0-9]\\+\\.[0-9]\\+\\).*$|\\1|g'",
+                        "    echo `/app/bin/R --version | sed -n 's|^R version \\([0-9.]\\+\\).*$|\\1|p'`-`/app/bin/R --version | sed -n 's|^Platform: \\([^-]\\+\\).*$|\\1|p'`",
                         "elif [[ \"$1\" == \"-R\" ]]; then",
                         "    shift",
                         "    /app/bin/R \"$@\"",
@@ -315,12 +315,12 @@
             "build-commands": [
                 "cd jamovi-compiler && npm install --offline",
                 "mkdir -p /app/lib/jamovi/modules",
-                "mkdir -p   jmv/build/R4.3.2-linux",
-                "/app/bin/R CMD INSTALL *.jmv.Rpkg --library=jmv/build/R4.3.2-linux   --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "mkdir -p   jmv/build/R`/app/bin/jamovi --r-version`-linux",
+                "/app/bin/R CMD INSTALL *.jmv.Rpkg --library=jmv/build/R`/app/bin/jamovi --r-version`-linux   --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
                 "./jamovi-compiler.sh --i18n jmv --update",
                 "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app --patch-version --skip-remotes --assume-app-version `cat version`",
-                "mkdir -p scatr/build/R4.3.2-linux",
-                "/app/bin/R CMD INSTALL *.scatr.Rpkg --library=scatr/build/R4.3.2-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "mkdir -p scatr/build/R`/app/bin/jamovi --r-version`",
+                "/app/bin/R CMD INSTALL *.scatr.Rpkg --library=scatr/build/R`/app/bin/jamovi --r-version` --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
                 "./jamovi-compiler.sh --install scatr --to /app/lib/jamovi/modules --home /app --rlibs /app/lib/jamovi/modules/jmv/R --assume-app-version `cat version`"
             ],
             "build-options": {
