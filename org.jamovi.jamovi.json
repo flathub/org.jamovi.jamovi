@@ -298,7 +298,7 @@
                         "if [[ \"$1\" == \"--version\" ]]; then",
                         "    cat $HERE/../lib/jamovi/version",
                         "elif [[ \"$1\" == \"--r-version\" ]]; then",
-                        "    echo `/app/bin/R --version | sed -n 's|^R version \\([0-9.]\\+\\).*$|\\1|p'`-`/app/bin/R --version | sed -n 's|^Platform: \\([^-]\\+\\).*$|\\1|p'`",
+                        "    echo `/app/bin/R --version | sed -n 's|^R version \\([0-9.]\\+\\).*$|\\1|p'`-`/app/bin/R --version | sed -n 's|^Platform: \\([^-]\\+\\).*$|\\1|p'` | sed 's|x86_64|x64|g' | sed 's|aarch64|arm64|g'",
                         "elif [[ \"$1\" == \"-R\" ]]; then",
                         "    shift",
                         "    /app/bin/R \"$@\"",
