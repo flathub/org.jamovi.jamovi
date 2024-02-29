@@ -319,7 +319,7 @@
                 "/app/bin/R CMD INSTALL *.jmv.Rpkg --library=jmv/build/R`/app/bin/jamovi --r-version`-linux   --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
                 "./jamovi-compiler.sh --i18n jmv --update",
                 "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app --patch-version --skip-remotes --assume-app-version `cat version`",
-                "mkdir -p scatr/build/R`/app/bin/jamovi --r-version`",
+                "mkdir -p scatr/build/R`/app/bin/jamovi --r-version`-linux",
                 "/app/bin/R CMD INSTALL *.scatr.Rpkg --library=scatr/build/R`/app/bin/jamovi --r-version` --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
                 "./jamovi-compiler.sh --install scatr --to /app/lib/jamovi/modules --home /app --rlibs /app/lib/jamovi/modules/jmv/R --assume-app-version `cat version`"
             ],
