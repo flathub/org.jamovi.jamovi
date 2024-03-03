@@ -436,14 +436,12 @@
         },
         {
             "name": "jamovi-engine",
-            "build-options": {
-                "config-opts": [
-                    "--rhome=/app/lib/R",
-                    "--base-module-path=/app/lib/R/library",
-                    "--rpath=/app/lib/R/library/RInside/lib",
-                    "--rpath=/app/lib/R/lib"
-                ]
-            },
+            "buildsystem": "simple",
+            "build-commands": [
+                "./configure --rhome=/app/lib/R --base-module-path=/app/lib/R/library --rpath=/app/lib/R/library/RInside/lib --rpath=/app/lib/R/lib",
+                "make",
+                "make install"
+            ],
             "sources":[
                 "jamovi-source.json"
             ]
