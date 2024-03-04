@@ -153,6 +153,23 @@
             ]
         },
         {
+            "name": "units",
+            /* needed by units (R package) */
+            "buildsystem": "simple",
+            "build-commands": [
+                "./configure --includedir=/app/share/include --libdir=/app/lib",
+                "make",
+                "make install"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://downloads.unidata.ucar.edu/udunits/2.2.28/udunits-2.2.28.tar.gz",
+                    "sha512": "86146d489e1d472723e059fb15a5dd697a67568ffb5cdba17d191eb304c018bffffea708a73cce50a6c87ad33b387e5ee6653377ae0ebe9986117dfd41e9a5a1"
+                }
+            ]
+        },
+        {
             "name": "xml2-config",
             "buildsystem": "simple",
             "build-commands": [
@@ -301,7 +318,7 @@
                         "    echo `/app/bin/R --version | sed -n 's|^R version \\([0-9.]\\+\\).*$|\\1|p'`-`/app/bin/R --version | sed -n 's|^Platform: \\([^-]\\+\\).*$|\\1|p'` | sed 's|x86_64|x64|g' | sed 's|aarch64|arm64|g'",
                         "elif [[ \"$1\" == \"-R\" ]]; then",
                         "    shift",
-                        "    /app/bin/R \"$@\"",
+                        "    DOWNLOAD_STATIC_LIBV8=1 UDUNITS2_INCLUDE=/app/share/include UDUNITS2_LIBS=/app/lib /app/bin/R \"$@\"",
                         "else",
                         "    /app/bin/zypak-wrapper /app/bin/electron \"$@\"",
                         "fi"
@@ -440,7 +457,7 @@
             "build-commands": [
                 "./configure --rhome=/app/lib/R --base-module-path=/app/lib/R/library --rpath=/app/lib/R/library/RInside/lib --rpath=/app/lib/R/lib",
                 "make",
-                "make install"
+                "BINDIR='${FLATPAK_DEST}/bin' make install"
             ],
             "sources":[
                 "jamovi-source.json"
