@@ -1,422 +1,428 @@
 [
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/R6_2.5.1.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/R6_2.5.1.tar.gz",
         "sha512": "092b051c24c09848c730df0f3ccbec924093493c32832923fb73b78f8c649828a2a0f83fa018e66e0bb0d87c4473d5cadb648f37c852779581d2bd7e8f39f751",
         "dest": "000_R6.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/RColorBrewer_1.1-3.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/RColorBrewer_1.1-3.tar.gz",
         "sha512": "36a53237ec978c600c53a4702ba087425e63fd4e9b5318897bb9e4c8c1f6bd5c0308e74768cf5e14891983d21390429e800fc005bfe166123372c85a4a548927",
         "dest": "001_RColorBrewer.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/base64enc_0.1-3.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/base64enc_0.1-3.tar.gz",
         "sha512": "b41fb24db8726ea6932281167f309de1d69f2626be0386108550315a7f3d326112a7197a6d1264dc0407c938ca98c6b2a931f4bf6bb6beac3be2156982f515a6",
         "dest": "002_base64enc.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/brio_1.1.3.tar.gz",
-        "sha512": "c12e65b84484f95757cd70b63f5bdd5e4c2f7b07a6a5c50f8ec5cf603c4ffbe96c59d4c40310c7a5469a1ccaa2bc111e6908400f1e48c96c9d2314bde823212b",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/brio_1.1.4.tar.gz",
+        "sha512": "a748980b946a1f4f9b9ecf2e330f11e183a907b5d0fd9436390ec32638c94810464c83aeae821583e975b5f731838728573de98947e89728cf144d1939a8e490",
         "dest": "003_brio.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/cpp11_0.4.3.tar.gz",
-        "sha512": "5963e63e54b2a20557fb7a5ccb50b11b54cce116c6c12da8c9b6d59f684f8a3559f9ed8508dd43200ebb9328eb05e00322f1d2be578501b568731852f62cab39",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/cpp11_0.4.7.tar.gz",
+        "sha512": "7429c4c95a8fec2890867a0389c8d32a9f36b690b25b0a75c3dfa389a087369fcf19b6fca5c69abe03ca889d7d76c4661e1b87adf4538ca2aae820ef03ad9d65",
         "dest": "004_cpp11.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/curl_5.0.0.tar.gz",
-        "sha512": "ecd76120657a03599c420a53f3bec197652e2e8220c25c80de189eb896ed21d3635aab43fcaed64fd99c883ba7b7eeb80f66bf0feeaac9512940c85045af13a6",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/curl_5.2.0.tar.gz",
+        "sha512": "0ed77924a3c64bca55b69d2373cae52d25e780934ee41bf12485ecafc6e38c95dbe3e45f7ad7c0f7ce4fbb06e0e8afee86080b152ed1040b6954eb711f985548",
         "dest": "005_curl.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/farver_2.1.1.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/farver_2.1.1.tar.gz",
         "sha512": "0e04b378622a1e9670fbd8586a4e5f8bcb7be55814e39db98992ce583e94d922bff39d6acf581e30878265e1468fa269a6dd6ad4538d9cbee79b4bd19555d857",
         "dest": "006_farver.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/fastmap_1.1.1.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/fastmap_1.1.1.tar.gz",
         "sha512": "35e283f883f6f0961f422d8153e74b6ab2553b3142654a5a4af268856de10e33761afb60a41ab1ad2357198cfc7d76d1516131f18b95710a4b04851991dd8a9a",
         "dest": "007_fastmap.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/magrittr_2.0.3.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/magrittr_2.0.3.tar.gz",
         "sha512": "ab29ab78d8f655a432552d1697b92f647276fd788c6d283ad29f9bf7fcddc5060dc8b4fdb1ffe71cde4cd504c6f17f7fc35cdc6b68c20f7f03c0ecc56d4f767e",
         "dest": "008_magrittr.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/praise_1.0.0.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/praise_1.0.0.tar.gz",
         "sha512": "339fd9adbe724925056fe189592a403806f4e7c1b5c82a0f02bc6a946c118c1dacdbc7a831cdb5dbdc0b3e45108a61526672b42dd19e20f48ebe90f3419a4b83",
         "dest": "009_praise.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/rappdirs_0.3.3.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/rappdirs_0.3.3.tar.gz",
         "sha512": "abd24ea2a6be858ec762c3a42574b0771c18a3d422c3f3f8b7ece807807d1d3aa8598edce8ec453a900769367ff2a9be080aed6cb8d3d665f4f92dd25cf39593",
         "dest": "010_rappdirs.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/rprojroot_2.0.3.tar.gz",
-        "sha512": "caebdc67a1a492ad2dce1ba44cd3a99074526806ace938ee054e571280b788d45bf414a780dc7866ff294d1eff4f0bd2737bee7cae8b5ae4ccdbab7b93cee1ac",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/rprojroot_2.0.4.tar.gz",
+        "sha512": "ba630ffe1cae852b14e9899ea35f464c7cc5cfa6ba87b6cb0288a502339be7c663c49b0f0ff1894a41287cfa7d54387532a87467dd0b85ccc3a21c7ea271a2f3",
         "dest": "011_rprojroot.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/utf8_1.2.3.tar.gz",
-        "sha512": "e742f7baacb94a51968d3db4bfffe0ab5aced3f3f87e4a74d0b87a4bdcf8cddb63bdb6f666d3e4abf520dfc578da6ca259d5d825ae536b4678961bfe069b19ad",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/utf8_1.2.4.tar.gz",
+        "sha512": "c244d3f0559976a591ef77cf30e8a9cd8fa10a21e2de585e6fa9fe51c50dd750144e198e78dfe2b6d2aecb7605acfc02c2086f5817da5d9d8ddf11d34465c4d2",
         "dest": "012_utf8.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/viridisLite_0.4.1.tar.gz",
-        "sha512": "25166a864f4d5b999f24b136569d908ec112d4ccf4feb8c62344147d1e389247501ac53e08b18eeaade3fdd3a30fbdf7bf81848ded2e740ade18e6ebb136c705",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/viridisLite_0.4.2.tar.gz",
+        "sha512": "929d95e679ddf44e6d1385a96fa786d6f3f6090f12243f4e2b8101f3805fb156157970f2e53eef810885b8b76eafff86e16bdf073b2d621d4e39eb3f49d0297d",
         "dest": "013_viridisLite.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/yaml_2.3.7.tar.gz",
-        "sha512": "29faef896336860527b193699101c0e61048de68a7b39b1e5f820b7e2d4bba031bfdca0c2e5207620f2074ec2581ce1d5eef11f3b6c8cff8ed0a640e2c407d8f",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/yaml_2.3.8.tar.gz",
+        "sha512": "f2482ff635761324e7f15349709a29395d9dc1df76e95cce8a8541a42b39ece662c4885321f646d4d25dde52f0ff7faf547a3155a6028b8b1a4e7f4154517343",
         "dest": "014_yaml.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/Matrix_1.5-4.tar.gz",
-        "sha512": "b58cd2457995a79c218800d423873770922ae840fb39d726c4af2ed85d7356f09fe0d00bc752584f2dcc080ac9863ae9e1b3c9d949ef64782b4359e27290459a",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/Matrix_1.6-4.tar.gz",
+        "sha512": "6a5e118efca1d6463618e32c9b63bd70bf90faabf040103009aa8d40b976324b2361f8a36866341b60e8e78326c1a3d3688d1c4334bd0eebc5c282993b609e01",
         "dest": "015_Matrix.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/Rcpp_1.0.10.tar.gz",
-        "sha512": "524c38caea2b95d9832b596fd1af7d9ce066478832616cd13c591a5b2bfcd15eb5def70cc40ff4be07831d3c8d18063d9f407835228a20d35cecf1f8ab658cf7",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/Rcpp_1.0.11.tar.gz",
+        "sha512": "7da248dbfcfc7c05c88f84969cd9348e3202c48de1659506ce9eb6a7abf314dccc6478528ea97f14977b90a6507957b6b50196373362fe5e56a43066a0b68817",
         "dest": "016_Rcpp.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/cli_3.6.1.tar.gz",
-        "sha512": "8981493529a0ef85f7f7902735f42fefd572b2aa9617bc22c5a041820a64d9e9dd7af579243a2ff7dd15338b3ebbef612f1846076fb511b51fce76ee941191f3",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/cli_3.6.2.tar.gz",
+        "sha512": "cdebf391803e9a112480de3737e7ad40a2e0854b51609480117a94a297d22dddf034a60aa31fddfc149b321f0d9b1a46969843b79e61d9f70ad27c8f192d5300",
         "dest": "017_cli.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/colorspace_2.1-0.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/colorspace_2.1-0.tar.gz",
         "sha512": "d28143cd6561b4b9678f15ce08f52ee1da243c54222443fe5ac6130a2f3c24095b5c98ab857df2cffeadd427ecb5a654e77e09591dccb2c2c11621ac57ec998b",
         "dest": "018_colorspace.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/crayon_1.5.2.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/crayon_1.5.2.tar.gz",
         "sha512": "0cdd778d88981b45016ac0bbccd0a15d7e0bc51b1c0b544e4cb1eb03f3e164164650f46dc9dc1610ffbf8a605ed163637d055e740dc87aeab42da3f7a8286acf",
         "dest": "019_crayon.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/digest_0.6.31.tar.gz",
-        "sha512": "4c00b0e27078cab5057638fcb298956ae77c865f12da63390b06de93f0067bc0961cd81c513b6327f1dfb87d14f50b4ca52103a946194b142eee52c49f876c23",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/digest_0.6.33.tar.gz",
+        "sha512": "ce11d5624265d8d22ee06f3827353a246ec839344f56be94c68c9618ae15ed56853433593dea9db974a3708cb848e764e46936096c6f6bf5b597ccc5d05dd81c",
         "dest": "020_digest.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/evaluate_0.20.tar.gz",
-        "sha512": "a713f3bf4426dfeffef63921f9112312ff2ae4561e603185a831b4d9ddc986113ebb066544c385f1ca1595977442a1221218623c70d178b64977009119feb47a",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/evaluate_0.23.tar.gz",
+        "sha512": "a3735ab20b558857250e9815cd29cea122cd0a8df9a61135525a0af5aa5bb01e0f11c04ed7164332b3a6f9e46e8a283ea93f82ff98dee7986151962c8fa89fe2",
         "dest": "021_evaluate.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/fansi_1.0.4.tar.gz",
-        "sha512": "129df2b981442155e4029bfc7fb34c8d6bf482fe794cf21ccb98f1a00e44ebac280a1596caa0873d416dae4b360b3c6dacf3cbdd83dd1b46a10a98e6fbe38f31",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/fansi_1.0.6.tar.gz",
+        "sha512": "84f60903e950510c3f433e8464bfaf8f7638a054d563f5fcf741cb9edd85b301ba113db8b213b92c01fcf7ab247428804d25c72e1793c856f56b8b6e879201bc",
         "dest": "022_fansi.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/fs_1.6.1.tar.gz",
-        "sha512": "d52293e640e9add1c5fe6c0507201525594772b013b9bc6fd23454ba200d8b58f2a4cbab22924621a2f90d4782ca03864d9b0cc0d11b0a246f74d6e0fb2b4f32",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/fs_1.6.3.tar.gz",
+        "sha512": "77ba79a719b6f4228a721996ab707c8151040e0874e3d0c6e354dab2dc439f4269e9247027f8958ef48b7f0fe9fd8d3d83bcf4ceb58cf7ed52963c8daa9b119b",
         "dest": "023_fs.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/glue_1.6.2.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/glue_1.6.2.tar.gz",
         "sha512": "155a7778dc60f69ec79d5c2ba62ed418df124a529eb3a4b430bed9963dc6236df2b8781d5cb54a3033def40044bba46f0f4702ae5b1a451b599996adf547f37c",
         "dest": "024_glue.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/isoband_0.2.7.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/isoband_0.2.7.tar.gz",
         "sha512": "5139416343d6c948cb231f473c0efaf5c798c78fe672cadbcf2d962c6c0203448a8d2a7919b6acfcccf408f50fda74c4af452607a1965cd35d3fbec9d15d456b",
         "dest": "025_isoband.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/jsonlite_1.8.4.tar.gz",
-        "sha512": "74cd611e3ddc149a7b210defe9f7f49bcb56ea0c4481cc720235e0d9eb7044d2686419037f23df34152c5d2fae13de5b0c0b9f330fe604979fcfd27280ea7b0f",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/jsonlite_1.8.8.tar.gz",
+        "sha512": "a35094a3d1e6f8ac738f8e0108d272645682fbc6386446ebfbf020140d51daf98817d492fde10758c9f8f1aa3252ac1115f1dd7a689c192898c9404ee8512d04",
         "dest": "026_jsonlite.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/labeling_0.4.2.tar.gz",
-        "sha512": "b61805c88182bb19df53a61b0c83950a490b1600f2ac17f4fe5a02645e743f710456dbf58ce8aac29e6dca4d9f51e4d76e1cdc7fdaf7fa9d3c273f0e360558ee",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/labeling_0.4.3.tar.gz",
+        "sha512": "11d6b8cbf530b76caad09c6125960a361db456aaaa7147d12f4b87c74803e19a5cd9a72e581540f02599b418c5c00104720862b1a59ec68c324ca7c5313f2c2d",
         "dest": "027_labeling.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/mime_0.12.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/mime_0.12.tar.gz",
         "sha512": "e5e1fe205b959d249fe8a331d35fec32093e24c8480c7d23f0178c5d4be02f1ecc6490615715b1203f4532173afb0312d49379c1529d3bf1ec58bd096cdac1cd",
         "dest": "028_mime.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/pkgconfig_2.0.3.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/pkgconfig_2.0.3.tar.gz",
         "sha512": "02fead3513429c446c1ad81b451ec9714b1e4bf556c8fbd436c54c137a9e261759e9c8f4a0bacd0e300f60c464995145ce011ed61033b949049f594cce9ec110",
         "dest": "029_pkgconfig.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/ps_1.7.4.tar.gz",
-        "sha512": "d9b51ba234cb9b79f1945771adc92037b3e2f81a13e806dd18030aac7119940c3acecc054192a5e2abac490bf33d6e1c4bd7f6c17f12c133641709697da74f5b",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/ps_1.7.5.tar.gz",
+        "sha512": "05d5403c39c34e8f6f6097cd1a0c5b9ac75d0388f3fc11b7ee8b46bee79fdf5630c6508b64458555f29b14e25cadbf299d4f1eee5d7d11772b828de6bb0366eb",
         "dest": "030_ps.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/remotes_2.4.2.tar.gz",
-        "sha512": "5750ea5cdbcbf657964df90c30b61742478492385673f212059c39e3c6ccce2f03f092d9bf862c62e777bde45465311ddd6aad2231f6c1a39f38bcbb93e875f0",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/remotes_2.4.2.1.tar.gz",
+        "sha512": "059847999ec7e663eb846136c9669566b39b6711f33ac7ae5f6b59795d349cf1a247448c793ca5ede88bc8f6cf1763d622e85be38308225b09cb7ebc04b89d35",
         "dest": "031_remotes.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/rlang_1.1.0.tar.gz",
-        "sha512": "707bbdaa5c3d960bcc43461ef6a58e4ceb64c7a9a638138db32fc9305be943380b9d8f51e418fd93f1adad6569f7dfcdd9dd778d12609bc6100409fcbee0d564",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/rlang_1.1.2.tar.gz",
+        "sha512": "e5feb8128d9f563c69f30c70b8fdf170c121a58633a5f7ec523c517f97f8ee867f23464221699bfd8f629a7a956f43f44fcd73ae60067b26bf09446ef7a5648e",
         "dest": "032_rlang.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/stringi_1.7.12.tar.gz",
-        "sha512": "6859c7d09110e87efffa7de4bb2b2b711e2a73bcfced3c50b47248df9baf054d067148984aed21cdc69449076c020e854a74dd2ab09346d0e5ba9139b51fd29f",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/stringi_1.8.3.tar.gz",
+        "sha512": "6f1e0bca32476ea5c3251e09b293ec0d3bce117d49031d8913637729ef57f93d43fb714e647155d80a532a34c0aa9e7b09b3ed0952382368ca968175c495bee4",
         "dest": "033_stringi.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/systemfonts_1.0.4.tar.gz",
-        "sha512": "1a34d8fe0c3211ed461fdcad33292bb5f73aa1a3b9565ad79142c47c74d23648a4dd8be7ec9585dfe59add3162af24ba624772f02e476b4e6e96e31e41916529",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/systemfonts_1.0.5.tar.gz",
+        "sha512": "6534d75ae02277318576ba5ebd4c88be86c8ffc44a249f814a89bdf2eac56f3c279d1d37e56188a82ded103aaf3e390669f3885324765184340c76998427c068",
         "dest": "034_systemfonts.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/withr_2.5.0.tar.gz",
-        "sha512": "60e3d3a235dbed1661b94fff05e23c70d97df7d06de4b0274f11fde900899a174f734cccd8dcc929f21e93e0b2195eaf5729688ffc4142c711dc036c2dbc486e",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/withr_2.5.2.tar.gz",
+        "sha512": "6544aafbe0522545645b33150b7468c6215653e26ec85e2ac14c4689351707df5bf0eda1db77bbdd09747c56c223159ca6e8320712fbebf509b082e651e4d6ed",
         "dest": "035_withr.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/xfun_0.38.tar.gz",
-        "sha512": "341cf554b83fc25024d158a26c18aa0417b07f396d100e34a856899e557becb37764c6ddacb4748416998cc681061152a75b1471dae8c8435ff9821dc25c6e2c",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/xfun_0.41.tar.gz",
+        "sha512": "ff00c0313ba5082a21506a7a0657eddc93daa2203f7f5730feca661c3edb4906b5fed755d43de117c070d936e2362fb4592a3a33e015cb761dde7ce826f7f434",
         "dest": "036_xfun.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/RInside_0.2.18.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/RInside_0.2.18.tar.gz",
         "sha512": "52b7199572ea24ad9d2bf13d827164d67867387c5d8e1e1af58b4e268e0e7cff2e0803997d1cb476710fb3a4c26ccec9386e0919026ac9350a8c04c3d5828b78",
         "dest": "037_RInside.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/RProtoBuf_0.4.20.tar.gz",
-        "sha512": "6d625647a692e4c3ea89b0397903e8b62f99220b6849b841c86c30a32cd3f9da2d21321b06267030bdd4b78e874854ecceaaf03a074bc1250fa709fa572d9d01",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/RProtoBuf_0.4.21.tar.gz",
+        "sha512": "a36c8ac13d5168b3a1580ef34fcb8ecc1cfa60767433c2f8e5552e5d7532b699133633c2df815b6013411cc4685c92b24636d5654f7c93e82a093e2cdb5e94ed",
         "dest": "038_RProtoBuf.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/cachem_1.0.7.tar.gz",
-        "sha512": "b4931a6a599dd5bbe94e84b0a924b9257a60d8e507317d86e2ddb5e574ae19f22f9a3c827e4081e9f778fc0c286f18f19ab15d2c477430d3f10bab3a15aedc14",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/cachem_1.0.8.tar.gz",
+        "sha512": "ede1bfda6dbedc684196cc80e3d51302a74f6e2dea45d9f925d7981b672c54a1184f9f0b80e96cb763bbb895b350c2338d748f42bf35a6b4ea22277b0a09f8aa",
         "dest": "039_cachem.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/desc_1.4.2.tar.gz",
-        "sha512": "ca7c054ad50785955c21c9d970bf6a529b24a7d3912a676258748036fb5c04873fe2ddcc80c190ce0bdbe54e00bf2fe9ad1b75289482a28dbc1d69f4595e119e",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/desc_1.4.3.tar.gz",
+        "sha512": "6117843296be38531095c6a5fd37b3b9bc5a92cef57ad8f228e9e2f6a14241a1c6c93c5c8cfca63a3b83f59e1655d6b29ff45d3f855124281fb1ad4dae815b50",
         "dest": "040_desc.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/diffobj_0.3.5.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/diffobj_0.3.5.tar.gz",
         "sha512": "5762225a35103989d4e6a34029de8fa36e2c2f5750b4d8f4b45ab6dec22429b81a64c59a363bb1260043b6d8f8a6f2c45e22abedd89005086799c614ddea0602",
         "dest": "041_diffobj.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/ellipsis_0.3.2.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/ellipsis_0.3.2.tar.gz",
         "sha512": "f4640b59b0b4fcef25726623e9d765b58ae6a62bea7d612632c6f12243fa68f5a95fc1eb7a6a8a6402d599616191c8eb9d6d4f5d29c7edf7e3e28ce201701577",
         "dest": "042_ellipsis.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/highr_0.10.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/highr_0.10.tar.gz",
         "sha512": "69f067c16d5649fecae2d8238ea954dbd14603fc0543990d8dea91e87c02db1421397f760f02ac20cd93c54f70422fb4ad805861b11a88696849c0f466ab7f1d",
         "dest": "043_highr.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/lifecycle_1.0.3.tar.gz",
-        "sha512": "e1fdf92ebc36832cc79acfa74e055ae70d8f084fa9fa700931c0fe6d8aba6b3a201909dd15701b9da07c896cc49c8d590fd21dad525831601e751f24b2fa92e8",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/lifecycle_1.0.4.tar.gz",
+        "sha512": "7c93e21ff765f9c9239facd9d94f161793199305f492fab6790d28bfd03db30fcb9dced5d6d3d3b4462b5bc0f5ff7e05e6e22d42a6e857ba97ba0db4d73a1f9c",
         "dest": "044_lifecycle.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/munsell_0.5.0.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/munsell_0.5.0.tar.gz",
         "sha512": "2e05fccb7672485a2916e36651449cb046a343c7dc35409f04974e932f5da7978b811b0d49c02f9b79259728fef362615d483dcb4d51e8cf4b1e206062f70904",
         "dest": "045_munsell.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/processx_3.8.0.tar.gz",
-        "sha512": "52056d5c55cde77920cf0096bd9691b40ba13cb8181da905c93aaeb59201c9646e2a036d2240bb125f9c64faa513fad366c2d059e7f0ea0534ee917cf0a13000",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/processx_3.8.3.tar.gz",
+        "sha512": "5cb78b3856a7ad2f7c024de505c4158e5d3ef71aaf346e2c4767878efa94f7d1a2ff3063bbf8e42668bc417acca43eb7d1d56fbb2fd760f9644576abc7451d06",
         "dest": "046_processx.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/textshaping_0.3.6.tar.gz",
-        "sha512": "d4976356be8212b15bb30138146be6eab74e6ed445fd40d0a9eae5570e613388af9224cc42af3adb2e9991e25f6f089863989eb068972dbe63232e9d1594a00b",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/textshaping_0.3.7.tar.gz",
+        "sha512": "36031a368552a535b5debd4b7e61d2226bf5eea445fca20977773fa98eb9159cc778fe75a947cb840eb805fe9b682f3ad62eb3d19f8f3169be53f8c513fc2008",
         "dest": "047_textshaping.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/tinytex_0.44.tar.gz",
-        "sha512": "6f62ae95f86334a00e8db507bee108f12f16d22cf562064230e8120a54cc8961cda952b7d266bc5d18201ec7b2db4ed2a27e33137d213f28974e19563942533b",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/tinytex_0.49.tar.gz",
+        "sha512": "da498ad4d27de8d4512e3bee67d01c1cd8ee46f00a562732fb44eb4f714e6445a20a8b06b18ae6de60ca378a9d16f15fd33291bd4f9b5cba955f01ee71338407",
         "dest": "048_tinytex.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/callr_3.7.3.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/callr_3.7.3.tar.gz",
         "sha512": "2e1109161e45746bc07d1452420283afadc255bb7d93ed2cefc3ea19878a63b631d25b7032e3d7200f0ce7d96babd91facb326f9304499e2b7ebd89df9ac6add",
         "dest": "049_callr.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/gtable_0.3.3.tar.gz",
-        "sha512": "40c34d3450782e223e181e60c6f73948b45b0d5816a06919cd9b6782ac4d6da40f157542c32684d0cf689fc9b6b02e1bc9bf31589b577e94c39c99bd04de1c44",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/gtable_0.3.4.tar.gz",
+        "sha512": "bc6b4f0fa10657f97c3c298f0cd6e374053cfdd93c213be0063fac48025117bf2b4d7e966defe0943b6293e101a61f1af648700f960448b45d0f8d3bf3b413d7",
         "dest": "050_gtable.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/htmltools_0.5.5.tar.gz",
-        "sha512": "4dff2c5006e5439ea1fcdaed1291febf3257470ee6ae58c317c6463164d8ceb94e9348e2fb9fdb35c4507bf090f8383426f267eb06f4047688db620199bb0903",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/htmltools_0.5.7.tar.gz",
+        "sha512": "c5d310da49f717e107179335e1c050982da9d98c549cfb45b0abe90ff15ab9ec5071526a6a85e133d5524e42d4c8e78236757654d072b42afaefd8b338f7c7eb",
         "dest": "051_htmltools.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/knitr_1.42.tar.gz",
-        "sha512": "b4572283152c6894c5bb515b8549070ae0e4e546538b098443942a79c3eb93c81abaea621a6c5a1edb362f0a6360885c497f0c6428589306c8f0527bc8a7883d",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/knitr_1.45.tar.gz",
+        "sha512": "d84177285718de38b19db56c6853de9d24b476a0d7510b27f1c7c366c848fae8ae37b54e306712a249f3741feb3804d234ef4c875944487b6eba9e172a148ce8",
         "dest": "052_knitr.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/memoise_2.0.1.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/memoise_2.0.1.tar.gz",
         "sha512": "4a4548fbee29404a11217d25b9db095241de11eab0b864a4c330e976ab8517013b39f3c472f58b7f432a6f91f0bd7c7e6a74651d1ee6b4b6fa27a3f870f33473",
         "dest": "053_memoise.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/pkgload_1.3.2.tar.gz",
-        "sha512": "f2da2defc282a9517404df5197eb71e59bcab1d0e9b953c928c882dafa7ab11125c0bffc00949e9109d92cabcb58a353958eeff60966451931be74c1fc7a7d49",
-        "dest": "054_pkgload.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/ragg_1.2.7.tar.gz",
+        "sha512": "46d59808d49c30cc3948a7ed0998d4223cdc39c53aac021d0dfed456d47e02b9e1157215e22b9561e273f1cd28161ff54181b6ee8f8896b04da98f781c324b6c",
+        "dest": "054_ragg.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/ragg_1.2.5.tar.gz",
-        "sha512": "6fce3b6f49347bee19827916fa1200bb1f7ce57f23da36e51d5448d0c4ed690c5e49e857825854df9d21d55ec74fd042556dd40b76607203a35eeb7dc878e133",
-        "dest": "055_ragg.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/scales_1.3.0.tar.gz",
+        "sha512": "166fd9736e03e3cd4bfe73cf6335dca03ac7f5dde1e8de2a4fe503c11281f9005071ffa0afcacf7e7278be65b4133443e56051b7b05c2d353ac524be33c89771",
+        "dest": "055_scales.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/scales_1.2.1.tar.gz",
-        "sha512": "e23da0d3464bcc86d1ce808a9e9dcd6b7c87ccb1ff52c517b87d9e86e19173f202e638df186cec421bff9f8d24d05c5a9ea122cc65699dae8d1bc24e405cb5af",
-        "dest": "056_scales.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/vctrs_0.6.5.tar.gz",
+        "sha512": "7e5233d99ca991295660a39795ddf7eb9d35ff905cde21a063f90163ce7c5f38620566dc9d45ac884917e24eb6c7e5ad1315580e72dc4ceef8950a99550e54ec",
+        "dest": "056_vctrs.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/vctrs_0.6.1.tar.gz",
-        "sha512": "859c40f57c1bf1b579fc64e079412595993d1a99ec0bf5e41c28840ac72fb3367605161a190269dbc332ced63f847780c1ccaa1a0bf2f0bb9a04b81cba80158f",
-        "dest": "057_vctrs.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/fontawesome_0.5.2.tar.gz",
+        "sha512": "cb0760a0f6282f5cfd1c522184e5a49572bc0070897569f67a47b948e5b156349e7cacf905db608ab50b94992f0f1eeba4f0f9ec4f0b54610efbcbc0dc34c45b",
+        "dest": "057_fontawesome.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/fontawesome_0.5.0.tar.gz",
-        "sha512": "367752638993a5d21e6a5dcbb16e4667497c69dcc0e6c337d0e2f2158548d2b4a2a0be7cf42e7f7d224a7ee0328ff82bb81d2e62269264551787af9413b3dea7",
-        "dest": "058_fontawesome.Rpkg"
-    },
-    {
-        "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/jquerylib_0.1.4.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/jquerylib_0.1.4.tar.gz",
         "sha512": "2ebbb35f80b2fc818445bd2c1c255e3b2fef0398b37d86cba4e5e26e31df5a2d3d94af59bf50bb724717ebbd6089f469a8a235c1e1cb955d3f8555c8467d3898",
-        "dest": "059_jquerylib.Rpkg"
+        "dest": "058_jquerylib.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/pillar_1.9.0.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/pillar_1.9.0.tar.gz",
         "sha512": "7c3335d504955d83dcf2f08da9a4ffbf1fa8c1175b1ee8d93c957736bbf9e9de5f0de49b189539ec12d373a7c8ae39bab43103125a7a3810ec9c956f9cf31e87",
-        "dest": "060_pillar.Rpkg"
+        "dest": "059_pillar.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/sass_0.4.5.tar.gz",
-        "sha512": "799dfd29a6b7c90af784e04543a731725bccdce22dc13efddf62880c7643991ae12ef504e4b13e924837d450811198727ce401be11b3453bc7a27fdc2aa642a5",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/pkgbuild_1.4.3.tar.gz",
+        "sha512": "3c95948debf5cc7d24ab32b57a6738b81c587394eac4b30724f233ae682b4809a98f9370db905d42fff88f06444486a388773cc46c7357fa206a743f6a6aef65",
+        "dest": "060_pkgbuild.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/sass_0.4.8.tar.gz",
+        "sha512": "b2cfc7ee0e51082f9551b23191d26d8ad6b8d7a4cbfb534b582accc346b85de53214f75e0f2d69dd49681a7265e34a825f0e94b9d664992a4ab123e0efe24067",
         "dest": "061_sass.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/stringr_1.5.0.tar.gz",
-        "sha512": "7bd24813cb1e6c51f553778c5ca825b38eedf961e06aa273105111a72b3920605d91f4880d53a4bd4c64fe71e8647e03776dfcf9c9d9382b0bae5f5bb963f80c",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/stringr_1.5.1.tar.gz",
+        "sha512": "3b758c180d8342780ca765824a12a6b16428f021168c1dce0d62e427075718aca62ccc6418ee8dd4f7fbd301ac70a506f18c630baa973050e308730ea8c8aafd",
         "dest": "062_stringr.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/bslib_0.4.2.tar.gz",
-        "sha512": "b6f45298408f869942d19427baa25f59a63b982d62f9153581adb5f8799b28296c2c7300069dadbb676a6821a22a5865fe182c7a0ae071bcd2dad63af1c61595",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/bslib_0.6.1.tar.gz",
+        "sha512": "925b7790f76ca445a05b6a16d9ef198c14a9441c730464984d7cd6ba800c2cec07c77722465776f426047008bb3b9e34e425e28d469ced494c4c278bdf2a3b3e",
         "dest": "063_bslib.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/tibble_3.2.1.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/pkgload_1.3.3.tar.gz",
+        "sha512": "b2b2dd2242138d554a75f02db1cec397f9c1e401f5f1ba0a77d8fb0f64a660c0eafd9815d8bd0fef9965fb99974c742c89769e867c133f4d3c78ec4231c791c5",
+        "dest": "064_pkgload.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/tibble_3.2.1.tar.gz",
         "sha512": "b28b7dc957c8bc00f5867ae8cf2ec043a3d6bc5b6144197ea85cb0ed9f05d97d9e9066f738efa5dd0316152b38b96d8a7d82eb397be29226d1bda2de17d59843",
-        "dest": "064_tibble.Rpkg"
+        "dest": "065_tibble.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/ggplot2_3.4.2.tar.gz",
-        "sha512": "107698c58b6f647c147984ce2e81ddab91cbfd3273af8bf1a923fee6d9125de89b3a12a9f757967313ff71359c13d2df1b00022a31a69e9de33dd4e7d1f3ec0d",
-        "dest": "065_ggplot2.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/ggplot2_3.4.4.tar.gz",
+        "sha512": "d213f7e0eff5fb9901b46e6dfd902ee0ce130b2e13dc60e12410d7f18488a8a5759688e0d602e166b7bcfefc0b40f9108a980c35707181034d3e76c06a59ba9d",
+        "dest": "066_ggplot2.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/rematch2_2.1.2.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/rematch2_2.1.2.tar.gz",
         "sha512": "b83901cb0f2c301baa20bb1c6b1e509dfca7bcf4a443b11f7230ffaa6cba9cc993a6c11069f4d715e5bbdcebdf0f35014b20581815384b9e9e6ad387b40e2309",
-        "dest": "066_rematch2.Rpkg"
+        "dest": "067_rematch2.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/rmarkdown_2.21.tar.gz",
-        "sha512": "775fa62a029287d5c3ddd6f4111d8a1832f928b82a883b99106e9eda8034ae3286d3f7ce5870333e0e9b45b342477407a64c3254501864610cd643a11a27878e",
-        "dest": "067_rmarkdown.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/rmarkdown_2.25.tar.gz",
+        "sha512": "31c9305a1e04912d2d6df0599745c24e305519784bf9b91cf41266e03bc5eeed3450cc2a6b918208283dd8f71ae1463596fc945dddd32e5388685a82f0ce8d0f",
+        "dest": "068_rmarkdown.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/waldo_0.4.0.tar.gz",
-        "sha512": "3dcf469d8af7dfdb616732d2e0465eb02407f38204ac632bdc4812b8fd53e8673f6831c1c79dcef884c71f80f1eb20a72eb94f22b0e6b2de1e49a081d4d3a435",
-        "dest": "068_waldo.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/waldo_0.5.2.tar.gz",
+        "sha512": "7bd5c1dfc80fafea657dcf4a6689ce4d0bf38ff0a909923f162bfda8214e4f669dc475f6809a10c562c036bd3427b23ab584de652bcffa22f98c01946c094944",
+        "dest": "069_waldo.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.rstudio.com/cran/2023-04-07/src/contrib/testthat_3.1.7.tar.gz",
-        "sha512": "0b877df360fab46007f849bfbbee629af6ca2874559873fb641c27748aaeebac0bd8690723ee8fe83f02c2c86f9b25727f8c72de4ce4f7fd963c65d72a8dfb6e",
-        "dest": "069_testthat.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/testthat_3.2.1.tar.gz",
+        "sha512": "2f4b598ebb5a09ca69c17d5332c0cd54de482baa445585197432c1a5def306d7c1be2db25dfe216eebd350eb10e454b2d33f7dab72635ac8994b0901d5dd8b81",
+        "dest": "070_testthat.Rpkg"
     }
 ]

@@ -1,10 +1,11 @@
 {
     "app-id": "org.jamovi.jamovi",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "21.08",
+    "runtime-version": "23.08",
     "base": "org.electronjs.Electron2.BaseApp",
-    "base-version": "21.08",
+    "base-version": "23.08",
     "sdk": "org.freedesktop.Sdk",
+    "sdk-extensions": [ "org.freedesktop.Sdk.Extension.node18" ],
     "command": "jamovi",
     "separate-locales": false,
     "rename-desktop-file": "jamovi.desktop",
@@ -24,7 +25,8 @@
         "cxxflags": "-O2 -g",
         "env": {
             "R_HOME": "/app/lib/R"
-        }
+        },
+        "append-path": "/usr/lib/sdk/node18/bin"
     },
     "cleanup": [
         "/include",
@@ -53,8 +55,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.76.0/source/boost_1_76_0.tar.bz2",
-                    "sha512": "5d68bed98c57e03b4cb2420d9b856e5f0669561a6142a4b0c9c8a58dc5b6b28e16ccbb16ac559c3a3198c45769a246bf996b96cb7b6a019dd15f05c2270e9429"
+                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.81.0/source/boost_1_81_0.tar.bz2",
+                    "sha512": "a04201e73da59f68fa02761b333c864a96ebaf268247b6b10cb19ed3d70ee9ad3da4c53123f2a7a4a9b9e1408793b51e1adbcc6fd09f60fecef3ca9522bb6b36"
                 }
             ],
             "cleanup": [
@@ -62,32 +64,50 @@
             ]
         },
         {
-            "name": "lapack",
-            "buildsystem": "cmake",
-            "builddir": true,
-            "config-opts": [
-                "-DCMAKE_INSTALL_PREFIX=/app",
-                "-DCMAKE_INSTALL_LIBDIR=lib",
-                "-DCMAKE_BUILD_TYPE=Release",
-                "-DBUILD_SHARED_LIBS=ON",
-                "-DBUILD_TESTING=OFF",
-                "-DLAPACKE=ON",
-                "-DCBLAS=ON"
-            ],
+            "name": "ProtoBuf",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://www.netlib.org/lapack/lapack-3.8.0.tar.gz",
-                    "sha512": "17786cb7306fccdc9b4a242de7f64fc261ebe6a10b6ec55f519deb4cb673cb137e8742aa5698fd2dc52f1cd56d3bd116af3f593a01dcf6770c4dcc86c50b2a7f"
+                    "url": "https://github.com/protocolbuffers/protobuf/archive/refs/tags/v3.21.12.zip",
+                    "sha512": "7f1c9a4297a4e47705d64932483f31ed25da928d24e351d94899038f852015d4a16c88c2b962ac4a0c62e6a3f6689f87fb4cef7165d327aae5381a7b975bdf2e"
                 }
             ],
-            "cleanup": [ "/lib/cmake" ]
+            "cleanup": [
+                "/bin/protoc"
+            ]
+        },
+        {
+            "name": "nanomsg",
+            /* needed by python3-nanomsg */
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/nanomsg/nanomsg/archive/1.1.5.zip",
+                    "sha512": "8fbdf275f6e4185bfeb24f4ad28094ce8e9b5798e8040d6ff16fd6df51b79c17f3fc36d2285e9e23baf86ff9c9fa1f9613b9abdae67cccb470878af90f1fe304"
+                }
+            ]
+        },
+        {
+            "name": "xslt-config",
+            "buildsystem": "simple",
+            "build-commands": [
+                "mv xslt-config /app/bin"
+            ],
+            "sources": [
+                {
+                    "type": "script",
+                    "dest-filename": "xslt-config",
+                    "commands": [
+                        "#!/bin/bash",
+                        "pkg-config libxslt $*"
+                    ]
+                }
+            ]
         },
         {
             "name": "R",
             "config-opts": [
                 "--enable-R-shlib",
-                "--disable-BLAS-shlib",
                 "--libdir=/app/lib",
                 "--with-x=no"
             ],
@@ -96,8 +116,8 @@
             "sources": [
                 {
                     "type":"archive",
-                    "url": "https://cran.r-project.org/src/base/R-4/R-4.1.3.tar.gz",
-                    "sha512":"cb71cc6c9551cc9cef4819ed778a8d0ef40490ec2bed27669c8e93d464a93bef5e73c2a03a714db03c87112b291a752ec2d21194e5abef81d85cb6c62643127c"
+                    "url": "https://cran.r-project.org/src/base/R-4/R-4.3.2.tar.gz",
+                    "sha512":"125114357f20d4a3248aee86727768d1dc15e07e44353f8a68fe2ef1fedae508e85d944301d00c0edd61e8b012b0b3cdcde53ac60be903713f96542d83ad5b1d"
                 }
             ],
             "cleanup": [
@@ -127,193 +147,27 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mirror.freedif.org/GNU/gsl/gsl-2.6.tar.gz",
+                    "url": "https://ftp.gnu.org/gnu/gsl/gsl-2.6.tar.gz",
                     "sha512": "0be8240715f0b86aba2c63d9f12da4dba4719d4e350e9308d279e0dd3b2f0519ea26fd2e38a17f3e8cf43aacbaa2455207a7ca0d6c305f3b8725e8ece2250a74"
                 }
             ]
         },
         {
-            "name": "ProtoBuf",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/protocolbuffers/protobuf/releases/download/v3.11.4/protobuf-cpp-3.11.4.tar.gz",
-                    "sha512": "b421ebfe2a16f76785abf43583d04ced6c1fd8d79e988a7a4bf5bc3a4108121dd5ffa25e20c5d2cc32a07daf58d5c3b9d123eb0e6e5a2002e2788effc3dda2de"
-                }
-            ],
-            "cleanup": [
-                "/bin/protoc"
-            ]
-        },
-        {
-            "name": "nanomsg",
-            /* needed by python3-nanomsg */
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/nanomsg/nanomsg/archive/1.1.5.zip",
-                    "sha512": "8fbdf275f6e4185bfeb24f4ad28094ce8e9b5798e8040d6ff16fd6df51b79c17f3fc36d2285e9e23baf86ff9c9fa1f9613b9abdae67cccb470878af90f1fe304"
-                }
-            ]
-        },
-        "shared-modules/python2.7/python-2.7.json",
-        {
-            "name": "nodejs",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://nodejs.org/download/release/v14.18.2/node-v14.18.2.tar.xz",
-                    "sha512": "9179321e09e91ae68e8833b57fcd8e76aef11546cb9e75a95dc80480513fef46211f308138c10653a050decc687bb31d7975adb388654bc64d41be625fc2e76b"
-                }
-            ],
-            "cleanup": [
-                "/include",
-                "/share",
-                "/lib/node_modules",
-                "/bin/node",
-                "/bin/npm",
-                "/bin/npx"
-            ]
-        },
-        {
-            "name": "xslt-config",
+            "name": "units",
+            /* needed by units (R package) */
             "buildsystem": "simple",
             "build-commands": [
-                "mv xslt-config /app/bin"
-            ],
-            "sources": [
-                {
-                    "type": "script",
-                    "dest-filename": "xslt-config",
-                    "commands": [
-                        "#!/bin/bash",
-                        "pkg-config libxslt $*"
-                    ]
-                }
-            ]
-        },
-        "python-deps.json",
-        {
-            "name": "python3-numpy",
-            "buildsystem": "simple",
-            "build-commands": [
-                "python3 setup.py build -j 0",
-                "python3 setup.py install --prefix=/app --root=/ --optimize=1"
-            ],
-            "build-options": {
-                "env": {
-                    "ATLAS": "None",
-                    "BLAS": "/app/lib",
-                    "LAPACK": "/app/lib"
-                }
-            },
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/82/a8/1e0f86ae3f13f7ce260e9f782764c16559917f24382c74edfb52149897de/numpy-1.20.2.zip",
-                    "sha512": "337a66d68c965da06f757a89b58d30b83ec0b2f3c7a3bb39496e5031e50fee6c4f2ec090202c3da9a20613864ea46d032ae75af1de5c33eebe515133ef37d40c"
-                }
-            ]
-        },
-        {
-            "name": "python3-scipy",
-            "buildsystem": "simple",
-            "build-commands": [
-                "python3 setup.py build -j 0",
-                "python3 setup.py install --prefix=/app --root=/ --optimize=1"
-            ],
-            "build-options": {
-                "env": {
-                    "ATLAS": "None",
-                    "BLAS": "/app/lib",
-                    "LAPACK": "/app/lib",
-                    "LDFLAGS": "-shared"
-                }
-            },
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/scipy/scipy/releases/download/v1.6.2/scipy-1.6.2.tar.xz",
-                    "sha512": "2253f257d5c55739a47759e039602dc542bd1a068c5883fd2a80a60bc7d3e8372d467d589ae2c83b9a847d0fb76c1fb841208213297db284f142fac98dd33b8e"
-                }
-            ]
-        },
-        {
-            "name": "electron-x86_64",
-            "only-arches": [ "x86_64" ],
-            "buildsystem": "simple",
-            "build-commands": [
-                "mkdir -p /app/bin/resources",
-                "cp *.so  /app/bin",
-                "cp *.bin /app/bin",
-                "cp *.dat /app/bin",
-                "cp *.pak /app/bin",
-                "cp electron /app/bin/",
-                "cp -r resources/ /app/bin/",
-                "cp -r locales/   /app/bin/"
+                "./configure --includedir=/app/share/include --libdir=/app/lib",
+                "make",
+                "make install"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v25.3.2/electron-v25.3.2-linux-x64.zip",
-                    "sha512": "6a1af90665d67d5d7f94c491dc8fb68213a0d276127c54a130172d5009160ef1005258434dde62bc888189ac7ef57905e29d90842f38badf8ad423b09c37cece",
-                    "strip-components": 0
+                    "url": "https://downloads.unidata.ucar.edu/udunits/2.2.28/udunits-2.2.28.tar.gz",
+                    "sha512": "86146d489e1d472723e059fb15a5dd697a67568ffb5cdba17d191eb304c018bffffea708a73cce50a6c87ad33b387e5ee6653377ae0ebe9986117dfd41e9a5a1"
                 }
             ]
-        },
-        {
-            "name": "electron-arm",
-            "only-arches": [ "arm" ],
-            "buildsystem": "simple",
-            "build-commands": [
-                "mkdir -p ${FLATPAK_DEST}/bin/resources",
-                "cp *.so  ${FLATPAK_DEST}/bin",
-                "cp *.bin ${FLATPAK_DEST}/bin",
-                "cp *.dat ${FLATPAK_DEST}/bin",
-                "cp *.pak ${FLATPAK_DEST}/bin",
-                "cp electron ${FLATPAK_DEST}/bin/",
-                "cp -r resources/ ${FLATPAK_DEST}/bin/"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v25.3.2/electron-v25.3.2-linux-armv7l.zip",
-                    "sha512": "2b31aca7727b77b2d35145730b8e07fe5c83088161310c3c3de24678d919838e2cf5481eb5f4125628f070a14f1d986cf8e9da84567a57f67cea08380e28bb54",
-                    "strip-components": 0
-                }
-            ]
-        },
-        {
-            "name": "electron-arm64",
-            "only-arches": [ "aarch64" ],
-            "buildsystem": "simple",
-            "build-commands": [
-                "mkdir -p ${FLATPAK_DEST}/bin/resources",
-                "cp *.so  ${FLATPAK_DEST}/bin",
-                "cp *.bin ${FLATPAK_DEST}/bin",
-                "cp *.dat ${FLATPAK_DEST}/bin",
-                "cp *.pak ${FLATPAK_DEST}/bin",
-                "cp electron ${FLATPAK_DEST}/bin/",
-                "cp -r resources/ ${FLATPAK_DEST}/bin/"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v25.3.2/electron-v25.3.2-linux-arm64.zip",
-                    "sha512": "24e06513df2357266ff3f169291eb12d2265f2cbc2c8509833389aea3e62d0f60da6295f3233bc5423e4fdcbc807e47ecabeadd50f332909b92b36593e18c72f",
-                    "strip-components": 0
-                }
-            ]
-        },
-        {
-            "name": "zypak-chrome-sandbox",
-            /* needed by zypak which is bundled in the electron base app */
-            "buildsystem": "simple",
-            "build-commands": [
-                "touch    ${FLATPAK_DEST}/bin/chrome-sandbox",
-                "chmod +x ${FLATPAK_DEST}/bin/chrome-sandbox"
-            ],
-            "sources": [ ]
         },
         {
             "name": "xml2-config",
@@ -376,11 +230,68 @@
             ]
         },
         {
+            "name": "electron-x86_64",
+            "only-arches": [ "x86_64" ],
+            "buildsystem": "simple",
+            "build-commands": [
+                "mkdir -p /app/bin/resources",
+                "cp *.so  /app/bin",
+                "cp *.bin /app/bin",
+                "cp *.dat /app/bin",
+                "cp *.pak /app/bin",
+                "cp electron /app/bin/",
+                "cp -r resources/ /app/bin/",
+                "cp -r locales/   /app/bin/"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/electron/electron/releases/download/v25.3.2/electron-v25.3.2-linux-x64.zip",
+                    "sha512": "6a1af90665d67d5d7f94c491dc8fb68213a0d276127c54a130172d5009160ef1005258434dde62bc888189ac7ef57905e29d90842f38badf8ad423b09c37cece",
+                    "strip-components": 0
+                }
+            ]
+        },
+        {
+            "name": "electron-arm64",
+            "only-arches": [ "aarch64" ],
+            "buildsystem": "simple",
+            "build-commands": [
+                "mkdir -p ${FLATPAK_DEST}/bin/resources",
+                "cp *.so  ${FLATPAK_DEST}/bin",
+                "cp *.bin ${FLATPAK_DEST}/bin",
+                "cp *.dat ${FLATPAK_DEST}/bin",
+                "cp *.pak ${FLATPAK_DEST}/bin",
+                "cp electron ${FLATPAK_DEST}/bin/",
+                "cp -r resources/ ${FLATPAK_DEST}/bin/"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/electron/electron/releases/download/v25.3.2/electron-v25.3.2-linux-arm64.zip",
+                    "sha512": "24e06513df2357266ff3f169291eb12d2265f2cbc2c8509833389aea3e62d0f60da6295f3233bc5423e4fdcbc807e47ecabeadd50f332909b92b36593e18c72f",
+                    "strip-components": 0
+                }
+            ]
+        },
+        {
+            "name": "zypak-chrome-sandbox",
+            /* needed by zypak which is bundled in the electron base app */
+            "buildsystem": "simple",
+            "build-commands": [
+                "touch    ${FLATPAK_DEST}/bin/chrome-sandbox",
+                "chmod +x ${FLATPAK_DEST}/bin/chrome-sandbox"
+            ],
+            "sources": [ ]
+        },
+        {
             "name": "jamovi-electron-app",
             "buildsystem": "simple",
             "build-options": {
                 "env": {
-                    "npm_config_cache": "../flatpak-node/npm-cache"
+                    "XDG_CACHE_HOME": "../flatpak-node/cache",
+                    "npm_config_cache": "../flatpak-node/npm-cache",
+                    "npm_config_offline": "true"
                 }
             },
             "build-commands": [
@@ -404,60 +315,14 @@
                         "if [[ \"$1\" == \"--version\" ]]; then",
                         "    cat $HERE/../lib/jamovi/version",
                         "elif [[ \"$1\" == \"--r-version\" ]]; then",
-                        "    /app/bin/R --version | head -1 | sed 's|^R version \\([0-9]\\+\\.[0-9]\\+\\.[0-9]\\+\\).*$|\\1|g'",
+                        "    echo `/app/bin/R --version | sed -n 's|^R version \\([0-9.]\\+\\).*$|\\1|p'`-`/app/bin/R --version | sed -n 's|^Platform: \\([^-]\\+\\).*$|\\1|p'` | sed 's|x86_64|x64|g' | sed 's|aarch64|arm64|g'",
                         "elif [[ \"$1\" == \"-R\" ]]; then",
                         "    shift",
-                        "    /app/bin/R \"$@\"",
+                        "    DOWNLOAD_STATIC_LIBV8=1 UDUNITS2_INCLUDE=/app/share/include UDUNITS2_LIBS=/app/lib /app/bin/R \"$@\"",
                         "else",
                         "    /app/bin/zypak-wrapper /app/bin/electron \"$@\"",
                         "fi"
                     ]
-                }
-            ]
-        },
-        {
-            "name": "jamovi-server",
-            "buildsystem": "simple",
-            "build-commands": [
-                "cd server && python3 setup.py build_ext",
-                "cd server && python3 setup.py install --prefix=/app",
-                "cd readstat && python3 setup.py build_ext",
-                "cd readstat && python3 setup.py install --prefix=/app",
-                "mkdir -p /app/lib/jamovi",
-                "cp version /app/lib/jamovi/version"
-            ],
-            "sources":[
-                "jamovi-source.json"
-            ]
-        },
-        {
-            "name": "jamovi-client",
-            "buildsystem": "simple",
-            "build-options": {
-                "env": {
-                    "npm_config_cache": "../flatpak-node/npm-cache"
-                }
-            },
-            "build-commands": [
-                "cd client && npm install --offline",
-                "cd client && npm run build",
-                "cp -r client/dist     /app/lib/jamovi/client"
-            ],
-            "sources":[
-                "client-deps-sources.json",
-                "jamovi-source.json"
-            ]
-        },
-        {
-            "name": "env.conf",
-            "buildsystem": "simple",
-            "build-commands": [
-                "sed -E -e \"s|R_HOME=.*|R_HOME=$R_HOME|g\" -e \"s|R_LIBS=.*|R_LIBS=$R_HOME/library|g\" env.conf > /app/bin/env.conf"
-            ],
-            "sources":[
-                {
-                    "type": "file",
-                    "path": "env.conf"
                 }
             ]
         },
@@ -467,17 +332,19 @@
             "build-commands": [
                 "cd jamovi-compiler && npm install --offline",
                 "mkdir -p /app/lib/jamovi/modules",
-                "mkdir -p   jmv/build/R4.1.3-linux",
-                "/app/bin/R CMD INSTALL *.jmv.Rpkg --library=jmv/build/R4.1.3-linux   --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "mkdir -p   jmv/build/R`/app/bin/jamovi --r-version`-linux",
+                "/app/bin/R CMD INSTALL *.jmv.Rpkg --library=jmv/build/R`/app/bin/jamovi --r-version`-linux   --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
                 "./jamovi-compiler.sh --i18n jmv --update",
-                "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app --patch-version --skip-remotes",
-                "mkdir -p scatr/build/R4.1.3-linux",
-                "/app/bin/R CMD INSTALL *.scatr.Rpkg --library=scatr/build/R4.1.3-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
-                "./jamovi-compiler.sh --install scatr --to /app/lib/jamovi/modules --home /app --rlibs /app/lib/jamovi/modules/jmv/R"
+                "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app --patch-version --skip-remotes --assume-app-version `cat version`",
+                "mkdir -p scatr/build/R`/app/bin/jamovi --r-version`-linux",
+                "/app/bin/R CMD INSTALL *.scatr.Rpkg --library=scatr/build/R`/app/bin/jamovi --r-version`-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
+                "./jamovi-compiler.sh --install scatr --to /app/lib/jamovi/modules --home /app --rlibs /app/lib/jamovi/modules/jmv/R --assume-app-version `cat version`"
             ],
             "build-options": {
                 "env": {
+                    "XDG_CACHE_HOME": "../flatpak-node/cache",
                     "npm_config_cache": "../flatpak-node/npm-cache",
+                    "npm_config_offline": "true",
                     "R_LIBS": "/app/lib/jamovi/modules/jmv/R"
                 }
             },
@@ -495,16 +362,103 @@
                 }
             ]
         },
+        "python-deps.json",
+        {
+            "name": "python3-scipy-x86_64",
+            "only-arches": [ "x86_64" ],
+            "buildsystem": "simple",
+            "build-commands": [
+            	"python3 -m pip install numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl scipy-1.12.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl --prefix=${FLATPAK_DEST}"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/3a/d0/edc009c27b406c4f9cbc79274d6e46d634d139075492ad055e3d68445925/numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+                    "sha256": "666dbfb6ec68962c033a450943ded891bed2d54e6755e35e5835d63f4f6931d5"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/d4/b8/7169935f9a2ea9e274ad8c21d6133d492079e6ebc3fc69a915c2375616b0/scipy-1.12.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+                    "sha256": "8b8066bce124ee5531d12a74b617d9ac0ea59245246410e19bca549656d9a40a"
+                }
+            ]
+        },
+        {
+            "name": "python3-scipy-aarch64",
+            "only-arches": [ "aarch64" ],
+            "buildsystem": "simple",
+            "build-commands": [
+                "python3 -m pip install numpy-1.26.4-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl scipy-1.12.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl --prefix=${FLATPAK_DEST}"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/79/ae/7e5b85136806f9dadf4878bf73cf223fe5c2636818ba3ab1c585d0403164/numpy-1.26.4-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+                    "sha256": "7ab55401287bfec946ced39700c053796e7cc0e3acbef09993a9ad2adba6ca6e"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/e3/c5/d40abc1a857c1c6519e1a4e096d6aee86861eddac019fb736b6af8a58d25/scipy-1.12.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+                    "sha256": "c3003652496f6e7c387b1cf63f4bb720951cfa18907e998ea551e6de51a04467"
+                }
+            ]
+        },
+        {
+            "name": "jamovi-server",
+            "buildsystem": "simple",
+            "build-commands": [
+                "cd server && python3 setup.py build_ext",
+                "cd server && python3 setup.py install --single-version-externally-managed --root=/ --prefix=${FLATPAK_DEST}",
+                "cd readstat && python3 setup.py build_ext",
+                "cd readstat && python3 setup.py install --single-version-externally-managed --root=/ --prefix=${FLATPAK_DEST}",
+                "mkdir -p /app/lib/jamovi",
+                "cp version /app/lib/jamovi/version"
+            ],
+            "sources":[
+                "jamovi-source.json"
+            ]
+        },
+        {
+            "name": "jamovi-client",
+            "buildsystem": "simple",
+            "build-options": {
+                "env": {
+                    "XDG_CACHE_HOME": "../flatpak-node/cache",
+                    "npm_config_cache": "../flatpak-node/npm-cache",
+                    "npm_config_offline": "true"
+                }
+            },
+            "build-commands": [
+                "cd client && npm install --offline",
+                "cd client && npm run build",
+                "cp -r client/dist     /app/lib/jamovi/client"
+            ],
+            "sources":[
+                "client-deps-sources.json",
+                "jamovi-source.json"
+            ]
+        },
+        {
+            "name": "env.conf",
+            "buildsystem": "simple",
+            "build-commands": [
+                "sed -E -e \"s|R_HOME=.*|R_HOME=$R_HOME|g\" -e \"s|R_LIBS=.*|R_LIBS=$R_HOME/library|g\" -e \"s|JAMOVI_R_VERSION=.*|JAMOVI_R_VERSION=`jamovi --r-version`|g\" env.conf > /app/bin/env.conf"
+            ],
+            "sources":[
+                {
+                    "type": "file",
+                    "path": "env.conf"
+                }
+            ]
+        },
         {
             "name": "jamovi-engine",
-            "build-options": {
-                "config-opts": [
-                    "--rhome=/app/lib/R",
-                    "--base-module-path=/app/lib/R/library",
-                    "--rpath=/app/lib/R/library/RInside/lib",
-                    "--rpath=/app/lib/R/lib"
-                ]
-            },
+            "buildsystem": "simple",
+            "build-commands": [
+                "./configure --rhome=/app/lib/R --base-module-path=/app/lib/R/library --rpath=/app/lib/R/library/RInside/lib --rpath=/app/lib/R/lib",
+                "make",
+                "BINDIR='${FLATPAK_DEST}/bin' make install"
+            ],
             "sources":[
                 "jamovi-source.json"
             ]
@@ -514,7 +468,9 @@
             "buildsystem": "simple",
             "build-options": {
                 "env": {
-                    "npm_config_cache": "../flatpak-node/npm-cache"
+                    "XDG_CACHE_HOME": "../flatpak-node/cache",
+                    "npm_config_cache": "../flatpak-node/npm-cache",
+                    "npm_config_offline": "true"
                 }
             },
             "build-commands": [
