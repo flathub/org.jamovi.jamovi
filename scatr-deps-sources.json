@@ -2,7 +2,7 @@
     {
         "type": "archive",
         "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/lazyeval_0.2.2.tar.gz",
-        "sha512": "ff69538e70e2886ce3733ac1b6930de3605a0e1bae864589678f2e2d3e45ed69496f53aa88f9bc79dcb4cde23f93b3f1133e75f9ac668034591dca7b1ef69c07",
+        "sha512": "bf29d92441dfe84b7c93320aef3b9499c20eeb63b3331a3ada147565d0d5f4e4c001fb9150b029f6b2e58009e1b7630d56c468b5b14fbd04f4163a71c9b2c546",
         "dest": "000_lazyeval.scatr.Rpkg"
     },
     {
