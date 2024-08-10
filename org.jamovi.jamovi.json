@@ -116,8 +116,8 @@
             "sources": [
                 {
                     "type":"archive",
-                    "url": "https://cran.r-project.org/src/base/R-4/R-4.3.2.tar.gz",
-                    "sha512":"125114357f20d4a3248aee86727768d1dc15e07e44353f8a68fe2ef1fedae508e85d944301d00c0edd61e8b012b0b3cdcde53ac60be903713f96542d83ad5b1d"
+                    "url": "https://cran.r-project.org/src/base/R-4/R-4.4.1.tar.gz",
+                    "sha512":"cc30172227b7d89a9d6e9d65c8622b2042bcbbf3f1b5e36c7460f60958a1a0589980a1867ec9989df2589c1618233f3382d4732700b147361ace3be6680b5643"
                 }
             ],
             "cleanup": [

@@ -1,20 +1,14 @@
 [
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/lazyeval_0.2.2.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2024-08-07/src/contrib/lazyeval_0.2.2.tar.gz",
         "sha512": "bf29d92441dfe84b7c93320aef3b9499c20eeb63b3331a3ada147565d0d5f4e4c001fb9150b029f6b2e58009e1b7630d56c468b5b14fbd04f4163a71c9b2c546",
         "dest": "000_lazyeval.scatr.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/cowplot_1.1.2.tar.gz",
-        "sha512": "26944cdbad8f4a71bee91811644c9ae36c84dc40b14bb829013602dbee94353b18076415b09a3406f3a4525aa49f2b83273d4c17fb9c60d9ccf6dc32a3fc45f6",
-        "dest": "001_cowplot.scatr.Rpkg"
-    },
-    {
-        "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2024-01-09/src/contrib/ggstance_0.3.6.tar.gz",
-        "sha512": "5dbf297bd9fab7760d98037bc11ad7c315ae6b57c5e6ae3a635370f5f04daff015eb9a1dd9b9d84bc722aa7c580db1bcc215d07a324736c793e7b1bd6e0016cf",
-        "dest": "002_ggstance.scatr.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2024-08-07/src/contrib/ggstance_0.3.7.tar.gz",
+        "sha512": "6ef1fc407657d617502afd1934aec3cab53e0ab0a5f6b4246924e368db515d80145a47e02062f65b77df0171245a5f817a75c346abaf0bff7081c33512f2e59c",
+        "dest": "001_ggstance.scatr.Rpkg"
     }
 ]
