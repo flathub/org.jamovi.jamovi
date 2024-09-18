@@ -367,8 +367,8 @@
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2024-08-07/src/contrib/ragg_1.3.2.tar.gz",
-        "sha512": "f747090e3a783dcfdd9fb09eba309ae09bb4ed27d8b95e791036091ac4c304c5a2ed001f66e44e970aa5538b71057daf922d6e4cc80edc1b52c5a7a58d217478",
+        "url": "https://packagemanager.posit.co/cran/2024-09-12/src/contrib/ragg_1.3.3.tar.gz",
+        "sha512": "c5c0b33e0cfb27bf24dcf3b67c822853346df44b155c54221f4adc0206a20478863b6e226c3671ed9a9ac62c24baad7fe229f1052487b3253db80f505f75950e",
         "dest": "061_ragg.Rpkg"
     },
     {
