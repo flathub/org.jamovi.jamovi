@@ -13,7 +13,7 @@
                 {
                     "type": "file",
                     "url": "https://files.pythonhosted.org/packages/df/b3/072c28eace372ba7630ea187b7efd7f09cc8bcebf847a96b5e03e9cc0828/expandvars-0.12.0-py3-none-any.whl",
-                    "sha256": "7432c1c2ae50c671a8146583177d60020dd210ada7d940e52af91f1f84f753b2"
+                    "sha512": "1cd66464607f83356cf0ba49488527fd4ff2aca456dd53e859abb729234cd31631b989c4eeb2d0f6362fa9b5038e10b9f379b424a4adc03a80d12bda472d88a1"
                 }
             ]
         },
@@ -26,8 +26,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/5e/d8/65adb47d921ce828ba319d6587aa8758da022de509c3862a70177a958844/protobuf-4.25.3.tar.gz",
-                    "sha256": "25b5d0b42fd000320bd7830b349e3b696435f3b329810427a6bcce6a5492cc5c"
+                    "url": "https://files.pythonhosted.org/packages/b1/a4/4579a61de526e19005ceeb93e478b61d77aa38c8a85ad958ff16a9906549/protobuf-5.28.2.tar.gz",
+                    "sha512": "2596e2be4ce396d991041ca82e09e54eb935c6598b52807efee2c35b3f2b2be2d1518aae905c05291ccfb35c511404c14e417bff2ec863dca1e8cc9d5cd7c282"
                 }
             ]
         },
@@ -40,8 +40,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/bd/a2/ea124343e3b8dd7712561fe56c4f92eda26865f5e1040b289203729186f2/tornado-6.4.tar.gz",
-                    "sha256": "72291fa6e6bc84e626589f1c29d90a5a6d593ef5ae68052ee2ef000dfd273dee"
+                    "url": "https://files.pythonhosted.org/packages/ee/66/398ac7167f1c7835406888a386f6d0d26ee5dbf197d8a571300be57662d3/tornado-6.4.1.tar.gz",
+                    "sha512": "294b4fff8a6d1b9592d355f7faf78f1a94a2aaea1b54414b7e81884b8d4069713a28f6105ae36f27be78abf4c47a1fceab3801bc92b5429374f7a534f104c437"
                 }
             ]
         },
@@ -55,7 +55,7 @@
                 {
                     "type": "file",
                     "url": "https://files.pythonhosted.org/packages/0b/b1/3037e0e380d5fab2824e69a59bd374da402c0cef264ccb3fe5d71c230c4b/nanomsg-1.0.tar.gz",
-                    "sha256": "843be41258219d9d319cf434a68cac7669834ab9c993ea4bab5b3d87f62a7a13"
+                    "sha512": "2d1e6349b73481aaa9fb0a683f531f7fe92374e1893fe236763ec86c6389ad1a3ce3900b1e1b4dff165c90447f2516a5b9aff0e1760dc190fa093c3cc2c301aa"
                 }
             ]
         },
@@ -68,8 +68,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/cd/e5/af35f7ea75cf72f2cd079c95ee16797de7cd71f29ea7c68ae5ce7be1eda0/PyYAML-6.0.1.tar.gz",
-                    "sha256": "bfdf460b1736c775f2ba9f6a92bca30bc2095067b8a9d77876d1fad6cc3b4a43"
+                    "url": "https://files.pythonhosted.org/packages/54/ed/79a089b6be93607fa5cdaedf301d7dfb23af5f25c398d5ead2525b063e17/pyyaml-6.0.2.tar.gz",
+                    "sha512": "a675e0056bb6af9119c7f2796e349ced05afca64118a5b444d66dafcb6a774cf274eeba7eab044b86eb6c12a9d7c785c654f6cf229e1d190340dd06ea76e25ec"
                 }
             ]
         },
@@ -83,7 +83,7 @@
                 {
                     "type": "file",
                     "url": "https://files.pythonhosted.org/packages/38/6f/f5fbc992a329ee4e0f288c1fe0e2ad9485ed064cac731ed2fe47dcc38cbf/chardet-5.2.0-py3-none-any.whl",
-                    "sha256": "e1cf59446890a00105fe7b7912492ea04b6e6f06d4b742b2c788469e34c82970"
+                    "sha512": "807aa47c3b05748eeaff835268cbeb29c7db394f05a325e638b6c0a7cdf56515a8f3ad64e1f7e34d949760e6227533c249f6b39ff84fe27fef9b62dbb6e3a2aa"
                 }
             ]
         },
@@ -97,12 +97,12 @@
                 {
                     "type": "file",
                     "url": "https://files.pythonhosted.org/packages/96/c2/3dd434b0108730014f1b96fd286040dc3bcb70066346f7e01ec2ac95865f/et_xmlfile-1.1.0-py3-none-any.whl",
-                    "sha256": "a2ba85d1d6a74ef63837eed693bcb89c3f752169b0e3e7ae5b16ca5e1b3deada"
+                    "sha512": "458ef7cff8981ab3fedec0fd3c28c3e289975dd7749d5333f44d1da93fa7d28d7850d634c86028e7abfe99896b80921f623f5f0758ed5c15a0255cdbf588a588"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/6a/94/a59521de836ef0da54aaf50da6c4da8fb4072fb3053fa71f052fd9399e7a/openpyxl-3.1.2-py2.py3-none-any.whl",
-                    "sha256": "f91456ead12ab3c6c2e9491cf33ba6d08357d802192379bb482f1033ade496f5"
+                    "url": "https://files.pythonhosted.org/packages/c0/da/977ded879c29cbd04de313843e76868e6e13408a94ed6b987245dc7c8506/openpyxl-3.1.5-py2.py3-none-any.whl",
+                    "sha512": "841436823cdda465653c4a6d4a5e135d990d5d7bc5cf85ad915a43b99eaed4f76826076488275fae0fe3f85ffc43e9e93750fb64af95d1d3e3c551f5b9e7ffba"
                 }
             ]
         },
@@ -115,13 +115,13 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/2b/b4/bbccb250adbee490553b6a52712c46c20ea1ba533a643f1424b27ffc6845/lxml-5.1.0.tar.gz",
-                    "sha256": "3eea6ed6e6c918e468e693c41ef07f3c3acc310b70ddd9cc72d9ef84bc9564ca"
+                    "url": "https://files.pythonhosted.org/packages/e7/6b/20c3a4b24751377aaa6307eb230b66701024012c29dd374999cc92983269/lxml-5.3.0.tar.gz",
+                    "sha512": "7f8a3717645893bc6f790cc9adfb8fdab91c352dc4dc23c0ccb4af9a0d138acf9ef5054e9786af497955f10079e9242dbd63ea9ac39c33bfd71ca2fe4ef4a7c0"
                 },
                 {
                     "type": "file",
                     "url": "https://files.pythonhosted.org/packages/5b/fd/4a1583b47a7527669f5c9d45c031c3b4ae35a4cd34b2113ed98b1b9f1bce/pyexcel_ezodf-0.3.4-py2.py3-none-any.whl",
-                    "sha256": "a74ac7636a015fff31d35c5350dc5ad347ba98ecb453de4dbcbb9a9168434e8c"
+                    "sha512": "26d5454cafbf681b0a2755a7cde68f88e6ebc2b086cc5f1d98e5e58558864853ff8396cf16160272eaa5a192fa3246d7fe0db76c0a49f1f2be71e0977bf9b4d1"
                 }
             ]
         },
@@ -134,43 +134,43 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/18/93/1f005bbe044471a0444a82cdd7356f5120b9cf94fe2c50c0cdbf28f1258b/aiohttp-3.9.3.tar.gz",
-                    "sha256": "90842933e5d1ff760fae6caca4b2b3edba53ba8f4b71e95dacf2818a2aca06f7"
+                    "url": "https://files.pythonhosted.org/packages/18/b6/58ea188899950d759a837f9a58b2aee1d1a380ea4d6211ce9b1823748851/aiohappyeyeballs-2.4.0-py3-none-any.whl",
+                    "sha512": "9faa0219c31cdc6f051f985178bea0bf8dbc083f25d013cea5984933a15c7257a50901607d5440d53890ed397b0dc619913b98bad2e60a3c753aa19ee8305416"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/ca/28/ca549838018140b92a19001a8628578b0f2a3b38c16826212cc6f706e6d4/aiohttp-3.10.5.tar.gz",
+                    "sha512": "bb932d24b3ce332d8a232ef3bf1fbe9b0a7df9986ad5e81d5f41bc31a81204653e5250c4f0ee77a9eeb53d404bd907b12977d31caae54c00ef0146350629e750"
                 },
                 {
                     "type": "file",
                     "url": "https://files.pythonhosted.org/packages/76/ac/a7305707cb852b7e16ff80eaf5692309bde30e2b1100a1fcacdc8f731d97/aiosignal-1.3.1-py3-none-any.whl",
-                    "sha256": "f8376fb07dd1e86a584e4fcdec80b36b7f81aac666ebc724e2c090300dd83b17"
+                    "sha512": "51a954a1f2ff839cd652e4aa8e2bbdde49e9ad956d526c3743097fcef317a6be07bb49a45d2095ad3146ce8a390735f67e3f50598264d100ce4f79eaaf193bec"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/a7/fa/e01228c2938de91d47b307831c62ab9e4001e747789d0b05baf779a6488c/async_timeout-4.0.3-py3-none-any.whl",
-                    "sha256": "7405140ff1230c310e51dc27b3145b9092d659ce68ff733fb0cefe3ee42be028"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/e0/44/827b2a91a5816512fcaf3cc4ebc465ccd5d598c45cefa6703fcf4a79018f/attrs-23.2.0-py3-none-any.whl",
-                    "sha256": "99b87a485a5820b23b879f04c2305b44b951b502fd64be915879d77a7e8fc6f1"
+                    "url": "https://files.pythonhosted.org/packages/6a/21/5b6702a7f963e95456c0de2d495f67bf5fd62840ac655dc451586d23d39a/attrs-24.2.0-py3-none-any.whl",
+                    "sha512": "2fe6dfdc50743e0851111897521bd02dac85b3cc707e64956e0af00076d726f44939f8fb7e3d50396f71a52a4af8807baf13dee62b0310fc32b295ad1b2db200"
                 },
                 {
                     "type": "file",
                     "url": "https://files.pythonhosted.org/packages/cf/3d/2102257e7acad73efc4a0c306ad3953f68c504c16982bbdfee3ad75d8085/frozenlist-1.4.1.tar.gz",
-                    "sha256": "c037a86e8513059a2613aaba4d817bb90b9d9b6b69aace3ce9c877e8c8ed402b"
+                    "sha512": "5ec5f8cff67d7f1aae517507122bc6c7af66a8ef23cac8b490edf65180c723277a33628e1395f24ffbd793de1eb65f429fd0b39a50115f740ce614a5577ffae2"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/c2/e7/a82b05cf63a603df6e68d59ae6a68bf5064484a0718ea5033660af4b54a9/idna-3.6-py3-none-any.whl",
-                    "sha256": "c05567e9c24a6b9faaa835c4821bad0590fbb9d5779e7caa6e1cc4978e7eb24f"
+                    "url": "https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl",
+                    "sha512": "2ef5e95eb6bf734c0385b5b6952b87eb92c6341901be20ebb3136e359dd9c7b6fadbec335223afdd4beef421573e667b7a24c683c6418833aca97d3aa6d513fa"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/f9/79/722ca999a3a09a63b35aac12ec27dfa8e5bb3a38b0f857f7a1a209a88836/multidict-6.0.5.tar.gz",
-                    "sha256": "f7e301075edaf50500f0b341543c41194d8df3ae5caf4702f2095f3ca73dd8da"
+                    "url": "https://files.pythonhosted.org/packages/d6/be/504b89a5e9ca731cd47487e91c469064f8ae5af93b7259758dcfc2b9c848/multidict-6.1.0.tar.gz",
+                    "sha512": "2e35c1450879ecfc856e5355cc515f57ce6100a1cd8854704dc6afc1bbdce0d46ab3eb9e23e35ea9956aacfb33bec351e8b878c11fa1cf3c03282fa40a4959d3"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/e0/ad/bedcdccbcbf91363fd425a948994f3340924145c2bc8ccb296f4a1e52c28/yarl-1.9.4.tar.gz",
-                    "sha256": "566db86717cf8080b99b58b083b773a908ae40f06681e87e589a976faf8246bf"
+                    "url": "https://files.pythonhosted.org/packages/e4/3d/4924f9ed49698bac5f112bc9b40aa007bbdcd702462c1df3d2e1383fb158/yarl-1.11.1.tar.gz",
+                    "sha512": "a64bc1d9fa93029c54c359cf3667cf2fc1cf35cbea69911521af998bf43852a092844fa206bf3b31d38d2c8ad14f9eab7358020350cda22826486c317abf09f1"
                 }
             ]
         },
@@ -183,8 +183,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/06/55/9f73c32dda93fa4f539fafa268f9504e83c489f460c380371d94296126cd/pybind11-2.11.1-py3-none-any.whl",
-                    "sha256": "33cdd02a6453380dd71cc70357ce388ad1ee8d32bd0e38fc22b273d050aa29b3"
+                    "url": "https://files.pythonhosted.org/packages/13/2f/0f24b288e2ce56f51c920137620b4434a38fd80583dbbe24fc2a1656c388/pybind11-2.13.6-py3-none-any.whl",
+                    "sha512": "3a0c996f5ed98e7479367726b362a1543f30df0c1dbc7ff08fc0c5fe837d5d2655b67d95bb6accc90001fd12e1308354eed33bec9528ad43a0616836d6bcb504"
                 }
             ]
         }

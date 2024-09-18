@@ -50,7 +50,7 @@
             "buildsystem": "simple",
             "build-commands": [
                 "./bootstrap.sh --with-libraries=filesystem,system",
-                "./b2 -j4 install --prefix=/app"
+                "./b2 -j4 install --prefix=${FLATPAK_DEST}"
             ],
             "sources": [
                 {
@@ -79,11 +79,15 @@
         {
             "name": "nanomsg",
             /* needed by python3-nanomsg */
+            "buildsystem": "cmake",
+            "env": {
+                "CMAKE_INSTALL_LIBDIR": "lib"
+            },
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/nanomsg/nanomsg/archive/1.1.5.zip",
-                    "sha512": "8fbdf275f6e4185bfeb24f4ad28094ce8e9b5798e8040d6ff16fd6df51b79c17f3fc36d2285e9e23baf86ff9c9fa1f9613b9abdae67cccb470878af90f1fe304"
+                    "url": "https://github.com/nanomsg/nanomsg/archive/1.2.tar.gz",
+                    "sha512": "377b3a0b4be6d6decd2711ff84ac1855ae0a298e7557dbe4b7d881c2a76f4e521671b47987b924c434afdad7ff1dfebb50982c8c0afca9b44682c898510d4c92"
                 }
             ]
         },
@@ -368,18 +372,19 @@
             "only-arches": [ "x86_64" ],
             "buildsystem": "simple",
             "build-commands": [
-            	"python3 -m pip install numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl scipy-1.12.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl --prefix=${FLATPAK_DEST}"
+                "pip3 debug --verbose",
+            	"python3 -m pip install numpy-2.1.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl scipy-1.14.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl --prefix=${FLATPAK_DEST}"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/3a/d0/edc009c27b406c4f9cbc79274d6e46d634d139075492ad055e3d68445925/numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-                    "sha256": "666dbfb6ec68962c033a450943ded891bed2d54e6755e35e5835d63f4f6931d5"
+                    "url": "https://files.pythonhosted.org/packages/cb/22/2b840d297183916a95847c11f82ae11e248fa98113490b2357f774651e1d/numpy-2.1.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+                    "sha256": "d2b9cd92c8f8e7b313b80e93cedc12c0112088541dcedd9197b5dee3738c1201"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d4/b8/7169935f9a2ea9e274ad8c21d6133d492079e6ebc3fc69a915c2375616b0/scipy-1.12.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-                    "sha256": "8b8066bce124ee5531d12a74b617d9ac0ea59245246410e19bca549656d9a40a"
+                    "url": "https://files.pythonhosted.org/packages/8e/ee/8a26858ca517e9c64f84b4c7734b89bda8e63bec85c3d2f432d225bb1886/scipy-1.14.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+                    "sha256": "8f9ea80f2e65bdaa0b7627fb00cbeb2daf163caa015e59b7516395fe3bd1e066"
                 }
             ]
         },
@@ -388,18 +393,19 @@
             "only-arches": [ "aarch64" ],
             "buildsystem": "simple",
             "build-commands": [
-                "python3 -m pip install numpy-1.26.4-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl scipy-1.12.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl --prefix=${FLATPAK_DEST}"
+                "pip3 debug --verbose",
+                "python3 -m pip install numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl --prefix=${FLATPAK_DEST}"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/79/ae/7e5b85136806f9dadf4878bf73cf223fe5c2636818ba3ab1c585d0403164/numpy-1.26.4-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
-                    "sha256": "7ab55401287bfec946ced39700c053796e7cc0e3acbef09993a9ad2adba6ca6e"
+                    "url": "https://files.pythonhosted.org/packages/9f/8a/76ddef3e621541ddd6984bc24d256a4e3422d036790cbbe449e6cad439ee/numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+                    "sha256": "fcd8f556cdc8cfe35e70efb92463082b7f43dd7e547eb071ffc36abc0ca4699b"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/e3/c5/d40abc1a857c1c6519e1a4e096d6aee86861eddac019fb736b6af8a58d25/scipy-1.12.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
-                    "sha256": "c3003652496f6e7c387b1cf63f4bb720951cfa18907e998ea551e6de51a04467"
+                    "url": "https://files.pythonhosted.org/packages/f0/5a/efa92a58dc3a2898705f1dc9dbaf390ca7d4fba26d6ab8cfffb0c72f656f/scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+                    "sha256": "30ac8812c1d2aab7131a79ba62933a2a76f582d5dbbc695192453dae67ad6310"
                 }
             ]
         },
