@@ -1,0 +1,14 @@
+expandvars
+cython
+protobuf
+tornado
+nanomsg
+PyYAML
+chardet
+openpyxl
+pyexcel-ezodf
+aiohttp
+pybind11
+setuptools
+wheel
+pip
