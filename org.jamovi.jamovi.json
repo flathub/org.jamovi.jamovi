@@ -55,8 +55,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.81.0/source/boost_1_81_0.tar.bz2",
-                    "sha512": "a04201e73da59f68fa02761b333c864a96ebaf268247b6b10cb19ed3d70ee9ad3da4c53123f2a7a4a9b9e1408793b51e1adbcc6fd09f60fecef3ca9522bb6b36"
+                    "url": "https://archives.boost.io/release/1.81.0/source/boost_1_81_0.tar.bz2",
+                    "sha256": "71feeed900fbccca04a3b4f2f84a7c217186f28a940ed8b7ed4725986baf99fa"
                 }
             ],
             "cleanup": [
