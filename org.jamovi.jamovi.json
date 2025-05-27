@@ -80,9 +80,6 @@
             "name": "nanomsg",
             /* needed by python3-nanomsg */
             "buildsystem": "cmake",
-            "env": {
-                "CMAKE_INSTALL_LIBDIR": "lib"
-            },
             "sources": [
                 {
                     "type": "archive",
@@ -120,8 +117,8 @@
             "sources": [
                 {
                     "type":"archive",
-                    "url": "https://cran.r-project.org/src/base/R-4/R-4.4.1.tar.gz",
-                    "sha512":"cc30172227b7d89a9d6e9d65c8622b2042bcbbf3f1b5e36c7460f60958a1a0589980a1867ec9989df2589c1618233f3382d4732700b147361ace3be6680b5643"
+                    "url": "https://cran.r-project.org/src/base/R-4/R-4.5.0.tar.gz",
+                    "sha512": "e32de0115f32c3e44f3a003deae6b35fa0ae1ed951f8a74d815e8a417de0e84547c2ec5386cf965208cc1c81e5d43a3706a15af929d295056201f2ffe6b9d84b"
                 }
             ],
             "cleanup": [
@@ -250,8 +247,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v25.3.2/electron-v25.3.2-linux-x64.zip",
-                    "sha512": "6a1af90665d67d5d7f94c491dc8fb68213a0d276127c54a130172d5009160ef1005258434dde62bc888189ac7ef57905e29d90842f38badf8ad423b09c37cece",
+                    "url": "https://github.com/electron/electron/releases/download/v36.3.1/electron-v36.3.1-linux-x64.zip",
+                    "sha512": "907578381ba519981ced04e8098b17f1b817d5a638e3448772d1f98abf157e562125c77a076d6daf9df742c61fe906721a225cd2d7cee30b5236e4c452226f51",
                     "strip-components": 0
                 }
             ]
@@ -272,8 +269,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/electron/electron/releases/download/v25.3.2/electron-v25.3.2-linux-arm64.zip",
-                    "sha512": "24e06513df2357266ff3f169291eb12d2265f2cbc2c8509833389aea3e62d0f60da6295f3233bc5423e4fdcbc807e47ecabeadd50f332909b92b36593e18c72f",
+                    "url": "https://github.com/electron/electron/releases/download/v36.3.1/electron-v36.3.1-linux-arm64.zip",
+                    "sha512": "25f9591c578998464d44c3037598aa742f6d7cc6c5d845fbcad6ba1fcff1b130af7a77ff37ee3a82f91dd65daf1e7d742039fc6c784c534f616b986471402e4d",
                     "strip-components": 0
                 }
             ]
@@ -339,10 +336,8 @@
                 "mkdir -p   jmv/build/R`/app/bin/jamovi --r-version`-linux",
                 "/app/bin/R CMD INSTALL *.jmv.Rpkg --library=jmv/build/R`/app/bin/jamovi --r-version`-linux   --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
                 "./jamovi-compiler.sh --i18n jmv --update",
-                "./jamovi-compiler.sh --install jmv --to /app/lib/jamovi/modules --home /app --patch-version --skip-remotes --assume-app-version `cat version`",
-                "mkdir -p scatr/build/R`/app/bin/jamovi --r-version`-linux",
-                "/app/bin/R CMD INSTALL *.scatr.Rpkg --library=scatr/build/R`/app/bin/jamovi --r-version`-linux --no-docs --no-html --no-data --no-help --no-demo --no-multiarch",
-                "./jamovi-compiler.sh --install scatr --to /app/lib/jamovi/modules --home /app --rlibs /app/lib/jamovi/modules/jmv/R --assume-app-version `cat version`"
+                "./jamovi-compiler.sh --install jmv   --to /app/lib/jamovi/modules --home /app --patch-version --skip-remotes --assume-app-version `cat version`",
+                "./jamovi-compiler.sh --install plots --to /app/lib/jamovi/modules --home /app --patch-version --skip-remotes --assume-app-version `cat version` --rlibs /app/lib/jamovi/modules/jmv/R"
             ],
             "build-options": {
                 "env": {
@@ -355,7 +350,6 @@
             "sources": [
                 "jmc-deps-sources.json",
                 "jmv-deps-sources.json",
-                "scatr-deps-sources.json",
                 "jamovi-source.json",
                 {
                     "type": "script",
