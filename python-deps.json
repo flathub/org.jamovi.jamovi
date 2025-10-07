@@ -187,6 +187,20 @@
                     "sha512": "3a0c996f5ed98e7479367726b362a1543f30df0c1dbc7ff08fc0c5fe837d5d2655b67d95bb6accc90001fd12e1308354eed33bec9528ad43a0616836d6bcb504"
                 }
             ]
+        },
+        {
+            "name": "python3-certifi",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"certifi==2025.8.3\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/e5/48/1549795ba7742c948d2ad169c1c8cdbae65bc450d6cd753d124b17c8cd32/certifi-2025.8.3-py3-none-any.whl",
+                    "sha512": "8e1b4689b6a7ff8e1dd7e3aa3c41dff343e7301c697e1c19a434b00af3be4ec75291d0f521a920876c1bc77009c4223a79e0a72f0987ddcc3049269d1a8b4dbb"
+                }
+            ]
         }
     ]
 }
