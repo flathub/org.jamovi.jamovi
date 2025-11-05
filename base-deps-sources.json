@@ -550,5 +550,11 @@
         "url": "https://repo.jamovi.org/cran/2025-05-25/src/contrib/export_0.3.1.tar.gz",
         "sha512": "4bc44e4513c4ddc565847f2f0c51fcd2ff72e70314c84ffdf5ee24137f3e392ff059f87f94b35431bf7620c59053e400572029f0caf4f704770b3079e1708528",
         "dest": "091_export.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/sjentsch/jmvReadWrite/archive/dcc7ecc5772d24c33ddbe7852a2bd6934bdf7635.zip",
+        "sha512": "24f9d7533c3e1480ecd476ad3ac1463c4400ff7cb6efcf3b6bbda2b5247b8c4fd7fdcd58fe7eb4c5f88a0e837e02cbdfae501f67eeb75eeb4f9b486cc031ff7d",
+        "dest": "999_jmvReadWrite.Rpkg"
     }
 ]
