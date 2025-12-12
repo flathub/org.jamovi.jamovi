@@ -429,7 +429,7 @@
                 }
             },
             "build-commands": [
-                "cd client && npm install --offline",
+                "cd client && npm install --offline --omit=dev",
                 "cd client && npm run build",
                 "cp -r client/dist     /app/lib/jamovi/client"
             ],
