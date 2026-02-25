@@ -36,6 +36,13 @@
   </screenshots>
 
   <releases>
+    <release version="2.7.21" date="2026-02-26">
+      <description>
+        <ul>
+          <li>Fix to language issue</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.7.19" date="2026-02-25">
       <description>
         <ul>
