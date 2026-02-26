@@ -23,6 +23,7 @@
   <url type="donation">https://www.jamovi.org/contribute.html</url>
   <url type="help">https://www.jamovi.org/user-manual.html</url>
   <url type="homepage">https://www.jamovi.org</url>
+  <url type="vcs-browser">https://github.com/jamovi/jamovi</url>
 
   <screenshots>
     <screenshot type="default">
@@ -36,6 +37,14 @@
   </screenshots>
 
   <releases>
+    <release version="2.7.22" date="2026-02-26">
+      <description>
+        <ul>
+          <li>Improvements to plot ticks</li>
+          <li>Additional fix to language issue</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.7.21" date="2026-02-26">
       <description>
         <ul>
