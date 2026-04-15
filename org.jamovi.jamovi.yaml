@@ -1,0 +1,401 @@
+app-id: org.jamovi.jamovi
+
+runtime: org.freedesktop.Platform
+runtime-version: '24.08'
+base: org.electronjs.Electron2.BaseApp
+base-version: '24.08'
+sdk: org.freedesktop.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.node22
+
+command: jamovi
+separate-locales: false
+rename-desktop-file: jamovi.desktop
+rename-icon: jamovi
+
+finish-args:
+  - --share=network
+  - --share=ipc
+  - --socket=x11
+  - --device=dri
+  - --filesystem=home
+  - --env=TMPDIR=/var/tmp
+  - --talk-name=org.freedesktop.Notifications
+build-options:
+  cflags: -O2 -g
+  cxxflags: -O2 -g
+  env:
+    R_HOME: /app/lib/R
+  append-path: /usr/lib/sdk/node22/bin
+cleanup:
+  - /include
+  - /bin/chardetect
+  - /bin/cygdb
+  - /bin/cython
+  - /bin/cythonize
+  - /bin/nanocat
+  - /bin/f2py*
+  - /bin/pip*
+  - /bin/python2*
+  - /lib/cmake
+  - /lib/pkgconfig
+  - /lib/*.a
+  - /lib/*.la
+  - /lib/python2*
+
+x-jamovi-source: &jamovi-source
+  type: git
+  url: https://github.com/jamovi/jamovi.git
+  commit: e05ea358b034bf4cb2ebcdf470a6a4907abdde0e
+
+modules:
+  - name: boost
+    buildsystem: simple
+    build-commands:
+      - ./bootstrap.sh --with-libraries=filesystem,system
+      - ./b2 -j4 install --prefix=${FLATPAK_DEST}
+    sources:
+      - type: archive
+        url: https://archives.boost.io/release/1.81.0/source/boost_1_81_0.tar.bz2
+        sha256: 71feeed900fbccca04a3b4f2f84a7c217186f28a940ed8b7ed4725986baf99fa
+    cleanup:
+      - /include
+
+  - name: ProtoBuf
+    sources:
+      - type: archive
+        url: https://github.com/protocolbuffers/protobuf/archive/refs/tags/v3.21.12.zip
+        sha512: 7f1c9a4297a4e47705d64932483f31ed25da928d24e351d94899038f852015d4a16c88c2b962ac4a0c62e6a3f6689f87fb4cef7165d327aae5381a7b975bdf2e
+    cleanup:
+      - /bin/protoc
+
+  - name: nanomsg
+    # needed by python3-nanomsg
+    buildsystem: cmake
+    sources:
+      - type: archive
+        url: https://github.com/nanomsg/nanomsg/archive/1.2.tar.gz
+        sha512: 377b3a0b4be6d6decd2711ff84ac1855ae0a298e7557dbe4b7d881c2a76f4e521671b47987b924c434afdad7ff1dfebb50982c8c0afca9b44682c898510d4c92
+
+  - name: xslt-config
+    buildsystem: simple
+    build-commands:
+      - mv xslt-config /app/bin
+    sources:
+      - type: script
+        dest-filename: xslt-config
+        commands:
+          - '#!/bin/bash'
+          - pkg-config libxslt $*
+
+  - name: R
+    config-opts:
+      - --enable-R-shlib
+      - --libdir=/app/lib
+      - --with-x=no
+    build-options: {}
+    sources:
+      - type: archive
+        url: https://cran.r-project.org/src/base/R-4/R-4.5.0.tar.gz
+        sha512: e32de0115f32c3e44f3a003deae6b35fa0ae1ed951f8a74d815e8a417de0e84547c2ec5386cf965208cc1c81e5d43a3706a15af929d295056201f2ffe6b9d84b
+    cleanup:
+      - /app/lib/R/doc
+
+  - name: nlopt
+    # needed by nloptr (R package)
+    build-options:
+      cflags: -fPIC
+    sources:
+      - type: archive
+        url: http://ab-initio.mit.edu/nlopt/nlopt-2.4.2.tar.gz
+        sha256: '8099633de9d71cbc06cd435da993eb424bbcdbded8f803cdaa9fb8c6e09c8e89'
+
+  - name: gsl
+    # needed by gsl (R package)
+    config-opts:
+      - includedir=/app/lib/R/include
+    sources:
+      - type: archive
+        url: https://ftp.gnu.org/gnu/gsl/gsl-2.6.tar.gz
+        sha512: 0be8240715f0b86aba2c63d9f12da4dba4719d4e350e9308d279e0dd3b2f0519ea26fd2e38a17f3e8cf43aacbaa2455207a7ca0d6c305f3b8725e8ece2250a74
+
+  - name: units
+    # needed by units (R package)
+    buildsystem: simple
+    build-commands:
+      - ./configure --includedir=/app/share/include --libdir=/app/lib
+      - make
+      - make install
+    sources:
+      - type: archive
+        url: https://downloads.unidata.ucar.edu/udunits/2.2.28/udunits-2.2.28.tar.gz
+        sha512: 86146d489e1d472723e059fb15a5dd697a67568ffb5cdba17d191eb304c018bffffea708a73cce50a6c87ad33b387e5ee6653377ae0ebe9986117dfd41e9a5a1
+
+  - name: xml2-config
+    buildsystem: simple
+    build-commands:
+      - mv xml2-config /app/bin
+    sources:
+      - type: script
+        dest-filename: xml2-config
+        # providing our own xml2-config saves us from having to
+        # patch a *lot* of packages
+        commands:
+          - '#!/bin/bash'
+          - if [ "$1" == "--version" ]
+          - then
+          - '    pkg-config --modversion libxml-2.0'
+          - else
+          - '    pkg-config $* libxml-2.0'
+          - fi
+
+  - name: libpng-config
+    buildsystem: simple
+    build-commands:
+      - mv libpng-config /app/bin
+    sources:
+      - type: script
+        dest-filename: libpng-config
+        # providing our own libpng-config saves us from having to
+        # patch some packages
+        commands:
+          - '#!/bin/bash'
+          - if [ "$1" == "--static" ] && [ "$2" == "--ldflags" ];
+          - then
+          - '    pkg-config --static --libs libpng'
+          - else
+          - '    pkg-config --cflags libpng'
+          - fi
+
+  - name: jmvcore
+    buildsystem: simple
+    build-commands:
+      - /app/bin/R CMD INSTALL *.Rpkg  --no-docs --no-html --no-help --no-demo --no-multiarch
+      - /app/bin/R CMD INSTALL jmvcore --no-docs --no-html --no-help --no-demo --no-multiarch
+    sources:
+      - base-deps-sources.json
+      - *jamovi-source
+
+  - name: electron-x86_64
+    only-arches:
+      - x86_64
+    buildsystem: simple
+    build-commands:
+      - mkdir -p /app/bin/resources
+      - cp *.so  /app/bin
+      - cp *.bin /app/bin
+      - cp *.dat /app/bin
+      - cp *.pak /app/bin
+      - cp electron /app/bin/
+      - cp -r resources/ /app/bin/
+      - cp -r locales/   /app/bin/
+    sources:
+      - type: archive
+        url: https://github.com/electron/electron/releases/download/v25.3.2/electron-v25.3.2-linux-x64.zip
+        sha512: 6a1af90665d67d5d7f94c491dc8fb68213a0d276127c54a130172d5009160ef1005258434dde62bc888189ac7ef57905e29d90842f38badf8ad423b09c37cece
+        strip-components: 0
+
+  - name: electron-arm64
+    only-arches:
+      - aarch64
+    buildsystem: simple
+    build-commands:
+      - mkdir -p ${FLATPAK_DEST}/bin/resources
+      - cp *.so  ${FLATPAK_DEST}/bin
+      - cp *.bin ${FLATPAK_DEST}/bin
+      - cp *.dat ${FLATPAK_DEST}/bin
+      - cp *.pak ${FLATPAK_DEST}/bin
+      - cp electron ${FLATPAK_DEST}/bin/
+      - cp -r resources/ ${FLATPAK_DEST}/bin/
+    sources:
+      - type: archive
+        url: https://github.com/electron/electron/releases/download/v25.3.2/electron-v25.3.2-linux-arm64.zip
+        sha512: 24e06513df2357266ff3f169291eb12d2265f2cbc2c8509833389aea3e62d0f60da6295f3233bc5423e4fdcbc807e47ecabeadd50f332909b92b36593e18c72f
+        strip-components: 0
+
+  - name: zypak-chrome-sandbox
+    # needed by zypak which is bundled in the electron base app
+    buildsystem: simple
+    build-commands:
+      - touch    ${FLATPAK_DEST}/bin/chrome-sandbox
+      - chmod +x ${FLATPAK_DEST}/bin/chrome-sandbox
+    sources: []
+
+  - name: jamovi-electron-app
+    buildsystem: simple
+    build-options:
+      env:
+        XDG_CACHE_HOME: ../flatpak-node/cache
+        npm_config_cache: ../flatpak-node/npm-cache
+        npm_config_offline: 'true'
+    build-commands:
+      - cp jamovi /app/bin/jamovi
+      - cd electron && npm install --offline
+      - cd electron && npm run deploy
+      - mv electron/default_app.asar /app/bin/resources
+    sources:
+      - electron-app-deps-sources.json
+      - *jamovi-source
+      - type: script
+        dest-filename: jamovi
+        # we handle the call to --version here so it doesn't
+        # need electron (or a display server)
+        commands:
+          - '#!/bin/bash'
+          - SCRIPT=`realpath $0`
+          - HERE=`dirname $SCRIPT`
+          - 'if [[ "$1" == "--version" ]]; then'
+          - '    cat $HERE/../lib/jamovi/version'
+          - 'elif [[ "$1" == "--r-version" ]]; then'
+          - "    echo `/app/bin/R --version | sed -n 's|^R version \\([0-9.]\\+\\).*$|\\1|p'`-`/app/bin/R\
+            \ --version | sed -n 's|^Platform: \\([^-]\\+\\).*$|\\1|p'` | sed 's|x86_64|x64|g'\
+            \ | sed 's|aarch64|arm64|g'"
+          - 'elif [[ "$1" == "-R" ]]; then'
+          - '    shift'
+          - '    DOWNLOAD_STATIC_LIBV8=1 UDUNITS2_INCLUDE=/app/share/include UDUNITS2_LIBS=/app/lib
+            /app/bin/R "$@"'
+          - else
+          - '    /app/bin/zypak-wrapper /app/bin/electron "$@"'
+          - fi
+
+  - name: jmv
+    buildsystem: simple
+    build-commands:
+      - cd jamovi-compiler && npm install --offline
+      - mkdir -p /app/lib/jamovi/modules
+      - mkdir -p   jmv/build/R`/app/bin/jamovi --r-version`-linux
+      - /app/bin/R CMD INSTALL *.jmv.Rpkg --library=jmv/build/R`/app/bin/jamovi --r-version`-linux
+        --no-docs --no-html --no-data --no-help --no-demo --no-multiarch
+      - ./jamovi-compiler.sh --i18n jmv --update
+      - ./jamovi-compiler.sh --install jmv   --to /app/lib/jamovi/modules --home /app
+        --patch-version --skip-remotes --assume-app-version `cat version`
+      - ./jamovi-compiler.sh --install plots --to /app/lib/jamovi/modules --home /app
+        --patch-version --skip-remotes --assume-app-version `cat version` --rlibs /app/lib/jamovi/modules/jmv/R
+    build-options:
+      env:
+        XDG_CACHE_HOME: ../flatpak-node/cache
+        npm_config_cache: ../flatpak-node/npm-cache
+        npm_config_offline: 'true'
+        R_LIBS: /app/lib/jamovi/modules/jmv/R
+    sources:
+      - jmc-deps-sources.json
+      - jmv-deps-sources.json
+      - *jamovi-source
+      - type: script
+        dest-filename: jamovi-compiler.sh
+        commands:
+          - node jamovi-compiler/index.js --rhome $R_HOME $*
+
+  - python-deps.json
+
+  - name: python3-scipy-x86_64
+    only-arches:
+      - x86_64
+    buildsystem: simple
+    build-commands:
+      - pip3 debug --verbose
+      - python3 -m pip install numpy-2.1.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+        scipy-1.14.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl --prefix=${FLATPAK_DEST}
+    sources:
+      - type: file
+        url: https://files.pythonhosted.org/packages/cb/22/2b840d297183916a95847c11f82ae11e248fa98113490b2357f774651e1d/numpy-2.1.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+        sha256: d2b9cd92c8f8e7b313b80e93cedc12c0112088541dcedd9197b5dee3738c1201
+      - type: file
+        url: https://files.pythonhosted.org/packages/8e/ee/8a26858ca517e9c64f84b4c7734b89bda8e63bec85c3d2f432d225bb1886/scipy-1.14.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+        sha256: 8f9ea80f2e65bdaa0b7627fb00cbeb2daf163caa015e59b7516395fe3bd1e066
+
+  - name: python3-scipy-aarch64
+    only-arches:
+      - aarch64
+    buildsystem: simple
+    build-commands:
+      - pip3 debug --verbose
+      - python3 -m pip install numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+        scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl --prefix=${FLATPAK_DEST}
+    sources:
+      - type: file
+        url: https://files.pythonhosted.org/packages/9f/8a/76ddef3e621541ddd6984bc24d256a4e3422d036790cbbe449e6cad439ee/numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+        sha256: fcd8f556cdc8cfe35e70efb92463082b7f43dd7e547eb071ffc36abc0ca4699b
+      - type: file
+        url: https://files.pythonhosted.org/packages/f0/5a/efa92a58dc3a2898705f1dc9dbaf390ca7d4fba26d6ab8cfffb0c72f656f/scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+        sha256: 30ac8812c1d2aab7131a79ba62933a2a76f582d5dbbc695192453dae67ad6310
+
+  - name: jamovi-server
+    buildsystem: simple
+    build-commands:
+      - cd server && python3 setup.py build_ext
+      - cd server && python3 setup.py install --single-version-externally-managed --root=/
+        --prefix=${FLATPAK_DEST}
+      - cd readstat && python3 setup.py build_ext
+      - cd readstat && python3 setup.py install --single-version-externally-managed --root=/
+        --prefix=${FLATPAK_DEST}
+      - mkdir -p /app/lib/jamovi
+      - cp version /app/lib/jamovi/version
+    sources:
+      - *jamovi-source
+
+  - name: jamovi-client
+    buildsystem: simple
+    build-options:
+      env:
+        XDG_CACHE_HOME: ../flatpak-node/cache
+        npm_config_cache: ../flatpak-node/npm-cache
+        npm_config_offline: 'true'
+    build-commands:
+      - cd client && npm install --offline
+      - cd client && npm run build
+      - cp -r client/dist     /app/lib/jamovi/client
+    sources:
+      - client-deps-sources.json
+      - *jamovi-source
+
+  - name: env.conf
+    buildsystem: simple
+    build-commands:
+      - sed -E -e "s|R_HOME=.*|R_HOME=$R_HOME|g" -e "s|R_LIBS=.*|R_LIBS=$R_HOME/library|g"
+        -e "s|JAMOVI_R_VERSION=.*|JAMOVI_R_VERSION=`jamovi --r-version`|g" env.conf
+        > /app/bin/env.conf
+    sources:
+      - type: file
+        path: env.conf
+
+  - name: jamovi-engine
+    buildsystem: simple
+    build-commands:
+      - ./configure --rhome=/app/lib/R --base-module-path=/app/lib/R/library --rpath=/app/lib/R/library/RInside/lib
+        --rpath=/app/lib/R/lib
+      - make
+      - BINDIR='${FLATPAK_DEST}/bin' make install
+    sources:
+      - *jamovi-source
+
+  - name: jamovi-i18n
+    buildsystem: simple
+    build-options:
+      env:
+        XDG_CACHE_HOME: ../flatpak-node/cache
+        npm_config_cache: ../flatpak-node/npm-cache
+        npm_config_offline: 'true'
+    build-commands:
+      - mkdir -p /app/lib/jamovi/i18n/json
+      - cd i18n && npm install --offline
+      - cd i18n && node index.js --build src --dest /app/lib/jamovi/i18n/json
+    sources:
+      - i18n-deps-sources.json
+      - *jamovi-source
+
+  - name: jamovi-meta
+    buildsystem: simple
+    build-commands:
+      - mkdir -p /app/share/icons/hicolor/scalable/apps
+      - cp platform/app-icon.svg /app/share/icons/hicolor/scalable/apps/jamovi.svg
+      - mkdir -p /app/share/applications
+      - cp platform/jamovi.desktop /app/share/applications/
+      - mkdir -p /app/share/appdata
+      - cp org.jamovi.jamovi.appdata.xml /app/share/appdata/
+      - mkdir -p /app/share/mime/packages
+      - cp platform/jamovi-dataset.xml /app/share/mime/packages/org.jamovi.jamovi.xml
+    sources:
+      - *jamovi-source
+      - type: file
+        path: org.jamovi.jamovi.appdata.xml
