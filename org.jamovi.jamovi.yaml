@@ -1,4 +1,5 @@
 app-id: org.jamovi.jamovi
+
 runtime: org.freedesktop.Platform
 runtime-version: '24.08'
 base: org.electronjs.Electron2.BaseApp
@@ -6,15 +7,16 @@ base-version: '24.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node22
+
 command: jamovi
 separate-locales: false
 rename-desktop-file: jamovi.desktop
 rename-icon: jamovi
+
 finish-args:
   - --share=network
   - --share=ipc
   - --socket=x11
-  - --socket=pulseaudio
   - --device=dri
   - --filesystem=home
   - --env=TMPDIR=/var/tmp
@@ -44,7 +46,7 @@ cleanup:
 x-jamovi-source: &jamovi-source
   type: git
   url: https://github.com/jamovi/jamovi.git
-  commit: 233b3029f25b16e1b8f74ad6639dc7154d7b94eb
+  commit: e05ea358b034bf4cb2ebcdf470a6a4907abdde0e
 
 modules:
   - name: boost
