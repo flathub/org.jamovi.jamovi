@@ -1,5 +1,4 @@
 expandvars
-cython
 protobuf
 tornado
 nanomsg
@@ -9,6 +8,4 @@ openpyxl
 pyexcel-ezodf
 aiohttp
 pybind11
-setuptools
-wheel
-pip
+certifi
