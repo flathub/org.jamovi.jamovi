@@ -548,7 +548,7 @@
     {
         "type": "archive",
         "url": "https://repo.jamovi.org/cran/2025-05-25/src/contrib/export_0.3.1.tar.gz",
-        "sha512": "4bc44e4513c4ddc565847f2f0c51fcd2ff72e70314c84ffdf5ee24137f3e392ff059f87f94b35431bf7620c59053e400572029f0caf4f704770b3079e1708528",
+        "sha512": "0ba6bca3deb809a9586637419687d04037c9eeb4b687d175ccd8c1d37422beab40446ff20436dea0c22de98d25c14b30b182dd7946de1375a40354ec95b3daec",
         "dest": "091_export.Rpkg"
     },
     {
