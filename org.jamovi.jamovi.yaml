@@ -46,7 +46,7 @@ cleanup:
 x-jamovi-source: &jamovi-source
   type: git
   url: https://github.com/jamovi/jamovi.git
-  commit: 78e2308fa6e8f3376b946d1c6ff0e963ac95e997
+  commit: 2146574acee0bf6a0f6b342ece0024147d2515b2
 
 modules:
   - name: boost
