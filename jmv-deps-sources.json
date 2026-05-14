@@ -1,638 +1,734 @@
 [
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/BH_1.87.0-1.tar.gz",
-        "sha512": "f68c2e41b16841fdb5f5be4aa273a62f75e98ef35742e2e989e6d01afc17924a07891f07df67d4e66196d2d31cf347e9c4a3b8a2a33000b5aacfbfd168ded2ef",
-        "dest": "000_BH.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/AsioHeaders_1.30.2-1.tar.gz",
+        "sha512": "b8c999fc7f5e467c1ba9fb60f5e10f9c436f406cbe494de3697197eda8c4be02324f4eb00cedcbcd6d4abb73dd8061d325c1fa81e122d46771d2af1780059437",
+        "dest": "000_AsioHeaders.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/RcppParallel_5.1.10.tar.gz",
-        "sha512": "f2b1a57f37be6d812fe78c7334664434727677d4571f93a936a4958ce2494dfa8a8d7f26b38965aaafc0d62ce8f8a45fa9b35fe12fb9ca678b8d2e832199a66a",
-        "dest": "001_RcppParallel.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/BH_1.90.0-1.tar.gz",
+        "sha512": "5b03b027d171dd9fc5b956daf1153e65cd965cb6737334b4a344831833e5a8a75233ee50c10f3e98ba3841fa1d47459c209e07e637bc5e1c54a7209d9aa96f16",
+        "dest": "001_BH.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/bitops_1.0-9.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/RcppParallel_5.1.11-2.tar.gz",
+        "sha512": "e761e2ad34dcc1c27c601a4ce6d9cd051951a9b80da7f25b85f557c04606b40934f3664b3a859db0865a2345f68d7c23198565c85141a33da69111dc7a70ca60",
+        "dest": "002_RcppParallel.jmv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/bigD_0.3.1.tar.gz",
+        "sha512": "4245a4df59f51ab4bc6f735660eeb2c1759fa82d2b1d0f47b8fdd41e152762649fa79de36c8cb34eaebbb97c586a7d53b6b6c1d5bded7ac8f94541a9a981f902",
+        "dest": "003_bigD.jmv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/bitops_1.0-9.tar.gz",
         "sha512": "226dd107726a669f5cbc6216e67242622443752056438349e9f9f350590c4beca12563978ebb0e4015d139fa7c76efdb3dcf2addad53df1154fc4c59b250455b",
-        "dest": "002_bitops.jmv.Rpkg"
+        "dest": "004_bitops.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/ca_0.71.1.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/ca_0.71.1.tar.gz",
         "sha512": "6ed8ee8a75d1e42599d73dd427a7660ca9cef6075e5d7f45114511d20366635fbe020f8f6b3ad2ee203a9b2a49611cf3b10dba00132e628b1fe6a8deb41ce2e1",
-        "dest": "003_ca.jmv.Rpkg"
+        "dest": "005_ca.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/carData_3.0-5.tar.gz",
-        "sha512": "b2596b808e50b3d2a21dea70efe62b68895cab8713439feb9b3467c3703ce099fc89ef2496bb84b94401786d3ef04d5a0b2bef02214f551b0d09cc626a4a548e",
-        "dest": "004_carData.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/carData_3.0-6.tar.gz",
+        "sha512": "c4d32bf8185068af2f256748c600112ff8a1c8ec16df904b5f3cc43567b87738b292477c494a0ef64ff8a82ef849b57d2f509045cbe0a66552fd8d859a2a1c9b",
+        "dest": "006_carData.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/contfrac_1.1-12.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/commonmark_2.0.0.tar.gz",
+        "sha512": "8ac2abafc448b989aa3cebfba872daadc4d5639a03c9a427bc23eddba5b047962de8d1ab0b47e5195a9f76c5d7efaa074d25d74760d752ee38d7377b8bd3aa1e",
+        "dest": "007_commonmark.jmv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/contfrac_1.1-12.tar.gz",
         "sha512": "184fa1007645af90aedc7d9c03ee636a89853bcf2c0284a597b1e4b5ed7fc14b06a1cd182ad0735d184f254e7b606cd5c8d8deda1add295279c00b452b1bc3d8",
-        "dest": "005_contfrac.jmv.Rpkg"
+        "dest": "008_contfrac.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/glasso_1.11.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/glasso_1.11.tar.gz",
         "sha512": "df07df5e33542af9d766ba6d98279d633d92f03c90e71d14a731abecc1484d2a76402fa8bc520564b439d794041e67ddbc37dea69278478685a7132f19a543d8",
-        "dest": "006_glasso.jmv.Rpkg"
+        "dest": "009_glasso.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/jpeg_0.1-11.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/jpeg_0.1-11.tar.gz",
         "sha512": "8f63a96530189db5d7ec70252dc66fe51bd11f529666591d2425c5d7a699c75d4160d89a3e1e1bc03b0b00f2889bc219dc74fa63d1ad0b55a74c01335f0c7616",
-        "dest": "007_jpeg.jmv.Rpkg"
+        "dest": "010_jpeg.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/lisrelToR_0.3.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/lisrelToR_0.3.tar.gz",
         "sha512": "43fdabf17f13310701de8ec330a3d86744f80549fc92675c887dc99552ae93a8337698cdeff05bbbffc8982656e0530c8431a0f56138a8d851cb4990ba65db3e",
-        "dest": "008_lisrelToR.jmv.Rpkg"
+        "dest": "011_lisrelToR.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/matrixStats_1.5.0.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/matrixStats_1.5.0.tar.gz",
         "sha512": "bd2f5a440a64f9f078e0ba97b7f344d70bfde0c30681172d21e015e2501cc81f0aaf4bcbb474b98649bea2a57815c4d0be3b551e0ba1972e2c089ee51afe43ad",
-        "dest": "009_matrixStats.jmv.Rpkg"
+        "dest": "012_matrixStats.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/mnormt_2.1.1.tar.gz",
-        "sha512": "e827d38d23dbc530a718d3e1413ef7cdfb28e631ea377bd9e879ee3a1021174ac1d437daed63dfc4732e20f9404423758f0f2cbe34a73d7bd1b22986d4e1accb",
-        "dest": "010_mnormt.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/mnormt_2.1.2.tar.gz",
+        "sha512": "c54e4f551b183d4b32417255706362118b5d0e2ed61aff3b6f603ffb5752a8e7c35d8414af059ab86ee6a132094e1dc7ad474364644c3047ac67fb46b4c888fa",
+        "dest": "013_mnormt.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/nloptr_2.2.1.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/nloptr_2.2.1.tar.gz",
         "sha512": "b22c0b2798d1f342cf7ae32d92ac86d88c7a95fef536cc4016f59a04ea44c0d2bb6def29f454915d9ab8475d79b58910ae3e0429edb48e7aee9c4cd031f61509",
-        "dest": "011_nloptr.jmv.Rpkg"
+        "dest": "014_nloptr.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/numDeriv_2016.8-1.1.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/numDeriv_2016.8-1.1.tar.gz",
         "sha512": "94de61a7db6eedcce94ca9b01d5ed41ef6fa4ae8f23d7d28fe5a77bb0d91b3bd671e5c5ae666ef254bf2711c4083dff6e422f46b000788f241bd36b0fbc81e19",
-        "dest": "012_numDeriv.jmv.Rpkg"
+        "dest": "015_numDeriv.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/pbivnorm_0.6.0.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/otel_0.2.0.tar.gz",
+        "sha512": "a1f0e1d0b8da52a6137bae3f1b9b008d2574a2addea76c3c5f316958c8b6d860f35500245b6d1cef8c45abe093edc80edcba4be0fa515c515008c1fdc07b3bd6",
+        "dest": "016_otel.jmv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/pbivnorm_0.6.0.tar.gz",
         "sha512": "adebf14403bab67ebef6f4684af96b1ad61c01c3af555bae6ddd287015ee2bf673fa19322b4ef6b77cb0922a52cffc3c47c195276a5a402d055524b96a70e973",
-        "dest": "013_pbivnorm.jmv.Rpkg"
+        "dest": "017_pbivnorm.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/png_0.1-8.tar.gz",
-        "sha512": "a7991c41c7c9f93527e617841dd96bf6e8034921723b3429076fe1828ecd4f9eec18d1eaa0496222ae85b43fbd1d1ee61da5589912f9fcaed695d8ab560291c0",
-        "dest": "014_png.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/png_0.1-9.tar.gz",
+        "sha512": "fd50f4fadce39a13867b38d0edf4e870c298ac9e159812b4f12af65a21859fb58f7e634d1f8ed101e4e16b67471933d588a98aefadab65ccffd13ff66d66f770",
+        "dest": "018_png.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/prettyunits_1.2.0.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/prettyunits_1.2.0.tar.gz",
         "sha512": "4636529c8a7e1cbcf45e3b809b30de9e9cbd15d1e90dee9c1b043c2398c23bcfef4b7062c0bde0625b91d88c3e9712191efdeda01eb1d79e853d27f5fe160fef",
-        "dest": "015_prettyunits.jmv.Rpkg"
+        "dest": "019_prettyunits.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/quadprog_1.5-8.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/quadprog_1.5-8.tar.gz",
         "sha512": "a205113c16641f744f1ca470a0aa116eb29cd7a85f4f68a7adf4749f19f7bcbbe69eca671f5df771a59ecdc5c4ba3fbc47a2938cecf0378ae73d812aaebf0ccd",
-        "dest": "016_quadprog.jmv.Rpkg"
+        "dest": "020_quadprog.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/qvcalc_1.0.4.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/qvcalc_1.0.4.tar.gz",
         "sha512": "a49ced169133e36729f29d211107984411c9901ba4af46b53f0dcc542a47f1953f2a39d184a36e8ec596bcab866e11936e08a3d318dee2e96fe784ee4a901f4e",
-        "dest": "017_qvcalc.jmv.Rpkg"
+        "dest": "021_qvcalc.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/rematch_2.0.0.tar.gz",
-        "sha512": "3e646beca2b15c841b96d02fd400fd936abfb90a7eedf274144d58103eb88d5c230a732f503657369506bff13bb4aa380af3b3522701886236379d7357761bf6",
-        "dest": "018_rematch.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/rstudioapi_0.18.0.tar.gz",
+        "sha512": "defed56833e5ec29592dff6e3d231c75b975627c138598e513f943133e28ef947a6608907a1357889f32f44b71d2a9c68e1144b065c3cd9f11d0091564e07f05",
+        "dest": "022_rstudioapi.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/rstudioapi_0.17.1.tar.gz",
-        "sha512": "014eb280f525f47c5064418d935dd22332c10924e3fe2d51a76eb93cf957b6253c1be16e1ce3757e0db90a11761361883b7961fd865b82cf0d010c23f035805f",
-        "dest": "019_rstudioapi.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/Deriv_4.2.0.tar.gz",
+        "sha512": "0bf0d2b34c4109c40783722de7e5abb04723b74e8430a84ac78d77b598310bc1ffcb589c397f8106f37899e6bc840c1705810cb705c1d159308f85c092cd5206",
+        "dest": "023_Deriv.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/Deriv_4.1.6.tar.gz",
-        "sha512": "9e2c9aa1dd8c3bcaf717cf68adf25669f305fc883d677fc590f01f38aa32f44a74befb0510929c52abc2e575784d65b9a09d233378c1dd97c5142e549c3a5855",
-        "dest": "020_Deriv.jmv.Rpkg"
-    },
-    {
-        "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/Formula_1.2-5.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/Formula_1.2-5.tar.gz",
         "sha512": "fd4e492cd3760283f4e102d8a7c767ef103be6d6dd8777020739a3085d85ee59d129998f0b01b35001d8df979d2d05f45d77e77c66427c69d1105c9a3b15f065",
-        "dest": "021_Formula.jmv.Rpkg"
+        "dest": "024_Formula.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/GPArotation_2025.3-1.tar.gz",
-        "sha512": "b7f0f78c6fbde6fa0ca3ead0015be2733c0ee4f38659f116eab5163884ada5541f1f923bf2fa86f9de77296390e3e194d5e1c74b9212a0c145398eee4833933d",
-        "dest": "022_GPArotation.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/GPArotation_2026.4-1.tar.gz",
+        "sha512": "9103709597aef714fdc2ee89db339e7b8b9decc9c6df67851e2a21a627fd62e3f390388141c9799376ca9b654c3adb4a5e295baac0b31d9b7b8037b9a98087fc",
+        "dest": "025_GPArotation.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/Matrix_1.7-3.tar.gz",
-        "sha512": "54e08df26edc1cf00a58893722f8f48794f5b05b3cd9a21ef729aab4063804c9874de9f3ec297cada86a3b03769a6a758263756a627af5d547a76aab56549fdd",
-        "dest": "023_Matrix.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/Matrix_1.7-5.tar.gz",
+        "sha512": "3a5385cf3be5ab7afd5de12ea3257042647227e542829155a6db8e9cad209337e9907bc037a282c1bc4732e73d9731ff67a83f5599004da7d5166bcaab0056d7",
+        "dest": "026_Matrix.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/PMCMR_4.4.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/PMCMR_4.4.tar.gz",
         "sha512": "068938889668929856b0061cba7bc53d2282217a011aaf84e6504985ac35c0bbe991a27c71d50cbf14c3cc3998c9c1c3d8282daf0ac794176031dcbc88223e39",
-        "dest": "024_PMCMR.jmv.Rpkg"
+        "dest": "027_PMCMR.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/RUnit_0.4.33.tar.gz",
-        "sha512": "f002bc5d056c56a29180948b1b95f0f9ddd1bace78439386bd0c0768509e4545eaa06aab008b605ba39ed139c7d553de24eeafe3d49c57a65a42bee8a2336fcd",
-        "dest": "025_RUnit.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/RUnit_0.4.33.1.tar.gz",
+        "sha512": "e9b650deaa80ffc4d3d2be71d942aad2b9eec748af193ef1a6153bcf3ec24111615530e6beae4e88932b2ca4a722a86ea0f37930849be04a8f846b3f129a2d09",
+        "dest": "028_RUnit.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/RcppEigen_0.3.4.0.2.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/RcppArmadillo_15.2.6-1.tar.gz",
+        "sha512": "243bd67d05a9cf38d0c5d8dca7af5502023648f36cbbeef3b747976648df8deef323c293a957d4d7077577e5e37b6a193de5e67f579a841a1e872745b314434f",
+        "dest": "029_RcppArmadillo.jmv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/RcppEigen_0.3.4.0.2.tar.gz",
         "sha512": "0a5c8f74703c96768928b47953cd134778d2b1660c63ad666516b325e0a164e8fd6a2908ff21033d304e3dc5b2217f429c266553b1ff42adb9413b7eb4b7586e",
-        "dest": "026_RcppEigen.jmv.Rpkg"
+        "dest": "030_RcppEigen.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/SparseM_1.84-2.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/SparseM_1.84-2.tar.gz",
         "sha512": "b185d972804c50c78c0b148846c77fbfce19aeda1d8d4884c99cf28c985dbe94f9cb67f3bb836d3959ce129aea073832b1ddd4d9d4305071b60b04e3edddff09",
-        "dest": "027_SparseM.jmv.Rpkg"
+        "dest": "031_SparseM.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/TH.data_1.1-3.tar.gz",
-        "sha512": "b7b34483325fda49a5e2eb028499fb3f8df5bc766da35d146a042fc83510e5d11cf63f47fdb26ec3877f6607494b8377259e2786063b2a06bc33b1c06a12da7a",
-        "dest": "028_TH.data.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/TH.data_1.1-5.tar.gz",
+        "sha512": "d3eb3276dc7fbce3455da2ec3e41a0b39f9e4ab4cc20d176869a222bf4d59145972365eb9fe912eebb1d048a6e9cab6e8223c0500bb59a2f2c36d45199e770d0",
+        "dest": "032_TH.data.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/XML_3.99-0.18.tar.gz",
-        "sha512": "17ca5d1b2e44d16279ed4f7e343bcf149ed1a5d04aafb6395c15f66f9a1ff4d105bee4454c368e05ebc65a1d3ce5914a9af70f4a1be8e4e3d82e601a96d60105",
-        "dest": "029_XML.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/V8_8.2.0.tar.gz",
+        "sha512": "297655d938a9cf913d08408cab5762e21568264e5c4188849d1b4e4d26f3ad437ab202104b1b0d783dd986213b9a304e0b18d3e46f88b1dae043bd6fa27aeaa5",
+        "dest": "033_V8.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/abind_1.4-8.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/XML_3.99-0.23.tar.gz",
+        "sha512": "26388d69e434d5d0ad7ff67222c3adfae7cb4c4353677a2c5162daf6a52bb4b9a2bc51de7aece60e358e024e9411d7b8a28f5d39cefed4f59cea41b31e8e0d2b",
+        "dest": "034_XML.jmv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/abind_1.4-8.tar.gz",
         "sha512": "e9efa1c8ed3c1a53587dfd14e973efce3d9cf4d268bde336b4231f7d4ffea705fde2ae923dd1adba369cb1bd7f28956e4992e86df5406b91b32abe7d311d2acb",
-        "dest": "030_abind.jmv.Rpkg"
+        "dest": "035_abind.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/caTools_1.18.3.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/caTools_1.18.3.tar.gz",
         "sha512": "6d231942c19aad73c77bb4897aca57dc03ff4a3e676dc92ba1a8c163ca0800e2eee83ba849b6f710eb0db962c682a7b369288736ebb0bdf96315ea88735ce56e",
-        "dest": "031_caTools.jmv.Rpkg"
+        "dest": "036_caTools.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/cellranger_1.1.0.tar.gz",
-        "sha512": "bc07f03b3d9bef70c3d271387811d3966e96aff04d241fa50124884cc828a6beb14692d588ca6f58fcb9cadcb72ffa0fc81fd01bd432dddf7d8ea976769b08cf",
-        "dest": "032_cellranger.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/checkmate_2.3.4.tar.gz",
+        "sha512": "fd7cb5d63e7a3824a85bdb3d65992a44bc8d56f30da897d9785172a34738831e023c7a1237aeeca8ed1e9fe8e01c54e67d16d6bf4e246c89f67f34af66c54301",
+        "dest": "037_checkmate.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/checkmate_2.3.2.tar.gz",
-        "sha512": "f3e2de263e7222c811840879bf4019dfd68a74eba7e3a2b21302313c47bab695cbfaab5ccb77de04b66e1b2a2b6d4e95259d6bca6ceb98ef148ea20990214db3",
-        "dest": "033_checkmate.jmv.Rpkg"
-    },
-    {
-        "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/coda_0.19-4.1.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/coda_0.19-4.1.tar.gz",
         "sha512": "1dba75afe21682156440546714145430b05c48971e27579ae5cabce7f4ee5b64a5ee782ee81e2eaec1e69aaa70732b5b6955d0e99d5bbf0c3bac0d60909b1d90",
-        "dest": "034_coda.jmv.Rpkg"
+        "dest": "038_coda.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/colorspace_2.1-1.tar.gz",
-        "sha512": "14678ffff1af68d93b1c2a8381667ebd3c7622774ab7e27f47be19a35e66e9c913516d8388c8d3af06a1b09d3f37d4099942b17b602b21e7c8e0ebe8a35e4c98",
-        "dest": "035_colorspace.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/colorspace_2.1-2.tar.gz",
+        "sha512": "cd19049f93c4014aa3087f82aff3fd360c3a366f4a318c76d03512aae8b53caaba91cb4ed57fce45120cef8144d1abd7e03c0173e84bed9570133c4394526b41",
+        "dest": "039_colorspace.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/corpcor_1.6.10.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/corpcor_1.6.10.tar.gz",
         "sha512": "cccaabc95607f99b7f423a571b803ce01a84bd74342b1108d4853347f87f1afb4bbc66fcc556b3eb4d37280da617d0aa36e323e2983bc2af22fa20991cb2b30f",
-        "dest": "036_corpcor.jmv.Rpkg"
+        "dest": "040_corpcor.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/cowplot_1.1.3.tar.gz",
-        "sha512": "54d60bf05c31f1934fd7d176ee246ba88fd29c9f0d6de12d9ce54b686f5602060de818656217bde3b7be963d72ebe3d51046f590272fbb0349f9a3d3b6393ffc",
-        "dest": "037_cowplot.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/cowplot_1.2.0.tar.gz",
+        "sha512": "3a7aa7ac26c5eb1f2f136caec5ed0547fb1bc0711e1448eaca5d60fcb01e1897801a75e922d08a654d383aad9c0d0e86a69fa109d3ed83d36b1d31c90ff8c246",
+        "dest": "041_cowplot.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/deSolve_1.40.tar.gz",
-        "sha512": "bdd0533ce95e73776942f578a688d3a819778e6c36db3c404aa8abc3c96015b16128b8fba3a67cd649aa370ad0bab4dc41d30e9bcf376778cfefc71a2cc42e16",
-        "dest": "038_deSolve.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/deSolve_1.42.tar.gz",
+        "sha512": "cbddd0cf9492ea3b94d27bf7a548d205ba1759b3c371de279149d9624f02b973bb3d93982980215b9736accb0450dfaa84c61b9aff3c7b8ae2d89562dbb30c17",
+        "dest": "042_deSolve.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/elliptic_1.4-0.tar.gz",
-        "sha512": "7927f5a4c135c53ee5d90eb031f37b1bba3bfc5886de218466dda72e1808952ba4ab8628f9434fa6a5671449ddce85bc94eec0e70bb260d60e301464f79bba79",
-        "dest": "039_elliptic.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/elliptic_1.5-1.tar.gz",
+        "sha512": "955dc20e857b5ee6c65dae8e42146635121bbf1afa12b7ed53ed21711ad93bb69e253ed86969858baabeeeed62152c3e78ae3ec596ed25974c8a58b77c6a3b11",
+        "dest": "043_elliptic.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/estimability_1.5.1.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/estimability_1.5.1.tar.gz",
         "sha512": "7ae867d8832acf5a5dd2fe844a8af15a0c36fd61958f81b7d05757f146147944d6a6678fe4ee4cab65f7bef7d8d9d55c920a2b5b4fdfc3b1521a5744a8ae9204",
-        "dest": "040_estimability.jmv.Rpkg"
+        "dest": "044_estimability.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/fdrtool_1.2.18.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/fdrtool_1.2.18.tar.gz",
         "sha512": "c28dfa2b801e4a288bc535d35673295a462aadd3c7ba006fda884ccf9135ae1fb0088869374a0f8a4aa83c93d3e48a59a605751603e9ad704997f6bead636abc",
-        "dest": "041_fdrtool.jmv.Rpkg"
+        "dest": "045_fdrtool.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/forcats_1.0.0.tar.gz",
-        "sha512": "c380d0b207a7018e0f0ba2215f761f04150657c322123abe8a91602fcc985e1c043aa86918fde073a4055916317e2cf59e222bc8d616d54acad70dfd78ba3db3",
-        "dest": "042_forcats.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/forcats_1.0.1.tar.gz",
+        "sha512": "2c9ac5b80af08ecf777c5dfd9f9a7a64963345bca402fc37724816175be3a85590af3ee82145238f83f8f4289fcfc1a4ff6c7946b17490bbdcf1b2f648e50ba5",
+        "dest": "046_forcats.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/ggrepel_0.9.6.tar.gz",
-        "sha512": "a5c3f357b64265042be1fdcd1a449b37f4e2c2c76401ec907c29ecea8375e7957db18ceb7ff9d8e9ec831289380d96c63d51c6e3dbbe993fd730b1c77dfd9a81",
-        "dest": "043_ggrepel.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/fracdiff_1.5-4.tar.gz",
+        "sha512": "7f86fb3dcb244cc71fae712dae341b5ae5d3522feb7fa6835a3f36955fb8ebab4f1ae2d325ecb7d98d3987ac479d553129934b7ef1d4c9195fae9e9ff670e924",
+        "dest": "047_fracdiff.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/ggridges_0.5.6.tar.gz",
-        "sha512": "694032eefca8961bef5e3cd9fd79b2fa42159e8f8213b01903a017f8e6457ba592d43992b847fa174e8605d647df7fdf9823a8e2db4f9308f0d279cb6b41ca10",
-        "dest": "044_ggridges.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/ggrepel_0.9.8.tar.gz",
+        "sha512": "9d3da6f6e6b9b2c497e05e55246b81eafc0a4b332a0ff7b433a82acde81683b26d31445387d5f632b96b16de5f6645c5932d213462f0eea72441ae7755d159d0",
+        "dest": "048_ggrepel.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/gridExtra_2.3.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/ggridges_0.5.7.tar.gz",
+        "sha512": "68932bd20676ca1bc782aab4176d7e28600ef9f849e292c5853722053e897928b2dd6f351cb4632daa5811199829083730a5f5c30b04ff2e3d2b83890ce61e21",
+        "dest": "049_ggridges.jmv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/gridExtra_2.3.tar.gz",
         "sha512": "eba5bfc0b38aa1a86f1457eb1f8c2035ae424ae4db64862e14c9d90eab49616de05264dcbd5d0ae1dd84c7f3344a4b99cf662aabb04c9d254a82174935ac2772",
-        "dest": "045_gridExtra.jmv.Rpkg"
+        "dest": "050_gridExtra.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/gtools_3.9.5.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/gtools_3.9.5.tar.gz",
         "sha512": "570fbbe5ef0d26a99afa67940764725ae0330725f2255df4baa46a0ae977e419dc42a682055e574ee6184b88c96c716f041aaf8686965cb6d9b96ad2d1ce5654",
-        "dest": "046_gtools.jmv.Rpkg"
+        "dest": "051_gtools.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/here_1.0.1.tar.gz",
-        "sha512": "9572f7776dfb81e17e2f877921deb7446c6fabef5f0275767cd0efc546ecf13671a05cfab0574724ed4860c79dd69847c42670304aba20ff7bcbee85fbdef17d",
-        "dest": "047_here.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/hms_1.1.4.tar.gz",
+        "sha512": "af047a5bf86eccd8736966bcf119fe7ebca80f634d6023370ced4d8a3d31134c9b3ffaa83d994a22709610da1be06efb67e821080dbc9a2ac5c265f8fe038217",
+        "dest": "052_hms.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/hms_1.1.3.tar.gz",
-        "sha512": "203dc22b17a5f17695e8e2e9ccd871baec5ca7203afe98ebd5ff304018c1efc5056a7a2bb3633d3824c31698a16e3ef429792c3840c971f9d20377ba7f3da856",
-        "dest": "048_hms.jmv.Rpkg"
-    },
-    {
-        "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/htmlwidgets_1.6.4.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/htmlwidgets_1.6.4.tar.gz",
         "sha512": "67e84384fc530235fe06ccd2452d930cb17b29cfede89133aee0a00845f5f184f44827abee0a59f7fb52a0713f8eb7cd4bac179c2580cb232a2003e80f28957f",
-        "dest": "049_htmlwidgets.jmv.Rpkg"
+        "dest": "053_htmlwidgets.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/lavaan_0.6-19.tar.gz",
-        "sha512": "eb6f24a5ee9cec6d87b3feb964cab7e8221c2c27b6107989dfb5429e27d764607647b1a2f32ed11308737f196fbb26a3fff456fa74c58185a0b036e036606722",
-        "dest": "050_lavaan.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/later_1.4.8.tar.gz",
+        "sha512": "d7e6cda2fac7bd492725113480e21693d606b2e8c7ee55eca57d804bb54b5d3f653d6faa826a6b1aaa2de59ac9470aa64bf6a61a83d94f1b30e3df1878c0bba0",
+        "dest": "054_later.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/microbenchmark_1.5.0.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/lavaan_0.6-21.tar.gz",
+        "sha512": "375cc0efe66b0e3d583837cb2ccc80f7948a5a0d79ea213f2623ed26ed1488bc84b952de52e4a991f4014e1c6d61ef56c622948f427448c588366d76222fd748",
+        "dest": "055_lavaan.jmv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/litedown_0.9.tar.gz",
+        "sha512": "4827e08f009fd8b92c45da04bc3cfa33513e318a3e3229e4d9f701c094d22f044e640be278140b620d7db2a4d1447b4964147aacdf5231d74fe4ed8643579b91",
+        "dest": "056_litedown.jmv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/microbenchmark_1.5.0.tar.gz",
         "sha512": "53b52993ea5c1d0588ebe8eb3c686768287ba26c8275daeba0b50b30499911685b6eaf902a0db3f4504e622683a8bce477117a77f554101fe97a57d498d55d02",
-        "dest": "051_microbenchmark.jmv.Rpkg"
+        "dest": "057_microbenchmark.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/minqa_1.2.8.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/minqa_1.2.8.tar.gz",
         "sha512": "788e568cd90f17ac8e9fb3ff341daac706b03bdc4bd300c88adb1360b49be1faa23bfc2dff3088cfd24158f75467b59b31030db8e1a854a25286f8837cac1019",
-        "dest": "052_minqa.jmv.Rpkg"
+        "dest": "058_minqa.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/modelr_0.1.11.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/modelr_0.1.11.tar.gz",
         "sha512": "66c9d0b46ac7855eb05af32f1f5128a1b54fd1b27181364e68d039f3b086207efc3ac8645799476c067668b0ac21abd0c14f2825b0b638ee768e2185286a856a",
-        "dest": "053_modelr.jmv.Rpkg"
+        "dest": "059_modelr.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/mvnormtest_0.1-9-3.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/mvnormtest_0.1-9-3.tar.gz",
         "sha512": "eec4882dd7b675e274039a99b8cb01a45b442a54d4e622aba27400d51890a59e9ab540053b56c044c171e7ebac5fd0c18bfca574c2a2869c09f605c3bc9abcb1",
-        "dest": "054_mvnormtest.jmv.Rpkg"
+        "dest": "060_mvnormtest.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/mvtnorm_1.3-3.tar.gz",
-        "sha512": "cb97be297f6fcedcac39611e9a62de7965e1a472c1d93003deb0248c4ae8692a732edabbf6dee78f35d52b7d8cd73b3babf44ab943782273a7a5eb73906e1647",
-        "dest": "055_mvtnorm.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/mvtnorm_1.3-7.tar.gz",
+        "sha512": "cc478e969bb39d76ea9b6bb17c962934ce0e07a099d76d5a39062ee75d6d2c4ffa89031bd1e5969d42639eebadddbe924a1813edee9ee7b61ea9c20ba7562547",
+        "dest": "061_mvtnorm.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/patchwork_1.3.0.tar.gz",
-        "sha512": "1dfd1b702bc37b5b7bb822e3dfdaf235f99422f33293e1ec5c19645dd9ac4dfca7c3ba8d6dab84f6e482dea155e239e5d4b74f6651cfe2942d8e52d3a43ee956",
-        "dest": "056_patchwork.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/patchwork_1.3.2.tar.gz",
+        "sha512": "31169a694feea905b055c3472406637bb94231a8c21f752972926bb09adcb707fc5780912090e97b052eebb671bd66f4e96c28bb6d9328879d73f76b606fbbbb",
+        "dest": "062_patchwork.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/pbapply_1.7-2.tar.gz",
-        "sha512": "fe9d28edc90aa2ec552d9049fb636e397affe13bed70828cd3526c4c48f48fc2fe694782a810ad4d39f241df2e576acb94e18a23000daac1e12f119543a60699",
-        "dest": "057_pbapply.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/pbapply_1.7-4.tar.gz",
+        "sha512": "ac8d8e9e14ef51919ed9892cc11050c10184366a33cf2fe48fd36518431a88dc8a389739212edbebf775bf6c144e2c5693ef4380f1e7eeca638973b4439dd68d",
+        "dest": "063_pbapply.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/plyr_1.8.9.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/plyr_1.8.9.tar.gz",
         "sha512": "59c307a4342643fddecc80881033227973dccaa3169203c88e86504b5756b5663b25a2d2755b438738b611b0a254286189e5d1c2581a48d50e33833954cef1ed",
-        "dest": "058_plyr.jmv.Rpkg"
+        "dest": "064_plyr.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/rbibutils_2.3.tar.gz",
-        "sha512": "0f09726b43f479b70c542264fb511c861cef9aa54fad6db99cde982aae974e0dec1badd74200086c79ade45c6f00f10216cf8463756a84306119a957b45d29ae",
-        "dest": "059_rbibutils.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/rbibutils_2.4.1.tar.gz",
+        "sha512": "7f5bd6bba989c34fe723445f93ebdf0a9790be592bfad5835abc3e0d2bafef27e3b0c6b94b2fa8b485f6123f2226b8cd2c096ab43804d310234941de7d7f269f",
+        "dest": "065_rbibutils.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/relimp_1.0-5.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/reactR_0.6.1.tar.gz",
+        "sha512": "0a390ba250ef21544a51ba4673b11cb59603ffde0142c1e8ab65dec42fdc4b8e53507ada001442deac6823befc5bb6cd898b566b0692fcb3af61427f304d22aa",
+        "dest": "066_reactR.jmv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/relimp_1.0-5.tar.gz",
         "sha512": "8f56fcca1ed3008463911cf9133919ae45544a690e469c514517715e7c77a481c7fdc0f1102b82618e2a005e5ec4a612f1f7a2f4c77a9e24bbc478add9b15292",
-        "dest": "060_relimp.jmv.Rpkg"
+        "dest": "067_relimp.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/ssanv_1.1.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/ssanv_1.1.tar.gz",
         "sha512": "05004d1b562e94d20dd4141526a3ecfd0b8a8e7df6ca6af1a09c307a477582d9f2402416038dccecebc574dde114f6a0cc8a67cab1e5e3e208e8fa489cddf996",
-        "dest": "061_ssanv.jmv.Rpkg"
+        "dest": "068_ssanv.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/zoo_1.8-14.tar.gz",
-        "sha512": "560600380a6a0f41f28a362438dde9eb6840fcb2f91e64cae4531762e98a99207bc6be7fabb10e5bceb895eb06f61749bf1acee08916329611d7d8d66f100fdd",
-        "dest": "062_zoo.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/timeDate_4052.112.tar.gz",
+        "sha512": "e7374ee313550d8182f633ec24c58fd2f9d03e3738e8c64325ed449cae4e4f7344cb03a24f65cc991b1eee47cb5b54b805b94b96241eb209e78e3c29027e0743",
+        "dest": "069_timeDate.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/MatrixModels_0.5-4.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/urca_1.3-4.tar.gz",
+        "sha512": "622f9d34e09839e589c055f32f77d9e38b264eeecf20ee1dd9b70c57084c27c71a6f42be024c619f492990654035703e3ed664f937f6b662acf2c0aa04565274",
+        "dest": "070_urca.jmv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/zoo_1.8-15.tar.gz",
+        "sha512": "572bcd5365742ec2fb2ee04e5f069624168c88419add485faa4eef44d1e17c3f7b628ea6fad1c2335e16439051c33f3c72849d58c9c942b1355952eb8d5f9012",
+        "dest": "071_zoo.jmv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/MatrixModels_0.5-4.tar.gz",
         "sha512": "b3db85cef079fce2281bad89fa6b2873388e5fe7ae5b34185124fc1121399b1bece4fa65579d029aea0b2b4199e379907a0d28dbe82a0182d25b7491064a4d31",
-        "dest": "063_MatrixModels.jmv.Rpkg"
+        "dest": "072_MatrixModels.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/Rdpack_2.6.4.tar.gz",
-        "sha512": "a3e84e5c12331b733fe87aa4f1c6bde2e70f8539a6356263a09d2e326d013040fb0f1ed53d33f13a123114d4a0df2dc23ec7fe358f119efb14a2cf3b08c0583f",
-        "dest": "064_Rdpack.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/Rdpack_2.6.6.tar.gz",
+        "sha512": "fcb477cf5c45d11991ca10551507c95a3f0c6eaef590301de1409f3bf803bf76d5c74648ea8a8fa78fbc43086f92188ae78c22a7e563e580857c03659f4bd012",
+        "dest": "073_Rdpack.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/StanHeaders_2.32.10.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/StanHeaders_2.32.10.tar.gz",
         "sha512": "af03329c02f5388a2688aeb778124591f734a3db3deefb400b94a31fb2ce21dcd07ebd297d68bf27b5b82e3b798516ba8ce85337650120f26d5f8f92a698aa09",
-        "dest": "065_StanHeaders.jmv.Rpkg"
+        "dest": "074_StanHeaders.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/doBy_4.6.27.tar.gz",
-        "sha512": "5324fd0c4cf64e3c1fdfa1492f120f77d949941b7ba6659cbd4846e06669858ffd71f26ac5bdf0b346a5ce3e4677b44ed24d454da92f5ba9a75b22bb4ff21103",
-        "dest": "066_doBy.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/emmeans_2.0.3.tar.gz",
+        "sha512": "d717206941ebaf3a9d81c6b50b6de48903b3992998f7798efebc01c188fad8701cda563a8672c63063b6b08b74d683193f119ba9e1b4e462c364ebf0dfe8ff93",
+        "dest": "075_emmeans.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/emmeans_1.11.1.tar.gz",
-        "sha512": "cc1738a5914d6ae9bce9d1e928469df553fc528cd9dd3f178b6c587a5b914ce976cd3d5a7c3d1b8ab6d54492e1473efceb5cda1843d7b58af3cd9db22671cb01",
-        "dest": "067_emmeans.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/exactci_1.4-5.tar.gz",
+        "sha512": "34c55b59b4ba69ba862b05f727e7f56ae1fa8dfde4d0f34608c37bd9942317534ed1b3c6ea256f9a8484baa1e3de25dccc9afefa342947757602cd4ae47c6e36",
+        "dest": "076_exactci.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/exactci_1.4-4.tar.gz",
-        "sha512": "b9c9ccae735ddc83920fcb9d0bd9789e28701b1442d01d211728aade3b6c2bdda32368c0f889e8e0b5f0ab0d482886d4bd4fd07cb27dbcb77e96956511d6c81c",
-        "dest": "068_exactci.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/ggstats_0.13.0.tar.gz",
+        "sha512": "d1d3094b9d4de4f2aaa9250050fb4f12fdd1ae16ff35e0cca3958918974e512ca3d9176d531564c3967de63ff1ef6ced1866ee6f9588ca5a1124248e2a55bf4c",
+        "dest": "077_ggstats.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/ggstats_0.9.0.tar.gz",
-        "sha512": "5272cc48279cfd204ccea54f615c03e261982622c4095824dfe95cacf1883c1814ebee3fc9bf3bc4d6b0f90e2b9058176b88540b1ae2cd7299258ab47a15333f",
-        "dest": "069_ggstats.jmv.Rpkg"
-    },
-    {
-        "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/gnm_1.1-5.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/gnm_1.1-5.tar.gz",
         "sha512": "fe55cb311cb6fd154d12ca6310fa241eba2bc9d7fe81acc334ba24562ec27513230dd64708fb8730a305426a6144725d60f80c4d245ebfb72846e45f733140de",
-        "dest": "070_gnm.jmv.Rpkg"
+        "dest": "078_gnm.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/gplots_3.2.0.tar.gz",
-        "sha512": "ef2278a65c1101ebc4d03bd99c8349219b453e12020d1e03e17399322d277705bd954a081ca7ee5f3ac9032d06544b0c3986c857c9c44e733f55dad6c1530b31",
-        "dest": "071_gplots.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/gplots_3.3.0.tar.gz",
+        "sha512": "ec9a14f36f24ef051aa8933f87d1b8680c05711e53939c62a06f7349e76b471fdc8a91e5773fd29c2b04e2f7ae5b414fac4cf8c57908e11c4b3c882d5c518400",
+        "dest": "079_gplots.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/htmlTable_2.4.3.tar.gz",
-        "sha512": "fc874c9c0f8b2dd4082a399923c1ac7e4e172d7ad68a2cd60d6cbef2f6f37ba920003996d788bb01c57d11e00f5bee2f67d75048011fef2840f4fd6481cb7f5b",
-        "dest": "072_htmlTable.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/htmlTable_2.5.0.tar.gz",
+        "sha512": "01473ca45f68349286acc7ddb8035a2778e52fae6ec9e25cf395dbbd4a73ae07b1b38ac2507ce7bb6c183c1dfa2b82f57ac893c4520866cb8f85d6eb3ee4a400",
+        "dest": "080_htmlTable.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/hypergeo_1.2-14.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/hypergeo_1.2-14.tar.gz",
         "sha512": "5c0bd0070c9c8ab7433a536b21a7fde00400345f221324ea2bb1180b07eba492c71416131255c78308c1b19262843766640f890b42ef015fc1129140a55183ca",
-        "dest": "073_hypergeo.jmv.Rpkg"
+        "dest": "081_hypergeo.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/igraph_2.1.4.tar.gz",
-        "sha512": "2641427e17266f309930fed658813254d1acb8a5b8cf7fecc7e763ed6a59e79673a86c818f42f76d05daae92bd10c44a1bd906182c7cda4b87d543ec2583d5ff",
-        "dest": "074_igraph.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/igraph_2.3.1.tar.gz",
+        "sha512": "9ce603835931abd55a03b0134098043dab619717fb7d2f35b6ccfa4230c8eb59cab4d80e15a2fe0865dfa2d4dca0f8bb4a91f8d1aac6ef26b2c8aeabeb694b94",
+        "dest": "082_igraph.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/kutils_1.73.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/juicyjuice_0.1.0.tar.gz",
+        "sha512": "caf814eddc20095fc3f47e326f4fb2944470d5c11e200ae4ac3364601e35d3d5277243aa02ab32f07ef5eb77cb677307eb606d224bc1cbc28381ae669b3004a9",
+        "dest": "083_juicyjuice.jmv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/kutils_1.73.tar.gz",
         "sha512": "0fa4cea5de3ce4b089ae9c794fc5625ef1a14a0b4e011df1945ec7176d2991f0bb266e36a579e72fcbd4d0ab42bc441764ccf50c07de8d9d7f40b39e09b87b91",
-        "dest": "075_kutils.jmv.Rpkg"
+        "dest": "084_kutils.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/lmtest_0.9-40.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/lmtest_0.9-40.tar.gz",
         "sha512": "7f98d6bb16ac968844621a7a29d30f69d4f2df9b70c0756b71c267d6087ce33dc69f026cc4d0a878e713f3ec16d3df108f118747c5e3b40e809ea57bdf4a759c",
-        "dest": "076_lmtest.jmv.Rpkg"
+        "dest": "085_lmtest.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/progress_1.2.3.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/markdown_2.0.tar.gz",
+        "sha512": "014e07d1a1995251fbbfb1b1823810355b1ba66d3f19d6bbf64ca07167152b73e9052925ab70ecb9bc3477983d3f6c6bb2c6c9098ead4f1a6be47378284238f8",
+        "dest": "086_markdown.jmv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/progress_1.2.3.tar.gz",
         "sha512": "f34afdc2b1632f82e53aecae51709ee81a9f026edd633632b2601849dd6d911f40cc711df646f80be91bc261db42b7e7b17071987947b3e525d13fc41dd758eb",
-        "dest": "077_progress.jmv.Rpkg"
+        "dest": "087_progress.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/psych_2.5.3.tar.gz",
-        "sha512": "e56b8443fc8acb8c144b23327e86d0d90ef8be4499cd147f9ffdd302f5521512d63954ef7eaf3e9533a377ec59eb6047bb539e5c2e6188f6c1ab41071bdea54d",
-        "dest": "078_psych.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/promises_1.5.0.tar.gz",
+        "sha512": "95bb51f663a0564bbf3b1555a0f5e3dcdf65887d847255fd520201f617f39ea4b47521da73ed289535d7592a5201c1eb69d42488d98a1736070ab27687e66b10",
+        "dest": "088_promises.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/reshape2_1.4.4.tar.gz",
-        "sha512": "d4606f14524c194d91d8c165fee0ef418eb381d3d01e761e83902f806a319218c81dfa74a48845c55e7af0256d4ae1c6f1ea58c3e8249e11212dc53b4ce2c98a",
-        "dest": "079_reshape2.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/psych_2.6.3.tar.gz",
+        "sha512": "5c97802ff520119f5276d703a118562bd965deeb64b4e6f365609abed7fbc4745b2c9954188200149cc948908a30d113e18d6be631df802b2471d41d96f63293",
+        "dest": "089_psych.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/rpf_1.0.15.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/reactable_0.4.5.tar.gz",
+        "sha512": "978d576d2dc905098342157e7d9718e89961650a908c4b60e5a50e0220bf2bebb2c85edb14a353b76d6bd2c1bfacb9088b9e6e385a28ab3ae4b1f1051c11e059",
+        "dest": "090_reactable.jmv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/reshape2_1.4.5.tar.gz",
+        "sha512": "0f4eb00197aef9e7a496af5ddb76ae34f5026d1ae3b45eaf946f228af2be1354cd5351c6c63dea20db3b9265ec058516aa0c38056655d313be9af900a3c73f8d",
+        "dest": "091_reshape2.jmv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/rpf_1.0.15.tar.gz",
         "sha512": "41c9f13663c9d4a94aceee104ce964989f6928a376e57964723011c858e7766740289c808d98cb9e80b72951bb63f7bb520ec0b50451a62a5b8208f3168aeedb",
-        "dest": "080_rpf.jmv.Rpkg"
+        "dest": "092_rpf.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/sandwich_3.1-1.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/sandwich_3.1-1.tar.gz",
         "sha512": "11c36fff95f6684c82927a122d0a6a541e4892524b5d460b9a0a81529c3aea67efbbf8a087e15e753ece5dcd6bfc4c8bc3cd5bc06094f60b3c2625a7e43ac480",
-        "dest": "081_sandwich.jmv.Rpkg"
+        "dest": "093_sandwich.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/viridis_0.6.5.tar.gz",
-        "sha512": "026412819b0a341210e67ac1dbc841187e31e3cb65a6f049be9a2a9d18a89bcf2ab4723bfb6235d924999c6c486257ec7eadda4dd27abbb831d6721f223b5651",
-        "dest": "082_viridis.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/websocket_1.4.4.tar.gz",
+        "sha512": "6271e5a8d90a0d3835c37c37d303bee2a52bf26342fdb0e799dbad967f48055e278074df3deee4c47fa7bce9b6e3fbcaa8cdac1e0ea1a8a9f1c0c432018ba8aa",
+        "dest": "094_websocket.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/BayesFactor_0.9.12-4.7.tar.gz",
-        "sha512": "88e0b398edff8a397a90f79c0fc12b649b39f018e01315948d4a2d302d4dbdf67ef250271eac0424f4b30e5374a6a436eee39284d12b820883455f5131d2ae5c",
-        "dest": "083_BayesFactor.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/BayesFactor_0.9.12-4.8.tar.gz",
+        "sha512": "93f9a4733aad17f80d8d3b1cd75ca53b18fd0cb51a6e07e6616e8f13ad58f6dddc5ede6f70a1814007abe795cd87a36fffe373dde15446ad16982f0bc859074d",
+        "dest": "095_BayesFactor.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/GGally_2.2.1.tar.gz",
-        "sha512": "06b91c8e3e9208a4741fd4b25cb21648af3a60dc9d25b4ab6508c826ca16bc6876b9edcd3ebd270b0afc63da0016412c79371e9f07d6b48c9ca6ee1674dbaf41",
-        "dest": "084_GGally.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/GGally_2.4.0.tar.gz",
+        "sha512": "e9a59dafd9c15040b4f1882ffb21678710d73dcca19f4b25351f98e5192626158773e78adf27630f3d1c560d253bb803738614137415451e8f6e37646b02c636",
+        "dest": "096_GGally.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/Hmisc_5.2-3.tar.gz",
-        "sha512": "15ac1b76caee682f57a308ababe3e6e15049b3c683290081a50b638ca5ce31871a171e0bab9711d6c94cfefc34313fb36093d2b02512ccd85f0bf7aaf44e85b0",
-        "dest": "085_Hmisc.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/Hmisc_5.2-5.tar.gz",
+        "sha512": "925eb5006c4171129dab76e884107cf4b550b0edfc1f201a9d03feef6ede07fe16a97e76dbe753b3d4e1176a95e6888abd16a68caaa0ef562eb75a95e2a8e92c",
+        "dest": "097_Hmisc.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/OpenMx_2.22.7.tar.gz",
-        "sha512": "8f403e2d6e6dbe55d7670eb88279c90a437471fac54cf516b65000903cfd907b69c7585f0c041d32b7ff845a825ba1fe9458a0c7e96b44c471e7368933022833",
-        "dest": "086_OpenMx.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/OpenMx_2.22.11.tar.gz",
+        "sha512": "b4c76faefc6257301f32346173972b1ef2428f3157ac6ce961ed67722ada968963b23b0347a9b4eb3f6bd71f9e0bf31b2d7324d0c82cf290e0e5f1269a5d9ea9",
+        "dest": "098_OpenMx.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/ROCR_1.0-11.tar.gz",
-        "sha512": "e5a050a255e822cbc71699f48e116ffab650bc15375ed02268fe0dc1cf37da5aa46610bc5f9cf2da4c0fb166bd3b60d56f17fb03d4e29fbb4edb8ba7db0f175b",
-        "dest": "087_ROCR.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/ROCR_1.0-12.tar.gz",
+        "sha512": "bad3e52211f5fa875f28502c51cd51e464b6a3eec8c206b0b9436f689feca811089735524f25dd72fa32e0da6232a150b11b917408da6e2153aa14141a8f4152",
+        "dest": "099_ROCR.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/exact2x2_1.6.9.tar.gz",
-        "sha512": "2fecc048f91a0e2e2aea27f7c928e28421d2576e6cec605689f7428b8743b27b04bb46561164b74a87de442c4da667d2aeb55a44d18856ec478c0fb411a6950e",
-        "dest": "088_exact2x2.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/chromote_0.5.1.tar.gz",
+        "sha512": "dc5fd074378616baf9687a34ee1c4bae9549aae3bbad4528800650d1e60f8f3bfa86644c79565aad6405a6c3ba991212fa7f842149e7fcabf37153466ccbf552",
+        "dest": "100_chromote.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/multcomp_1.4-28.tar.gz",
-        "sha512": "b6fc03a11364f29cd174d660d4f080f7ac040e8a7a47e353e48eb4f642caa6c0b4e8f87defc5941409252139ac0cb5a2f94235bfbb0a2755af11a75eebe214fc",
-        "dest": "089_multcomp.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/exact2x2_1.7.0.tar.gz",
+        "sha512": "5e32698993b0ac3c943a58bc7bf99d5497820ab89787baf18c551a2aba3b9193052ea1df84ff980b5bb4e430351664ca0aee3f9a16ed37efa1d4723d586b2100",
+        "dest": "101_exact2x2.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/quantreg_6.1.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/forecast_9.0.2.tar.gz",
+        "sha512": "e645255826d3f169972dbf3b5bf1a3cce15908d83a9b66005684cd1aee785775f9d85650bff4a410aa070dbaa9c4f007d83a3cc0977d859482f9fe76ce57f674",
+        "dest": "102_forecast.jmv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/gt_1.3.0.tar.gz",
+        "sha512": "54b8ca5cc851805fbcdffb15408bdc5b8fcffa3e229f1883aafda5fa0f3fc870e2770ef6699e745443e0cc5b1b1c6b330b4b8eb919da3408c8a00a8797cc8c6b",
+        "dest": "103_gt.jmv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/multcomp_1.4-30.tar.gz",
+        "sha512": "4f13a592c369634cfda068bbe92a4ac065dfebe5d1c765b95c5bfdb605730f73d54ef3e6bf15d52f9ae4c6ad1d69351f1e50dd8953ec10bec7dc03cc1274d49e",
+        "dest": "104_multcomp.jmv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/quantreg_6.1.tar.gz",
         "sha512": "b8ec1548e28c3b1af1e122ad42f76c468253c0448c8af5011ac4a57e33caecfd574a97e9eb82717ad2f6d5c7b1b08e31b9b63fa03606e27a6ecda94206321fbe",
-        "dest": "090_quantreg.jmv.Rpkg"
+        "dest": "105_quantreg.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/readxl_1.4.5.tar.gz",
-        "sha512": "56a43304a669ced9b341520296cb47fdbad7f09461b7ab8096b32085fec09a81a89e5cd3c859b85e64a04d5968f0bbf2c57969afd6347264bab7fe0805097d1b",
-        "dest": "091_readxl.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/reformulas_0.4.4.tar.gz",
+        "sha512": "8f9cae4f448338c89ca2f1662d5366e1b8cdcb69739daef2e44983f055dc21e1edbefcd7bc66bc99af936f9d5869201f25e540faaa11fcc17223d731dd99aa50",
+        "dest": "106_reformulas.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/reformulas_0.4.1.tar.gz",
-        "sha512": "165d6bc4c2043fe2dde6f1c349c89a7b2bd0fe235d9ee5ec0f7acbfc4619e8b442fd97b97d0d7a3fd076320934fad57a8261d872e754852e50298bfe418ea77d",
-        "dest": "092_reformulas.jmv.Rpkg"
-    },
-    {
-        "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/vcd_1.4-13.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/vcd_1.4-13.tar.gz",
         "sha512": "a45ae2ff5ae8a3ccea68a17a4451a5940e1e4bf2c513774e9c6e06a4eb977804c21e54440cfae04386aae3e4e1a7df1b15e288a49a825b86580ea39fc14999b5",
-        "dest": "093_vcd.jmv.Rpkg"
+        "dest": "107_vcd.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/lme4_1.1-37.tar.gz",
-        "sha512": "b10c61e1e0c13a73240e416636a8659fb0776b02b22ab28a04071085eeafbfd241404bede245b0c875a7bac06b76c4bf04b26a1bd366bdf831132f721e6f9824",
-        "dest": "094_lme4.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/doBy_4.7.1.tar.gz",
+        "sha512": "5d7f8d558e130ff0bf8fb60722eddc4d7034e4491b531ae199736a031a469c43fcf4d565b0076e2c0ac9c83215fffc7d3279f555feae90ad7b2f8caca1c57145",
+        "dest": "108_doBy.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/qgraph_1.9.8.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/lme4_2.0-1.tar.gz",
+        "sha512": "77dd6db407a24d4f7b1d2a90da012adc9167d96f1cf9ffe75822af7b3cffedc951ade11a613812bf9a650853cac4e2cc63800b16c71415522190f5e06c194b79",
+        "dest": "109_lme4.jmv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/qgraph_1.9.8.tar.gz",
         "sha512": "de7799c174e6d6fa27d74b2fae0787416632fb81a0d887a831a531f80a03e08ad09b501bd2d6e5c70daf53d2100e90822be90201c76f6b405383ad2bb215c216",
-        "dest": "095_qgraph.jmv.Rpkg"
+        "dest": "110_qgraph.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/vcdExtra_0.8-5.tar.gz",
-        "sha512": "7d8efd99ac631d5bd4644f06a99a81856350a585d0d34bf820756e7002c698ac0eb8aa4a57ddab1f8d0d79db4031e2b51e0e231d4f039c2648660ae9248bdc30",
-        "dest": "096_vcdExtra.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/webshot2_0.1.2.tar.gz",
+        "sha512": "a0dd887b60eafe2741d19f802b75d690065b616a5d8c76e52f754e743c11cc385cad19d9a3c8676e4421e5c1530ea5e6afc28cefbd7faed52cbe5a8e8588c2fd",
+        "dest": "111_webshot2.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/arm_1.14-4.tar.gz",
-        "sha512": "54845ffd0296c20797aeb7abcf0cc3fde195f514b4cf69bec638640e70e0cab1c660dcc5cbb75811650146160c9f5963dea0f7d482a99d3b3dd6e734e508412d",
-        "dest": "097_arm.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/arm_1.15-3.tar.gz",
+        "sha512": "1fbc50288703971c6e9de82ffab879b7aa884c0b8dbf823a7659934974263994f5341d96ab217647df58b54354899b1eee7eea290ec95ece54b796afaeddabee",
+        "dest": "112_arm.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/lmerTest_3.1-3.tar.gz",
-        "sha512": "cf0c6a8a90953193c945eea97d50b4f3efa8c96290141fb334826001b4f24dd7fbe880c901b80ec185262356285f3febf38902283536767be7ceef8086267a3e",
-        "dest": "098_lmerTest.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/lmerTest_3.2-1.tar.gz",
+        "sha512": "6fc96a1f76b64bea79c9465cad71e2a74cf738966c4e7d90cef91c9703101dea815c4cc9c60b32ee6884c9e1a1c26d6eedabda18e2d791fd16d34bb726d75198",
+        "dest": "113_lmerTest.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/pbkrtest_0.5.4.tar.gz",
-        "sha512": "2408e96e61937fc31281de8e8357d43483eb016e3702d57bf0e4d5236f1295c87e48e31db1d0507b1097b07f523ce856c2bf1d9d63610ebe401005fd8d4790a6",
-        "dest": "099_pbkrtest.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/pbkrtest_0.5.5.tar.gz",
+        "sha512": "f4940dd51b3ecd52b0003da4cf39b5dedc96613da424f046e79e37dd76ae9e70297bc969cecefec2950fa1a690a294f32d9b2c7b831d9a13a2c1eff207008aef",
+        "dest": "114_pbkrtest.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/rockchalk_1.8.157.tar.gz",
-        "sha512": "865193cd697121f8c83b9c008e2f2327847f43c167984626fdb5b9a91f118dc93c5aac3b94f09d3b64a0000104d83e4c1e738319c796c6c4d7f8437c8cc25304",
-        "dest": "100_rockchalk.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/rockchalk_1.8.164.tar.gz",
+        "sha512": "3174af6b0359236129910724a13ba065a1ea7c0dd20a668fa03b7d8db6e04b6e6fbae072a602bfad15d9701d33ebba0b11f528a71c82b1a30c849a1d21d38573",
+        "dest": "115_rockchalk.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/car_3.1-3.tar.gz",
-        "sha512": "24f4f0de00ebdddb5196f337f49634eb52db5f6f681cd725fa8946a8fcb5759e18b1b385308d85655345ffcc2e8b89305bdcb1210459429a062211790c92ee2b",
-        "dest": "101_car.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/vcdExtra_0.9.3.tar.gz",
+        "sha512": "8e1b6ed9889ee02df24e1011eac9610a6f65496088a67f9f607be92a4a3f9e16a8ebf26a3b0fafd55670d75c29a839e16206e162f62efe549010f651ec3bdbe5",
+        "dest": "116_vcdExtra.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/mi_1.1.tar.gz",
-        "sha512": "076d7e9b93bbc22ef736f9977aa784cddc93ac05e8ae099e4b80978919bad4340b717a64c2b8aa0a714eea40993e1391c6fa659ec32b04ae19c8aaec49fdc60a",
-        "dest": "102_mi.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/car_3.1-5.tar.gz",
+        "sha512": "c4ac9689f7360b9be47811a437c832ae6957756a5b123127da33bc8c96d5ec1fe6405f0d4a40af4d38156700568ec942745d463a44d6b58bf30f78d9f4d0a8b7",
+        "dest": "117_car.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/afex_1.4-1.tar.gz",
-        "sha512": "f91df95ddceff5f139e27efde319b7e2ac98c312137f2fabd5427e6430065d669acc5bf20675a68bcf1f15f39a1b807563320da1e7cc705bbae0dce22a9dd2d2",
-        "dest": "103_afex.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/mi_1.2.tar.gz",
+        "sha512": "8c5317cad0c9212daf1bc6cf5c728d3e98a44bb59cd02c4bab44bb7aa97cca5d3e6d4ddae523d3823549ac9a7a78f936aa9fb2f6d916970db179fe8aaa891a2c",
+        "dest": "118_mi.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/sem_3.1-16.tar.gz",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/afex_1.5-1.tar.gz",
+        "sha512": "ff64e518e956ba355f7b7e4ca47091e6219cbffc023f0384307a832c0ce16abc4c02755c9b4c93c5c1d0b106cf94a0ad2bc132e1a54cab635ca7a44df6679fb7",
+        "dest": "119_afex.jmv.Rpkg"
+    },
+    {
+        "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/sem_3.1-16.tar.gz",
         "sha512": "1b3081cf3db6da5adae75792dc1724c4b43ddf97757baf2cc585e6a454f8400b103831cad8d3ce115f8083655e9376e8339e8ce6cdb73f458914efa450d13009",
-        "dest": "104_sem.jmv.Rpkg"
+        "dest": "120_sem.jmv.Rpkg"
     },
     {
         "type": "archive",
-        "url": "https://packagemanager.posit.co/cran/2025-05-25/src/contrib/semPlot_1.1.6.tar.gz",
-        "sha512": "6f4504814ce3ca35b58246588739ca4ef0836c6f2214a3d53f30dbd907e3b448b2c35b297ad60117182292d09036fbc5d04908f47befa767b0e2913a229a14c2",
-        "dest": "105_semPlot.jmv.Rpkg"
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/semPlot_1.1.8.tar.gz",
+        "sha512": "5e9770dda2e02b76e93ee3be604792ac2136657dabd258ab2697082b0a7ad5b5bcc72f55a9b60b567ed3bb637def5dd4d988ce8ffa8586d94f60a4db288c8f0f",
+        "dest": "121_semPlot.jmv.Rpkg"
     }
 ]

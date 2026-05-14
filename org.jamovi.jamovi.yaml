@@ -98,8 +98,8 @@ modules:
     build-options: {}
     sources:
       - type: archive
-        url: https://cran.r-project.org/src/base/R-4/R-4.5.0.tar.gz
-        sha512: e32de0115f32c3e44f3a003deae6b35fa0ae1ed951f8a74d815e8a417de0e84547c2ec5386cf965208cc1c81e5d43a3706a15af929d295056201f2ffe6b9d84b
+        url: https://cran.r-project.org/src/base/R-4/R-4.6.0.tar.gz
+        sha512: 109d0141389583cc27e3e810e3cc029709e695cc411932564d9e88898a750ff8c1fae00abb3ab9714d85e591960aca81cd3da9cdfa07a7d810cd0a7be03ddeb1
     cleanup:
       - /app/lib/R/doc
 
