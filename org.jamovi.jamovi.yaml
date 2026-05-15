@@ -268,6 +268,12 @@ modules:
     buildsystem: simple
     build-commands:
       - cd jamovi-compiler && npm install --offline
+      # Stage pre-fetched static libv8 into /app so the V8 R package configure
+      # script can find the headers and libv8_monolith.a via V8_PKG_CFLAGS/LIBS.
+      # Both /include and /lib/*.a are in the global cleanup list, so they are
+      # removed from the final Flatpak after all packages are compiled.
+      - cp -rT libv8-static/include/ /app/include/
+      - cp libv8-static/lib/libv8_monolith.a /app/lib/
       - mkdir -p /app/lib/jamovi/modules
       - mkdir -p   jmv/build/R`/app/bin/jamovi --r-version`-linux
       - /app/bin/R CMD INSTALL *.jmv.Rpkg --library=jmv/build/R`/app/bin/jamovi --r-version`-linux
@@ -283,6 +289,8 @@ modules:
         npm_config_cache: ../flatpak-node/npm-cache
         npm_config_offline: 'true'
         R_LIBS: /app/lib/jamovi/modules/jmv/R
+        V8_PKG_CFLAGS: -I/app/include
+        V8_PKG_LIBS: -L/app/lib -lv8_monolith
     sources:
       - jmc-deps-sources.json
       - jmv-deps-sources.json
@@ -291,6 +299,20 @@ modules:
         dest-filename: jamovi-compiler.sh
         commands:
           - node jamovi-compiler/index.js --rhome $R_HOME $*
+      - type: archive
+        url: https://github.com/jeroen/build-v8-static/releases/download/12.4.254.21/v8-rocky-8-amd64.tar.gz
+        sha512: cd7a2700f06d2d262f22badaa1a4142e710d575e5a8131d518b814a94783c9c3bcd524a6c93336a12a0b6c7d254bbced255217182ed11748f6cf6bc21158ec5c
+        dest: libv8-static
+        strip-components: 1
+        only-arches:
+          - x86_64
+      - type: archive
+        url: https://github.com/jeroen/build-v8-static/releases/download/12.4.254.21/v8-debian-11-arm64.tar.gz
+        sha512: 0d38cc1073c8277394556208e5cfa15560837ea596fbf450a7ad47576be32c9eaf0611e9ea13e41d50e83d2cf1b7cad28f87883003773f78ef4aa39ef86dc4e3
+        dest: libv8-static
+        strip-components: 1
+        only-arches:
+          - aarch64
 
   - python-deps.json
 
