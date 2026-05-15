@@ -171,6 +171,10 @@ modules:
 
   - name: jmvcore
     buildsystem: simple
+    build-options:
+      env:
+        # for the fs package to build
+        USE_BUNDLED_LIBUV: '1'
     build-commands:
       - /app/bin/R CMD INSTALL *.Rpkg  --no-docs --no-html --no-help --no-demo --no-multiarch
       - /app/bin/R CMD INSTALL jmvcore --no-docs --no-html --no-help --no-demo --no-multiarch
