@@ -291,7 +291,7 @@ modules:
             \ | sed 's|aarch64|arm64|g'"
           - 'elif [[ "$1" == "-R" ]]; then'
           - '    shift'
-          - '    DOWNLOAD_STATIC_LIBV8=1 UDUNITS2_INCLUDE=/app/share/include UDUNITS2_LIBS=/app/lib
+          - '    DOWNLOAD_STATIC_LIBV8=1 UDUNITS2_INCLUDE=/app/share/include UDUNITS2_LIBS=/app/lib USE_BUNDLED_LIBUV=1
             /app/bin/R "$@"'
           - else
           - '    /app/bin/zypak-wrapper /app/bin/electron "$@"'
