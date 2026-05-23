@@ -133,6 +133,39 @@ modules:
         url: https://downloads.unidata.ucar.edu/udunits/2.2.28/udunits-2.2.28.tar.gz
         sha512: 86146d489e1d472723e059fb15a5dd697a67568ffb5cdba17d191eb304c018bffffea708a73cce50a6c87ad33b387e5ee6653377ae0ebe9986117dfd41e9a5a1
 
+  - name: geos
+    # needed by sf (R package)
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=Release
+      - -DBUILD_TESTING=OFF
+    sources:
+      - type: archive
+        url: https://download.osgeo.org/geos/geos-3.14.1.tar.bz2
+        sha512: a5a27c34249a6b7fa8bc5d6d557f278bcc3a81ca188f9f543bee7afb6e47d9f8a545e676c5884c0651530bccd24eb929feaaf95cda8e73b033296073e6626f0d
+
+  - name: PROJ
+    # needed by sf (R package) and gdal
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=Release
+      - -DBUILD_TESTING=OFF
+    sources:
+      - type: archive
+        url: https://download.osgeo.org/proj/proj-9.8.1.tar.gz
+        sha512: f8d02a605ce409b63f2809ecceb941b6f7eaa9bd5197040c13a1fa930e5b8fc3e996110ad71a4c7c56fc5ba5251a2d9cade0b51bbbc12048276915b9f46ba93b
+
+  - name: gdal
+    # needed by sf (R package)
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=Release
+      - -DGDAL_USE_GEOS=ON
+    sources:
+      - type: archive
+        url: https://download.osgeo.org/gdal/3.13.0/gdal-3.13.0.tar.gz
+        sha512: 40a3d35c051dced32f83052a3210e049cfff686c155fc836eec80bff82f91055a2ee7a83f613426bea11100d8469bfcdb8a3b05a992156b32fca1854ab849734
+
   - name: xml2-config
     buildsystem: simple
     build-commands:
