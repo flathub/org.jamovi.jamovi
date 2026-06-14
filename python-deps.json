@@ -201,6 +201,52 @@
                     "sha512": "8e1b4689b6a7ff8e1dd7e3aa3c41dff343e7301c697e1c19a434b00af3be4ec75291d0f521a920876c1bc77009c4223a79e0a72f0987ddcc3049269d1a8b4dbb"
                 }
             ]
+        },
+        {
+            "name": "python3-cryptography",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"cryptography\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/0c/c3/44f3fbbfa403ea2a7c779186dc20772604442dde72947e7d01069cbe98e3/pycparser-3.0-py3-none-any.whl",
+                    "sha512": "0d4db91143b4be85ff467eb5b622fafe9a4904ab4afcfeff9cc2e9a7a08919e68b6d0503a8e548ec3c4f358c025469765ffe6475792034eaae338bc0492bc62b"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/78/2d/7fa73dfa841b5ac06c7b8855cfc18622132e365f5b81d02230333ff26e9e/cffi-2.0.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+                    "sha512": "61d40bbdb52155272fa7b8bc53ae23016372cbee7521ad506763e417c0505d3cdd1fc634e66e767412d05887a53930ab81630694a1d2cbe1762561083dfdfd38",
+                    "only-arches": [
+                        "x86_64"
+                    ]
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/d5/72/12b5f8d3865bf0f87cf1404d8c374e7487dcf097a1c91c436e72e6badd83/cffi-2.0.0-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+                    "sha512": "75fddd8818cb696feb1f03d87b43483199445617d42a299f98e7b09da67c64da280dc0bd1a07e70c986aa13928699bd4bf4045a86a16b8f839568d850cd8ca1b",
+                    "only-arches": [
+                        "aarch64"
+                    ]
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/2c/99/2d13299eb3dd27b02dcfaafcc91d6b5cb3329f7cbd6d8f51921acd566c1a/cryptography-49.0.0-cp39-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+                    "sha512": "c2f6e1df815a0ae74fd9eed7e39780260c33a10dc2e3a9b1d0e8875d771df4a25ff96b18a0c2f83465ea07d3a5aaab0e537d5ea00d9979de6f0173024b1a8be7",
+                    "only-arches": [
+                        "x86_64"
+                    ]
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/3d/df/40577043ca124e17012f408ddddaeb213b856336ac82ddb3bc915f39e29f/cryptography-49.0.0-cp39-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+                    "sha512": "3cc6061fb99a156cf596ca597694c9cf7581e27069b24aeaf4d04be37086b7485a845d2c1c95def1ce4188ec0e841197894d50ca7dc10b6d0e0a93ea6e1845d0",
+                    "only-arches": [
+                        "aarch64"
+                    ]
+                }
+            ]
         }
     ]
 }
