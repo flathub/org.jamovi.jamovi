@@ -221,16 +221,16 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/78/2d/7fa73dfa841b5ac06c7b8855cfc18622132e365f5b81d02230333ff26e9e/cffi-2.0.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
-                    "sha512": "61d40bbdb52155272fa7b8bc53ae23016372cbee7521ad506763e417c0505d3cdd1fc634e66e767412d05887a53930ab81630694a1d2cbe1762561083dfdfd38",
+                    "url": "https://files.pythonhosted.org/packages/98/df/0a1755e750013a2081e863e7cd37e0cdd02664372c754e5560099eb7aa44/cffi-2.0.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+                    "sha512": "4fa9d65eeae2f1b136da75bca37d90f9d5f6b772effa1c4904cc53f6a56e071d3354a5c32e69fa7e3193b857687d2ca12367d214b7215bc21d583e9d0d50e815",
                     "only-arches": [
                         "x86_64"
                     ]
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d5/72/12b5f8d3865bf0f87cf1404d8c374e7487dcf097a1c91c436e72e6badd83/cffi-2.0.0-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
-                    "sha512": "75fddd8818cb696feb1f03d87b43483199445617d42a299f98e7b09da67c64da280dc0bd1a07e70c986aa13928699bd4bf4045a86a16b8f839568d850cd8ca1b",
+                    "url": "https://files.pythonhosted.org/packages/a9/f5/a2c23eb03b61a0b8747f211eb716446c826ad66818ddc7810cc2cc19b3f2/cffi-2.0.0-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+                    "sha512": "df16a51c2763515b5d9660656d68faeb5416866da807cdd6a17b7503c53e54ba32106a9066c53fdba9b15b6d563255c8aea8d578df5732585a17af960c71e704",
                     "only-arches": [
                         "aarch64"
                     ]
