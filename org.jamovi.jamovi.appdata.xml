@@ -37,6 +37,23 @@
   </screenshots>
 
   <releases>
+    <release version="28.5" date="2026-10-01">
+      <description>
+        <ul>
+          <li>Fix to NA handling in computed vars</li>
+        </ul>
+      </description>
+    </release>
+    <release version="28.4" date="2026-09-30">
+      <description>
+        <ul>
+          <li>Added support for .docx export</li>
+          <li>Added support for .odt export</li>
+          <li>Added module support for opening external files</li>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
     <release version="28.3" date="2026-09-18">
       <description>
         <ul>
