@@ -37,6 +37,113 @@
   </screenshots>
 
   <releases>
+    <release version="28.3" date="2026-09-18">
+      <description>
+        <ul>
+          <li>Improvement to copy/paste behaviour (thanks Nour!)</li>
+          <li>Fix to decimal missing value comparison</li>
+          <li>Added Option File for module developers</li>
+          <li>Added Results Text element for module developers</li>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
+    <release version="28.2" date="2026-08-13">
+      <description>
+        <ul>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
+    <release version="28.1" date="2026-07-28">
+      <description>
+        <ul>
+          <li>Brought forward CRAN snapshot</li>
+          <li>Architectural improvements</li>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.7.38" date="2026-07-21">
+      <description>
+        <ul>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.7.37" date="2026-07-01">
+      <description>
+        <ul>
+          <li>Update to internationalisation</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.7.36" date="2026-06-29">
+      <description>
+        <ul>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.7.35" date="2026-06-22">
+      <description>
+        <ul>
+          <li>Fix to 'analysis has terminated' issue (windows only)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.7.34" date="2026-06-21">
+      <description>
+        <ul>
+          <li>Improvement to I18n</li>
+          <li>Fix to windows .zip</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.7.33" date="2026-06-16">
+      <description>
+        <ul>
+          <li>Fix to windows .exe installer (windows only)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.7.32" date="2026-06-15">
+      <description>
+        <ul>
+          <li>Added module signature checking</li>
+          <li>Added support for .msix installers</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.7.31" date="2026-06-01">
+      <description>
+        <ul>
+          <li>Fix to confirmation dialog</li>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.7.30" date="2026-05-19">
+      <description>
+        <ul>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.7.29" date="2026-05-12">
+      <description>
+        <ul>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.7.28" date="2026-05-04">
+      <description>
+        <ul>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.7.27" date="2026-04-27">
       <description>
         <ul>

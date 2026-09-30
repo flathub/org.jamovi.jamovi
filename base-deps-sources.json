@@ -553,6 +553,12 @@
     },
     {
         "type": "archive",
+        "url": "https://packagemanager.posit.co/cran/2026-05-11/src/contrib/commonmark_2.0.0.tar.gz",
+        "sha512": "8ac2abafc448b989aa3cebfba872daadc4d5639a03c9a427bc23eddba5b047962de8d1ab0b47e5195a9f76c5d7efaa074d25d74760d752ee38d7377b8bd3aa1e",
+        "dest": "092_commonmark.Rpkg"
+    },
+    {
+        "type": "archive",
         "url": "https://github.com/sjentsch/jmvReadWrite/archive/dcc7ecc5772d24c33ddbe7852a2bd6934bdf7635.zip",
         "sha512": "24f9d7533c3e1480ecd476ad3ac1463c4400ff7cb6efcf3b6bbda2b5247b8c4fd7fdcd58fe7eb4c5f88a0e837e02cbdfae501f67eeb75eeb4f9b486cc031ff7d",
         "dest": "999_jmvReadWrite.Rpkg"
