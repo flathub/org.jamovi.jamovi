@@ -37,6 +37,13 @@
   </screenshots>
 
   <releases>
+    <release version="28.6" date="2026-10-01">
+      <description>
+        <ul>
+          <li>Fix to language selection</li>
+        </ul>
+      </description>
+    </release>
     <release version="28.5" date="2026-10-01">
       <description>
         <ul>
