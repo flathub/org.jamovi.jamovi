@@ -37,6 +37,14 @@
   </screenshots>
 
   <releases>
+    <release version="28.7" date="2026-10-03">
+      <description>
+        <ul>
+          <li>Added support for module export actions</li>
+          <li>General bug-fixes and improvements</li>
+        </ul>
+      </description>
+    </release>
     <release version="28.6" date="2026-10-01">
       <description>
         <ul>
